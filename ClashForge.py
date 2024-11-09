@@ -35,7 +35,7 @@ TEST_URL = "http://www.pinterest.com"
 CLASH_API_PORTS = [9090]
 CLASH_API_HOST = "127.0.0.1"
 CLASH_API_SECRET = ""
-TIMEOUT = 2
+TIMEOUT = 1
 MAX_CONCURRENT_TESTS = 100
 LIMIT = 100 # 最多保留LIMIT个节点
 CONFIG_FILE = 'clash_config.yaml'
@@ -1613,7 +1613,9 @@ def generate_clash_config(links,load_nodes):
     if config["proxies"]:
         with open(CONFIG_FILE, "w", encoding="utf-8") as f:
             yaml.dump(config, f, allow_unicode=True, default_flow_style=False)
-        print(f"已经生成Clash配置文件{CONFIG_FILE}")
+        with open(f'{CONFIG_FILE}.json', "w", encoding="utf-8") as f:
+            json.dump(config,f,ensure_ascii=False)
+        print(f"已经生成Clash配置文件{CONFIG_FILE}|{CONFIG_FILE}.json")
     else:
         print('没有节点数据更新')
 
@@ -1647,6 +1649,9 @@ def ensure_executable(file_path):
 
 # 处理 Clash 配置错误，解析错误信息并更新配置文件
 def handle_clash_error(error_message, config_file_path):
+    start_time = time.time()
+    config_file_path = f'{config_file_path}.json' if os.path.exists(f'{config_file_path}.json') else config_file_path
+
     proxy_index_match = re.search(r'proxy (\d+):', error_message)
     if not proxy_index_match:
         return False
@@ -1656,30 +1661,24 @@ def handle_clash_error(error_message, config_file_path):
     try:
         # 读取配置文件
         with open(config_file_path, 'r', encoding='utf-8') as file:
-            config = yaml.safe_load(file)
-
-        if 'proxies' not in config:
-            return False
+            config = json.load(file)
 
         # 获取要删除的节点的name
-        if problem_index >= len(config['proxies']):
-            return False
-
         problem_proxy_name = config['proxies'][problem_index]['name']
-
         # 删除问题节点
-        config['proxies'].pop(problem_index)
+        del config['proxies'][problem_index]
 
         # 从所有proxy-groups中删除该节点引用
-        if 'proxy-groups' in config:
-            for group in config['proxy-groups']:
-                if 'proxies' in group:
-                    group['proxies'] = [p for p in group['proxies'] if p != problem_proxy_name]
+        proxies = config['proxy-groups'][1]["proxies"]
+        proxies.remove(problem_proxy_name)
+        for group in config["proxy-groups"][1:]:
+            group["proxies"] = proxies
 
         # 保存更新后的配置
         with open(config_file_path, 'w', encoding='utf-8') as file:
-            yaml.dump(config, file, allow_unicode=True, sort_keys=False)
+            file.write(json.dumps(config,ensure_ascii=False))
 
+        print(f'配置异常：{error_message}修复配置异常，移除proxy[{problem_index}] {problem_proxy_name} 完毕，耗时{time.time() - start_time}s\n')
         return True
 
     except Exception as e:
@@ -1780,7 +1779,11 @@ def start_clash():
         raise OSError("Unsupported operating system.")
 
     not_started = True
+
+    global CONFIG_FILE
+    CONFIG_FILE = f'{CONFIG_FILE}.json' if os.path.exists(f'{CONFIG_FILE}.json') else CONFIG_FILE
     while not_started:
+        # print(f'加载配置{CONFIG_FILE}')
         clash_process = subprocess.Popen(
             [clash_binary, '-f', CONFIG_FILE],
             stdout=subprocess.PIPE,
@@ -1796,36 +1799,34 @@ def start_clash():
 
         stdout_thread.start()
 
-        timeout = 20
+        timeout = 1
         start_time = time.time()
-        error_detected = False
-
-        while time.time() - start_time < timeout and not error_detected:
-            stdout_thread.join(timeout=1)
+        while time.time() - start_time < timeout:
+            stdout_thread.join(timeout=0.2)
             if output_lines:
                 # 检查输出是否包含错误信息
+                if 'GeoIP' in output_lines[-1]:
+                    print(output_lines[-1])
+                    time.sleep(5)
+                    return clash_process
+
                 if "Parse config error" in output_lines[-1]:
-                    if 'GEOIP' in output_lines[-1]:
-                        pass
-                    else:
-                        print(f'代理节点异常: {output_lines[-1]}\n尝试自动修复配置，移除异常节点')
-                        error_detected = True
-                        if handle_clash_error(output_lines[-1], CONFIG_FILE):
-                            stop_clash(clash_process)
+                    if handle_clash_error(output_lines[-1], CONFIG_FILE):
+                        stop_clash(clash_process)
+                        output_lines = []
             if is_clash_api_running():
-                error_detected = True
-                not_started = False
+                return clash_process
 
-        # if not error_detected:
-        #     not_started = False
+        # if is_clash_api_running():
+        #     return clash_process
 
-        if not_started and error_detected:
+        if not_started:
             continue
         return clash_process
 
 
 # 停止 Clash
-def stop_clash(clash_process, timeout=2):
+def stop_clash(clash_process, timeout=1):
     """安全地终止 Clash 进程"""
     if clash_process is None:
         return
@@ -1850,25 +1851,12 @@ def stop_clash(clash_process, timeout=2):
         except:
             pass
 
-def try_connect_to_clash():
-    url = f"http://{CLASH_API_HOST}:{CLASH_API_PORTS[0]}/proxies"
-    for attempt in range(5):
-        try:
-            response = requests.get(url)
-            response.raise_for_status() # 抛出异常以处理HTTP错误
-            return response.json() # 返回正确的响应
-        except requests.ConnectionError:
-            clash_process = start_clash()
-            print(f"\r尝试连接Clash API失败，正在重试... 第 {attempt + 1} 次\n", end="", flush=True)
-            time.sleep(2) # 等待2秒后重试
-    raise ConnectionError("无法连接到 Clash API，已达到最大重试次数。")
-
-
 def is_clash_api_running():
     try:
         url = f"http://{CLASH_API_HOST}:{CLASH_API_PORTS[0]}/configs"
         response = requests.get(url)
         # 检查响应状态码，200表示正常
+        print(f'Clash API启动成功，开始批量检测')
         return response.status_code == 200
     except requests.exceptions.RequestException:
         # 捕获所有请求异常，包括连接错误等
@@ -2067,9 +2055,13 @@ class ClashConfig:
         """保存配置到文件"""
         try:
             # 保存新配置
-            with open(self.config_path, 'w', encoding='utf-8') as f:
+            yaml_cfg = self.config_path.strip('.json') if self.config_path.endswith('.json') else self.config_path
+            if os.path.exists(f'{yaml_cfg}.json'):
+                os.remove(f'{yaml_cfg}.json')
+            with open(yaml_cfg, 'w', encoding='utf-8') as f:
                 yaml.dump(self.config, f, allow_unicode=True, sort_keys=False)
-            print(f"新配置已保存到: {self.config_path}")
+            print(f"新配置已保存到: {yaml_cfg}")
+
         except Exception as e:
             print(f"保存配置文件失败: {e}")
             sys.exit(1)
@@ -2120,7 +2112,8 @@ async def test_group_proxies(clash_api: ClashAPI, proxies: List[str]) -> List[Pr
 
 async def proxy_clean():
     # 更新全局配置
-    global MAX_CONCURRENT_TESTS, TIMEOUT, CLASH_API_SECRET, LIMIT
+    global MAX_CONCURRENT_TESTS, TIMEOUT, CLASH_API_SECRET, LIMIT, CONFIG_FILE
+    CONFIG_FILE = f'{CONFIG_FILE}.json' if os.path.exists(f'{CONFIG_FILE}.json') else CONFIG_FILE
     print(f"===================节点批量检测基本信息======================")
     print(f"配置文件: {CONFIG_FILE}")
     print(f"API 端口: {CLASH_API_PORTS[0]}")
@@ -2129,6 +2122,7 @@ async def proxy_clean():
     print(f"保留节点：最多保留{LIMIT}个延迟最小的有效节点")
 
     # 加载配置
+    print(f'加载配置文件{CONFIG_FILE}')
     config = ClashConfig(CONFIG_FILE)
     available_groups = config.get_group_names()[1:]
 
