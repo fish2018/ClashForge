@@ -32,6 +32,11 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
+- name: tg频道:@ripaojiedian
+  type: http
+  server: ftq.ink
+  port: 4000
+  tls: true
 - name: 🇭🇰 香港|@ripaojiedian
   server: 223.113.54.149
   port: 14505
@@ -74,21 +79,29 @@ proxies:
   password: 13e7f6f8-4ec2-4060-a1b2-e78eba835ab2
   sni: xj.cokecloud.top
   skip-cert-verify: false
-- name: 🇯🇵 日本4|@ripaojiedian
-  server: 120.233.26.140
-  port: 50001
-  client-fingerprint: chrome
-  type: trojan
-  password: 2add6241-8fe8-3922-8347-da25e8ced601
-  sni: jpcn2.doubledou.icu
-  skip-cert-verify: false
-- name: 🇰🇷 韩国|@ripaojiedian
-  server: p225.panda004.net
-  port: 3771
+- name: 🇰🇷 韩国2|@ripaojiedian
+  server: 112.213.102.228
+  port: 4231
   client-fingerprint: chrome
   type: ss
   cipher: aes-256-cfb
   password: qwerREWQ@@
+  tfo: false
+- name: 🇸🇬 狮城特殊|@ripaojiedian
+  server: 3.35.206.24
+  port: 443
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  tfo: false
+- name: 🇯🇵 日本特殊|@ripaojiedian
+  server: 43.203.127.152
+  port: 443
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
   tfo: false
 - name: 🇻🇳 越南|@ripaojiedian
   server: vn.mjt000.com
@@ -115,364 +128,108 @@ proxies:
     path: /farcry?ed=2560
     headers:
       Host: loki.oracle
-- name: Warsaw  8
+- name: CDN优选-1
+  server: 1.cdn.5468936.xyz
+  port: 80
+  type: vmess
+  uuid: be9cf152-7cf1-46f9-88ed-a55b343c927b
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /linuxdo
+- name: CDN优选-2
+  server: 2.cdn.5468936.xyz
+  port: 80
+  type: vmess
+  uuid: be9cf152-7cf1-46f9-88ed-a55b343c927b
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /linuxdo
+- name: CDN优选-3
+  server: 3.cdn.5468936.xyz
+  port: 80
+  type: vmess
+  uuid: be9cf152-7cf1-46f9-88ed-a55b343c927b
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /linuxdo
+- name: CDN优选-5
+  server: 5.cdn.5468936.xyz
+  port: 80
+  type: vmess
+  uuid: be9cf152-7cf1-46f9-88ed-a55b343c927b
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /linuxdo
+- name: CDN优选-6
+  server: 6.cdn.5468936.xyz
+  port: 80
+  type: vmess
+  uuid: be9cf152-7cf1-46f9-88ed-a55b343c927b
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /linuxdo
+- name: CDN优选-8
+  server: 8.cdn.5468936.xyz
+  port: 80
+  type: vmess
+  uuid: be9cf152-7cf1-46f9-88ed-a55b343c927b
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /linuxdo
+- name: Warsaw Pro 5
   type: trojan
-  server: organic-skunk.boa152.lol
+  server: improved-shrimp.boa152.lol
   port: 443
   password: '3723507166611775488'
-  sni: organic-skunk.boa152.lol
+  sni: improved-shrimp.boa152.lol
   skip-cert-verify: false
   udp: true
-- name: Amsterdam  17
+- name: Moscow Pro 3
   type: trojan
-  server: helping-katydid.boa152.lol
+  server: usable-skink.treefrog761.one
   port: 443
   password: '3723507166611775488'
-  sni: helping-katydid.boa152.lol
+  sni: usable-skink.treefrog761.one
   skip-cert-verify: false
   udp: true
-- name: Amsterdam  Pro 24
+- name: London  15
   type: trojan
-  server: devoted-starfish.boa152.lol
+  server: boss-hound.boa152.lol
   port: 443
   password: '3723507166611775488'
-  sni: devoted-starfish.boa152.lol
+  sni: boss-hound.boa152.lol
   skip-cert-verify: false
   udp: true
-- name: Frankfurt -L22 1
+- name: Frankfurt  16
   type: trojan
-  server: profound-anemone.boa152.lol
+  server: ample-cockatoo.boa152.lol
   port: 443
   password: '3723507166611775488'
-  sni: profound-anemone.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Tokyo -L22 8
-  type: trojan
-  server: welcomed-chimp.boa152.lol
-  port: 443
-  password: '3723507166611775488'
-  sni: welcomed-chimp.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Amsterdam  9
-  type: trojan
-  server: fitting-ox.boa152.lol
-  port: 443
-  password: '3723507166611775488'
-  sni: fitting-ox.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Ireland  Pro 5
-  type: trojan
-  server: cuddly-slug.treefrog761.one
-  port: 443
-  password: '3723507166611775488'
-  sni: cuddly-slug.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: Frankfurt  4
-  type: trojan
-  server: pleased-slug.boa152.lol
-  port: 443
-  password: '3723507166611775488'
-  sni: pleased-slug.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Singapore  Pro 5
-  type: trojan
-  server: amazing-porpoise.treefrog761.one
-  port: 443
-  password: '3723507166611775488'
-  sni: amazing-porpoise.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: Ireland  Pro 3
-  type: trojan
-  server: discrete-perch.boa152.lol
-  port: 443
-  password: '3723507166611775488'
-  sni: discrete-perch.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Tokyo  Pro 15
-  type: trojan
-  server: relative-monkey.boa152.lol
-  port: 443
-  password: '3723507166611775488'
-  sni: relative-monkey.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Singapore  7
-  type: trojan
-  server: profound-shiner.boa152.lol
-  port: 443
-  password: '3723507166611775488'
-  sni: profound-shiner.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: New York   7
-  type: trojan
-  server: allowed-primate.boa152.lol
-  port: 443
-  password: '3723507166611775488'
-  sni: allowed-primate.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Singapore  8
-  type: trojan
-  server: major-reindeer.boa152.lol
-  port: 443
-  password: '3723507166611775488'
-  sni: major-reindeer.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Ohio -L22 2
-  type: trojan
-  server: native-tetra.boa152.lol
-  port: 443
-  password: '3723507166611775488'
-  sni: native-tetra.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Toronto  Pro 1
-  type: trojan
-  server: neutral-magpie.treefrog761.one
-  port: 443
-  password: '3723507166611775488'
-  sni: neutral-magpie.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: Virginia  Pro 6
-  type: trojan
-  server: key-eel.treefrog761.one
-  port: 443
-  password: '3723507166611775488'
-  sni: key-eel.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: New York   Pro 9
-  type: trojan
-  server: eternal-tadpole.boa152.lol
-  port: 443
-  password: '3723507166611775488'
-  sni: eternal-tadpole.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Amsterdam  Pro 28
-  type: trojan
-  server: lucky-grouper.boa152.lol
-  port: 443
-  password: '3723507166611775488'
-  sni: lucky-grouper.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Paris Pro 1
-  type: trojan
-  server: exciting-mallard.boa152.lol
-  port: 443
-  password: '3723507166611775488'
-  sni: exciting-mallard.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Frankfurt  6
-  type: trojan
-  server: profound-elk.boa152.lol
-  port: 443
-  password: '3723507166611775488'
-  sni: profound-elk.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: New York   Pro 3
-  type: trojan
-  server: relative-rhino.boa152.lol
-  port: 443
-  password: '3723507166611775488'
-  sni: relative-rhino.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Warsaw  6
-  type: trojan
-  server: honest-gar.boa152.lol
-  port: 443
-  password: '3723507166611775488'
-  sni: honest-gar.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Tokyo  13
-  type: trojan
-  server: ethical-falcon.boa152.lol
-  port: 443
-  password: '3723507166611775488'
-  sni: ethical-falcon.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Ponte San Pietro Pro 1
-  type: trojan
-  server: keen-falcon.treefrog761.one
-  port: 443
-  password: '3723507166611775488'
-  sni: keen-falcon.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: Ireland -L22 1
-  type: trojan
-  server: deciding-chamois.boa152.lol
-  port: 443
-  password: '3723507166611775488'
-  sni: deciding-chamois.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Oregon -L22 Pro 16
-  type: trojan
-  server: fresh-grub.boa152.lol
-  port: 443
-  password: '3723507166611775488'
-  sni: fresh-grub.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Virginia  Pro 15
-  type: trojan
-  server: busy-buffalo.treefrog761.one
-  port: 443
-  password: '3723507166611775488'
-  sni: busy-buffalo.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: Singapore -L22 11
-  type: trojan
-  server: cheerful-boxer.boa152.lol
-  port: 443
-  password: '3723507166611775488'
-  sni: cheerful-boxer.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Amsterdam  6
-  type: trojan
-  server: sensible-ocelot.boa152.lol
-  port: 443
-  password: '3723507166611775488'
-  sni: sensible-ocelot.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: New York   8
-  type: trojan
-  server: actual-albacore.boa152.lol
-  port: 443
-  password: '3723507166611775488'
-  sni: actual-albacore.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Mumbai Pro 3
-  type: trojan
-  server: able-emu.treefrog761.one
-  port: 443
-  password: '3723507166611775488'
-  sni: able-emu.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: Tokyo  Pro 6
-  type: trojan
-  server: fancy-mudfish.treefrog761.one
-  port: 443
-  password: '3723507166611775488'
-  sni: fancy-mudfish.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: Ohio  Pro 20
-  type: trojan
-  server: magnetic-chicken.treefrog761.one
-  port: 443
-  password: '3723507166611775488'
-  sni: magnetic-chicken.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: Manassas  Pro 25
-  type: trojan
-  server: tight-clam.boa152.lol
-  port: 443
-  password: '3723507166611775488'
-  sni: tight-clam.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Manassas  Pro 19
-  type: trojan
-  server: discrete-moccasin.boa152.lol
-  port: 443
-  password: '3723507166611775488'
-  sni: discrete-moccasin.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Amsterdam 25
-  type: trojan
-  server: concrete-buzzard.boa152.lol
-  port: 443
-  password: '3723507166611775488'
-  sni: concrete-buzzard.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Tokyo -L22 Pro 5
-  type: trojan
-  server: capable-eel.treefrog761.one
-  port: 443
-  password: '3723507166611775488'
-  sni: capable-eel.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: Amsterdam  Pro 27
-  type: trojan
-  server: star-monarch.boa152.lol
-  port: 443
-  password: '3723507166611775488'
-  sni: star-monarch.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Seoul -L22 2
-  type: trojan
-  server: striking-shepherd.boa152.lol
-  port: 443
-  password: '3723507166611775488'
-  sni: striking-shepherd.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Singapore  Pro 10
-  type: trojan
-  server: whole-foxhound.boa152.lol
-  port: 443
-  password: '3723507166611775488'
-  sni: whole-foxhound.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Stockholm Pro 1
-  type: trojan
-  server: real-cowbird.boa152.lol
-  port: 443
-  password: '3723507166611775488'
-  sni: real-cowbird.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Istanbul  Pro 1
-  type: trojan
-  server: absolute-mink.treefrog761.one
-  port: 443
-  password: '3723507166611775488'
-  sni: absolute-mink.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: Mumbai  Pro 4
-  type: trojan
-  server: loyal-bulldog.treefrog761.one
-  port: 443
-  password: '3723507166611775488'
-  sni: loyal-bulldog.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: Amsterdam  13
-  type: trojan
-  server: useful-prawn.boa152.lol
-  port: 443
-  password: '3723507166611775488'
-  sni: useful-prawn.boa152.lol
+  sni: ample-cockatoo.boa152.lol
   skip-cert-verify: false
   udp: true
 - name: Singapore -L22 Pro 9
@@ -491,292 +248,68 @@ proxies:
   sni: open-kangaroo.boa152.lol
   skip-cert-verify: false
   udp: true
-- name: New York   Pro 5
+- name: Amsterdam  Pro 13
   type: trojan
-  server: organic-hare.boa152.lol
+  server: useful-prawn.boa152.lol
   port: 443
   password: '3723507166611775488'
-  sni: organic-hare.boa152.lol
+  sni: useful-prawn.boa152.lol
   skip-cert-verify: false
   udp: true
-- name: Virginia Pro 10
+- name: Frankfurt -L22 1
   type: trojan
-  server: equipped-mutt.boa152.lol
+  server: profound-anemone.boa152.lol
   port: 443
   password: '3723507166611775488'
-  sni: equipped-mutt.boa152.lol
+  sni: profound-anemone.boa152.lol
   skip-cert-verify: false
   udp: true
-- name: Amsterdam  Pro 15
+- name: Ireland  Pro 5
   type: trojan
-  server: social-bream.boa152.lol
+  server: cuddly-slug.treefrog761.one
   port: 443
   password: '3723507166611775488'
-  sni: social-bream.boa152.lol
+  sni: cuddly-slug.treefrog761.one
   skip-cert-verify: false
   udp: true
-- name: Frankfurt  Pro 16
+- name: Tokyo -L22 8
   type: trojan
-  server: ample-cockatoo.boa152.lol
+  server: welcomed-chimp.boa152.lol
   port: 443
   password: '3723507166611775488'
-  sni: ample-cockatoo.boa152.lol
+  sni: welcomed-chimp.boa152.lol
   skip-cert-verify: false
   udp: true
-- name: Frankfurt  18
+- name: Seoul -L22 Pro 2
   type: trojan
-  server: proper-titmouse.boa152.lol
+  server: striking-shepherd.boa152.lol
   port: 443
   password: '3723507166611775488'
-  sni: proper-titmouse.boa152.lol
+  sni: striking-shepherd.boa152.lol
   skip-cert-verify: false
   udp: true
-- name: Warsaw  Pro 3
+- name: Paris Pro 1
   type: trojan
-  server: perfect-beagle.boa152.lol
+  server: exciting-mallard.boa152.lol
   port: 443
   password: '3723507166611775488'
-  sni: perfect-beagle.boa152.lol
+  sni: exciting-mallard.boa152.lol
   skip-cert-verify: false
   udp: true
-- name: Amsterdam  22
+- name: Warsaw  8
   type: trojan
-  server: national-gar.boa152.lol
+  server: organic-skunk.boa152.lol
   port: 443
   password: '3723507166611775488'
-  sni: national-gar.boa152.lol
+  sni: organic-skunk.boa152.lol
   skip-cert-verify: false
   udp: true
-- name: Toronto  Pro 2
+- name: Singapore  1
   type: trojan
-  server: trusty-grackle.boa152.lol
+  server: premium-gull.boa152.lol
   port: 443
   password: '3723507166611775488'
-  sni: trusty-grackle.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: London  15
-  type: trojan
-  server: boss-hound.boa152.lol
-  port: 443
-  password: '3723507166611775488'
-  sni: boss-hound.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: London Pro 4
-  type: trojan
-  server: leading-shrew.boa152.lol
-  port: 443
-  password: '3723507166611775488'
-  sni: leading-shrew.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Tokyo  Pro 11
-  type: trojan
-  server: crucial-satyr.boa152.lol
-  port: 443
-  password: '3723507166611775488'
-  sni: crucial-satyr.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Manassas  1
-  type: trojan
-  server: nearby-hedgehog.boa152.lol
-  port: 443
-  password: '3723507166611775488'
-  sni: nearby-hedgehog.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Ireland  Pro 2
-  type: trojan
-  server: boss-marten.boa152.lol
-  port: 443
-  password: '3723507166611775488'
-  sni: boss-marten.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Tokyo  Pro 12
-  type: trojan
-  server: unbiased-ladybug.treefrog761.one
-  port: 443
-  password: '3723507166611775488'
-  sni: unbiased-ladybug.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: Warsaw  7
-  type: trojan
-  server: holy-seahorse.boa152.lol
-  port: 443
-  password: '3723507166611775488'
-  sni: holy-seahorse.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Singapore  Pro 6
-  type: trojan
-  server: fair-wahoo.treefrog761.one
-  port: 443
-  password: '3723507166611775488'
-  sni: fair-wahoo.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: Warsaw 5
-  type: trojan
-  server: improved-shrimp.boa152.lol
-  port: 443
-  password: '3723507166611775488'
-  sni: improved-shrimp.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Amsterdam  11
-  type: trojan
-  server: fit-mackerel.boa152.lol
-  port: 443
-  password: '3723507166611775488'
-  sni: fit-mackerel.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Amsterdam  Pro 16
-  type: trojan
-  server: wise-cowbird.boa152.lol
-  port: 443
-  password: '3723507166611775488'
-  sni: wise-cowbird.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Tokyo  2
-  type: trojan
-  server: smiling-marmoset.boa152.lol
-  port: 443
-  password: '3723507166611775488'
-  sni: smiling-marmoset.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Amsterdam  19
-  type: trojan
-  server: sacred-guppy.boa152.lol
-  port: 443
-  password: '3723507166611775488'
-  sni: sacred-guppy.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Singapore  Pro 15
-  type: trojan
-  server: joint-skink.treefrog761.one
-  port: 443
-  password: '3723507166611775488'
-  sni: joint-skink.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: Frankfurt  8
-  type: trojan
-  server: oriented-terrier.boa152.lol
-  port: 443
-  password: '3723507166611775488'
-  sni: oriented-terrier.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Seoul  Pro 3
-  type: trojan
-  server: huge-katydid.treefrog761.one
-  port: 443
-  password: '3723507166611775488'
-  sni: huge-katydid.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: Manassas  Pro 35
-  type: trojan
-  server: needed-kite.boa152.lol
-  port: 443
-  password: '3723507166611775488'
-  sni: needed-kite.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Amsterdam  3
-  type: trojan
-  server: pleased-airedale.boa152.lol
-  port: 443
-  password: '3723507166611775488'
-  sni: pleased-airedale.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Oregon  Pro 12
-  type: trojan
-  server: usable-toad.treefrog761.one
-  port: 443
-  password: '3723507166611775488'
-  sni: usable-toad.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: Tokyo -L22 Pro 7
-  type: trojan
-  server: fleet-weevil.boa152.lol
-  port: 443
-  password: '3723507166611775488'
-  sni: fleet-weevil.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Manila Pro 1
-  type: trojan
-  server: advanced-shad.treefrog761.one
-  port: 443
-  password: '3723507166611775488'
-  sni: advanced-shad.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: Riyadh Pro 1
-  type: trojan
-  server: noted-calf.treefrog761.one
-  port: 443
-  password: '3723507166611775488'
-  sni: noted-calf.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: Amsterdam  14
-  type: trojan
-  server: clean-ray.boa152.lol
-  port: 443
-  password: '3723507166611775488'
-  sni: clean-ray.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Singapore  Pro 13
-  type: trojan
-  server: fond-anemone.treefrog761.one
-  port: 443
-  password: '3723507166611775488'
-  sni: fond-anemone.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: Tokyo -L22 Pro 1
-  type: trojan
-  server: related-hawk.treefrog761.one
-  port: 443
-  password: '3723507166611775488'
-  sni: related-hawk.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: Ponte San Pietro Pro 2
-  type: trojan
-  server: rich-sturgeon.treefrog761.one
-  port: 443
-  password: '3723507166611775488'
-  sni: rich-sturgeon.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: Frankfurt  Pro 13
-  type: trojan
-  server: golden-krill.treefrog761.one
-  port: 443
-  password: '3723507166611775488'
-  sni: golden-krill.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: Amsterdam  Pro 7
-  type: trojan
-  server: tops-kit.boa152.lol
-  port: 443
-  password: '3723507166611775488'
-  sni: tops-kit.boa152.lol
+  sni: premium-gull.boa152.lol
   skip-cert-verify: false
   udp: true
 - name: Tokyo  4
@@ -787,28 +320,84 @@ proxies:
   sni: unbiased-manatee.boa152.lol
   skip-cert-verify: false
   udp: true
-- name: Amsterdam  Pro 18
+- name: Mumbai  Pro 4
   type: trojan
-  server: correct-redbird.boa152.lol
+  server: loyal-bulldog.treefrog761.one
   port: 443
   password: '3723507166611775488'
-  sni: correct-redbird.boa152.lol
+  sni: loyal-bulldog.treefrog761.one
   skip-cert-verify: false
   udp: true
-- name: Amsterdam  10
+- name: Singapore  Pro 8
   type: trojan
-  server: wired-magpie.boa152.lol
+  server: major-reindeer.boa152.lol
   port: 443
   password: '3723507166611775488'
-  sni: wired-magpie.boa152.lol
+  sni: major-reindeer.boa152.lol
   skip-cert-verify: false
   udp: true
-- name: Kuala Lumpur Pro 1
+- name: Amsterdam  7
   type: trojan
-  server: safe-ferret.treefrog761.one
+  server: tops-kit.boa152.lol
   port: 443
   password: '3723507166611775488'
-  sni: safe-ferret.treefrog761.one
+  sni: tops-kit.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Istanbul  Pro 1
+  type: trojan
+  server: absolute-mink.treefrog761.one
+  port: 443
+  password: '3723507166611775488'
+  sni: absolute-mink.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Toronto  2
+  type: trojan
+  server: trusty-grackle.boa152.lol
+  port: 443
+  password: '3723507166611775488'
+  sni: trusty-grackle.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Tokyo -L22 Pro 1
+  type: trojan
+  server: related-hawk.treefrog761.one
+  port: 443
+  password: '3723507166611775488'
+  sni: related-hawk.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Amsterdam  Pro 3
+  type: trojan
+  server: pleased-airedale.boa152.lol
+  port: 443
+  password: '3723507166611775488'
+  sni: pleased-airedale.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Virginia  Pro 15
+  type: trojan
+  server: busy-buffalo.treefrog761.one
+  port: 443
+  password: '3723507166611775488'
+  sni: busy-buffalo.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: London Pro 4
+  type: trojan
+  server: leading-shrew.boa152.lol
+  port: 443
+  password: '3723507166611775488'
+  sni: leading-shrew.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Amsterdam  Pro 9
+  type: trojan
+  server: fitting-ox.boa152.lol
+  port: 443
+  password: '3723507166611775488'
+  sni: fitting-ox.boa152.lol
   skip-cert-verify: false
   udp: true
 - name: Seoul  Pro 4
@@ -819,12 +408,548 @@ proxies:
   sni: super-goblin.treefrog761.one
   skip-cert-verify: false
   udp: true
+- name: New York   8
+  type: trojan
+  server: actual-albacore.boa152.lol
+  port: 443
+  password: '3723507166611775488'
+  sni: actual-albacore.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: New York   7
+  type: trojan
+  server: allowed-primate.boa152.lol
+  port: 443
+  password: '3723507166611775488'
+  sni: allowed-primate.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Ponte San Pietro Pro 1
+  type: trojan
+  server: keen-falcon.treefrog761.one
+  port: 443
+  password: '3723507166611775488'
+  sni: keen-falcon.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Amsterdam  Pro 18
+  type: trojan
+  server: correct-redbird.boa152.lol
+  port: 443
+  password: '3723507166611775488'
+  sni: correct-redbird.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Amsterdam  14
+  type: trojan
+  server: clean-ray.boa152.lol
+  port: 443
+  password: '3723507166611775488'
+  sni: clean-ray.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Ohio -L22 2
+  type: trojan
+  server: native-tetra.boa152.lol
+  port: 443
+  password: '3723507166611775488'
+  sni: native-tetra.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: New York   Pro 9
+  type: trojan
+  server: eternal-tadpole.boa152.lol
+  port: 443
+  password: '3723507166611775488'
+  sni: eternal-tadpole.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Warsaw  3
+  type: trojan
+  server: perfect-beagle.boa152.lol
+  port: 443
+  password: '3723507166611775488'
+  sni: perfect-beagle.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Amsterdam Pro 25
+  type: trojan
+  server: concrete-buzzard.boa152.lol
+  port: 443
+  password: '3723507166611775488'
+  sni: concrete-buzzard.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Tokyo  13
+  type: trojan
+  server: ethical-falcon.boa152.lol
+  port: 443
+  password: '3723507166611775488'
+  sni: ethical-falcon.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Tokyo  11
+  type: trojan
+  server: crucial-satyr.boa152.lol
+  port: 443
+  password: '3723507166611775488'
+  sni: crucial-satyr.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Warsaw  7
+  type: trojan
+  server: holy-seahorse.boa152.lol
+  port: 443
+  password: '3723507166611775488'
+  sni: holy-seahorse.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Oregon -L22 Pro 16
+  type: trojan
+  server: fresh-grub.boa152.lol
+  port: 443
+  password: '3723507166611775488'
+  sni: fresh-grub.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Tokyo  Pro 2
+  type: trojan
+  server: smiling-marmoset.boa152.lol
+  port: 443
+  password: '3723507166611775488'
+  sni: smiling-marmoset.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Amsterdam  Pro 11
+  type: trojan
+  server: fit-mackerel.boa152.lol
+  port: 443
+  password: '3723507166611775488'
+  sni: fit-mackerel.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Ponte San Pietro Pro 2
+  type: trojan
+  server: rich-sturgeon.treefrog761.one
+  port: 443
+  password: '3723507166611775488'
+  sni: rich-sturgeon.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Prague Pro 2
+  type: trojan
+  server: humane-tetra.treefrog761.one
+  port: 443
+  password: '3723507166611775488'
+  sni: humane-tetra.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Singapore  Pro 10
+  type: trojan
+  server: whole-foxhound.boa152.lol
+  port: 443
+  password: '3723507166611775488'
+  sni: whole-foxhound.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Amsterdam  24
+  type: trojan
+  server: devoted-starfish.boa152.lol
+  port: 443
+  password: '3723507166611775488'
+  sni: devoted-starfish.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Ireland  Pro 3
+  type: trojan
+  server: discrete-perch.boa152.lol
+  port: 443
+  password: '3723507166611775488'
+  sni: discrete-perch.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Manassas  Pro 1
+  type: trojan
+  server: nearby-hedgehog.boa152.lol
+  port: 443
+  password: '3723507166611775488'
+  sni: nearby-hedgehog.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Frankfurt  Pro 8
+  type: trojan
+  server: oriented-terrier.boa152.lol
+  port: 443
+  password: '3723507166611775488'
+  sni: oriented-terrier.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Mumbai Pro 3
+  type: trojan
+  server: able-emu.treefrog761.one
+  port: 443
+  password: '3723507166611775488'
+  sni: able-emu.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Amsterdam  22
+  type: trojan
+  server: national-gar.boa152.lol
+  port: 443
+  password: '3723507166611775488'
+  sni: national-gar.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Tokyo -L22 Pro 5
+  type: trojan
+  server: capable-eel.treefrog761.one
+  port: 443
+  password: '3723507166611775488'
+  sni: capable-eel.treefrog761.one
+  skip-cert-verify: false
+  udp: true
 - name: Singapore -L22 Pro 3
   type: trojan
   server: daring-roughy.treefrog761.one
   port: 443
   password: '3723507166611775488'
   sni: daring-roughy.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Frankfurt  Pro 18
+  type: trojan
+  server: proper-titmouse.boa152.lol
+  port: 443
+  password: '3723507166611775488'
+  sni: proper-titmouse.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Singapore -L22 11
+  type: trojan
+  server: cheerful-boxer.boa152.lol
+  port: 443
+  password: '3723507166611775488'
+  sni: cheerful-boxer.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Tokyo -L22 Pro 7
+  type: trojan
+  server: fleet-weevil.boa152.lol
+  port: 443
+  password: '3723507166611775488'
+  sni: fleet-weevil.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Stockholm 1
+  type: trojan
+  server: real-cowbird.boa152.lol
+  port: 443
+  password: '3723507166611775488'
+  sni: real-cowbird.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Frankfurt  Pro 13
+  type: trojan
+  server: golden-krill.treefrog761.one
+  port: 443
+  password: '3723507166611775488'
+  sni: golden-krill.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Tokyo  Pro 15
+  type: trojan
+  server: relative-monkey.boa152.lol
+  port: 443
+  password: '3723507166611775488'
+  sni: relative-monkey.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Manassas  Pro 35
+  type: trojan
+  server: needed-kite.boa152.lol
+  port: 443
+  password: '3723507166611775488'
+  sni: needed-kite.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Sydney  Pro 5
+  type: trojan
+  server: pumped-stingray.boa152.lol
+  port: 443
+  password: '3723507166611775488'
+  sni: pumped-stingray.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: New York   Pro 3
+  type: trojan
+  server: relative-rhino.boa152.lol
+  port: 443
+  password: '3723507166611775488'
+  sni: relative-rhino.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Singapore 2
+  type: trojan
+  server: ace-mayfly.boa152.lol
+  port: 443
+  password: '3723507166611775488'
+  sni: ace-mayfly.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Amsterdam  Pro 17
+  type: trojan
+  server: helping-katydid.boa152.lol
+  port: 443
+  password: '3723507166611775488'
+  sni: helping-katydid.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Ireland  2
+  type: trojan
+  server: boss-marten.boa152.lol
+  port: 443
+  password: '3723507166611775488'
+  sni: boss-marten.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Amsterdam  Pro 28
+  type: trojan
+  server: lucky-grouper.boa152.lol
+  port: 443
+  password: '3723507166611775488'
+  sni: lucky-grouper.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Singapore  7
+  type: trojan
+  server: profound-shiner.boa152.lol
+  port: 443
+  password: '3723507166611775488'
+  sni: profound-shiner.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: New York   5
+  type: trojan
+  server: organic-hare.boa152.lol
+  port: 443
+  password: '3723507166611775488'
+  sni: organic-hare.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Frankfurt  Pro 4
+  type: trojan
+  server: pleased-slug.boa152.lol
+  port: 443
+  password: '3723507166611775488'
+  sni: pleased-slug.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Amsterdam  16
+  type: trojan
+  server: wise-cowbird.boa152.lol
+  port: 443
+  password: '3723507166611775488'
+  sni: wise-cowbird.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Amsterdam  19
+  type: trojan
+  server: sacred-guppy.boa152.lol
+  port: 443
+  password: '3723507166611775488'
+  sni: sacred-guppy.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Warsaw  6
+  type: trojan
+  server: honest-gar.boa152.lol
+  port: 443
+  password: '3723507166611775488'
+  sni: honest-gar.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Singapore  Pro 13
+  type: trojan
+  server: fond-anemone.treefrog761.one
+  port: 443
+  password: '3723507166611775488'
+  sni: fond-anemone.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Seoul  Pro 3
+  type: trojan
+  server: huge-katydid.treefrog761.one
+  port: 443
+  password: '3723507166611775488'
+  sni: huge-katydid.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Amsterdam  27
+  type: trojan
+  server: star-monarch.boa152.lol
+  port: 443
+  password: '3723507166611775488'
+  sni: star-monarch.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Amsterdam  Pro 6
+  type: trojan
+  server: sensible-ocelot.boa152.lol
+  port: 443
+  password: '3723507166611775488'
+  sni: sensible-ocelot.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Oregon  Pro 12
+  type: trojan
+  server: usable-toad.treefrog761.one
+  port: 443
+  password: '3723507166611775488'
+  sni: usable-toad.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Kuala Lumpur Pro 1
+  type: trojan
+  server: safe-ferret.treefrog761.one
+  port: 443
+  password: '3723507166611775488'
+  sni: safe-ferret.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Amsterdam  Pro 15
+  type: trojan
+  server: social-bream.boa152.lol
+  port: 443
+  password: '3723507166611775488'
+  sni: social-bream.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Manassas  Pro 25
+  type: trojan
+  server: tight-clam.boa152.lol
+  port: 443
+  password: '3723507166611775488'
+  sni: tight-clam.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Seoul  Pro 1
+  type: trojan
+  server: fluent-bat.treefrog761.one
+  port: 443
+  password: '3723507166611775488'
+  sni: fluent-bat.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Manila Pro 1
+  type: trojan
+  server: advanced-shad.treefrog761.one
+  port: 443
+  password: '3723507166611775488'
+  sni: advanced-shad.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Manassas  19
+  type: trojan
+  server: discrete-moccasin.boa152.lol
+  port: 443
+  password: '3723507166611775488'
+  sni: discrete-moccasin.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Amsterdam  Pro 10
+  type: trojan
+  server: wired-magpie.boa152.lol
+  port: 443
+  password: '3723507166611775488'
+  sni: wired-magpie.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Bangkok Pro 1
+  type: trojan
+  server: tolerant-spider.treefrog761.one
+  port: 443
+  password: '3723507166611775488'
+  sni: tolerant-spider.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Ohio  Pro 20
+  type: trojan
+  server: magnetic-chicken.treefrog761.one
+  port: 443
+  password: '3723507166611775488'
+  sni: magnetic-chicken.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Toronto  Pro 1
+  type: trojan
+  server: neutral-magpie.treefrog761.one
+  port: 443
+  password: '3723507166611775488'
+  sni: neutral-magpie.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Frankfurt  6
+  type: trojan
+  server: profound-elk.boa152.lol
+  port: 443
+  password: '3723507166611775488'
+  sni: profound-elk.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Tokyo  Pro 6
+  type: trojan
+  server: fancy-mudfish.treefrog761.one
+  port: 443
+  password: '3723507166611775488'
+  sni: fancy-mudfish.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Singapore  Pro 6
+  type: trojan
+  server: fair-wahoo.treefrog761.one
+  port: 443
+  password: '3723507166611775488'
+  sni: fair-wahoo.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Tokyo  Pro 12
+  type: trojan
+  server: unbiased-ladybug.treefrog761.one
+  port: 443
+  password: '3723507166611775488'
+  sni: unbiased-ladybug.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Ireland -L22 Pro 1
+  type: trojan
+  server: deciding-chamois.boa152.lol
+  port: 443
+  password: '3723507166611775488'
+  sni: deciding-chamois.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Singapore  Pro 15
+  type: trojan
+  server: joint-skink.treefrog761.one
+  port: 443
+  password: '3723507166611775488'
+  sni: joint-skink.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Virginia Pro 10
+  type: trojan
+  server: equipped-mutt.boa152.lol
+  port: 443
+  password: '3723507166611775488'
+  sni: equipped-mutt.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Singapore  Pro 5
+  type: trojan
+  server: amazing-porpoise.treefrog761.one
+  port: 443
+  password: '3723507166611775488'
+  sni: amazing-porpoise.treefrog761.one
   skip-cert-verify: false
   udp: true
 - name: Singapore -L22 Pro 4
@@ -835,12 +960,12 @@ proxies:
   sni: equipped-mouse.treefrog761.one
   skip-cert-verify: false
   udp: true
-- name: Seoul  Pro 1
+- name: Virginia  Pro 6
   type: trojan
-  server: fluent-bat.treefrog761.one
+  server: key-eel.treefrog761.one
   port: 443
   password: '3723507166611775488'
-  sni: fluent-bat.treefrog761.one
+  sni: key-eel.treefrog761.one
   skip-cert-verify: false
   udp: true
 - name: rea-amd2
@@ -978,39 +1103,41 @@ proxies:
   auth: be758973-186d-46fe-8aa4-e017134fa291
   sni: www.bing.com
   skip-cert-verify: true
+- name: 🇷🇺 俄罗斯-圣彼得堡-HY-005-1A
+  server: 195.58.49.173
+  port: 28153
+  type: hysteria2
+  password: 1ddb0b4d-9010-4e09-809f-86231c204e3f
+  auth: 1ddb0b4d-9010-4e09-809f-86231c204e3f
+  up: 100
+  down: 100
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: MzliZDM5MDFhYmFlNTAyMA==
+  udp: true
 - name: 🇷🇺 俄罗斯-圣彼得堡-HY-005-1E
   server: 195.58.49.173
   port: 28153
   type: hysteria2
-  password: 7f21512a-240a-477d-8e83-1fba50a3eda0
-  auth: 7f21512a-240a-477d-8e83-1fba50a3eda0
+  password: 59c9c12d-7b09-46dc-ab42-21ad771fb696
+  auth: 59c9c12d-7b09-46dc-ab42-21ad771fb696
   up: 5
   down: 5
   skip-cert-verify: true
   obfs: salamander
   obfs-password: MzliZDM5MDFhYmFlNTAyMA==
   udp: true
-- name: 🇷🇺 俄罗斯-圣彼得堡-HY-005-1G
+- name: 🇷🇺 俄罗斯-圣彼得堡-005-1B
   server: 195.58.49.173
-  port: 28153
-  type: hysteria2
-  password: 180999db-5a60-4cea-a289-544961ee7c62
-  auth: 180999db-5a60-4cea-a289-544961ee7c62
-  up: 5
-  down: 5
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: MzliZDM5MDFhYmFlNTAyMA==
-  udp: true
-- name: 🇺🇸 美国1-1A
-  server: us.tuanzi.xyz
-  port: 20701
-  type: hysteria2
-  password: 2b304afb-8b62-44d8-bc82-06c1f49d8c6b
-  auth: 2b304afb-8b62-44d8-bc82-06c1f49d8c6b
-  up: 1000
-  down: 1000
-  skip-cert-verify: false
+  port: 53274
+  type: vmess
+  uuid: 727d1e03-2aed-4190-bff5-30890097c1c4
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
   udp: true
 - name: 🇷🇺 俄罗斯-圣彼得堡-HY-005-1D
   server: 195.58.49.173
@@ -1024,8 +1151,8 @@ proxies:
   obfs: salamander
   obfs-password: MzliZDM5MDFhYmFlNTAyMA==
   udp: true
-- name: 🇯🇵 日本1-1A
-  server: jp.tuanzi.xyz
+- name: 🇺🇸 美国1-1B
+  server: us.tuanzi.xyz
   port: 20701
   type: hysteria2
   password: 2b304afb-8b62-44d8-bc82-06c1f49d8c6b
@@ -1034,19 +1161,29 @@ proxies:
   down: 1000
   skip-cert-verify: false
   udp: true
-- name: 🇷🇺 俄罗斯-圣彼得堡-HY-005-1C
+- name: 🇸🇬 新加坡1-1A
+  server: sg.tuanzi.xyz
+  port: 20701
+  type: hysteria2
+  password: 1d603c86-5781-40b9-a345-aec83ae0608e
+  auth: 1d603c86-5781-40b9-a345-aec83ae0608e
+  up: 1000
+  down: 1000
+  skip-cert-verify: false
+  udp: true
+- name: 🇷🇺 俄罗斯-圣彼得堡-HY-005-1G
   server: 195.58.49.173
   port: 28153
   type: hysteria2
-  password: 1ddb0b4d-9010-4e09-809f-86231c204e3f
-  auth: 1ddb0b4d-9010-4e09-809f-86231c204e3f
-  up: 100
-  down: 100
+  password: 7f21512a-240a-477d-8e83-1fba50a3eda0
+  auth: 7f21512a-240a-477d-8e83-1fba50a3eda0
+  up: 5
+  down: 5
   skip-cert-verify: true
   obfs: salamander
   obfs-password: MzliZDM5MDFhYmFlNTAyMA==
   udp: true
-- name: 🇷🇺 俄罗斯-圣彼得堡-HY-005-1F
+- name: 🇷🇺 俄罗斯-圣彼得堡-HY-005-1B
   server: 195.58.49.173
   port: 28153
   type: hysteria2
@@ -1058,42 +1195,8 @@ proxies:
   obfs: salamander
   obfs-password: MzliZDM5MDFhYmFlNTAyMA==
   udp: true
-- name: 🇷🇺 俄罗斯-圣彼得堡-HY-005-1A
-  server: 195.58.49.173
-  port: 28153
-  type: hysteria2
-  password: 59c9c12d-7b09-46dc-ab42-21ad771fb696
-  auth: 59c9c12d-7b09-46dc-ab42-21ad771fb696
-  up: 5
-  down: 5
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: MzliZDM5MDFhYmFlNTAyMA==
-  udp: true
-- name: 🇭🇰 香港1-1A
-  server: hk.tuanzi.xyz
-  port: 20701
-  type: hysteria2
-  password: 2b304afb-8b62-44d8-bc82-06c1f49d8c6b
-  auth: 2b304afb-8b62-44d8-bc82-06c1f49d8c6b
-  up: 1000
-  down: 1000
-  skip-cert-verify: false
-  udp: true
-- name: 🇷🇺 俄罗斯-圣彼得堡-HY-005-1H
-  server: 195.58.49.173
-  port: 28153
-  type: hysteria2
-  password: e561fdb8-737c-4423-a72c-7831b7d3739d
-  auth: e561fdb8-737c-4423-a72c-7831b7d3739d
-  up: 5
-  down: 5
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: MzliZDM5MDFhYmFlNTAyMA==
-  udp: true
-- name: 🇺🇸 美国1-1B
-  server: us.tuanzi.xyz
+- name: 🇯🇵 日本1-1A
+  server: jp.tuanzi.xyz
   port: 20701
   type: hysteria2
   password: 1d603c86-5781-40b9-a345-aec83ae0608e
@@ -1102,7 +1205,7 @@ proxies:
   down: 1000
   skip-cert-verify: false
   udp: true
-- name: 🇷🇺 俄罗斯-圣彼得堡-HY-005-1B
+- name: 🇷🇺 俄罗斯-圣彼得堡-HY-005-1F
   server: 195.58.49.173
   port: 28153
   type: hysteria2
@@ -1114,719 +1217,51 @@ proxies:
   obfs: salamander
   obfs-password: MzliZDM5MDFhYmFlNTAyMA==
   udp: true
-- name: Frankfurt -L22 1-aOWm
-  type: trojan
-  server: profound-anemone.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: profound-anemone.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Tokyo  3-v45F
-  type: trojan
-  server: open-kangaroo.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: open-kangaroo.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Amsterdam  Pro 3-syjU
-  type: trojan
-  server: pleased-airedale.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: pleased-airedale.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Seoul  Pro 3-Jucy
-  type: trojan
-  server: huge-katydid.treefrog761.one
-  port: 443
-  password: '3648425794742788096'
-  sni: huge-katydid.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: Singapore  1-qbvw
-  type: trojan
-  server: premium-gull.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: premium-gull.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Amsterdam  Pro 6-NZed
-  type: trojan
-  server: sensible-ocelot.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: sensible-ocelot.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Tokyo  Pro 4-mADK
-  type: trojan
-  server: unbiased-manatee.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: unbiased-manatee.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Ohio  Pro 20-1OwC
-  type: trojan
-  server: magnetic-chicken.treefrog761.one
-  port: 443
-  password: '3648425794742788096'
-  sni: magnetic-chicken.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: Paris 1-OGtz
-  type: trojan
-  server: exciting-mallard.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: exciting-mallard.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Amsterdam  27-2KT6
-  type: trojan
-  server: star-monarch.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: star-monarch.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: New York   9-F78j
-  type: trojan
-  server: eternal-tadpole.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: eternal-tadpole.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Tokyo -L22 Pro 1-48Cc
-  type: trojan
-  server: related-hawk.treefrog761.one
-  port: 443
-  password: '3648425794742788096'
-  sni: related-hawk.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: Seoul  Pro 1-pXBV
-  type: trojan
-  server: fluent-bat.treefrog761.one
-  port: 443
-  password: '3648425794742788096'
-  sni: fluent-bat.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: Amsterdam  Pro 14-1rQM
-  type: trojan
-  server: clean-ray.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: clean-ray.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Amsterdam  Pro 15-IENv
-  type: trojan
-  server: social-bream.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: social-bream.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Frankfurt  4-nHxl
-  type: trojan
-  server: pleased-slug.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: pleased-slug.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Sydney Pro 2-NY53
-  type: trojan
-  server: decent-katydid.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: decent-katydid.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Tokyo  Pro 2-WVaR
-  type: trojan
-  server: smiling-marmoset.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: smiling-marmoset.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Amsterdam  18-xnkZ
-  type: trojan
-  server: correct-redbird.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: correct-redbird.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Singapore  8-wst8
-  type: trojan
-  server: major-reindeer.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: major-reindeer.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Seoul -L22 Pro 2-pdYO
-  type: trojan
-  server: striking-shepherd.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: striking-shepherd.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Manassas  35-u9ZK
-  type: trojan
-  server: needed-kite.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: needed-kite.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Istanbul  Pro 1-pyjU
-  type: trojan
-  server: absolute-mink.treefrog761.one
-  port: 443
-  password: '3648425794742788096'
-  sni: absolute-mink.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: Frankfurt  8-l15f
-  type: trojan
-  server: oriented-terrier.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: oriented-terrier.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Amsterdam  Pro 24-77lx
-  type: trojan
-  server: devoted-starfish.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: devoted-starfish.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Amsterdam  10-bqav
-  type: trojan
-  server: wired-magpie.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: wired-magpie.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Virginia  Pro 6-eixC
-  type: trojan
-  server: key-eel.treefrog761.one
-  port: 443
-  password: '3648425794742788096'
-  sni: key-eel.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: Warsaw  Pro 6-n13Z
-  type: trojan
-  server: honest-gar.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: honest-gar.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Amsterdam  17-Nqgh
-  type: trojan
-  server: helping-katydid.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: helping-katydid.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: New York   7-2dyT
-  type: trojan
-  server: allowed-primate.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: allowed-primate.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Amsterdam  13-5x9Q
-  type: trojan
-  server: useful-prawn.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: useful-prawn.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Kuala Lumpur Pro 1-LUUj
-  type: trojan
-  server: safe-ferret.treefrog761.one
-  port: 443
-  password: '3648425794742788096'
-  sni: safe-ferret.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: Tokyo -L22 Pro 5-Gvm3
-  type: trojan
-  server: capable-eel.treefrog761.one
-  port: 443
-  password: '3648425794742788096'
-  sni: capable-eel.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: Amsterdam  22-IkAl
-  type: trojan
-  server: national-gar.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: national-gar.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Tokyo  Pro 15-Wv4P
-  type: trojan
-  server: relative-monkey.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: relative-monkey.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Toronto  Pro 2-59Rh
-  type: trojan
-  server: trusty-grackle.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: trusty-grackle.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Amsterdam  Pro 16-qNWz
-  type: trojan
-  server: wise-cowbird.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: wise-cowbird.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Frankfurt  16-XNV0
-  type: trojan
-  server: ample-cockatoo.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: ample-cockatoo.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Mumbai Pro 3-7Gf5
-  type: trojan
-  server: able-emu.treefrog761.one
-  port: 443
-  password: '3648425794742788096'
-  sni: able-emu.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: Amsterdam  28-Jx3e
-  type: trojan
-  server: lucky-grouper.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: lucky-grouper.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Amsterdam  Pro 7-mNqA
-  type: trojan
-  server: tops-kit.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: tops-kit.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Tokyo  Pro 11-y53J
-  type: trojan
-  server: crucial-satyr.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: crucial-satyr.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Ireland  Pro 2-vlj8
-  type: trojan
-  server: boss-marten.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: boss-marten.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Manassas  Pro 1-0atV
-  type: trojan
-  server: nearby-hedgehog.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: nearby-hedgehog.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Singapore -L22 Pro 4-71r0
-  type: trojan
-  server: equipped-mouse.treefrog761.one
-  port: 443
-  password: '3648425794742788096'
-  sni: equipped-mouse.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: Toronto  Pro 1-RM9n
-  type: trojan
-  server: neutral-magpie.treefrog761.one
-  port: 443
-  password: '3648425794742788096'
-  sni: neutral-magpie.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: Ireland  3-9JVo
-  type: trojan
-  server: discrete-perch.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: discrete-perch.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Singapore  Pro 15-OViN
-  type: trojan
-  server: joint-skink.treefrog761.one
-  port: 443
-  password: '3648425794742788096'
-  sni: joint-skink.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: Frankfurt  18-Su6b
-  type: trojan
-  server: proper-titmouse.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: proper-titmouse.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Tokyo -L22 8-ITtN
-  type: trojan
-  server: welcomed-chimp.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: welcomed-chimp.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Mumbai  Pro 4-80Xl
-  type: trojan
-  server: loyal-bulldog.treefrog761.one
-  port: 443
-  password: '3648425794742788096'
-  sni: loyal-bulldog.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: Tokyo  Pro 6-LPNf
-  type: trojan
-  server: fancy-mudfish.treefrog761.one
-  port: 443
-  password: '3648425794742788096'
-  sni: fancy-mudfish.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: Virginia  Pro 15-tWe4
-  type: trojan
-  server: busy-buffalo.treefrog761.one
-  port: 443
-  password: '3648425794742788096'
-  sni: busy-buffalo.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: Oregon -L22 16-0i5j
-  type: trojan
-  server: fresh-grub.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: fresh-grub.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Tokyo  Pro 12-ixf4
-  type: trojan
-  server: unbiased-ladybug.treefrog761.one
-  port: 443
-  password: '3648425794742788096'
-  sni: unbiased-ladybug.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: New York   8-oDcQ
-  type: trojan
-  server: actual-albacore.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: actual-albacore.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Sydney  3-nuLW
-  type: trojan
-  server: complete-leopard.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: complete-leopard.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Singapore 2-2k9D
-  type: trojan
-  server: ace-mayfly.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: ace-mayfly.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: London  Pro 15-ZPFv
-  type: trojan
-  server: boss-hound.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: boss-hound.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Stockholm Pro 1-SCmV
-  type: trojan
-  server: real-cowbird.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: real-cowbird.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Amsterdam 25-R511
-  type: trojan
-  server: concrete-buzzard.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: concrete-buzzard.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Singapore  Pro 10-qfO5
-  type: trojan
-  server: whole-foxhound.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: whole-foxhound.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: London Pro 4-FD07
-  type: trojan
-  server: leading-shrew.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: leading-shrew.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Amsterdam  11-ysux
-  type: trojan
-  server: fit-mackerel.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: fit-mackerel.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Singapore -L22 Pro 9-lqUq
-  type: trojan
-  server: deciding-sunbeam.treefrog761.one
-  port: 443
-  password: '3648425794742788096'
-  sni: deciding-sunbeam.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: Amsterdam  Pro 9-Rki7
-  type: trojan
-  server: fitting-ox.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: fitting-ox.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Singapore -L22 Pro 11-lHBI
-  type: trojan
-  server: cheerful-boxer.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: cheerful-boxer.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Ohio -L22 Pro 2-2HYI
-  type: trojan
-  server: native-tetra.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: native-tetra.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: New York   Pro 5-I4ir
-  type: trojan
-  server: organic-hare.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: organic-hare.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Virginia 10-8Wjk
-  type: trojan
-  server: equipped-mutt.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: equipped-mutt.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Ponte San Pietro Pro 1-Pgo6
-  type: trojan
-  server: keen-falcon.treefrog761.one
-  port: 443
-  password: '3648425794742788096'
-  sni: keen-falcon.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: Manassas  Pro 25-gvxa
-  type: trojan
-  server: tight-clam.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: tight-clam.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Tokyo  13-uAWL
-  type: trojan
-  server: ethical-falcon.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: ethical-falcon.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Warsaw  7-CVI2
-  type: trojan
-  server: holy-seahorse.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: holy-seahorse.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Warsaw Pro 5-a5PJ
-  type: trojan
-  server: improved-shrimp.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: improved-shrimp.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Frankfurt  6-FVQg
-  type: trojan
-  server: profound-elk.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: profound-elk.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Ireland -L22 Pro 1-OCWN
-  type: trojan
-  server: deciding-chamois.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: deciding-chamois.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Amsterdam  19-wz8g
-  type: trojan
-  server: sacred-guppy.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: sacred-guppy.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Warsaw  8-SXBu
-  type: trojan
-  server: organic-skunk.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: organic-skunk.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Frankfurt  Pro 13-JOEg
-  type: trojan
-  server: golden-krill.treefrog761.one
-  port: 443
-  password: '3648425794742788096'
-  sni: golden-krill.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: Manassas  19-pZpY
-  type: trojan
-  server: discrete-moccasin.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: discrete-moccasin.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Manila Pro 1-mI6t
-  type: trojan
-  server: advanced-shad.treefrog761.one
-  port: 443
-  password: '3648425794742788096'
-  sni: advanced-shad.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: Tokyo -L22 Pro 7-JFZm
-  type: trojan
-  server: fleet-weevil.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: fleet-weevil.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Singapore -L22 Pro 3-D8aR
-  type: trojan
-  server: daring-roughy.treefrog761.one
-  port: 443
-  password: '3648425794742788096'
-  sni: daring-roughy.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: Sydney  Pro 5-9PXv
-  type: trojan
-  server: pumped-stingray.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: pumped-stingray.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: New York   3-7dP2
-  type: trojan
-  server: relative-rhino.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: relative-rhino.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Warsaw  3-FlLM
-  type: trojan
-  server: perfect-beagle.boa152.lol
-  port: 443
-  password: '3648425794742788096'
-  sni: perfect-beagle.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: Singapore  Pro 6-okl0
-  type: trojan
-  server: fair-wahoo.treefrog761.one
-  port: 443
-  password: '3648425794742788096'
-  sni: fair-wahoo.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: Singapore  Pro 13-KJdJ
-  type: trojan
-  server: fond-anemone.treefrog761.one
-  port: 443
-  password: '3648425794742788096'
-  sni: fond-anemone.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: Singapore  Pro 7-E7T9
+- name: 🇷🇺 俄罗斯-圣彼得堡-HY-005-1C
+  server: 195.58.49.173
+  port: 28153
+  type: hysteria2
+  password: e561fdb8-737c-4423-a72c-7831b7d3739d
+  auth: e561fdb8-737c-4423-a72c-7831b7d3739d
+  up: 5
+  down: 5
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: MzliZDM5MDFhYmFlNTAyMA==
+  udp: true
+- name: 🇷🇺 俄罗斯-圣彼得堡-HY-005-1H
+  server: 195.58.49.173
+  port: 28153
+  type: hysteria2
+  password: 180999db-5a60-4cea-a289-544961ee7c62
+  auth: 180999db-5a60-4cea-a289-544961ee7c62
+  up: 5
+  down: 5
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: MzliZDM5MDFhYmFlNTAyMA==
+  udp: true
+- name: 🇯🇵 日本1-1B
+  server: jp.tuanzi.xyz
+  port: 20701
+  type: hysteria2
+  password: 2b304afb-8b62-44d8-bc82-06c1f49d8c6b
+  auth: 2b304afb-8b62-44d8-bc82-06c1f49d8c6b
+  up: 1000
+  down: 1000
+  skip-cert-verify: false
+  udp: true
+- name: 🇺🇸 美国1-1A
+  server: us.tuanzi.xyz
+  port: 20701
+  type: hysteria2
+  password: 1d603c86-5781-40b9-a345-aec83ae0608e
+  auth: 1d603c86-5781-40b9-a345-aec83ae0608e
+  up: 1000
+  down: 1000
+  skip-cert-verify: false
+  udp: true
+- name: Singapore  Pro 7-hyxb
   type: trojan
   server: profound-shiner.boa152.lol
   port: 443
@@ -1834,15 +1269,79 @@ proxies:
   sni: profound-shiner.boa152.lol
   skip-cert-verify: false
   udp: true
-- name: Riyadh Pro 1-160Q
+- name: Amsterdam  Pro 7-X0Gl
   type: trojan
-  server: noted-calf.treefrog761.one
+  server: tops-kit.boa152.lol
   port: 443
   password: '3648425794742788096'
-  sni: noted-calf.treefrog761.one
+  sni: tops-kit.boa152.lol
   skip-cert-verify: false
   udp: true
-- name: Ponte San Pietro Pro 2-2Yru
+- name: Seoul -L22 2-BQ9m
+  type: trojan
+  server: striking-shepherd.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: striking-shepherd.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Oregon -L22 16-C13h
+  type: trojan
+  server: fresh-grub.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: fresh-grub.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Amsterdam  Pro 24-pZ4r
+  type: trojan
+  server: devoted-starfish.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: devoted-starfish.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Frankfurt  4-NocY
+  type: trojan
+  server: pleased-slug.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: pleased-slug.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Tokyo -L22 Pro 1-ODmj
+  type: trojan
+  server: related-hawk.treefrog761.one
+  port: 443
+  password: '3648425794742788096'
+  sni: related-hawk.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Ireland  3-y3Kn
+  type: trojan
+  server: discrete-perch.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: discrete-perch.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Paris Pro 1-1SSN
+  type: trojan
+  server: exciting-mallard.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: exciting-mallard.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Amsterdam Pro 25-cM3R
+  type: trojan
+  server: concrete-buzzard.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: concrete-buzzard.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Ponte San Pietro Pro 2-mEZa
   type: trojan
   server: rich-sturgeon.treefrog761.one
   port: 443
@@ -1850,15 +1349,7 @@ proxies:
   sni: rich-sturgeon.treefrog761.one
   skip-cert-verify: false
   udp: true
-- name: Singapore  Pro 5-yysr
-  type: trojan
-  server: amazing-porpoise.treefrog761.one
-  port: 443
-  password: '3648425794742788096'
-  sni: amazing-porpoise.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: Seoul  Pro 4-pXVX
+- name: Seoul  Pro 4-zBDm
   type: trojan
   server: super-goblin.treefrog761.one
   port: 443
@@ -1866,7 +1357,471 @@ proxies:
   sni: super-goblin.treefrog761.one
   skip-cert-verify: false
   udp: true
-- name: Oregon  Pro 12-ga0j
+- name: Mumbai  Pro 4-VjMO
+  type: trojan
+  server: loyal-bulldog.treefrog761.one
+  port: 443
+  password: '3648425794742788096'
+  sni: loyal-bulldog.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Singapore -L22 Pro 11-Xpar
+  type: trojan
+  server: cheerful-boxer.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: cheerful-boxer.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Amsterdam  Pro 15-KYrL
+  type: trojan
+  server: social-bream.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: social-bream.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Warsaw  Pro 6-KvUa
+  type: trojan
+  server: honest-gar.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: honest-gar.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Frankfurt  Pro 13-k9n2
+  type: trojan
+  server: golden-krill.treefrog761.one
+  port: 443
+  password: '3648425794742788096'
+  sni: golden-krill.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: New York   7-0iWX
+  type: trojan
+  server: allowed-primate.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: allowed-primate.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Singapore  Pro 10-uA0c
+  type: trojan
+  server: whole-foxhound.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: whole-foxhound.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Tokyo  Pro 2-KqOv
+  type: trojan
+  server: smiling-marmoset.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: smiling-marmoset.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Stockholm 1-bqcG
+  type: trojan
+  server: real-cowbird.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: real-cowbird.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Amsterdam  Pro 18-HKGR
+  type: trojan
+  server: correct-redbird.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: correct-redbird.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: London Pro 4-KOJT
+  type: trojan
+  server: leading-shrew.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: leading-shrew.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Bangkok Pro 1-FWfP
+  type: trojan
+  server: tolerant-spider.treefrog761.one
+  port: 443
+  password: '3648425794742788096'
+  sni: tolerant-spider.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Tokyo  Pro 11-umGu
+  type: trojan
+  server: crucial-satyr.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: crucial-satyr.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Amsterdam  Pro 10-cIEn
+  type: trojan
+  server: wired-magpie.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: wired-magpie.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Manassas  25-Je5e
+  type: trojan
+  server: tight-clam.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: tight-clam.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Istanbul  Pro 1-EJ5j
+  type: trojan
+  server: absolute-mink.treefrog761.one
+  port: 443
+  password: '3648425794742788096'
+  sni: absolute-mink.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Manila Pro 1-qPqc
+  type: trojan
+  server: advanced-shad.treefrog761.one
+  port: 443
+  password: '3648425794742788096'
+  sni: advanced-shad.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Prague Pro 2-pgsu
+  type: trojan
+  server: humane-tetra.treefrog761.one
+  port: 443
+  password: '3648425794742788096'
+  sni: humane-tetra.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Karachi Pro 2-F3LV
+  type: trojan
+  server: fun-louse.treefrog761.one
+  port: 443
+  password: '3648425794742788096'
+  sni: fun-louse.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Singapore  8-A5SM
+  type: trojan
+  server: major-reindeer.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: major-reindeer.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Tokyo  Pro 12-a4og
+  type: trojan
+  server: unbiased-ladybug.treefrog761.one
+  port: 443
+  password: '3648425794742788096'
+  sni: unbiased-ladybug.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Manassas  35-iKYB
+  type: trojan
+  server: needed-kite.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: needed-kite.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Singapore  Pro 15-XHzW
+  type: trojan
+  server: joint-skink.treefrog761.one
+  port: 443
+  password: '3648425794742788096'
+  sni: joint-skink.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Amsterdam  Pro 6-OxqX
+  type: trojan
+  server: sensible-ocelot.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: sensible-ocelot.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Tokyo -L22 Pro 8-H4jM
+  type: trojan
+  server: welcomed-chimp.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: welcomed-chimp.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Amsterdam  Pro 17-hF4G
+  type: trojan
+  server: helping-katydid.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: helping-katydid.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Frankfurt  Pro 8-5O2o
+  type: trojan
+  server: oriented-terrier.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: oriented-terrier.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Amsterdam  28-sxHo
+  type: trojan
+  server: lucky-grouper.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: lucky-grouper.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Virginia  Pro 15-Kqrm
+  type: trojan
+  server: busy-buffalo.treefrog761.one
+  port: 443
+  password: '3648425794742788096'
+  sni: busy-buffalo.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Tokyo  Pro 13-eGK1
+  type: trojan
+  server: ethical-falcon.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: ethical-falcon.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Singapore  1-30dE
+  type: trojan
+  server: premium-gull.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: premium-gull.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Tokyo  Pro 4-zYcd
+  type: trojan
+  server: unbiased-manatee.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: unbiased-manatee.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Ireland -L22 1-qeLD
+  type: trojan
+  server: deciding-chamois.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: deciding-chamois.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: New York   Pro 8-E5mM
+  type: trojan
+  server: actual-albacore.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: actual-albacore.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Virginia  Pro 6-95os
+  type: trojan
+  server: key-eel.treefrog761.one
+  port: 443
+  password: '3648425794742788096'
+  sni: key-eel.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Lagos Pro 2-Y4bh
+  type: trojan
+  server: artistic-flounder.treefrog761.one
+  port: 443
+  password: '3648425794742788096'
+  sni: artistic-flounder.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Tokyo  Pro 6-sVDg
+  type: trojan
+  server: fancy-mudfish.treefrog761.one
+  port: 443
+  password: '3648425794742788096'
+  sni: fancy-mudfish.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Moscow Pro 3-f52N
+  type: trojan
+  server: usable-skink.treefrog761.one
+  port: 443
+  password: '3648425794742788096'
+  sni: usable-skink.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Singapore -L22 Pro 9-8cyr
+  type: trojan
+  server: deciding-sunbeam.treefrog761.one
+  port: 443
+  password: '3648425794742788096'
+  sni: deciding-sunbeam.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Tokyo  Pro 3-jF3E
+  type: trojan
+  server: open-kangaroo.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: open-kangaroo.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Sydney 2-iiSp
+  type: trojan
+  server: decent-katydid.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: decent-katydid.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Kuala Lumpur Pro 1-iJ33
+  type: trojan
+  server: safe-ferret.treefrog761.one
+  port: 443
+  password: '3648425794742788096'
+  sni: safe-ferret.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Manama Pro 1-PZzK
+  type: trojan
+  server: skilled-badger.treefrog761.one
+  port: 443
+  password: '3648425794742788096'
+  sni: skilled-badger.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Amsterdam  Pro 3-XcXj
+  type: trojan
+  server: pleased-airedale.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: pleased-airedale.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Riyadh Pro 1-3slF
+  type: trojan
+  server: noted-calf.treefrog761.one
+  port: 443
+  password: '3648425794742788096'
+  sni: noted-calf.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: London  Pro 15-o2Id
+  type: trojan
+  server: boss-hound.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: boss-hound.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Amsterdam  Pro 27-9lfA
+  type: trojan
+  server: star-monarch.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: star-monarch.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Amsterdam  14-G4uB
+  type: trojan
+  server: clean-ray.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: clean-ray.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Toronto  Pro 2-oJB2
+  type: trojan
+  server: trusty-grackle.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: trusty-grackle.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Ohio  Pro 20-ahTL
+  type: trojan
+  server: magnetic-chicken.treefrog761.one
+  port: 443
+  password: '3648425794742788096'
+  sni: magnetic-chicken.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Seoul  Pro 1-AwSd
+  type: trojan
+  server: fluent-bat.treefrog761.one
+  port: 443
+  password: '3648425794742788096'
+  sni: fluent-bat.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Amsterdam  Pro 13-Zjgw
+  type: trojan
+  server: useful-prawn.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: useful-prawn.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Amsterdam  22-jeHo
+  type: trojan
+  server: national-gar.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: national-gar.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Virginia 10-nTAw
+  type: trojan
+  server: equipped-mutt.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: equipped-mutt.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Manassas  Pro 19-WTYK
+  type: trojan
+  server: discrete-moccasin.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: discrete-moccasin.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Frankfurt  Pro 18-IZwS
+  type: trojan
+  server: proper-titmouse.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: proper-titmouse.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Sydney  3-3HHx
+  type: trojan
+  server: complete-leopard.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: complete-leopard.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Fujairah Pro 1-njfG
+  type: trojan
+  server: intense-wombat.treefrog761.one
+  port: 443
+  password: '3648425794742788096'
+  sni: intense-wombat.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Oregon  Pro 12-iDtK
   type: trojan
   server: usable-toad.treefrog761.one
   port: 443
@@ -1874,7 +1829,71 @@ proxies:
   sni: usable-toad.treefrog761.one
   skip-cert-verify: false
   udp: true
-- name: Ireland  Pro 5-4f4O
+- name: Singapore  Pro 6-b99w
+  type: trojan
+  server: fair-wahoo.treefrog761.one
+  port: 443
+  password: '3648425794742788096'
+  sni: fair-wahoo.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Warsaw  8-k8CK
+  type: trojan
+  server: organic-skunk.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: organic-skunk.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: New York   3-CLfU
+  type: trojan
+  server: relative-rhino.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: relative-rhino.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Amsterdam  Pro 9-OroF
+  type: trojan
+  server: fitting-ox.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: fitting-ox.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Warsaw Pro 5-70aB
+  type: trojan
+  server: improved-shrimp.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: improved-shrimp.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Frankfurt  6-uhoT
+  type: trojan
+  server: profound-elk.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: profound-elk.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Warsaw  7-rCDI
+  type: trojan
+  server: holy-seahorse.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: holy-seahorse.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Warsaw  Pro 3-sXaZ
+  type: trojan
+  server: perfect-beagle.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: perfect-beagle.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Ireland  Pro 5-Vhio
   type: trojan
   server: cuddly-slug.treefrog761.one
   port: 443
@@ -1882,12 +1901,204 @@ proxies:
   sni: cuddly-slug.treefrog761.one
   skip-cert-verify: false
   udp: true
-- name: Kathmandu Pro 1-nHZD
+- name: Singapore -L22 Pro 3-wv6q
+  type: trojan
+  server: daring-roughy.treefrog761.one
+  port: 443
+  password: '3648425794742788096'
+  sni: daring-roughy.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Tokyo -L22 Pro 5-cqDS
+  type: trojan
+  server: capable-eel.treefrog761.one
+  port: 443
+  password: '3648425794742788096'
+  sni: capable-eel.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Singapore  Pro 13-RVSt
+  type: trojan
+  server: fond-anemone.treefrog761.one
+  port: 443
+  password: '3648425794742788096'
+  sni: fond-anemone.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Lagos Pro 3-LYwo
+  type: trojan
+  server: alive-polecat.treefrog761.one
+  port: 443
+  password: '3648425794742788096'
+  sni: alive-polecat.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Tokyo -L22 7-Xt1o
+  type: trojan
+  server: fleet-weevil.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: fleet-weevil.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Singapore Pro 2-Zs98
+  type: trojan
+  server: ace-mayfly.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: ace-mayfly.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Tokyo  Pro 15-SwuB
+  type: trojan
+  server: relative-monkey.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: relative-monkey.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Frankfurt -L22 1-exzA
+  type: trojan
+  server: profound-anemone.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: profound-anemone.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Ireland  Pro 2-VYkQ
+  type: trojan
+  server: boss-marten.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: boss-marten.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Sydney  Pro 5-NDBC
+  type: trojan
+  server: pumped-stingray.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: pumped-stingray.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Frankfurt  Pro 16-jF3h
+  type: trojan
+  server: ample-cockatoo.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: ample-cockatoo.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Singapore -L22 Pro 4-p99K
+  type: trojan
+  server: equipped-mouse.treefrog761.one
+  port: 443
+  password: '3648425794742788096'
+  sni: equipped-mouse.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: New York   5-QtEL
+  type: trojan
+  server: organic-hare.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: organic-hare.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Manassas  1-XLSF
+  type: trojan
+  server: nearby-hedgehog.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: nearby-hedgehog.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Toronto  Pro 1-lRP4
+  type: trojan
+  server: neutral-magpie.treefrog761.one
+  port: 443
+  password: '3648425794742788096'
+  sni: neutral-magpie.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Ponte San Pietro Pro 1-Aw1b
+  type: trojan
+  server: keen-falcon.treefrog761.one
+  port: 443
+  password: '3648425794742788096'
+  sni: keen-falcon.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Ohio -L22 Pro 2-OBuG
+  type: trojan
+  server: native-tetra.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: native-tetra.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Amsterdam  16-gzCF
+  type: trojan
+  server: wise-cowbird.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: wise-cowbird.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Mumbai Pro 3-fmPV
+  type: trojan
+  server: able-emu.treefrog761.one
+  port: 443
+  password: '3648425794742788096'
+  sni: able-emu.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Singapore  Pro 5-ckj3
+  type: trojan
+  server: amazing-porpoise.treefrog761.one
+  port: 443
+  password: '3648425794742788096'
+  sni: amazing-porpoise.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Amsterdam  Pro 19-dtes
+  type: trojan
+  server: sacred-guppy.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: sacred-guppy.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Kathmandu Pro 1-VrWC
   type: trojan
   server: settled-seal.treefrog761.one
   port: 443
   password: '3648425794742788096'
   sni: settled-seal.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Amsterdam  Pro 11-9zfj
+  type: trojan
+  server: fit-mackerel.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: fit-mackerel.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: New York   Pro 9-7fFN
+  type: trojan
+  server: eternal-tadpole.boa152.lol
+  port: 443
+  password: '3648425794742788096'
+  sni: eternal-tadpole.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: Seoul  Pro 3-eNTt
+  type: trojan
+  server: huge-katydid.treefrog761.one
+  port: 443
+  password: '3648425794742788096'
+  sni: huge-katydid.treefrog761.one
   skip-cert-verify: false
   udp: true
 - name: warp.irss.eu.org
@@ -1906,6 +2117,20 @@ proxies:
       Host: warp.irss.eu.org
 - name: warp.irss.eu.org 2
   server: 172.67.78.65
+  port: 80
+  client-fingerprint: randomized
+  type: vless
+  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
+  tls: false
+  tfo: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: warp.irss.eu.org
+- name: warp.irss.eu.org 3
+  server: 172.67.72.209
   port: 80
   client-fingerprint: randomized
   type: vless
@@ -2072,21 +2297,7 @@ proxies:
     path: /?ed=2048
     headers:
       Host: warp.irss.eu.org
-- name: warp.irss.eu.org 15
-  server: 172.64.90.89
-  port: 80
-  client-fingerprint: randomized
-  type: vless
-  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
-  tls: false
-  tfo: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: warp.irss.eu.org
-- name: 轮子1213
+- name: 轮子2213
   type: hysteria
   server: 195.154.184.5
   port: 22787
@@ -2098,7 +2309,7 @@ proxies:
   skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
-- name: 轮子3214
+- name: 轮子2214
   type: hysteria
   server: 208.87.243.151
   port: 38670
@@ -2110,7 +2321,7 @@ proxies:
   skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
-- name: 🇷🇺 俄罗斯-圣彼得堡-HY-005-1G-XyUf
+- name: 🇷🇺 俄罗斯-圣彼得堡-HY-005-1G-aLLe
   server: 195.58.49.173
   port: 28153
   type: hysteria2
@@ -2122,7 +2333,7 @@ proxies:
   obfs: salamander
   obfs-password: MzliZDM5MDFhYmFlNTAyMA==
   udp: true
-- name: 🇷🇺 俄罗斯-圣彼得堡-HY-005-1D-TX5U
+- name: 🇷🇺 俄罗斯-圣彼得堡-HY-005-1D-NTLZ
   server: 195.58.49.173
   port: 28153
   type: hysteria2
@@ -2161,31 +2372,7 @@ proxies:
   ws-opts:
     path: ''
   udp: true
-- name: 🇷🇺 俄罗斯-圣彼得堡-HY-005-1B-DHNT
-  server: 195.58.49.173
-  port: 28153
-  type: hysteria2
-  password: 255ca1da-6072-4580-a135-6b5e4b659a0c
-  auth: 255ca1da-6072-4580-a135-6b5e4b659a0c
-  up: 100
-  down: 100
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: MzliZDM5MDFhYmFlNTAyMA==
-  udp: true
-- name: 🇷🇺 俄罗斯-圣彼得堡-HY-005-1A-QP6H
-  server: 195.58.49.173
-  port: 28153
-  type: hysteria2
-  password: d287ce18-3d10-4702-ad0f-be611d256de0
-  auth: d287ce18-3d10-4702-ad0f-be611d256de0
-  up: 15
-  down: 15
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: MzliZDM5MDFhYmFlNTAyMA==
-  udp: true
-- name: 🇺🇸 美国02-9FyF
+- name: 🇺🇸 美国02-uIEk
   server: us02.sulink.one
   port: 10522
   type: hysteria2
@@ -2203,30 +2390,6 @@ proxies:
   ws-opts:
     path: ''
   udp: true
-- name: 🇷🇺 俄罗斯-圣彼得堡-HY-005-1C-nTqn
-  server: 195.58.49.173
-  port: 28153
-  type: hysteria2
-  password: acf812cd-1f72-46ac-9fd5-70e247e403d4
-  auth: acf812cd-1f72-46ac-9fd5-70e247e403d4
-  up: 100
-  down: 100
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: MzliZDM5MDFhYmFlNTAyMA==
-  udp: true
-- name: 🇷🇺 俄罗斯-圣彼得堡-HY-005-1H-XbW5
-  server: 195.58.49.173
-  port: 28153
-  type: hysteria2
-  password: b4931008-90da-407e-a88f-eee3cf57299f
-  auth: b4931008-90da-407e-a88f-eee3cf57299f
-  up: 100
-  down: 100
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: MzliZDM5MDFhYmFlNTAyMA==
-  udp: true
 - name: 🇦🇺 L0 | 澳大利亚 01 CDN
   server: l0-au-01-cdn.dpp.pp.ua
   port: 443
@@ -2235,18 +2398,6 @@ proxies:
   network: ws
   ws-opts:
     path: ''
-  udp: true
-- name: 🇷🇺 俄罗斯-圣彼得堡-HY-005-1E-mw0h
-  server: 195.58.49.173
-  port: 28153
-  type: hysteria2
-  password: 1f91b2f8-e9d2-4722-bd33-306290448cb8
-  auth: 1f91b2f8-e9d2-4722-bd33-306290448cb8
-  up: 100
-  down: 100
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: MzliZDM5MDFhYmFlNTAyMA==
   udp: true
 - name: 🇺🇸 L0 | 美国 01 CDN
   server: l0-us-01-cdn.dpp.pp.ua
@@ -2276,15 +2427,6 @@ proxies:
   cipher: 2022-blake3-aes-256-gcm
   password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:Mzk2NGI3ZmItYTA2Ny00ZGVmLTllZjAtZWZkNWNiZGU=
   udp: true
-- name: 🇧🇷 L0 | 巴西 01 CDN
-  server: l0-br-01-cdn.dpp.pp.ua
-  port: 443
-  type: trojan
-  password: fc3f3020-dbee-413c-9abf-4822fcf35eb2
-  network: ws
-  ws-opts:
-    path: ''
-  udp: true
 - name: 🇯🇵 L0 | 日本 01 CDN
   server: l0-jp-01-cdn.dpp.pp.ua
   port: 443
@@ -2306,34 +2448,25 @@ proxies:
   obfs: salamander
   obfs-password: MzliZDM5MDFhYmFlNTAyMA==
   udp: true
-- name: 🇷🇺 俄罗斯-圣彼得堡-HY-005-1F-XZHu
-  server: 195.58.49.173
-  port: 28153
-  type: hysteria2
-  password: f8236275-09f6-42a0-8418-ee7258137594
-  auth: f8236275-09f6-42a0-8418-ee7258137594
-  up: 100
-  down: 100
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: MzliZDM5MDFhYmFlNTAyMA==
-  udp: true
-- name: 🇨🇦 加拿大 - 多伦多 - Amazon Technologies Inc. - 1
-  server: 3.97.210.171
-  port: 22222
-  type: trojan
-  password: telegram-id-directvpn
-  sni: trojan.burgerip.co.uk
-  skip-cert-verify: true
-  udp: true
-- name: 🇩🇪 德国 - Frankfurt am Main - Amazon Technologies Inc. - 2
-  server: 18.198.190.11
+- name: 🇩🇪 德国 - Frankfurt am Main - Amazon Technologies Inc. - 1
+  server: 3.78.163.45
   port: 22222
   type: trojan
   password: telegram-id-privatevpns
   sni: trojan.burgerip.co.uk
   skip-cert-verify: true
   udp: true
+- name: 🇩🇪 德国 - Frankfurt am Main - Amazon.com - 4
+  server: 63.177.36.144
+  port: 22222
+  type: vless
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  tls: true
+  servername: telegram-channel-vlessconfig.sohala.uk
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /telegram-channel-vlessconfig-ws
 - name: 🇫🇮 芬兰 - 赫尔辛基 - Hetzner Online GmbH - 1
   server: 95.216.202.137
   port: 19304
@@ -2353,14 +2486,14 @@ proxies:
   servername: cloudflare.com
   client-fingerprint: random
   network: tcp
-- name: 🇯🇵 日本 - 东京 - Amazon Technologies Inc - 1
-  server: 13.114.31.63
+- name: 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 4
+  server: 3.112.236.3
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 4
-  server: 3.112.236.3
+- name: 🇯🇵 日本 - 东京 - Amazon.com, Inc. - 3
+  server: 43.207.232.228
   port: 443
   type: ss
   cipher: aes-256-cfb
@@ -2389,19 +2522,12 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: SK8DG4IJFnDwuhy35hOWUj
-- name: 🇵🇱 波兰 - 华沙 - Melbikomas UAB - 4
+- name: 🇵🇱 波兰 - 华沙 - Melbikomas UAB - 1
   server: 217.30.10.18
-  port: 9031
+  port: 9003
   type: ss
   cipher: aes-256-cfb
-  password: BwcAUZk8hUFAkDGN
-- name: 🇸🇬 新加坡 - 新加坡 - Microsoft Corporation - 3
-  server: api.tg8lnk.tech
-  port: 443
-  type: hysteria2
-  password: ThisIsNotForSale-Free$ervice
-  auth: ThisIsNotForSale-Free$ervice
-  skip-cert-verify: true
+  password: JdmRK9gMEqFgs8nP
   udp: true
 - name: 🇹🇷 土耳其 - 伊斯坦布尔 - Mehmet Selim Sahin - 1
   server: 176.98.41.45
@@ -2445,6 +2571,18 @@ proxies:
     path: /
     headers:
       Host: lamusa.daozhang.site
+- name: 🇺🇸 美国 - 凤凰城 - Oracle Corporation - 29
+  server: phx-plus-1ddns.faforex.eu.org
+  port: 18443
+  type: vless
+  uuid: 86206c88-b8e3-4cb3-8932-3ca6ea1b6033
+  tls: true
+  reality-opts:
+    public-key: 8233FxCRw1a_aCJ8d1HwHBMD_fABUNNW7rsrFe3vK0s
+    short-id: e6658462
+  servername: www.tesla.com
+  client-fingerprint: ios
+  network: tcp
 - name: 🇺🇸 美国 - 拉斯维加斯 - FranTech Solutions - 17
   server: u2.huvicloud.com
   port: 443
@@ -2472,8 +2610,21 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
+- name: 🇺🇸 美国 - 波特蘭 - Amazon.com, Inc. - 22
+  server: 34.222.136.128
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
 - name: 🇺🇸 美国 - 波特蘭 - Amazon.com, Inc. - 23
   server: 54.202.77.81
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 美国 - 波特蘭 - Amazon.com, Inc. - 4
+  server: 34.213.200.250
   port: 443
   type: ss
   cipher: aes-256-cfb
@@ -2611,6 +2762,153 @@ proxies:
   type: ss
   cipher: aes-256-gcm
   password: Y6R9pAtvxxzmGC
+- name: 🇸🇬 新加坡1高速中转3x-1B 2
+  server: gsgs.hy2.one
+  port: 53342
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:NzE2NWRmMTQtMjFiMS00MjgyLTg1OTQtZDA2YmZlOWU=
+  udp: true
+- name: 🇸🇬 新加坡2高速中转3x-1A 2
+  server: gsgs.hy2.one
+  port: 53341
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:ZjAyZDVkZjQtOGVmNC00ZmY5LWE5MWQtM2E1NDBjNDQ=
+  udp: true
+- name: 🇯🇵 日本3SS中转25x-1B 2
+  server: g3.hy2.one
+  port: 22063
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:NzE2NWRmMTQtMjFiMS00MjgyLTg1OTQtZDA2YmZlOWU=
+  udp: true
+- name: 🇹🇷 土耳其高速中转-1B 2
+  server: gsgs.hy2.one
+  port: 63327
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:NzE2NWRmMTQtMjFiMS00MjgyLTg1OTQtZDA2YmZlOWU=
+  udp: true
+- name: 🇭🇰 香港1高速中转2x-1A 2
+  server: gsgs.hy2.one
+  port: 53349
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:ZjAyZDVkZjQtOGVmNC00ZmY5LWE5MWQtM2E1NDBjNDQ=
+  udp: true
+- name: 🇯🇵 日本3SS中转25x-1A 2
+  server: g3.hy2.one
+  port: 22063
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:ZjAyZDVkZjQtOGVmNC00ZmY5LWE5MWQtM2E1NDBjNDQ=
+  udp: true
+- name: 🇹🇭 泰国ISP高速中转3x-1B 2
+  server: gsgs.hy2.one
+  port: 63329
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:NzE2NWRmMTQtMjFiMS00MjgyLTg1OTQtZDA2YmZlOWU=
+  udp: true
+- name: 🇸🇬 新加坡1高速中转3x-1A 2
+  server: gsgs.hy2.one
+  port: 53342
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:ZjAyZDVkZjQtOGVmNC00ZmY5LWE5MWQtM2E1NDBjNDQ=
+  udp: true
+- name: 🇸🇬 新加坡3高速中转3x-1B 2
+  server: gsgs.hy2.one
+  port: 53340
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:NzE2NWRmMTQtMjFiMS00MjgyLTg1OTQtZDA2YmZlOWU=
+  udp: true
+- name: 🇻🇳 越南高速中转-1B 2
+  server: gsgs.hy2.one
+  port: 63326
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:NzE2NWRmMTQtMjFiMS00MjgyLTg1OTQtZDA2YmZlOWU=
+  udp: true
+- name: 🇹🇭 泰国ISP高速中转3x-1A 2
+  server: gsgs.hy2.one
+  port: 63329
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:ZjAyZDVkZjQtOGVmNC00ZmY5LWE5MWQtM2E1NDBjNDQ=
+  udp: true
+- name: 🇯🇵 日本1高速中转-1A 2
+  server: gsgs.hy2.one
+  port: 53339
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:ZjAyZDVkZjQtOGVmNC00ZmY5LWE5MWQtM2E1NDBjNDQ=
+  udp: true
+- name: 🇭🇰 香港1高速中转2x-1B 2
+  server: gsgs.hy2.one
+  port: 53349
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:NzE2NWRmMTQtMjFiMS00MjgyLTg1OTQtZDA2YmZlOWU=
+  udp: true
+- name: 🇭🇰 香港6高速中转-1B 2
+  server: gsgs.hy2.one
+  port: 53344
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:NzE2NWRmMTQtMjFiMS00MjgyLTg1OTQtZDA2YmZlOWU=
+  udp: true
+- name: 🇸🇬 新加坡2高速中转3x-1B 2
+  server: gsgs.hy2.one
+  port: 53341
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:NzE2NWRmMTQtMjFiMS00MjgyLTg1OTQtZDA2YmZlOWU=
+  udp: true
+- name: 🇸🇬 新加坡3高速中转3x-1A 2
+  server: gsgs.hy2.one
+  port: 53340
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:ZjAyZDVkZjQtOGVmNC00ZmY5LWE5MWQtM2E1NDBjNDQ=
+  udp: true
+- name: 🇭🇰 香港6高速中转-1A 2
+  server: gsgs.hy2.one
+  port: 53344
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:ZjAyZDVkZjQtOGVmNC00ZmY5LWE5MWQtM2E1NDBjNDQ=
+  udp: true
+- name: 🇭🇰 香港2高速中转2x-1B 2
+  server: gsgs.hy2.one
+  port: 53348
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:NzE2NWRmMTQtMjFiMS00MjgyLTg1OTQtZDA2YmZlOWU=
+  udp: true
+- name: 🇭🇰 香港2高速中转2x-1A 2
+  server: gsgs.hy2.one
+  port: 53348
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:ZjAyZDVkZjQtOGVmNC00ZmY5LWE5MWQtM2E1NDBjNDQ=
+  udp: true
+- name: 🇯🇵 日本1高速中转-1B 2
+  server: gsgs.hy2.one
+  port: 53339
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:NzE2NWRmMTQtMjFiMS00MjgyLTg1OTQtZDA2YmZlOWU=
+  udp: true
+- name: 🇻🇳 越南高速中转-1A 2
+  server: gsgs.hy2.one
+  port: 63326
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:ZjAyZDVkZjQtOGVmNC00ZmY5LWE5MWQtM2E1NDBjNDQ=
+  udp: true
 - name: pimax_LosAngeles
   server: ssm.pimax.com
   port: 11231
@@ -2639,303 +2937,342 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
+  - warp.irss.eu.org 3
   - 🇺🇸 美国 - 洛杉矶 - M247 Europe SRL - 2
-  - warp.irss.eu.org 12
-  - warp.irss.eu.org 14
-  - warp.irss.eu.org 5
-  - warp.irss.eu.org 15
-  - 轮子3214
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 28
   - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 26
-  - warp.irss.eu.org 11
-  - warp.irss.eu.org 13
   - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 27
-  - warp.irss.eu.org 8
+  - warp.irss.eu.org 12
   - warp.irss.eu.org 10
-  - 🇺🇸 美国1-1B
-  - warp.irss.eu.org
+  - warp.irss.eu.org 4
   - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 25
-  - phx-tuic
+  - warp.irss.eu.org 11
+  - warp.irss.eu.org 5
+  - warp.irss.eu.org 14
   - warp.irss.eu.org 2
   - warp.irss.eu.org 6
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 28
-  - 🇺🇸 美国 - 海厄利亞 - M247 Europe SRL - 3
-  - 🇺🇸 美国 - 波特蘭 - Amazon.com, Inc. - 11
   - warp.irss.eu.org 9
-  - warp.irss.eu.org 4
-  - Oregon  Pro 12-ga0j
-  - Oregon -L22 16-0i5j
-  - Hy2-phx-arm
-  - warp.irss.eu.org 7
-  - 🇺🇸 美国 - 迈阿密 - GTHost - 7
-  - phx-reality
-  - 🇺🇸 美国 - 迈阿密 - GTHost - 16
-  - Manassas  19-pZpY
-  - 🇺🇸 美国 - 迈阿密 - GTHost - 9
-  - 🇺🇸 美国 - 迈阿密 - GTHost - 15
-  - Virginia  Pro 6-eixC
-  - 🇺🇸 美国 - 迈阿密 - GTHost - 19
-  - Manassas  35-u9ZK
-  - Ohio  Pro 20-1OwC
-  - Ohio -L22 Pro 2-2HYI
-  - Virginia 10-8Wjk
-  - 🇺🇸 美国 - 迈阿密 - GTHost - 18
-  - 🇺🇸 美国 - 迈阿密 - GTHost - 6
-  - 🇺🇸 美国 - 迈阿密 - GTHost - 10
-  - Manassas  Pro 1-0atV
-  - Manassas  Pro 25-gvxa
-  - New York   7-2dyT
-  - Virginia  Pro 15-tWe4
-  - New York   3-7dP2
-  - 🇺🇸 美国 - 迈阿密 - GTHost - 13
-  - New York   9-F78j
-  - 🇺🇸 美国 - 迈阿密 - GTHost - 14
-  - New York   8-oDcQ
-  - 🇺🇸 美国 - 迈阿密 - GTHost - 8
-  - New York   Pro 5-I4ir
-  - Toronto  Pro 2-59Rh
-  - 🇯🇵 日本 - 东京 - Amazon Technologies Inc - 1
-  - 🇺🇸 L0 | 美国 01 CDN
-  - Toronto  Pro 1-RM9n
-  - 🇺🇸 美国02-9FyF
-  - 🇨🇦 加拿大 - 多伦多 - Amazon Technologies Inc. - 1
-  - 🇺🇸 美国 - 迈阿密 - GTHost - 12
-  - 🇺🇸 美国 - 拉斯维加斯 - FranTech Solutions - 17
-  - 🇳🇱 荷兰 - 阿姆斯特丹 - Datacamp Limited - 1
-  - 🇺🇸 美国 - 休斯敦 - Lamhosting LLC - 20
-  - Oregon -L22 Pro 16
-  - Oregon  Pro 12
+  - 🇺🇸 美国02-uIEk
+  - 轮子2214
+  - warp.irss.eu.org 13
+  - warp.irss.eu.org
+  - 🇺🇸 美国 - 波特蘭 - Amazon.com, Inc. - 4
+  - warp.irss.eu.org 8
+  - Oregon  Pro 12-iDtK
+  - phx-tuic
+  - Oregon -L22 16-C13h
   - 🇺🇸 美国1-1A
-  - 🇯🇵 日本2|@ripaojiedian
-  - Tokyo -L22 Pro 1-48Cc
-  - Tokyo -L22 Pro 7-JFZm
-  - Tokyo -L22 Pro 5-Gvm3
-  - Tokyo  3-v45F
-  - Tokyo  Pro 11-y53J
-  - Tokyo -L22 8-ITtN
-  - Tokyo  13-uAWL
-  - Tokyo  Pro 12-ixf4
-  - Tokyo  Pro 4-mADK
-  - Tokyo  Pro 6-LPNf
-  - pimax_LosAngeles
-  - Tokyo  Pro 2-WVaR
-  - Tokyo  Pro 15-Wv4P
-  - 🇳🇱 荷兰 - 阿姆斯特丹 - Des Equity LLC - 2
-  - 🇺🇸 美国 - 波特蘭 - Amazon.com, Inc. - 1
-  - Virginia  Pro 15
-  - arm1-tuic
-  - Virginia Pro 10
-  - Ireland  Pro 5-4f4O
-  - Ireland  Pro 2-vlj8
-  - Manassas  Pro 19
-  - Ireland -L22 Pro 1-OCWN
-  - Manassas  Pro 35
-  - Ireland  3-9JVo
-  - 🇫🇮 芬兰 - 赫尔辛基 - Hetzner Online GmbH - 1
-  - Manassas  Pro 25
-  - New York   Pro 3
-  - New York   Pro 5
-  - Virginia  Pro 6
-  - Manassas  1
-  - New York   Pro 9
-  - 🇫🇷 法国|@ripaojiedian
-  - New York   7
-  - Seoul  Pro 1-pXBV
-  - London Pro 4-FD07
-  - Seoul  Pro 4-pXVX
-  - Amsterdam  Pro 15-IENv
-  - Amsterdam  22-IkAl
-  - Amsterdam  11-ysux
-  - Amsterdam  19-wz8g
-  - Amsterdam  Pro 3-syjU
-  - Seoul -L22 Pro 2-pdYO
-  - Amsterdam  18-xnkZ
-  - Paris 1-OGtz
-  - Amsterdam  28-Jx3e
-  - Amsterdam  Pro 6-NZed
-  - Amsterdam  17-Nqgh
-  - Amsterdam 25-R511
-  - Amsterdam  13-5x9Q
-  - Amsterdam  Pro 24-77lx
-  - Amsterdam  27-2KT6
-  - Seoul  Pro 3-Jucy
-  - Amsterdam  Pro 14-1rQM
-  - Amsterdam  10-bqav
-  - Amsterdam  Pro 7-mNqA
-  - New York   8
-  - Amsterdam  Pro 9-Rki7
-  - London  Pro 15-ZPFv
-  - 🇫🇷 法国 - 巴黎 - Online S.A.S. - 1
-  - Amsterdam  Pro 16-qNWz
-  - Frankfurt -L22 1-aOWm
-  - Frankfurt  Pro 13-JOEg
-  - Ponte San Pietro Pro 2-2Yru
-  - Frankfurt  4-nHxl
-  - Ponte San Pietro Pro 1-Pgo6
-  - Frankfurt  6-FVQg
-  - Frankfurt  8-l15f
-  - Frankfurt  18-Su6b
-  - Toronto  Pro 2
-  - 🇩🇪 德国 - Frankfurt am Main - Amazon Technologies Inc. - 2
-  - Frankfurt  16-XNV0
-  - Toronto  Pro 1
-  - Ohio  Pro 20
-  - 🇰🇷 韩国|@ripaojiedian
-  - Sydney  Pro 5-9PXv
-  - Sydney  3-nuLW
-  - Sydney Pro 2-NY53
-  - Warsaw  8-SXBu
-  - Stockholm Pro 1-SCmV
-  - Warsaw Pro 5-a5PJ
-  - Warsaw  Pro 6-n13Z
-  - Ohio -L22 2
-  - Warsaw  7-CVI2
+  - Hy2-phx-arm
+  - 🇺🇸 美国 - 波特蘭 - Amazon.com, Inc. - 22
+  - 🇺🇸 美国 - 海厄利亞 - M247 Europe SRL - 3
   - 🇺🇸 美国 - 波特蘭 - Amazon.com, Inc. - 23
-  - 🇭🇰 香港1-1A
-  - Amsterdam  Pro 15
-  - Warsaw  3-FlLM
-  - 🇸🇬 L0 | 新加坡 01 CDN
-  - Tokyo  Pro 12
-  - Singapore  8-wst8
-  - Tokyo  Pro 15
-  - Tokyo  Pro 6
-  - Tokyo  2
-  - Singapore  Pro 7-E7T9
-  - Singapore  1-qbvw
-  - Tokyo -L22 Pro 7
-  - Singapore -L22 Pro 4-71r0
-  - Tokyo -L22 8
-  - rea-amd2
-  - Singapore  Pro 15-OViN
-  - Tokyo -L22 Pro 5
-  - Singapore  Pro 5-yysr
-  - Istanbul  Pro 1-pyjU
-  - Tokyo  Pro 11
-  - Singapore -L22 Pro 9-lqUq
-  - Singapore  Pro 6-okl0
-  - Singapore 2-2k9D
-  - Singapore  Pro 10-qfO5
-  - Tokyo  4
-  - Singapore -L22 Pro 3-D8aR
-  - Tokyo  Pro 3
-  - Singapore  Pro 13-KJdJ
-  - Singapore -L22 Pro 11-lHBI
-  - Tokyo -L22 Pro 1
-  - Tokyo  13
-  - Ireland -L22 1
-  - Ireland  Pro 5
-  - 🇺🇸 美国高速中转4
-  - Manila Pro 1-mI6t
-  - Ireland  Pro 3
-  - 🇭🇰 香港2|@ripaojiedian
-  - Hy2-Tokyo-arm1
-  - 🇳🇴 挪威 - Lorenskog - Microsoft Corporation - 1
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1G-XyUf
-  - Hy2-Tokyo-amd2
-  - Ireland  Pro 2
-  - Hy2-Tokyo-arm2
-  - 🇯🇵 L0 | 日本 01 CDN
-  - 🇭🇰 香港|@ripaojiedian
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1C
-  - Kuala Lumpur Pro 1-LUUj
-  - Seoul -L22 2
-  - London Pro 4
-  - Seoul  Pro 1
-  - Seoul  Pro 3
-  - Amsterdam  19
-  - Amsterdam 25
-  - Paris Pro 1
-  - amd-tuic
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1F
-  - Amsterdam  Pro 24
-  - Amsterdam  Pro 28
-  - Seoul  Pro 4
-  - Amsterdam  Pro 27
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1A
-  - Frankfurt -L22 1
-  - Amsterdam  13
-  - Frankfurt  8
-  - Frankfurt  Pro 16
-  - Frankfurt  Pro 13
-  - Frankfurt  6
-  - 🇨🇦 L0 | 加拿大 01 CDN
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1H
-  - Frankfurt  18
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1E
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1D-TX5U
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1I
-  - London  15
-  - Ponte San Pietro Pro 1
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1B
-  - Frankfurt  4
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1F-XZHu
-  - 🇵🇱 pol13-Hy2
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1E-mw0h
-  - Ponte San Pietro Pro 2
-  - Riyadh Pro 1-160Q
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1D
-  - 🇵🇱 波兰 - 华沙 - Melbikomas UAB - 4
-  - 轮子1213
-  - 🇵🇱 pol-Hy2
-  - 🇵🇱 pol1-Hy2
-  - Stockholm Pro 1
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1G
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1H-XbW5
-  - Amsterdam  17
-  - Amsterdam  6
-  - Amsterdam  9
-  - rea-arm2
-  - Amsterdam  11
-  - Amsterdam  22
-  - Amsterdam  14
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1A-QP6H
-  - 🇹🇼 台湾|@ripaojiedian
-  - Amsterdam  3
-  - Mumbai  Pro 4-80Xl
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1B-DHNT
-  - Amsterdam  Pro 16
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1C-nTqn
-  - Singapore  Pro 13
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1J
-  - Singapore  Pro 6
-  - Singapore  8
-  - Singapore -L22 Pro 3
-  - Amsterdam  Pro 7
-  - Istanbul  Pro 1
-  - Singapore  Pro 15
-  - Singapore  Pro 10
-  - Singapore  7
-  - Amsterdam  Pro 18
-  - Mumbai Pro 3-7Gf5
-  - rea-arm1
-  - 🇯🇵 日本 - 东京 - Amazon.com, Inc. - 5
-  - Kathmandu Pro 1-nHZD
-  - Singapore -L22 11
-  - Singapore -L22 Pro 4
-  - Singapore -L22 Pro 9
-  - Amsterdam  10
-  - Singapore  Pro 5
-  - 🇹🇷 土耳其 - 伊斯坦布尔 - Mehmet Selim Sahin - 1
-  - 🇸🇬 新加坡 - 新加坡 - Microsoft Corporation - 3
-  - Warsaw 5
-  - Warsaw  8
-  - Kuala Lumpur Pro 1
+  - 🇺🇸 美国 - 波特蘭 - Amazon.com, Inc. - 11
+  - phx-reality
+  - Ohio  Pro 20-ahTL
+  - Ohio -L22 Pro 2-OBuG
+  - 🇺🇸 美国 - 迈阿密 - GTHost - 8
+  - warp.irss.eu.org 7
+  - 🇺🇸 美国 - 迈阿密 - GTHost - 9
+  - 🇺🇸 美国 - 迈阿密 - GTHost - 18
+  - 🇺🇸 美国 - 迈阿密 - GTHost - 12
+  - 🇺🇸 美国 - 迈阿密 - GTHost - 14
+  - Manassas  35-iKYB
+  - 🇺🇸 美国 - 迈阿密 - GTHost - 10
+  - Manassas  1-XLSF
+  - 🇺🇸 美国 - 迈阿密 - GTHost - 7
+  - Virginia  Pro 6-95os
   - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 4
-  - Manila Pro 1
+  - 🇺🇸 美国 - 迈阿密 - GTHost - 6
+  - Virginia  Pro 15-Kqrm
+  - Virginia 10-nTAw
+  - Manassas  Pro 19-WTYK
+  - 🇺🇸 美国 - 迈阿密 - GTHost - 13
+  - 🇺🇸 美国 - 迈阿密 - GTHost - 15
+  - 🇺🇸 美国 - 迈阿密 - GTHost - 19
+  - 🇺🇸 美国 - 迈阿密 - GTHost - 16
+  - Manassas  25-Je5e
+  - New York   Pro 9-7fFN
+  - New York   7-0iWX
+  - New York   Pro 8-E5mM
+  - Toronto  Pro 1-lRP4
+  - New York   5-QtEL
+  - New York   3-CLfU
+  - Toronto  Pro 2-oJB2
+  - 🇯🇵 日本特殊|@ripaojiedian
+  - 🇸🇬 狮城特殊|@ripaojiedian
+  - arm1-tuic
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Datacamp Limited - 1
+  - Tokyo  Pro 3-jF3E
+  - Tokyo  Pro 4-zYcd
+  - Tokyo  Pro 15-SwuB
+  - Tokyo  Pro 2-KqOv
+  - Tokyo  Pro 12-a4og
+  - Tokyo -L22 Pro 8-H4jM
+  - Tokyo  Pro 13-eGK1
+  - 🇯🇵 日本2|@ripaojiedian
+  - Tokyo -L22 7-Xt1o
+  - Tokyo -L22 Pro 1-ODmj
+  - Tokyo  Pro 11-umGu
+  - 🇯🇵 日本1-1B
+  - Tokyo -L22 Pro 5-cqDS
+  - Tokyo  Pro 6-sVDg
+  - 🇭🇰 香港6高速中转-1A 2
+  - 🇺🇸 美国 - 拉斯维加斯 - FranTech Solutions - 17
+  - 🇭🇰 香港6高速中转-1B 2
+  - 🇫🇷 法国|@ripaojiedian
+  - 🇯🇵 日本1高速中转-1A 2
+  - Oregon -L22 Pro 16
+  - 🇺🇸 美国 - 休斯敦 - Lamhosting LLC - 20
+  - 🇺🇸 美国 - 凤凰城 - Oracle Corporation - 29
+  - 🇯🇵 日本1高速中转-1B 2
+  - 🇫🇮 芬兰 - 赫尔辛基 - Hetzner Online GmbH - 1
+  - Oregon  Pro 12
+  - 🇳🇴 挪威 - Lorenskog - Microsoft Corporation - 1
+  - 🇸🇬 新加坡2高速中转3x-1A 2
+  - 🇺🇸 美国1-1B
+  - Seoul  Pro 4-zBDm
+  - Seoul  Pro 1-AwSd
+  - 🇸🇬 新加坡1高速中转3x-1B 2
+  - Seoul -L22 2-BQ9m
+  - Seoul  Pro 3-eNTt
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Des Equity LLC - 2
+  - Ireland  3-y3Kn
+  - Ireland  Pro 2-VYkQ
+  - Ireland -L22 1-qeLD
+  - Ireland  Pro 5-Vhio
+  - 🇸🇬 新加坡3高速中转3x-1B 2
+  - pimax_LosAngeles
+  - 🇸🇬 新加坡2高速中转3x-1B 2
+  - 🇸🇬 新加坡1高速中转3x-1A 2
+  - 🇻🇳 越南高速中转-1A 2
+  - 🇻🇳 越南高速中转-1B 2
+  - 🇯🇵 日本3SS中转25x-1B 2
+  - 🇸🇬 新加坡3高速中转3x-1A 2
+  - Sydney  3-3HHx
+  - Sydney  Pro 5-NDBC
+  - Sydney 2-iiSp
+  - London Pro 4-KOJT
+  - 🇯🇵 日本 - 东京 - Amazon.com, Inc. - 3
+  - Amsterdam  Pro 3-XcXj
+  - Amsterdam  Pro 6-OxqX
+  - Amsterdam  Pro 15-KYrL
+  - Amsterdam  16-gzCF
+  - Amsterdam  Pro 19-dtes
+  - Amsterdam  Pro 11-9zfj
+  - Amsterdam  Pro 18-HKGR
+  - Amsterdam  Pro 7-X0Gl
+  - Amsterdam  28-sxHo
+  - Amsterdam  Pro 27-9lfA
+  - Amsterdam  22-jeHo
+  - Amsterdam Pro 25-cM3R
+  - Amsterdam  Pro 9-OroF
+  - Amsterdam  14-G4uB
+  - Amsterdam  Pro 10-cIEn
+  - Amsterdam  Pro 17-hF4G
+  - Paris Pro 1-1SSN
+  - London  Pro 15-o2Id
+  - Amsterdam  Pro 13-Zjgw
+  - 🇺🇸 L0 | 美国 01 CDN
+  - Hy2-Tokyo-amd2
+  - 🇵🇱 波兰 - 华沙 - Melbikomas UAB - 1
+  - 🇫🇷 法国 - 巴黎 - Online S.A.S. - 1
+  - 🇨🇦 L0 | 加拿大 01 CDN
+  - Frankfurt  Pro 13-k9n2
+  - Frankfurt  Pro 18-IZwS
+  - Frankfurt  4-NocY
+  - Frankfurt  6-uhoT
+  - Ponte San Pietro Pro 2-mEZa
+  - Frankfurt  Pro 16-jF3h
+  - Ponte San Pietro Pro 1-Aw1b
+  - Ohio -L22 2
+  - Manassas  19
+  - 🇩🇪 德国 - Frankfurt am Main - Amazon Technologies Inc. - 1
+  - Frankfurt -L22 1-exzA
+  - Manassas  Pro 25
+  - Frankfurt  Pro 8-5O2o
+  - Manassas  Pro 1
+  - Virginia  Pro 6
+  - rea-arm1
+  - rea-arm2
+  - 🇯🇵 日本3SS中转25x-1A 2
+  - Singapore  8-A5SM
+  - Singapore  1-30dE
+  - Singapore Pro 2-Zs98
+  - Singapore  Pro 7-hyxb
+  - Prague Pro 2-pgsu
+  - New York   7
+  - Singapore -L22 Pro 11-Xpar
+  - Singapore  Pro 6-b99w
+  - Singapore  Pro 5-ckj3
+  - Singapore -L22 Pro 9-8cyr
+  - Singapore -L22 Pro 4-p99K
+  - Singapore  Pro 10-uA0c
+  - Stockholm 1-bqcG
+  - Singapore  Pro 13-RVSt
+  - Singapore  Pro 15-XHzW
+  - Singapore -L22 Pro 3-wv6q
+  - 🇰🇷 韩国2|@ripaojiedian
+  - Toronto  2
+  - 🇹🇭 泰国ISP高速中转3x-1A 2
+  - 🇹🇼 台湾|@ripaojiedian
+  - New York   5
+  - Ohio  Pro 20
+  - Warsaw  Pro 6-KvUa
+  - Warsaw  7-rCDI
+  - Warsaw  8-k8CK
+  - Warsaw Pro 5-70aB
+  - CDN优选-1
+  - Manila Pro 1-qPqc
+  - Warsaw  Pro 3-sXaZ
+  - 🇺🇸 美国高速中转4
+  - 🇸🇬 新加坡1-1A
+  - Kuala Lumpur Pro 1-iJ33
+  - Virginia Pro 10
+  - Virginia  Pro 15
+  - New York   Pro 9
+  - CDN优选-3
+  - Istanbul  Pro 1-EJ5j
+  - 🇭🇰 香港2|@ripaojiedian
+  - New York   Pro 3
+  - Moscow Pro 3-f52N
+  - Tokyo  Pro 15
+  - amd-tuic
+  - Tokyo  Pro 6
+  - Tokyo  Pro 2
+  - Tokyo  13
+  - Tokyo  Pro 3
+  - Hy2-Tokyo-arm2
+  - Tokyo -L22 8
+  - Tokyo  4
+  - Bangkok Pro 1-FWfP
   - 🇺🇸 美国 - Elk Grove Village - CacheFly - 24
-  - Warsaw  6
-  - Warsaw  7
-  - 🇩🇪 L0 | 德国 01 CDN
+  - 🇵🇱 pol13-Hy2
+  - 🇵🇱 pol1-Hy2
+  - Tokyo -L22 Pro 5
+  - 🇭🇰 香港|@ripaojiedian
+  - Tokyo -L22 Pro 1
+  - Toronto  Pro 1
+  - Tokyo -L22 Pro 7
+  - 🇵🇱 pol-Hy2
+  - Tokyo  Pro 12
+  - Tokyo  11
+  - Amsterdam  Pro 24-pZ4r
+  - 🇩🇪 德国 - Frankfurt am Main - Amazon.com - 4
+  - New York   8
+  - Seoul -L22 Pro 2
+  - Manassas  Pro 35
+  - Mumbai  Pro 4-VjMO
+  - Ireland  2
+  - Mumbai Pro 3-fmPV
+  - 🇺🇸 美国 - 波特蘭 - Amazon.com, Inc. - 1
+  - 轮子2213
+  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1I
+  - 🇯🇵 L0 | 日本 01 CDN
+  - CDN优选-8
+  - Seoul  Pro 4
+  - Seoul  Pro 1
+  - CDN优选-2
+  - Ireland  Pro 5
+  - Seoul  Pro 3
+  - Ireland -L22 Pro 1
+  - Riyadh Pro 1-3slF
+  - London Pro 4
+  - Lagos Pro 2-Y4bh
+  - Lagos Pro 3-LYwo
+  - rea-amd2
+  - Amsterdam Pro 25
+  - Paris Pro 1
+  - Amsterdam  Pro 28
+  - Amsterdam  19
+  - Hy2-Tokyo-arm1
+  - Ireland  Pro 3
+  - 🇭🇰 香港1高速中转2x-1B 2
+  - 🇭🇰 香港2高速中转2x-1A 2
+  - Kathmandu Pro 1-VrWC
+  - 🇭🇰 香港2高速中转2x-1B 2
+  - Frankfurt  6
+  - London  15
+  - Frankfurt  Pro 4
+  - Frankfurt  16
+  - Frankfurt  Pro 18
+  - 🇷🇺 俄罗斯-圣彼得堡-005-1B
+  - 🇭🇰 香港1高速中转2x-1A 2
+  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1G
+  - Amsterdam  27
+  - Frankfurt -L22 1
+  - 🇹🇷 土耳其 - 伊斯坦布尔 - Mehmet Selim Sahin - 1
+  - Karachi Pro 2-F3LV
+  - Fujairah Pro 1-njfG
+  - Frankfurt  Pro 8
+  - Singapore  1
+  - Singapore 2
+  - Singapore  7
+  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1E
+  - Frankfurt  Pro 13
+  - Amsterdam  24
+  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1A
+  - Stockholm 1
+  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1B
+  - Manama Pro 1-PZzK
+  - Ponte San Pietro Pro 2
   - 🇦🇺 L0 | 澳大利亚 01 CDN
-  - 🇧🇷 L0 | 巴西 01 CDN
-  - Warsaw  Pro 3
-  - Riyadh Pro 1
-  - 🇰🇷 L0 | 韩国 01 CDN
-  - Mumbai Pro 3
-  - Mumbai  Pro 4
+  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1D
+  - Amsterdam  14
+  - Amsterdam  Pro 3
+  - Amsterdam  7
+  - Amsterdam  Pro 6
+  - Amsterdam  Pro 11
+  - Singapore  Pro 15
+  - Amsterdam  Pro 15
+  - Amsterdam  Pro 17
+  - Amsterdam  Pro 18
+  - Singapore  Pro 5
+  - Singapore -L22 Pro 4
+  - Prague Pro 2
   - 🇯🇵 日本1-1A
-  - 🇭🇰 香港6|@ripaojiedian
-  - 🇯🇵 日本4|@ripaojiedian
+  - Amsterdam  Pro 9
+  - Kuala Lumpur Pro 1
+  - Singapore  Pro 8
+  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1H
+  - Singapore -L22 Pro 9
+  - Amsterdam  22
+  - Amsterdam  Pro 10
+  - Singapore  Pro 10
+  - Amsterdam  Pro 13
+  - Singapore -L22 11
+  - Amsterdam  16
+  - Ponte San Pietro Pro 1
   - 🇻🇳 越南|@ripaojiedian
+  - Singapore  Pro 13
+  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1C
+  - 🇯🇵 日本 - 东京 - Amazon.com, Inc. - 5
+  - Warsaw  6
+  - Singapore -L22 Pro 3
+  - Istanbul  Pro 1
+  - Moscow Pro 3
+  - Warsaw Pro 5
+  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1F
+  - Singapore  Pro 6
+  - Bangkok Pro 1
+  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1G-aLLe
+  - 🇰🇷 L0 | 韩国 01 CDN
+  - CDN优选-6
+  - Warsaw  8
+  - tg频道:@ripaojiedian
+  - Manila Pro 1
+  - 🇸🇬 L0 | 新加坡 01 CDN
+  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1D-NTLZ
+  - Warsaw  7
+  - 🇹🇭 泰国ISP高速中转3x-1B 2
+  - 🇩🇪 L0 | 德国 01 CDN
+  - Sydney  Pro 5
+  - Mumbai  Pro 4
+  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1J
+  - Mumbai Pro 3
+  - 🇭🇰 香港6|@ripaojiedian
+  - 🇹🇷 土耳其高速中转-1B 2
+  - Warsaw  3
+  - CDN优选-5
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
@@ -2943,605 +3280,683 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
+  - warp.irss.eu.org 3
   - 🇺🇸 美国 - 洛杉矶 - M247 Europe SRL - 2
-  - warp.irss.eu.org 12
-  - warp.irss.eu.org 14
-  - warp.irss.eu.org 5
-  - warp.irss.eu.org 15
-  - 轮子3214
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 28
   - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 26
-  - warp.irss.eu.org 11
-  - warp.irss.eu.org 13
   - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 27
-  - warp.irss.eu.org 8
+  - warp.irss.eu.org 12
   - warp.irss.eu.org 10
-  - 🇺🇸 美国1-1B
-  - warp.irss.eu.org
+  - warp.irss.eu.org 4
   - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 25
-  - phx-tuic
+  - warp.irss.eu.org 11
+  - warp.irss.eu.org 5
+  - warp.irss.eu.org 14
   - warp.irss.eu.org 2
   - warp.irss.eu.org 6
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 28
-  - 🇺🇸 美国 - 海厄利亞 - M247 Europe SRL - 3
-  - 🇺🇸 美国 - 波特蘭 - Amazon.com, Inc. - 11
   - warp.irss.eu.org 9
-  - warp.irss.eu.org 4
-  - Oregon  Pro 12-ga0j
-  - Oregon -L22 16-0i5j
-  - Hy2-phx-arm
-  - warp.irss.eu.org 7
-  - 🇺🇸 美国 - 迈阿密 - GTHost - 7
-  - phx-reality
-  - 🇺🇸 美国 - 迈阿密 - GTHost - 16
-  - Manassas  19-pZpY
-  - 🇺🇸 美国 - 迈阿密 - GTHost - 9
-  - 🇺🇸 美国 - 迈阿密 - GTHost - 15
-  - Virginia  Pro 6-eixC
-  - 🇺🇸 美国 - 迈阿密 - GTHost - 19
-  - Manassas  35-u9ZK
-  - Ohio  Pro 20-1OwC
-  - Ohio -L22 Pro 2-2HYI
-  - Virginia 10-8Wjk
-  - 🇺🇸 美国 - 迈阿密 - GTHost - 18
-  - 🇺🇸 美国 - 迈阿密 - GTHost - 6
-  - 🇺🇸 美国 - 迈阿密 - GTHost - 10
-  - Manassas  Pro 1-0atV
-  - Manassas  Pro 25-gvxa
-  - New York   7-2dyT
-  - Virginia  Pro 15-tWe4
-  - New York   3-7dP2
-  - 🇺🇸 美国 - 迈阿密 - GTHost - 13
-  - New York   9-F78j
-  - 🇺🇸 美国 - 迈阿密 - GTHost - 14
-  - New York   8-oDcQ
-  - 🇺🇸 美国 - 迈阿密 - GTHost - 8
-  - New York   Pro 5-I4ir
-  - Toronto  Pro 2-59Rh
-  - 🇯🇵 日本 - 东京 - Amazon Technologies Inc - 1
-  - 🇺🇸 L0 | 美国 01 CDN
-  - Toronto  Pro 1-RM9n
-  - 🇺🇸 美国02-9FyF
-  - 🇨🇦 加拿大 - 多伦多 - Amazon Technologies Inc. - 1
-  - 🇺🇸 美国 - 迈阿密 - GTHost - 12
-  - 🇺🇸 美国 - 拉斯维加斯 - FranTech Solutions - 17
-  - 🇳🇱 荷兰 - 阿姆斯特丹 - Datacamp Limited - 1
-  - 🇺🇸 美国 - 休斯敦 - Lamhosting LLC - 20
-  - Oregon -L22 Pro 16
-  - Oregon  Pro 12
+  - 🇺🇸 美国02-uIEk
+  - 轮子2214
+  - warp.irss.eu.org 13
+  - warp.irss.eu.org
+  - 🇺🇸 美国 - 波特蘭 - Amazon.com, Inc. - 4
+  - warp.irss.eu.org 8
+  - Oregon  Pro 12-iDtK
+  - phx-tuic
+  - Oregon -L22 16-C13h
   - 🇺🇸 美国1-1A
-  - 🇯🇵 日本2|@ripaojiedian
-  - Tokyo -L22 Pro 1-48Cc
-  - Tokyo -L22 Pro 7-JFZm
-  - Tokyo -L22 Pro 5-Gvm3
-  - Tokyo  3-v45F
-  - Tokyo  Pro 11-y53J
-  - Tokyo -L22 8-ITtN
-  - Tokyo  13-uAWL
-  - Tokyo  Pro 12-ixf4
-  - Tokyo  Pro 4-mADK
-  - Tokyo  Pro 6-LPNf
-  - pimax_LosAngeles
-  - Tokyo  Pro 2-WVaR
-  - Tokyo  Pro 15-Wv4P
-  - 🇳🇱 荷兰 - 阿姆斯特丹 - Des Equity LLC - 2
-  - 🇺🇸 美国 - 波特蘭 - Amazon.com, Inc. - 1
-  - Virginia  Pro 15
-  - arm1-tuic
-  - Virginia Pro 10
-  - Ireland  Pro 5-4f4O
-  - Ireland  Pro 2-vlj8
-  - Manassas  Pro 19
-  - Ireland -L22 Pro 1-OCWN
-  - Manassas  Pro 35
-  - Ireland  3-9JVo
-  - 🇫🇮 芬兰 - 赫尔辛基 - Hetzner Online GmbH - 1
-  - Manassas  Pro 25
-  - New York   Pro 3
-  - New York   Pro 5
-  - Virginia  Pro 6
-  - Manassas  1
-  - New York   Pro 9
-  - 🇫🇷 法国|@ripaojiedian
-  - New York   7
-  - Seoul  Pro 1-pXBV
-  - London Pro 4-FD07
-  - Seoul  Pro 4-pXVX
-  - Amsterdam  Pro 15-IENv
-  - Amsterdam  22-IkAl
-  - Amsterdam  11-ysux
-  - Amsterdam  19-wz8g
-  - Amsterdam  Pro 3-syjU
-  - Seoul -L22 Pro 2-pdYO
-  - Amsterdam  18-xnkZ
-  - Paris 1-OGtz
-  - Amsterdam  28-Jx3e
-  - Amsterdam  Pro 6-NZed
-  - Amsterdam  17-Nqgh
-  - Amsterdam 25-R511
-  - Amsterdam  13-5x9Q
-  - Amsterdam  Pro 24-77lx
-  - Amsterdam  27-2KT6
-  - Seoul  Pro 3-Jucy
-  - Amsterdam  Pro 14-1rQM
-  - Amsterdam  10-bqav
-  - Amsterdam  Pro 7-mNqA
-  - New York   8
-  - Amsterdam  Pro 9-Rki7
-  - London  Pro 15-ZPFv
-  - 🇫🇷 法国 - 巴黎 - Online S.A.S. - 1
-  - Amsterdam  Pro 16-qNWz
-  - Frankfurt -L22 1-aOWm
-  - Frankfurt  Pro 13-JOEg
-  - Ponte San Pietro Pro 2-2Yru
-  - Frankfurt  4-nHxl
-  - Ponte San Pietro Pro 1-Pgo6
-  - Frankfurt  6-FVQg
-  - Frankfurt  8-l15f
-  - Frankfurt  18-Su6b
-  - Toronto  Pro 2
-  - 🇩🇪 德国 - Frankfurt am Main - Amazon Technologies Inc. - 2
-  - Frankfurt  16-XNV0
-  - Toronto  Pro 1
-  - Ohio  Pro 20
-  - 🇰🇷 韩国|@ripaojiedian
-  - Sydney  Pro 5-9PXv
-  - Sydney  3-nuLW
-  - Sydney Pro 2-NY53
-  - Warsaw  8-SXBu
-  - Stockholm Pro 1-SCmV
-  - Warsaw Pro 5-a5PJ
-  - Warsaw  Pro 6-n13Z
-  - Ohio -L22 2
-  - Warsaw  7-CVI2
+  - Hy2-phx-arm
+  - 🇺🇸 美国 - 波特蘭 - Amazon.com, Inc. - 22
+  - 🇺🇸 美国 - 海厄利亞 - M247 Europe SRL - 3
   - 🇺🇸 美国 - 波特蘭 - Amazon.com, Inc. - 23
-  - 🇭🇰 香港1-1A
-  - Amsterdam  Pro 15
-  - Warsaw  3-FlLM
-  - 🇸🇬 L0 | 新加坡 01 CDN
-  - Tokyo  Pro 12
-  - Singapore  8-wst8
-  - Tokyo  Pro 15
-  - Tokyo  Pro 6
-  - Tokyo  2
-  - Singapore  Pro 7-E7T9
-  - Singapore  1-qbvw
-  - Tokyo -L22 Pro 7
-  - Singapore -L22 Pro 4-71r0
-  - Tokyo -L22 8
-  - rea-amd2
-  - Singapore  Pro 15-OViN
-  - Tokyo -L22 Pro 5
-  - Singapore  Pro 5-yysr
-  - Istanbul  Pro 1-pyjU
-  - Tokyo  Pro 11
-  - Singapore -L22 Pro 9-lqUq
-  - Singapore  Pro 6-okl0
-  - Singapore 2-2k9D
-  - Singapore  Pro 10-qfO5
-  - Tokyo  4
-  - Singapore -L22 Pro 3-D8aR
-  - Tokyo  Pro 3
-  - Singapore  Pro 13-KJdJ
-  - Singapore -L22 Pro 11-lHBI
-  - Tokyo -L22 Pro 1
-  - Tokyo  13
-  - Ireland -L22 1
-  - Ireland  Pro 5
-  - 🇺🇸 美国高速中转4
-  - Manila Pro 1-mI6t
-  - Ireland  Pro 3
-  - 🇭🇰 香港2|@ripaojiedian
-  - Hy2-Tokyo-arm1
-  - 🇳🇴 挪威 - Lorenskog - Microsoft Corporation - 1
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1G-XyUf
-  - Hy2-Tokyo-amd2
-  - Ireland  Pro 2
-  - Hy2-Tokyo-arm2
-  - 🇯🇵 L0 | 日本 01 CDN
-  - 🇭🇰 香港|@ripaojiedian
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1C
-  - Kuala Lumpur Pro 1-LUUj
-  - Seoul -L22 2
-  - London Pro 4
-  - Seoul  Pro 1
-  - Seoul  Pro 3
-  - Amsterdam  19
-  - Amsterdam 25
-  - Paris Pro 1
-  - amd-tuic
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1F
-  - Amsterdam  Pro 24
-  - Amsterdam  Pro 28
-  - Seoul  Pro 4
-  - Amsterdam  Pro 27
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1A
-  - Frankfurt -L22 1
-  - Amsterdam  13
-  - Frankfurt  8
-  - Frankfurt  Pro 16
-  - Frankfurt  Pro 13
-  - Frankfurt  6
-  - 🇨🇦 L0 | 加拿大 01 CDN
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1H
-  - Frankfurt  18
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1E
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1D-TX5U
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1I
-  - London  15
-  - Ponte San Pietro Pro 1
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1B
-  - Frankfurt  4
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1F-XZHu
-  - 🇵🇱 pol13-Hy2
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1E-mw0h
-  - Ponte San Pietro Pro 2
-  - Riyadh Pro 1-160Q
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1D
-  - 🇵🇱 波兰 - 华沙 - Melbikomas UAB - 4
-  - 轮子1213
-  - 🇵🇱 pol-Hy2
-  - 🇵🇱 pol1-Hy2
-  - Stockholm Pro 1
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1G
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1H-XbW5
-  - Amsterdam  17
-  - Amsterdam  6
-  - Amsterdam  9
-  - rea-arm2
-  - Amsterdam  11
-  - Amsterdam  22
-  - Amsterdam  14
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1A-QP6H
-  - 🇹🇼 台湾|@ripaojiedian
-  - Amsterdam  3
-  - Mumbai  Pro 4-80Xl
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1B-DHNT
-  - Amsterdam  Pro 16
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1C-nTqn
-  - Singapore  Pro 13
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1J
-  - Singapore  Pro 6
-  - Singapore  8
-  - Singapore -L22 Pro 3
-  - Amsterdam  Pro 7
-  - Istanbul  Pro 1
-  - Singapore  Pro 15
-  - Singapore  Pro 10
-  - Singapore  7
-  - Amsterdam  Pro 18
-  - Mumbai Pro 3-7Gf5
-  - rea-arm1
-  - 🇯🇵 日本 - 东京 - Amazon.com, Inc. - 5
-  - Kathmandu Pro 1-nHZD
-  - Singapore -L22 11
-  - Singapore -L22 Pro 4
-  - Singapore -L22 Pro 9
-  - Amsterdam  10
-  - Singapore  Pro 5
-  - 🇹🇷 土耳其 - 伊斯坦布尔 - Mehmet Selim Sahin - 1
-  - 🇸🇬 新加坡 - 新加坡 - Microsoft Corporation - 3
-  - Warsaw 5
-  - Warsaw  8
-  - Kuala Lumpur Pro 1
+  - 🇺🇸 美国 - 波特蘭 - Amazon.com, Inc. - 11
+  - phx-reality
+  - Ohio  Pro 20-ahTL
+  - Ohio -L22 Pro 2-OBuG
+  - 🇺🇸 美国 - 迈阿密 - GTHost - 8
+  - warp.irss.eu.org 7
+  - 🇺🇸 美国 - 迈阿密 - GTHost - 9
+  - 🇺🇸 美国 - 迈阿密 - GTHost - 18
+  - 🇺🇸 美国 - 迈阿密 - GTHost - 12
+  - 🇺🇸 美国 - 迈阿密 - GTHost - 14
+  - Manassas  35-iKYB
+  - 🇺🇸 美国 - 迈阿密 - GTHost - 10
+  - Manassas  1-XLSF
+  - 🇺🇸 美国 - 迈阿密 - GTHost - 7
+  - Virginia  Pro 6-95os
   - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 4
-  - Manila Pro 1
+  - 🇺🇸 美国 - 迈阿密 - GTHost - 6
+  - Virginia  Pro 15-Kqrm
+  - Virginia 10-nTAw
+  - Manassas  Pro 19-WTYK
+  - 🇺🇸 美国 - 迈阿密 - GTHost - 13
+  - 🇺🇸 美国 - 迈阿密 - GTHost - 15
+  - 🇺🇸 美国 - 迈阿密 - GTHost - 19
+  - 🇺🇸 美国 - 迈阿密 - GTHost - 16
+  - Manassas  25-Je5e
+  - New York   Pro 9-7fFN
+  - New York   7-0iWX
+  - New York   Pro 8-E5mM
+  - Toronto  Pro 1-lRP4
+  - New York   5-QtEL
+  - New York   3-CLfU
+  - Toronto  Pro 2-oJB2
+  - 🇯🇵 日本特殊|@ripaojiedian
+  - 🇸🇬 狮城特殊|@ripaojiedian
+  - arm1-tuic
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Datacamp Limited - 1
+  - Tokyo  Pro 3-jF3E
+  - Tokyo  Pro 4-zYcd
+  - Tokyo  Pro 15-SwuB
+  - Tokyo  Pro 2-KqOv
+  - Tokyo  Pro 12-a4og
+  - Tokyo -L22 Pro 8-H4jM
+  - Tokyo  Pro 13-eGK1
+  - 🇯🇵 日本2|@ripaojiedian
+  - Tokyo -L22 7-Xt1o
+  - Tokyo -L22 Pro 1-ODmj
+  - Tokyo  Pro 11-umGu
+  - 🇯🇵 日本1-1B
+  - Tokyo -L22 Pro 5-cqDS
+  - Tokyo  Pro 6-sVDg
+  - 🇭🇰 香港6高速中转-1A 2
+  - 🇺🇸 美国 - 拉斯维加斯 - FranTech Solutions - 17
+  - 🇭🇰 香港6高速中转-1B 2
+  - 🇫🇷 法国|@ripaojiedian
+  - 🇯🇵 日本1高速中转-1A 2
+  - Oregon -L22 Pro 16
+  - 🇺🇸 美国 - 休斯敦 - Lamhosting LLC - 20
+  - 🇺🇸 美国 - 凤凰城 - Oracle Corporation - 29
+  - 🇯🇵 日本1高速中转-1B 2
+  - 🇫🇮 芬兰 - 赫尔辛基 - Hetzner Online GmbH - 1
+  - Oregon  Pro 12
+  - 🇳🇴 挪威 - Lorenskog - Microsoft Corporation - 1
+  - 🇸🇬 新加坡2高速中转3x-1A 2
+  - 🇺🇸 美国1-1B
+  - Seoul  Pro 4-zBDm
+  - Seoul  Pro 1-AwSd
+  - 🇸🇬 新加坡1高速中转3x-1B 2
+  - Seoul -L22 2-BQ9m
+  - Seoul  Pro 3-eNTt
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Des Equity LLC - 2
+  - Ireland  3-y3Kn
+  - Ireland  Pro 2-VYkQ
+  - Ireland -L22 1-qeLD
+  - Ireland  Pro 5-Vhio
+  - 🇸🇬 新加坡3高速中转3x-1B 2
+  - pimax_LosAngeles
+  - 🇸🇬 新加坡2高速中转3x-1B 2
+  - 🇸🇬 新加坡1高速中转3x-1A 2
+  - 🇻🇳 越南高速中转-1A 2
+  - 🇻🇳 越南高速中转-1B 2
+  - 🇯🇵 日本3SS中转25x-1B 2
+  - 🇸🇬 新加坡3高速中转3x-1A 2
+  - Sydney  3-3HHx
+  - Sydney  Pro 5-NDBC
+  - Sydney 2-iiSp
+  - London Pro 4-KOJT
+  - 🇯🇵 日本 - 东京 - Amazon.com, Inc. - 3
+  - Amsterdam  Pro 3-XcXj
+  - Amsterdam  Pro 6-OxqX
+  - Amsterdam  Pro 15-KYrL
+  - Amsterdam  16-gzCF
+  - Amsterdam  Pro 19-dtes
+  - Amsterdam  Pro 11-9zfj
+  - Amsterdam  Pro 18-HKGR
+  - Amsterdam  Pro 7-X0Gl
+  - Amsterdam  28-sxHo
+  - Amsterdam  Pro 27-9lfA
+  - Amsterdam  22-jeHo
+  - Amsterdam Pro 25-cM3R
+  - Amsterdam  Pro 9-OroF
+  - Amsterdam  14-G4uB
+  - Amsterdam  Pro 10-cIEn
+  - Amsterdam  Pro 17-hF4G
+  - Paris Pro 1-1SSN
+  - London  Pro 15-o2Id
+  - Amsterdam  Pro 13-Zjgw
+  - 🇺🇸 L0 | 美国 01 CDN
+  - Hy2-Tokyo-amd2
+  - 🇵🇱 波兰 - 华沙 - Melbikomas UAB - 1
+  - 🇫🇷 法国 - 巴黎 - Online S.A.S. - 1
+  - 🇨🇦 L0 | 加拿大 01 CDN
+  - Frankfurt  Pro 13-k9n2
+  - Frankfurt  Pro 18-IZwS
+  - Frankfurt  4-NocY
+  - Frankfurt  6-uhoT
+  - Ponte San Pietro Pro 2-mEZa
+  - Frankfurt  Pro 16-jF3h
+  - Ponte San Pietro Pro 1-Aw1b
+  - Ohio -L22 2
+  - Manassas  19
+  - 🇩🇪 德国 - Frankfurt am Main - Amazon Technologies Inc. - 1
+  - Frankfurt -L22 1-exzA
+  - Manassas  Pro 25
+  - Frankfurt  Pro 8-5O2o
+  - Manassas  Pro 1
+  - Virginia  Pro 6
+  - rea-arm1
+  - rea-arm2
+  - 🇯🇵 日本3SS中转25x-1A 2
+  - Singapore  8-A5SM
+  - Singapore  1-30dE
+  - Singapore Pro 2-Zs98
+  - Singapore  Pro 7-hyxb
+  - Prague Pro 2-pgsu
+  - New York   7
+  - Singapore -L22 Pro 11-Xpar
+  - Singapore  Pro 6-b99w
+  - Singapore  Pro 5-ckj3
+  - Singapore -L22 Pro 9-8cyr
+  - Singapore -L22 Pro 4-p99K
+  - Singapore  Pro 10-uA0c
+  - Stockholm 1-bqcG
+  - Singapore  Pro 13-RVSt
+  - Singapore  Pro 15-XHzW
+  - Singapore -L22 Pro 3-wv6q
+  - 🇰🇷 韩国2|@ripaojiedian
+  - Toronto  2
+  - 🇹🇭 泰国ISP高速中转3x-1A 2
+  - 🇹🇼 台湾|@ripaojiedian
+  - New York   5
+  - Ohio  Pro 20
+  - Warsaw  Pro 6-KvUa
+  - Warsaw  7-rCDI
+  - Warsaw  8-k8CK
+  - Warsaw Pro 5-70aB
+  - CDN优选-1
+  - Manila Pro 1-qPqc
+  - Warsaw  Pro 3-sXaZ
+  - 🇺🇸 美国高速中转4
+  - 🇸🇬 新加坡1-1A
+  - Kuala Lumpur Pro 1-iJ33
+  - Virginia Pro 10
+  - Virginia  Pro 15
+  - New York   Pro 9
+  - CDN优选-3
+  - Istanbul  Pro 1-EJ5j
+  - 🇭🇰 香港2|@ripaojiedian
+  - New York   Pro 3
+  - Moscow Pro 3-f52N
+  - Tokyo  Pro 15
+  - amd-tuic
+  - Tokyo  Pro 6
+  - Tokyo  Pro 2
+  - Tokyo  13
+  - Tokyo  Pro 3
+  - Hy2-Tokyo-arm2
+  - Tokyo -L22 8
+  - Tokyo  4
+  - Bangkok Pro 1-FWfP
   - 🇺🇸 美国 - Elk Grove Village - CacheFly - 24
-  - Warsaw  6
-  - Warsaw  7
-  - 🇩🇪 L0 | 德国 01 CDN
+  - 🇵🇱 pol13-Hy2
+  - 🇵🇱 pol1-Hy2
+  - Tokyo -L22 Pro 5
+  - 🇭🇰 香港|@ripaojiedian
+  - Tokyo -L22 Pro 1
+  - Toronto  Pro 1
+  - Tokyo -L22 Pro 7
+  - 🇵🇱 pol-Hy2
+  - Tokyo  Pro 12
+  - Tokyo  11
+  - Amsterdam  Pro 24-pZ4r
+  - 🇩🇪 德国 - Frankfurt am Main - Amazon.com - 4
+  - New York   8
+  - Seoul -L22 Pro 2
+  - Manassas  Pro 35
+  - Mumbai  Pro 4-VjMO
+  - Ireland  2
+  - Mumbai Pro 3-fmPV
+  - 🇺🇸 美国 - 波特蘭 - Amazon.com, Inc. - 1
+  - 轮子2213
+  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1I
+  - 🇯🇵 L0 | 日本 01 CDN
+  - CDN优选-8
+  - Seoul  Pro 4
+  - Seoul  Pro 1
+  - CDN优选-2
+  - Ireland  Pro 5
+  - Seoul  Pro 3
+  - Ireland -L22 Pro 1
+  - Riyadh Pro 1-3slF
+  - London Pro 4
+  - Lagos Pro 2-Y4bh
+  - Lagos Pro 3-LYwo
+  - rea-amd2
+  - Amsterdam Pro 25
+  - Paris Pro 1
+  - Amsterdam  Pro 28
+  - Amsterdam  19
+  - Hy2-Tokyo-arm1
+  - Ireland  Pro 3
+  - 🇭🇰 香港1高速中转2x-1B 2
+  - 🇭🇰 香港2高速中转2x-1A 2
+  - Kathmandu Pro 1-VrWC
+  - 🇭🇰 香港2高速中转2x-1B 2
+  - Frankfurt  6
+  - London  15
+  - Frankfurt  Pro 4
+  - Frankfurt  16
+  - Frankfurt  Pro 18
+  - 🇷🇺 俄罗斯-圣彼得堡-005-1B
+  - 🇭🇰 香港1高速中转2x-1A 2
+  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1G
+  - Amsterdam  27
+  - Frankfurt -L22 1
+  - 🇹🇷 土耳其 - 伊斯坦布尔 - Mehmet Selim Sahin - 1
+  - Karachi Pro 2-F3LV
+  - Fujairah Pro 1-njfG
+  - Frankfurt  Pro 8
+  - Singapore  1
+  - Singapore 2
+  - Singapore  7
+  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1E
+  - Frankfurt  Pro 13
+  - Amsterdam  24
+  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1A
+  - Stockholm 1
+  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1B
+  - Manama Pro 1-PZzK
+  - Ponte San Pietro Pro 2
   - 🇦🇺 L0 | 澳大利亚 01 CDN
-  - 🇧🇷 L0 | 巴西 01 CDN
-  - Warsaw  Pro 3
-  - Riyadh Pro 1
-  - 🇰🇷 L0 | 韩国 01 CDN
-  - Mumbai Pro 3
-  - Mumbai  Pro 4
+  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1D
+  - Amsterdam  14
+  - Amsterdam  Pro 3
+  - Amsterdam  7
+  - Amsterdam  Pro 6
+  - Amsterdam  Pro 11
+  - Singapore  Pro 15
+  - Amsterdam  Pro 15
+  - Amsterdam  Pro 17
+  - Amsterdam  Pro 18
+  - Singapore  Pro 5
+  - Singapore -L22 Pro 4
+  - Prague Pro 2
   - 🇯🇵 日本1-1A
-  - 🇭🇰 香港6|@ripaojiedian
-  - 🇯🇵 日本4|@ripaojiedian
+  - Amsterdam  Pro 9
+  - Kuala Lumpur Pro 1
+  - Singapore  Pro 8
+  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1H
+  - Singapore -L22 Pro 9
+  - Amsterdam  22
+  - Amsterdam  Pro 10
+  - Singapore  Pro 10
+  - Amsterdam  Pro 13
+  - Singapore -L22 11
+  - Amsterdam  16
+  - Ponte San Pietro Pro 1
   - 🇻🇳 越南|@ripaojiedian
+  - Singapore  Pro 13
+  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1C
+  - 🇯🇵 日本 - 东京 - Amazon.com, Inc. - 5
+  - Warsaw  6
+  - Singapore -L22 Pro 3
+  - Istanbul  Pro 1
+  - Moscow Pro 3
+  - Warsaw Pro 5
+  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1F
+  - Singapore  Pro 6
+  - Bangkok Pro 1
+  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1G-aLLe
+  - 🇰🇷 L0 | 韩国 01 CDN
+  - CDN优选-6
+  - Warsaw  8
+  - tg频道:@ripaojiedian
+  - Manila Pro 1
+  - 🇸🇬 L0 | 新加坡 01 CDN
+  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1D-NTLZ
+  - Warsaw  7
+  - 🇹🇭 泰国ISP高速中转3x-1B 2
+  - 🇩🇪 L0 | 德国 01 CDN
+  - Sydney  Pro 5
+  - Mumbai  Pro 4
+  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1J
+  - Mumbai Pro 3
+  - 🇭🇰 香港6|@ripaojiedian
+  - 🇹🇷 土耳其高速中转-1B 2
+  - Warsaw  3
+  - CDN优选-5
   url: http://www.gstatic.com/generate_204
   interval: 300
 - name: 手动选择
   type: select
   proxies:
+  - warp.irss.eu.org 3
   - 🇺🇸 美国 - 洛杉矶 - M247 Europe SRL - 2
-  - warp.irss.eu.org 12
-  - warp.irss.eu.org 14
-  - warp.irss.eu.org 5
-  - warp.irss.eu.org 15
-  - 轮子3214
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 28
   - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 26
-  - warp.irss.eu.org 11
-  - warp.irss.eu.org 13
   - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 27
-  - warp.irss.eu.org 8
+  - warp.irss.eu.org 12
   - warp.irss.eu.org 10
-  - 🇺🇸 美国1-1B
-  - warp.irss.eu.org
+  - warp.irss.eu.org 4
   - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 25
-  - phx-tuic
+  - warp.irss.eu.org 11
+  - warp.irss.eu.org 5
+  - warp.irss.eu.org 14
   - warp.irss.eu.org 2
   - warp.irss.eu.org 6
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 28
-  - 🇺🇸 美国 - 海厄利亞 - M247 Europe SRL - 3
-  - 🇺🇸 美国 - 波特蘭 - Amazon.com, Inc. - 11
   - warp.irss.eu.org 9
-  - warp.irss.eu.org 4
-  - Oregon  Pro 12-ga0j
-  - Oregon -L22 16-0i5j
-  - Hy2-phx-arm
-  - warp.irss.eu.org 7
-  - 🇺🇸 美国 - 迈阿密 - GTHost - 7
-  - phx-reality
-  - 🇺🇸 美国 - 迈阿密 - GTHost - 16
-  - Manassas  19-pZpY
-  - 🇺🇸 美国 - 迈阿密 - GTHost - 9
-  - 🇺🇸 美国 - 迈阿密 - GTHost - 15
-  - Virginia  Pro 6-eixC
-  - 🇺🇸 美国 - 迈阿密 - GTHost - 19
-  - Manassas  35-u9ZK
-  - Ohio  Pro 20-1OwC
-  - Ohio -L22 Pro 2-2HYI
-  - Virginia 10-8Wjk
-  - 🇺🇸 美国 - 迈阿密 - GTHost - 18
-  - 🇺🇸 美国 - 迈阿密 - GTHost - 6
-  - 🇺🇸 美国 - 迈阿密 - GTHost - 10
-  - Manassas  Pro 1-0atV
-  - Manassas  Pro 25-gvxa
-  - New York   7-2dyT
-  - Virginia  Pro 15-tWe4
-  - New York   3-7dP2
-  - 🇺🇸 美国 - 迈阿密 - GTHost - 13
-  - New York   9-F78j
-  - 🇺🇸 美国 - 迈阿密 - GTHost - 14
-  - New York   8-oDcQ
-  - 🇺🇸 美国 - 迈阿密 - GTHost - 8
-  - New York   Pro 5-I4ir
-  - Toronto  Pro 2-59Rh
-  - 🇯🇵 日本 - 东京 - Amazon Technologies Inc - 1
-  - 🇺🇸 L0 | 美国 01 CDN
-  - Toronto  Pro 1-RM9n
-  - 🇺🇸 美国02-9FyF
-  - 🇨🇦 加拿大 - 多伦多 - Amazon Technologies Inc. - 1
-  - 🇺🇸 美国 - 迈阿密 - GTHost - 12
-  - 🇺🇸 美国 - 拉斯维加斯 - FranTech Solutions - 17
-  - 🇳🇱 荷兰 - 阿姆斯特丹 - Datacamp Limited - 1
-  - 🇺🇸 美国 - 休斯敦 - Lamhosting LLC - 20
-  - Oregon -L22 Pro 16
-  - Oregon  Pro 12
+  - 🇺🇸 美国02-uIEk
+  - 轮子2214
+  - warp.irss.eu.org 13
+  - warp.irss.eu.org
+  - 🇺🇸 美国 - 波特蘭 - Amazon.com, Inc. - 4
+  - warp.irss.eu.org 8
+  - Oregon  Pro 12-iDtK
+  - phx-tuic
+  - Oregon -L22 16-C13h
   - 🇺🇸 美国1-1A
-  - 🇯🇵 日本2|@ripaojiedian
-  - Tokyo -L22 Pro 1-48Cc
-  - Tokyo -L22 Pro 7-JFZm
-  - Tokyo -L22 Pro 5-Gvm3
-  - Tokyo  3-v45F
-  - Tokyo  Pro 11-y53J
-  - Tokyo -L22 8-ITtN
-  - Tokyo  13-uAWL
-  - Tokyo  Pro 12-ixf4
-  - Tokyo  Pro 4-mADK
-  - Tokyo  Pro 6-LPNf
-  - pimax_LosAngeles
-  - Tokyo  Pro 2-WVaR
-  - Tokyo  Pro 15-Wv4P
-  - 🇳🇱 荷兰 - 阿姆斯特丹 - Des Equity LLC - 2
-  - 🇺🇸 美国 - 波特蘭 - Amazon.com, Inc. - 1
-  - Virginia  Pro 15
-  - arm1-tuic
-  - Virginia Pro 10
-  - Ireland  Pro 5-4f4O
-  - Ireland  Pro 2-vlj8
-  - Manassas  Pro 19
-  - Ireland -L22 Pro 1-OCWN
-  - Manassas  Pro 35
-  - Ireland  3-9JVo
-  - 🇫🇮 芬兰 - 赫尔辛基 - Hetzner Online GmbH - 1
-  - Manassas  Pro 25
-  - New York   Pro 3
-  - New York   Pro 5
-  - Virginia  Pro 6
-  - Manassas  1
-  - New York   Pro 9
-  - 🇫🇷 法国|@ripaojiedian
-  - New York   7
-  - Seoul  Pro 1-pXBV
-  - London Pro 4-FD07
-  - Seoul  Pro 4-pXVX
-  - Amsterdam  Pro 15-IENv
-  - Amsterdam  22-IkAl
-  - Amsterdam  11-ysux
-  - Amsterdam  19-wz8g
-  - Amsterdam  Pro 3-syjU
-  - Seoul -L22 Pro 2-pdYO
-  - Amsterdam  18-xnkZ
-  - Paris 1-OGtz
-  - Amsterdam  28-Jx3e
-  - Amsterdam  Pro 6-NZed
-  - Amsterdam  17-Nqgh
-  - Amsterdam 25-R511
-  - Amsterdam  13-5x9Q
-  - Amsterdam  Pro 24-77lx
-  - Amsterdam  27-2KT6
-  - Seoul  Pro 3-Jucy
-  - Amsterdam  Pro 14-1rQM
-  - Amsterdam  10-bqav
-  - Amsterdam  Pro 7-mNqA
-  - New York   8
-  - Amsterdam  Pro 9-Rki7
-  - London  Pro 15-ZPFv
-  - 🇫🇷 法国 - 巴黎 - Online S.A.S. - 1
-  - Amsterdam  Pro 16-qNWz
-  - Frankfurt -L22 1-aOWm
-  - Frankfurt  Pro 13-JOEg
-  - Ponte San Pietro Pro 2-2Yru
-  - Frankfurt  4-nHxl
-  - Ponte San Pietro Pro 1-Pgo6
-  - Frankfurt  6-FVQg
-  - Frankfurt  8-l15f
-  - Frankfurt  18-Su6b
-  - Toronto  Pro 2
-  - 🇩🇪 德国 - Frankfurt am Main - Amazon Technologies Inc. - 2
-  - Frankfurt  16-XNV0
-  - Toronto  Pro 1
-  - Ohio  Pro 20
-  - 🇰🇷 韩国|@ripaojiedian
-  - Sydney  Pro 5-9PXv
-  - Sydney  3-nuLW
-  - Sydney Pro 2-NY53
-  - Warsaw  8-SXBu
-  - Stockholm Pro 1-SCmV
-  - Warsaw Pro 5-a5PJ
-  - Warsaw  Pro 6-n13Z
-  - Ohio -L22 2
-  - Warsaw  7-CVI2
+  - Hy2-phx-arm
+  - 🇺🇸 美国 - 波特蘭 - Amazon.com, Inc. - 22
+  - 🇺🇸 美国 - 海厄利亞 - M247 Europe SRL - 3
   - 🇺🇸 美国 - 波特蘭 - Amazon.com, Inc. - 23
-  - 🇭🇰 香港1-1A
-  - Amsterdam  Pro 15
-  - Warsaw  3-FlLM
-  - 🇸🇬 L0 | 新加坡 01 CDN
-  - Tokyo  Pro 12
-  - Singapore  8-wst8
-  - Tokyo  Pro 15
-  - Tokyo  Pro 6
-  - Tokyo  2
-  - Singapore  Pro 7-E7T9
-  - Singapore  1-qbvw
-  - Tokyo -L22 Pro 7
-  - Singapore -L22 Pro 4-71r0
-  - Tokyo -L22 8
-  - rea-amd2
-  - Singapore  Pro 15-OViN
-  - Tokyo -L22 Pro 5
-  - Singapore  Pro 5-yysr
-  - Istanbul  Pro 1-pyjU
-  - Tokyo  Pro 11
-  - Singapore -L22 Pro 9-lqUq
-  - Singapore  Pro 6-okl0
-  - Singapore 2-2k9D
-  - Singapore  Pro 10-qfO5
-  - Tokyo  4
-  - Singapore -L22 Pro 3-D8aR
-  - Tokyo  Pro 3
-  - Singapore  Pro 13-KJdJ
-  - Singapore -L22 Pro 11-lHBI
-  - Tokyo -L22 Pro 1
-  - Tokyo  13
-  - Ireland -L22 1
-  - Ireland  Pro 5
-  - 🇺🇸 美国高速中转4
-  - Manila Pro 1-mI6t
-  - Ireland  Pro 3
-  - 🇭🇰 香港2|@ripaojiedian
-  - Hy2-Tokyo-arm1
-  - 🇳🇴 挪威 - Lorenskog - Microsoft Corporation - 1
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1G-XyUf
-  - Hy2-Tokyo-amd2
-  - Ireland  Pro 2
-  - Hy2-Tokyo-arm2
-  - 🇯🇵 L0 | 日本 01 CDN
-  - 🇭🇰 香港|@ripaojiedian
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1C
-  - Kuala Lumpur Pro 1-LUUj
-  - Seoul -L22 2
-  - London Pro 4
-  - Seoul  Pro 1
-  - Seoul  Pro 3
-  - Amsterdam  19
-  - Amsterdam 25
-  - Paris Pro 1
-  - amd-tuic
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1F
-  - Amsterdam  Pro 24
-  - Amsterdam  Pro 28
-  - Seoul  Pro 4
-  - Amsterdam  Pro 27
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1A
-  - Frankfurt -L22 1
-  - Amsterdam  13
-  - Frankfurt  8
-  - Frankfurt  Pro 16
-  - Frankfurt  Pro 13
-  - Frankfurt  6
-  - 🇨🇦 L0 | 加拿大 01 CDN
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1H
-  - Frankfurt  18
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1E
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1D-TX5U
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1I
-  - London  15
-  - Ponte San Pietro Pro 1
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1B
-  - Frankfurt  4
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1F-XZHu
-  - 🇵🇱 pol13-Hy2
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1E-mw0h
-  - Ponte San Pietro Pro 2
-  - Riyadh Pro 1-160Q
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1D
-  - 🇵🇱 波兰 - 华沙 - Melbikomas UAB - 4
-  - 轮子1213
-  - 🇵🇱 pol-Hy2
-  - 🇵🇱 pol1-Hy2
-  - Stockholm Pro 1
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1G
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1H-XbW5
-  - Amsterdam  17
-  - Amsterdam  6
-  - Amsterdam  9
-  - rea-arm2
-  - Amsterdam  11
-  - Amsterdam  22
-  - Amsterdam  14
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1A-QP6H
-  - 🇹🇼 台湾|@ripaojiedian
-  - Amsterdam  3
-  - Mumbai  Pro 4-80Xl
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1B-DHNT
-  - Amsterdam  Pro 16
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1C-nTqn
-  - Singapore  Pro 13
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1J
-  - Singapore  Pro 6
-  - Singapore  8
-  - Singapore -L22 Pro 3
-  - Amsterdam  Pro 7
-  - Istanbul  Pro 1
-  - Singapore  Pro 15
-  - Singapore  Pro 10
-  - Singapore  7
-  - Amsterdam  Pro 18
-  - Mumbai Pro 3-7Gf5
-  - rea-arm1
-  - 🇯🇵 日本 - 东京 - Amazon.com, Inc. - 5
-  - Kathmandu Pro 1-nHZD
-  - Singapore -L22 11
-  - Singapore -L22 Pro 4
-  - Singapore -L22 Pro 9
-  - Amsterdam  10
-  - Singapore  Pro 5
-  - 🇹🇷 土耳其 - 伊斯坦布尔 - Mehmet Selim Sahin - 1
-  - 🇸🇬 新加坡 - 新加坡 - Microsoft Corporation - 3
-  - Warsaw 5
-  - Warsaw  8
-  - Kuala Lumpur Pro 1
+  - 🇺🇸 美国 - 波特蘭 - Amazon.com, Inc. - 11
+  - phx-reality
+  - Ohio  Pro 20-ahTL
+  - Ohio -L22 Pro 2-OBuG
+  - 🇺🇸 美国 - 迈阿密 - GTHost - 8
+  - warp.irss.eu.org 7
+  - 🇺🇸 美国 - 迈阿密 - GTHost - 9
+  - 🇺🇸 美国 - 迈阿密 - GTHost - 18
+  - 🇺🇸 美国 - 迈阿密 - GTHost - 12
+  - 🇺🇸 美国 - 迈阿密 - GTHost - 14
+  - Manassas  35-iKYB
+  - 🇺🇸 美国 - 迈阿密 - GTHost - 10
+  - Manassas  1-XLSF
+  - 🇺🇸 美国 - 迈阿密 - GTHost - 7
+  - Virginia  Pro 6-95os
   - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 4
-  - Manila Pro 1
+  - 🇺🇸 美国 - 迈阿密 - GTHost - 6
+  - Virginia  Pro 15-Kqrm
+  - Virginia 10-nTAw
+  - Manassas  Pro 19-WTYK
+  - 🇺🇸 美国 - 迈阿密 - GTHost - 13
+  - 🇺🇸 美国 - 迈阿密 - GTHost - 15
+  - 🇺🇸 美国 - 迈阿密 - GTHost - 19
+  - 🇺🇸 美国 - 迈阿密 - GTHost - 16
+  - Manassas  25-Je5e
+  - New York   Pro 9-7fFN
+  - New York   7-0iWX
+  - New York   Pro 8-E5mM
+  - Toronto  Pro 1-lRP4
+  - New York   5-QtEL
+  - New York   3-CLfU
+  - Toronto  Pro 2-oJB2
+  - 🇯🇵 日本特殊|@ripaojiedian
+  - 🇸🇬 狮城特殊|@ripaojiedian
+  - arm1-tuic
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Datacamp Limited - 1
+  - Tokyo  Pro 3-jF3E
+  - Tokyo  Pro 4-zYcd
+  - Tokyo  Pro 15-SwuB
+  - Tokyo  Pro 2-KqOv
+  - Tokyo  Pro 12-a4og
+  - Tokyo -L22 Pro 8-H4jM
+  - Tokyo  Pro 13-eGK1
+  - 🇯🇵 日本2|@ripaojiedian
+  - Tokyo -L22 7-Xt1o
+  - Tokyo -L22 Pro 1-ODmj
+  - Tokyo  Pro 11-umGu
+  - 🇯🇵 日本1-1B
+  - Tokyo -L22 Pro 5-cqDS
+  - Tokyo  Pro 6-sVDg
+  - 🇭🇰 香港6高速中转-1A 2
+  - 🇺🇸 美国 - 拉斯维加斯 - FranTech Solutions - 17
+  - 🇭🇰 香港6高速中转-1B 2
+  - 🇫🇷 法国|@ripaojiedian
+  - 🇯🇵 日本1高速中转-1A 2
+  - Oregon -L22 Pro 16
+  - 🇺🇸 美国 - 休斯敦 - Lamhosting LLC - 20
+  - 🇺🇸 美国 - 凤凰城 - Oracle Corporation - 29
+  - 🇯🇵 日本1高速中转-1B 2
+  - 🇫🇮 芬兰 - 赫尔辛基 - Hetzner Online GmbH - 1
+  - Oregon  Pro 12
+  - 🇳🇴 挪威 - Lorenskog - Microsoft Corporation - 1
+  - 🇸🇬 新加坡2高速中转3x-1A 2
+  - 🇺🇸 美国1-1B
+  - Seoul  Pro 4-zBDm
+  - Seoul  Pro 1-AwSd
+  - 🇸🇬 新加坡1高速中转3x-1B 2
+  - Seoul -L22 2-BQ9m
+  - Seoul  Pro 3-eNTt
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Des Equity LLC - 2
+  - Ireland  3-y3Kn
+  - Ireland  Pro 2-VYkQ
+  - Ireland -L22 1-qeLD
+  - Ireland  Pro 5-Vhio
+  - 🇸🇬 新加坡3高速中转3x-1B 2
+  - pimax_LosAngeles
+  - 🇸🇬 新加坡2高速中转3x-1B 2
+  - 🇸🇬 新加坡1高速中转3x-1A 2
+  - 🇻🇳 越南高速中转-1A 2
+  - 🇻🇳 越南高速中转-1B 2
+  - 🇯🇵 日本3SS中转25x-1B 2
+  - 🇸🇬 新加坡3高速中转3x-1A 2
+  - Sydney  3-3HHx
+  - Sydney  Pro 5-NDBC
+  - Sydney 2-iiSp
+  - London Pro 4-KOJT
+  - 🇯🇵 日本 - 东京 - Amazon.com, Inc. - 3
+  - Amsterdam  Pro 3-XcXj
+  - Amsterdam  Pro 6-OxqX
+  - Amsterdam  Pro 15-KYrL
+  - Amsterdam  16-gzCF
+  - Amsterdam  Pro 19-dtes
+  - Amsterdam  Pro 11-9zfj
+  - Amsterdam  Pro 18-HKGR
+  - Amsterdam  Pro 7-X0Gl
+  - Amsterdam  28-sxHo
+  - Amsterdam  Pro 27-9lfA
+  - Amsterdam  22-jeHo
+  - Amsterdam Pro 25-cM3R
+  - Amsterdam  Pro 9-OroF
+  - Amsterdam  14-G4uB
+  - Amsterdam  Pro 10-cIEn
+  - Amsterdam  Pro 17-hF4G
+  - Paris Pro 1-1SSN
+  - London  Pro 15-o2Id
+  - Amsterdam  Pro 13-Zjgw
+  - 🇺🇸 L0 | 美国 01 CDN
+  - Hy2-Tokyo-amd2
+  - 🇵🇱 波兰 - 华沙 - Melbikomas UAB - 1
+  - 🇫🇷 法国 - 巴黎 - Online S.A.S. - 1
+  - 🇨🇦 L0 | 加拿大 01 CDN
+  - Frankfurt  Pro 13-k9n2
+  - Frankfurt  Pro 18-IZwS
+  - Frankfurt  4-NocY
+  - Frankfurt  6-uhoT
+  - Ponte San Pietro Pro 2-mEZa
+  - Frankfurt  Pro 16-jF3h
+  - Ponte San Pietro Pro 1-Aw1b
+  - Ohio -L22 2
+  - Manassas  19
+  - 🇩🇪 德国 - Frankfurt am Main - Amazon Technologies Inc. - 1
+  - Frankfurt -L22 1-exzA
+  - Manassas  Pro 25
+  - Frankfurt  Pro 8-5O2o
+  - Manassas  Pro 1
+  - Virginia  Pro 6
+  - rea-arm1
+  - rea-arm2
+  - 🇯🇵 日本3SS中转25x-1A 2
+  - Singapore  8-A5SM
+  - Singapore  1-30dE
+  - Singapore Pro 2-Zs98
+  - Singapore  Pro 7-hyxb
+  - Prague Pro 2-pgsu
+  - New York   7
+  - Singapore -L22 Pro 11-Xpar
+  - Singapore  Pro 6-b99w
+  - Singapore  Pro 5-ckj3
+  - Singapore -L22 Pro 9-8cyr
+  - Singapore -L22 Pro 4-p99K
+  - Singapore  Pro 10-uA0c
+  - Stockholm 1-bqcG
+  - Singapore  Pro 13-RVSt
+  - Singapore  Pro 15-XHzW
+  - Singapore -L22 Pro 3-wv6q
+  - 🇰🇷 韩国2|@ripaojiedian
+  - Toronto  2
+  - 🇹🇭 泰国ISP高速中转3x-1A 2
+  - 🇹🇼 台湾|@ripaojiedian
+  - New York   5
+  - Ohio  Pro 20
+  - Warsaw  Pro 6-KvUa
+  - Warsaw  7-rCDI
+  - Warsaw  8-k8CK
+  - Warsaw Pro 5-70aB
+  - CDN优选-1
+  - Manila Pro 1-qPqc
+  - Warsaw  Pro 3-sXaZ
+  - 🇺🇸 美国高速中转4
+  - 🇸🇬 新加坡1-1A
+  - Kuala Lumpur Pro 1-iJ33
+  - Virginia Pro 10
+  - Virginia  Pro 15
+  - New York   Pro 9
+  - CDN优选-3
+  - Istanbul  Pro 1-EJ5j
+  - 🇭🇰 香港2|@ripaojiedian
+  - New York   Pro 3
+  - Moscow Pro 3-f52N
+  - Tokyo  Pro 15
+  - amd-tuic
+  - Tokyo  Pro 6
+  - Tokyo  Pro 2
+  - Tokyo  13
+  - Tokyo  Pro 3
+  - Hy2-Tokyo-arm2
+  - Tokyo -L22 8
+  - Tokyo  4
+  - Bangkok Pro 1-FWfP
   - 🇺🇸 美国 - Elk Grove Village - CacheFly - 24
-  - Warsaw  6
-  - Warsaw  7
-  - 🇩🇪 L0 | 德国 01 CDN
+  - 🇵🇱 pol13-Hy2
+  - 🇵🇱 pol1-Hy2
+  - Tokyo -L22 Pro 5
+  - 🇭🇰 香港|@ripaojiedian
+  - Tokyo -L22 Pro 1
+  - Toronto  Pro 1
+  - Tokyo -L22 Pro 7
+  - 🇵🇱 pol-Hy2
+  - Tokyo  Pro 12
+  - Tokyo  11
+  - Amsterdam  Pro 24-pZ4r
+  - 🇩🇪 德国 - Frankfurt am Main - Amazon.com - 4
+  - New York   8
+  - Seoul -L22 Pro 2
+  - Manassas  Pro 35
+  - Mumbai  Pro 4-VjMO
+  - Ireland  2
+  - Mumbai Pro 3-fmPV
+  - 🇺🇸 美国 - 波特蘭 - Amazon.com, Inc. - 1
+  - 轮子2213
+  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1I
+  - 🇯🇵 L0 | 日本 01 CDN
+  - CDN优选-8
+  - Seoul  Pro 4
+  - Seoul  Pro 1
+  - CDN优选-2
+  - Ireland  Pro 5
+  - Seoul  Pro 3
+  - Ireland -L22 Pro 1
+  - Riyadh Pro 1-3slF
+  - London Pro 4
+  - Lagos Pro 2-Y4bh
+  - Lagos Pro 3-LYwo
+  - rea-amd2
+  - Amsterdam Pro 25
+  - Paris Pro 1
+  - Amsterdam  Pro 28
+  - Amsterdam  19
+  - Hy2-Tokyo-arm1
+  - Ireland  Pro 3
+  - 🇭🇰 香港1高速中转2x-1B 2
+  - 🇭🇰 香港2高速中转2x-1A 2
+  - Kathmandu Pro 1-VrWC
+  - 🇭🇰 香港2高速中转2x-1B 2
+  - Frankfurt  6
+  - London  15
+  - Frankfurt  Pro 4
+  - Frankfurt  16
+  - Frankfurt  Pro 18
+  - 🇷🇺 俄罗斯-圣彼得堡-005-1B
+  - 🇭🇰 香港1高速中转2x-1A 2
+  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1G
+  - Amsterdam  27
+  - Frankfurt -L22 1
+  - 🇹🇷 土耳其 - 伊斯坦布尔 - Mehmet Selim Sahin - 1
+  - Karachi Pro 2-F3LV
+  - Fujairah Pro 1-njfG
+  - Frankfurt  Pro 8
+  - Singapore  1
+  - Singapore 2
+  - Singapore  7
+  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1E
+  - Frankfurt  Pro 13
+  - Amsterdam  24
+  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1A
+  - Stockholm 1
+  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1B
+  - Manama Pro 1-PZzK
+  - Ponte San Pietro Pro 2
   - 🇦🇺 L0 | 澳大利亚 01 CDN
-  - 🇧🇷 L0 | 巴西 01 CDN
-  - Warsaw  Pro 3
-  - Riyadh Pro 1
-  - 🇰🇷 L0 | 韩国 01 CDN
-  - Mumbai Pro 3
-  - Mumbai  Pro 4
+  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1D
+  - Amsterdam  14
+  - Amsterdam  Pro 3
+  - Amsterdam  7
+  - Amsterdam  Pro 6
+  - Amsterdam  Pro 11
+  - Singapore  Pro 15
+  - Amsterdam  Pro 15
+  - Amsterdam  Pro 17
+  - Amsterdam  Pro 18
+  - Singapore  Pro 5
+  - Singapore -L22 Pro 4
+  - Prague Pro 2
   - 🇯🇵 日本1-1A
-  - 🇭🇰 香港6|@ripaojiedian
-  - 🇯🇵 日本4|@ripaojiedian
+  - Amsterdam  Pro 9
+  - Kuala Lumpur Pro 1
+  - Singapore  Pro 8
+  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1H
+  - Singapore -L22 Pro 9
+  - Amsterdam  22
+  - Amsterdam  Pro 10
+  - Singapore  Pro 10
+  - Amsterdam  Pro 13
+  - Singapore -L22 11
+  - Amsterdam  16
+  - Ponte San Pietro Pro 1
   - 🇻🇳 越南|@ripaojiedian
+  - Singapore  Pro 13
+  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1C
+  - 🇯🇵 日本 - 东京 - Amazon.com, Inc. - 5
+  - Warsaw  6
+  - Singapore -L22 Pro 3
+  - Istanbul  Pro 1
+  - Moscow Pro 3
+  - Warsaw Pro 5
+  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1F
+  - Singapore  Pro 6
+  - Bangkok Pro 1
+  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1G-aLLe
+  - 🇰🇷 L0 | 韩国 01 CDN
+  - CDN优选-6
+  - Warsaw  8
+  - tg频道:@ripaojiedian
+  - Manila Pro 1
+  - 🇸🇬 L0 | 新加坡 01 CDN
+  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1D-NTLZ
+  - Warsaw  7
+  - 🇹🇭 泰国ISP高速中转3x-1B 2
+  - 🇩🇪 L0 | 德国 01 CDN
+  - Sydney  Pro 5
+  - Mumbai  Pro 4
+  - 🇷🇺 俄罗斯-圣彼得堡-HY-005-1J
+  - Mumbai Pro 3
+  - 🇭🇰 香港6|@ripaojiedian
+  - 🇹🇷 土耳其高速中转-1B 2
+  - Warsaw  3
+  - CDN优选-5
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
