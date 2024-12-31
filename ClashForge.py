@@ -2384,5 +2384,9 @@ if __name__ == '__main__':
         "https://kpox8pzltp8.irss.eu.org",
         "https://v1210clash.pimax.com",
         "http://v1210clash.pimax.com",
+        "https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/refs/heads/master/list.yml",
+        "https://proxypool.link/clash/proxies",
+        "https://www.sstank.top/link/sAHQuZoZ1tzQWjrn?clash=1",
+        "https://github.com/midpoint/pools2/raw/refs/heads/master/Eternity.yml"
     ]
     work(links, check=True, only_check=False, allowed_types=["ss","hysteria2","hy2","vless","vmess","trojan"])
