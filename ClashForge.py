@@ -1400,6 +1400,17 @@ def match_nodes(text):
     yaml_data = {"proxies": proxies_list}
     return yaml_data
 
+def fix_yaml_content(content):
+    def clean_name(match):
+        name_value = match.group(1)  # 提取 name 的值
+        name_value = name_value.replace(":", "")  # 去除 :
+        return f'name: "{name_value}"'  # 确保加上双引号
+
+    # 处理 name: 后的值，去掉冒号并加引号
+    fixed_content = re.sub(r'name:\s*([^,"\n]+)', clean_name, content)
+    
+    return fixed_content
+
 # link非代理协议时(https)，请求url解析
 def process_url(url):
     isyaml = False
@@ -1411,6 +1422,7 @@ def process_url(url):
             content = response.content.decode('utf-8')
             if 'proxies:' in content:
                 # YAML格式
+                content = fix_yaml_content(content)
                 yaml_data = yaml.safe_load(content)
                 if 'proxies' in yaml_data:
                     isyaml = True
