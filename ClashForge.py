@@ -2387,6 +2387,12 @@ if __name__ == '__main__':
         "https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/refs/heads/master/list.yml",
         "https://proxypool.link/clash/proxies",
         "https://www.sstank.top/link/sAHQuZoZ1tzQWjrn?clash=1",
-        "https://github.com/midpoint/pools2/raw/refs/heads/master/Eternity.yml"
+        "https://github.com/midpoint/pools2/raw/refs/heads/master/Eternity.yml",
+        "https://fe199f91.jego.vip/subscribe/mihomo/dda8ef4dee6d0531ffcd2391634c6310",
+        "https://ef8d7dc9.jego.vip/subscribe/mihomo/1cc80eac1fb4a324e64cfa0234fec8c2",
+        "https://5924a891.jego.vip/subscribe/mihomo/04e5adfb7d173ca4b290f357c98373d4",
+        "https://df062b58.wyxhuawei.com/subscribe/clash/1d4f5d0c3aa76fea0ffcdb9cede32c66",
+        "https://8309a4e3.wyxhuawei.com/subscribe/clash/bddec9fc17aa1a36f249b3bff55057cc",
+        "https://55d9a62f.wyxhuawei.com/subscribe/clash/6bd8ae6a47dd42656ffc09a6562094a1"
     ]
     work(links, check=True, only_check=False, allowed_types=["ss","hysteria2","hy2","vless","vmess","trojan"])
