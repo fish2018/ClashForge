@@ -32,6 +32,730 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
+- name: 🇹🇼 台湾2|@ripaojiedian
+  server: taifo01a.kbservice.club
+  port: 443
+  client-fingerprint: chrome
+  type: trojan
+  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
+  sni: 45.32.28.232
+  skip-cert-verify: false
+- name: 🇯🇵 日本2|@ripaojiedian
+  server: 103.140.136.242
+  port: 16622
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: e03b35b40a25
+  tfo: false
+  plugin: v2ray-plugin
+  plugin-opts:
+    mode: websocket
+    host: jp06v1.3ci.xyz
+    path: /ymfvpytvkdp
+    tls: true
+    mux: true
+    skip-cert-verify: false
+- name: 🇻🇳 越南|@ripaojiedian
+  server: 103.186.155.19
+  port: 38388
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  tfo: false
+- name: 南极洲 - Kunlun - Cloudflare, Inc. - 1
+  server: c.c.ccccccccccccccccccccccccccccccccccccccccccc.cc
+  port: 443
+  type: vless
+  uuid: ae20b743-9c67-4ba9-86f5-116a4a838b12
+  tls: true
+  servername: aq.oldcloud.online
+  network: ws
+  ws-opts:
+    path: /aq
+    headers:
+      Host: aq.oldcloud.online
+- name: 阿拉伯联合酋长国 - Warisan - Diamond IP Brokers Fzco - 1
+  server: tky01.sqx001.com
+  port: 443
+  type: http
+  username: dmpyoary@mayorlogistic.com
+  password: cacb4d4fa26f4eed25e4d17a6370083c
+  tls: true
+  skip-cert-verify: true
+- name: 🇦🇺 澳大利亚 - 悉尼 - Marketingboys B.V - 3
+  server: sydney.sqx001.com
+  port: 443
+  type: http
+  username: dmpyoary@mayorlogistic.com
+  password: cacb4d4fa26f4eed25e4d17a6370083c
+  tls: true
+  skip-cert-verify: true
+- name: 🇧🇪 比利时 - 布鲁塞尔 - Stark Industries Solutions LTD - 1
+  server: chop-wrist-bud.stark-industries.solutions
+  port: 443
+  type: trojan
+  password: 3482c71a-d01c-4ae5-b454-fa8cb3785f66
+  sni: chop-wrist-bud.stark-industries.solutions
+  skip-cert-verify: false
+  udp: true
+- name: 🇧🇬 保加利亚 - 索菲亞 - Stark Industries Solutions LTD - 1
+  server: cache-giver-wife.stark-industries.solutions
+  port: 443
+  type: trojan
+  password: e6a2e741-0fce-440b-910c-b81325e2263a
+  sni: cache-giver-wife.stark-industries.solutions
+  skip-cert-verify: false
+  udp: true
+- name: 🇨🇦 加拿大 - Beauharnois - OVH SAS - 5
+  server: 104.17.148.22
+  port: 2052
+  type: vless
+  uuid: 98f48d81-da83-49d2-a1c1-547c2a57798d
+  tls: false
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: sPeedtest2.sbs.cavl.cytun.xyz
+  udp: true
+- name: 🇨🇦 加拿大 - 多伦多 - Kamatera, Inc. - 3
+  server: toronto1.sqx001.com
+  port: 443
+  type: http
+  username: dmpyoary@mayorlogistic.com
+  password: cacb4d4fa26f4eed25e4d17a6370083c
+  tls: true
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 - 旺市 - Cloudflare, Inc. - 1
+  server: 155.248.216.247
+  port: 30300
+  type: hysteria2
+  password: 2429bee3-e0c1-47dd-b420-75e6512b184b
+  auth: 2429bee3-e0c1-47dd-b420-75e6512b184b
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 - 旺市 - Cloudflare, Inc. - 4
+  server: 40.233.80.61
+  port: 26113
+  type: vless
+  uuid: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: GUcD8LK1DFNuVun5yhsqeEego_p3PF2yIdvE2KY2Nng
+    short-id: 1fbd20fd
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇨🇦 加拿大 - 旺市 - Cloudflare, Inc. - 6
+  server: 40.233.80.61
+  port: 45979
+  type: hysteria2
+  password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+  auth: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+  sni: www.bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  udp: true
+- name: 🇨🇱 智利 - 圣地亚哥 - The Constant Company - 1
+  server: santiago.sqx001.com
+  port: 443
+  type: http
+  username: dmpyoary@mayorlogistic.com
+  password: cacb4d4fa26f4eed25e4d17a6370083c
+  tls: true
+  skip-cert-verify: true
+- name: 🇨🇿 捷克 - České Budějovice - Stark Industries Solutions LTD - 1
+  server: bats-paper-chump.stark-industries.solutions
+  port: 443
+  type: trojan
+  password: e6a2e741-0fce-440b-910c-b81325e2263a
+  sni: bats-paper-chump.stark-industries.solutions
+  skip-cert-verify: false
+  udp: true
+- name: 🇩🇪 德国 - 兰河畔林堡 - OVH SAS - 63
+  server: tgju.org
+  port: 8080
+  type: vless
+  uuid: 51fda508-20aa-419e-b4c3-3a6202411412
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: 18.6na7PY43IT.zuLaiR.Org.
+  udp: true
+- name: 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 13
+  server: 104.24.81.142
+  port: 2096
+  type: vless
+  uuid: 647c5c62-01e4-426e-90ac-b97e00d039b5
+  tls: true
+  servername: my126.worldip.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: my126.worldip.dpdns.org
+- name: 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 14
+  server: 104.24.189.146
+  port: 2096
+  type: vless
+  uuid: 647c5c62-01e4-426e-90ac-b97e00d039b5
+  tls: true
+  servername: my126.worldip.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: my126.worldip.dpdns.org
+- name: 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 15
+  server: 104.24.193.247
+  port: 2083
+  type: vless
+  uuid: 647c5c62-01e4-426e-90ac-b97e00d039b5
+  tls: true
+  servername: my126.worldip.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: my126.worldip.dpdns.org
+- name: 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 16
+  server: 162.159.152.69
+  port: 443
+  type: vless
+  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
+  tls: true
+  servername: 0229.patterdeng.pp.ua
+  network: ws
+  ws-opts:
+    path: /proxyip=ProxyIP.Oracle.cmliussss.net
+    headers:
+      Host: 0229.patterdeng.pp.ua
+- name: 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 17
+  server: 104.24.228.202
+  port: 2087
+  type: vless
+  uuid: 647c5c62-01e4-426e-90ac-b97e00d039b5
+  tls: true
+  servername: my126.worldip.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: my126.worldip.dpdns.org
+- name: 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 18
+  server: 104.24.79.26
+  port: 8443
+  type: vless
+  uuid: a54f31b2-36ed-4a93-903f-381f7105418b
+  tls: true
+  servername: 241888.xyz
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: 241888.xyz
+- name: 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 20
+  server: 104.24.128.96
+  port: 2053
+  type: vless
+  uuid: 7ca28380-8f51-4eaa-89c9-6243bdf7f500
+  tls: true
+  servername: www.pjw5.top
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: www.pjw5.top
+- name: 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 22
+  server: 162.159.152.234
+  port: 2083
+  type: vless
+  uuid: 7ca28380-8f51-4eaa-89c9-6243bdf7f500
+  tls: true
+  servername: www.pjw5.top
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: www.pjw5.top
+- name: 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 24
+  server: 162.159.152.165
+  port: 8443
+  type: vless
+  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+  tls: true
+  servername: bitget1.asdasd.click
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: bitget1.asdasd.click
+- name: 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 25
+  server: 104.24.185.187
+  port: 2053
+  type: vless
+  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+  tls: true
+  servername: bitget1.asdasd.click
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: bitget1.asdasd.click
+- name: 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 28
+  server: 104.24.170.5
+  port: 443
+  type: vless
+  uuid: be813f12-47ac-4b16-9146-8435ebacae3f
+  tls: true
+  servername: xw0083.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: xw0083.dpdns.org
+- name: 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 29
+  server: 104.24.244.235
+  port: 2083
+  type: vless
+  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+  tls: true
+  servername: bitget1.asdasd.click
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: bitget1.asdasd.click
+- name: 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 31
+  server: 104.24.87.16
+  port: 2096
+  type: vless
+  uuid: 7ca28380-8f51-4eaa-89c9-6243bdf7f500
+  tls: true
+  servername: www.pjw5.top
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: www.pjw5.top
+- name: 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 32
+  server: 162.159.153.42
+  port: 443
+  type: vless
+  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
+  tls: true
+  servername: 0229.patterdeng.pp.ua
+  network: ws
+  ws-opts:
+    path: /proxyip=ProxyIP.Oracle.cmliussss.net
+    headers:
+      Host: 0229.patterdeng.pp.ua
+- name: 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 34
+  server: 104.24.29.17
+  port: 443
+  type: vless
+  uuid: 4b7251f3-d895-4c5b-8108-b83e80c73c3f
+  tls: true
+  servername: pzdxlzk97.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: pzdxlzk97.dpdns.org
+- name: 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 37
+  server: 104.24.79.131
+  port: 2096
+  type: vless
+  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+  tls: true
+  servername: bitget1.asdasd.click
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: bitget1.asdasd.click
+- name: 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 4
+  server: 104.24.34.42
+  port: 2053
+  type: vless
+  uuid: 7ca28380-8f51-4eaa-89c9-6243bdf7f500
+  tls: true
+  servername: www.pjw5.top
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: www.pjw5.top
+  udp: true
+- name: 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 43
+  server: 104.24.84.87
+  port: 8443
+  type: vless
+  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+  tls: true
+  servername: bitget1.asdasd.click
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: bitget1.asdasd.click
+- name: 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 46
+  server: 104.24.58.83
+  port: 443
+  type: vless
+  uuid: be813f12-47ac-4b16-9146-8435ebacae3f
+  tls: true
+  servername: xw0083.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: xw0083.dpdns.org
+- name: 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 47
+  server: 104.24.75.75
+  port: 443
+  type: vless
+  uuid: 44ae2a63-403b-40b2-9102-45eaf462df02
+  tls: true
+  servername: sol.us.kg
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: sol.us.kg
+- name: 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 49
+  server: 162.159.153.241
+  port: 443
+  type: vless
+  uuid: a54f31b2-36ed-4a93-903f-381f7105418b
+  tls: true
+  servername: 241888.xyz
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: 241888.xyz
+- name: 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 5
+  server: 104.24.40.146
+  port: 8443
+  type: vless
+  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+  tls: true
+  servername: bitget1.asdasd.click
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: bitget1.asdasd.click
+  udp: true
+- name: 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 50
+  server: 104.24.145.237
+  port: 443
+  type: vless
+  uuid: 44ae2a63-403b-40b2-9102-45eaf462df02
+  tls: true
+  servername: sol.us.kg
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: sol.us.kg
+- name: 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 55
+  server: 162.159.152.205
+  port: 443
+  type: vless
+  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
+  tls: true
+  servername: 0229.patterdeng.pp.ua
+  network: ws
+  ws-opts:
+    path: /proxyip=ProxyIP.Oracle.cmliussss.net
+    headers:
+      Host: 0229.patterdeng.pp.ua
+- name: 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 64
+  server: 162.159.153.170
+  port: 443
+  type: vless
+  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
+  tls: true
+  servername: 0229.patterdeng.pp.ua
+  network: ws
+  ws-opts:
+    path: /proxyip=ProxyIP.Oracle.cmliussss.net
+    headers:
+      Host: 0229.patterdeng.pp.ua
+- name: 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 65
+  server: 162.159.153.72
+  port: 443
+  type: vless
+  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
+  tls: true
+  servername: 0229.patterdeng.pp.ua
+  network: ws
+  ws-opts:
+    path: /proxyip=ProxyIP.Oracle.cmliussss.net
+    headers:
+      Host: 0229.patterdeng.pp.ua
+- name: 🇩🇪 德国 - 法兰克福 - OVH SAS - 56
+  server: 141.101.121.110
+  port: 80
+  type: vless
+  uuid: f2a72ad0-d23f-4eed-96cb-7d970b1e784d
+  tls: false
+  network: ws
+  ws-opts:
+    path: /vless/?Vless_txt
+    headers:
+      Host: ov-germany1.09vpn.com
+  udp: true
+- name: 🇩🇪 德国 - 法兰克福 - Stark Industries Solutions LTD - 10
+  server: 205.233.181.205
+  port: 2096
+  type: vless
+  uuid: 9e769ce1-34be-4e3f-b0a6-823f30eb8f69
+  tls: true
+  servername: DrOt0Ai1Oq.DeRaKhT.iNfO
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: DrOt0Ai1Oq.DeRaKhT.iNfO
+  udp: true
+- name: 🇩🇪 德国 - 法兰克福 - Stark Industries Solutions LTD - 11
+  server: 199.34.228.182
+  port: 2096
+  type: vless
+  uuid: 9e769ce1-34be-4e3f-b0a6-823f30eb8f69
+  tls: true
+  servername: DrOt0Ai1Oq.DeRaKhT.iNfO
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: DrOt0Ai1Oq.DeRaKhT.iNfO
+  udp: true
+- name: 🇩🇪 德国 - 法兰克福 - Stark Industries Solutions LTD - 33
+  server: 205.233.181.186
+  port: 8443
+  type: vless
+  uuid: 9e769ce1-34be-4e3f-b0a6-823f30eb8f69
+  tls: true
+  servername: CiR346yL3b.DeRaKhT.iNfO
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: CiR346yL3b.DeRaKhT.iNfO
+  udp: true
+- name: 🇩🇪 德国 - 法兰克福 - Stark Industries Solutions LTD - 38
+  server: 205.233.181.186
+  port: 2096
+  type: vless
+  uuid: 9e769ce1-34be-4e3f-b0a6-823f30eb8f69
+  tls: true
+  servername: DrOt0Ai1Oq.DeRaKhT.iNfO
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: DrOt0Ai1Oq.DeRaKhT.iNfO
+  udp: true
+- name: 🇩🇪 德国 - 纽伦堡 - Hetzner Online GmbH - 53
+  server: 5.75.192.18
+  port: 443
+  type: vless
+  uuid: 33707040-edcf-4185-94e4-2a071315c602
+  tls: true
+  reality-opts:
+    public-key: GpgfsA-U8Y8M3LRcTfsaBViDtp2VlN5riSLLZ2kxEiQ
+    short-id: 7def4dde
+  servername: vpn_proxy_channel_vpn_proxy_channel.hohod.ir
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 - 莱比锡 - Cloudflare, Inc. - 12
+  server: 5.10.245.75
+  port: 443
+  type: vless
+  uuid: 4f2b9193-ab76-401f-a254-10982ac2881a
+  tls: true
+  servername: hax-eu.lzj520hxw.dpdns.org
+  network: ws
+  ws-opts:
+    path: /lzjjjjj
+    headers:
+      Host: hax-eu.lzj520hxw.dpdns.org
+- name: 🇫🇷 法国 - 塞纳河畔伊夫里 - Online S.A.S. - 7
+  server: 195.154.33.70
+  port: 4489
+  type: hysteria2
+  password: dongtaiwang.com
+  auth: dongtaiwang.com
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇫🇷 法国 - 巴黎 - Online S.A.S. - 4
+  server: hy2-1.694463.xyz
+  port: 4489
+  type: hysteria2
+  password: dongtaiwang.com
+  auth: dongtaiwang.com
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇫🇷 法国 - 巴黎 - Online S.A.S. - 6
+  server: 51.158.205.126
+  port: 4489
+  type: hysteria2
+  password: dongtaiwang.com
+  auth: dongtaiwang.com
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇬🇧 英国 - 伦敦 - OVH SAS - 2
+  server: 51.38.65.155
+  port: 443
+  type: trojan
+  password: 53dc50c0-1e27-11f0-a1b6-1239d0255272
+  skip-cert-verify: true
+  udp: true
+- name: 🇬🇧 英国 - 伦敦 - OVH SAS - 3
+  server: 120.210.205.134
+  port: 47459
+  type: vmess
+  uuid: 83a424d8-4bcb-4cee-b016-2c8f1db4a921
+  alterId: 64
+  cipher: auto
+  tls: false
+- name: 🇬🇧 英国 - 伦敦 - Oracle Corporation - 4
+  server: ld-arm.nfsn666.gq
+  port: 8888
+  type: hysteria2
+  password: nfsn666
+  auth: nfsn666
+  sni: ld-arm.nfsn666.gq
+  skip-cert-verify: true
+  udp: true
+- name: 🇬🇧 英国 - 倫敦金融城 - Krystal Hosting Ltd - 1
+  server: 62.100.205.48
+  port: 989
+  type: ss
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+  udp: true
+- name: 🇬🇧 英国 - 考文垂 - Stark Industries Solutions LTD - 10
+  server: 45.142.120.97
+  port: 443
+  type: vless
+  uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
+  tls: true
+  servername: CxNiMjJz.cAfUnEaR.InFo
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: CxNiMjJz.cAfUnEaR.InFo
+  udp: true
+- name: 🇬🇧 英国 - 考文垂 - Stark Industries Solutions LTD - 11
+  server: 45.131.6.160
+  port: 443
+  type: vless
+  uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
+  tls: true
+  servername: CxNiMjJz.cAfUnEaR.InFo
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: CxNiMjJz.cAfUnEaR.InFo
+  udp: true
+- name: 🇬🇧 英国 - 考文垂 - Stark Industries Solutions LTD - 7
+  server: 188.42.88.45
+  port: 443
+  type: vless
+  uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
+  tls: true
+  servername: CxNiMjJz.cAfUnEaR.InFo
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: CxNiMjJz.cAfUnEaR.InFo
+  udp: true
+- name: 🇭🇰 哥伦比亚 - 波哥大 - Kaopu Cloud HK Limited - 1
+  server: 154.223.16.212
+  port: 989
+  type: ss
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+  udp: true
+- name: 🇮🇱 以色列 - 特拉维夫 - O.M.C. COMPUTERS & COMMUNICATIONS LTD - 3
+  server: telaviv.sqx001.com
+  port: 443
+  type: http
+  username: dmpyoary@mayorlogistic.com
+  password: cacb4d4fa26f4eed25e4d17a6370083c
+  tls: true
+  skip-cert-verify: true
+- name: 🇮🇹 意大利 - Milano - Kamatera, Inc. - 1
+  server: milan01.sqx001.com
+  port: 443
+  type: http
+  username: dmpyoary@mayorlogistic.com
+  password: cacb4d4fa26f4eed25e4d17a6370083c
+  tls: true
+  skip-cert-verify: true
+- name: 🇯🇵 日本 - 东京 - Akile LTD - 14
+  server: tky03.sqx001.com
+  port: 443
+  type: http
+  username: dmpyoary@mayorlogistic.com
+  password: cacb4d4fa26f4eed25e4d17a6370083c
+  tls: true
+  skip-cert-verify: true
+- name: 🇯🇵 日本 - 东京 - Alibaba (US) Technology Co., Ltd. - 9
+  server: 47.79.84.35
+  port: 61564
+  type: hysteria2
+  password: 494159ec-217f-4b50-9cf2-1b65e6db90dc
+  auth: 494159ec-217f-4b50-9cf2-1b65e6db90dc
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 104
+  server: 108.181.23.255
+  port: 443
+  type: hysteria2
+  password: b8bd42a9-551f-419d-b70d-4aefdd2cb074
+  auth: b8bd42a9-551f-419d-b70d-4aefdd2cb074
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 106
+  server: 108.181.23.241
+  port: 443
+  type: hysteria2
+  password: b8bd42a9-551f-419d-b70d-4aefdd2cb074
+  auth: b8bd42a9-551f-419d-b70d-4aefdd2cb074
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 171
+  server: 108.181.5.130
+  port: 57773
+  type: hysteria2
+  password: dongtaiwang.com
+  auth: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
 - name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 252
   server: 271e9043-sw1z40-t1bnjq-1krtb.los.gotochinatown.net
   port: 443
@@ -91,31 +815,6 @@ proxies:
   servername: tesla.com
   client-fingerprint: chrome
   network: tcp
-- name: 🇺🇸 美国 - 盐湖城 - Bage Cloud LLC - 76
-  server: 1.19990409.xyz
-  port: 65526
-  type: vless
-  uuid: 6286ecbd-29c3-4e94-9494-dcccae30b498
-  tls: true
-  reality-opts:
-    public-key: 3GAr9Fs6P5bywULijTKlogAPlzyNxVCPTDS40-h7b2Q
-    short-id: aa30e15d
-  servername: tesla.com
-  client-fingerprint: chrome
-  network: tcp
-- name: 🇺🇸 美国 - 紐約 - Cloudflare, Inc. - 221
-  server: 31.59.111.49
-  port: 33718
-  type: vless
-  uuid: e657e5fb-c417-4d3f-d84e-a3a8f010f9fa
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: g1f1wLjim5gOVGnI5LGUV0dL4iFXPoiepOPZfSxJe14
-  servername: icloud.cdn-apple.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 - name: 🇺🇸 美国 - 紐約 - MASSIVEGRID - 203
   server: 172.67.135.37
   port: 443
@@ -148,21 +847,6 @@ proxies:
     headers:
       Host: m9rrrfgh.459.pp.ua
   udp: true
-- name: 🇺🇸 美国 - 紐約 - MASSIVEGRID - 22
-  server: 104.21.26.17
-  port: 443
-  type: trojan
-  password: 4f435a3a-dfb8-4c90-b637-8df8c5d44550
-  sni: m9rrrfgh.459.pp.ua
-  alpn:
-  - http/1.1
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /l6lvY4hFZriQDBimbKYmPIggy
-    headers:
-      Host: m9rrrfgh.459.pp.ua
-  udp: true
 - name: 🇺🇸 美国 - 紐約 - MASSIVEGRID - 23
   server: 172.67.135.37
   port: 443
@@ -178,17 +862,6 @@ proxies:
     headers:
       Host: m9rrrfgh.459.pp.ua
   udp: true
-- name: 🇺🇸 美国 - 紐約 - MASSIVEGRID - 66
-  server: 104.21.71.83
-  port: 443
-  type: trojan
-  password: 03c93f49-d573-4889-a4bb-187047c5a314
-  sni: M7Yyu.777162.xYZ
-  network: ws
-  ws-opts:
-    path: /Rij8gsblmlfrZUch7YcAPgiEbt
-    headers:
-      Host: M7Yyu.777162.xYZ
 - name: 🇺🇸 美国 - 紐約 - MASSIVEGRID - 70
   server: 172.67.158.146
   port: 443
@@ -204,38 +877,6 @@ proxies:
     path: /bstMMelSTch7YcAPgiEbt
     headers:
       Host: m7rttyu.777169.xyz
-  udp: true
-- name: 🇺🇸 美国 - 紐約 - Massivegrid LTD - 161
-  server: 104.21.82.14
-  port: 443
-  type: vless
-  uuid: 53721970-2138-4263-8c9c-21397e759c06
-  tls: true
-  alpn:
-  - http/1.1
-  servername: m3EeerT.777259.xYZ
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /Bt93qlsreYHzV5Ii9WW
-    headers:
-      Host: m3eeert.777259.xyz
-  udp: true
-- name: 🇺🇸 美国 - 紐約 - Massivegrid LTD - 163
-  server: 172.67.150.169
-  port: 443
-  type: vless
-  uuid: 53721970-2138-4263-8c9c-21397e759c06
-  tls: true
-  alpn:
-  - http/1.1
-  servername: m3EeerT.777259.xYZ
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /Bt93qlsreYHzV5Ii9WW
-    headers:
-      Host: m3eeert.777259.xyz
   udp: true
 - name: 🇺🇸 美国 - 紐約 - Massivegrid LTD - 177
   server: 104.21.7.147
@@ -253,151 +894,6 @@ proxies:
     headers:
       Host: m12wert.huangshang.dpdns.org
   udp: true
-- name: 🇺🇸 美国 - 紐約 - Massivegrid LTD - 200
-  server: 104.21.63.226
-  port: 443
-  type: vless
-  uuid: b30a50bc-0f63-422d-bbd6-8c790c0abb4d
-  tls: true
-  alpn:
-  - http/1.1
-  servername: m8ui9.457.pp.ua
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /32FkuhQSR866TVMXPAl
-    headers:
-      Host: m8ui9.457.pp.ua
-  udp: true
-- name: 🇺🇸 美国 - 紐約 - Massivegrid LTD - 236
-  server: 172.67.150.57
-  port: 443
-  type: vless
-  uuid: 67db0c34-ae7a-4369-a6b5-554c99d8e5c9
-  tls: true
-  servername: M4deRTyU8.999358.XyZ
-  network: ws
-  ws-opts:
-    path: /a2YATZF8eZrBwsbnEcmJLxC
-    headers:
-      Host: M4deRTyU8.999358.XyZ
-- name: 🇺🇸 美国 - 紐約 - Massivegrid LTD - 241
-  server: m8ui9.457.pp.ua
-  port: 443
-  type: vless
-  uuid: b30a50bc-0f63-422d-bbd6-8c790c0abb4d
-  tls: true
-  servername: m8ui9.457.pp.ua
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /32FkuhQSR866TVMXPAl
-    headers:
-      Host: m8ui9.457.pp.ua
-- name: 🇺🇸 美国 - 紐約 - Massivegrid LTD - 249
-  server: 172.67.172.91
-  port: 443
-  type: vless
-  uuid: b30a50bc-0f63-422d-bbd6-8c790c0abb4d
-  tls: true
-  alpn:
-  - http/1.1
-  servername: m8ui9.457.pp.ua
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /32FkuhQSR866TVMXPAl
-    headers:
-      Host: m8ui9.457.pp.ua
-  udp: true
-- name: 🇺🇸 美国 - 紐約 - Massivegrid LTD - 250
-  server: m8yuitr.457.pp.ua
-  port: 443
-  type: trojan
-  password: b30a50bc-0f63-422d-bbd6-8c790c0abb4d
-  sni: m8yuitr.457.pp.ua
-  alpn:
-  - http/1.1
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /KLcD0D18SR866TVMXPAl
-    headers:
-      Host: m8yuitr.457.pp.ua
-  udp: true
-- name: 🇺🇸 美国 - 紐約 - Massivegrid LTD - 255
-  server: m11sdfgrw4rty.859886.xyz
-  port: 443
-  type: vless
-  uuid: 0a28b420-4f7c-43ad-a29e-80068ce08263
-  tls: true
-  alpn:
-  - http/1.1
-  servername: m11SdFgRw4rTy.859886.XYZ
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /dKFj3vjbdiwxY9TZlulnnYPb86csp
-    headers:
-      Host: m11sdfgrw4rty.859886.xyz
-  udp: true
-- name: 🇺🇸 美国 - 紐約 - Massivegrid LTD - 291
-  server: m11wER56.859886.XYZ
-  port: 80
-  type: vmess
-  uuid: 0a28b420-4f7c-43ad-a29e-80068ce08263
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /lhU8ShsoPZlulnnYPb86csp
-    headers:
-      Host: m11wer56.859886.xyz
-  udp: true
-- name: 🇺🇸 美国 - 紐約 - Massivegrid LTD - 292
-  server: m11sERFGH.459.pP.uA
-  port: 443
-  type: vmess
-  uuid: 0a28b420-4f7c-43ad-a29e-80068ce08263
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: false
-  servername: m11SERFGh.459.Pp.Ua
-  network: ws
-  ws-opts:
-    path: /lhU8ShsoPZlulnnYPb86csp
-    headers:
-      Host: m11serfgh.459.pp.ua
-  udp: true
-- name: 🇺🇸 美国 - 紐約 - Massivegrid LTD - 8
-  server: m11sdfg.890604.dpdns.org
-  port: 80
-  type: vmess
-  uuid: 0a28b420-4f7c-43ad-a29e-80068ce08263
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /lhU8ShsoPZlulnnYPb86csp
-    headers:
-      Host: m11sdfg.890604.dpdns.org
-- name: 🇺🇸 美国 - 紐約 - Massivegrid LTD - 9
-  server: m11wer56.859886.xyz
-  port: 80
-  type: vmess
-  uuid: 0a28b420-4f7c-43ad-a29e-80068ce08263
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /lhU8ShsoPZlulnnYPb86csp
-    headers:
-      Host: m11wer56.859886.xyz
 - name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 100
   server: 104.16.87.86
   port: 2053
@@ -634,30 +1130,6 @@ proxies:
     headers:
       Host: taoj.eu.org
   udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 196
-  server: fred.ns.cloudflare.com
-  port: 443
-  type: vless
-  uuid: 5177172c-125a-47fa-bccd-3778b459a75e
-  tls: true
-  servername: vless04.trevely.us.kg
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: vless04.trevely.us.kg
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 198
-  server: lynn.ns.cloudflare.com
-  port: 443
-  type: vless
-  uuid: 5177172c-125a-47fa-bccd-3778b459a75e
-  tls: true
-  servername: vless05.trevely.us.kg
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: vless05.trevely.us.kg
 - name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 202
   server: 173.245.59.144
   port: 443
@@ -674,36 +1146,6 @@ proxies:
     headers:
       Host: edccj.ambercc.filegear-sg.me
   udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 205
-  server: 199.34.228.178
-  port: 8443
-  type: trojan
-  password: Aimer
-  sni: epccj.ambercc.filegear-sg.me
-  alpn:
-  - h3
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560&proxyip=ts.hpc.tw
-    headers:
-      Host: epccj.ambercc.filegear-sg.me
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 206
-  server: 172.64.33.128
-  port: 443
-  type: trojan
-  password: Aimer
-  sni: epccj.ambercc.filegear-sg.me
-  alpn:
-  - h3
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560&proxyip=ts.hpc.tw
-    headers:
-      Host: epccj.ambercc.filegear-sg.me
-  udp: true
 - name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 207
   server: 104.16.74.176
   port: 443
@@ -716,522 +1158,6 @@ proxies:
     path: /?ed=2560
     headers:
       Host: pzdxlzk97.dpdns.org
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 208
-  server: 104.16.64.172
-  port: 443
-  type: vless
-  uuid: 7ca28380-8f51-4eaa-89c9-6243bdf7f500
-  tls: true
-  servername: www.pjw5.top
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: www.pjw5.top
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 210
-  server: 104.18.80.243
-  port: 443
-  type: vless
-  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
-  tls: true
-  servername: 0229.patterdeng.pp.ua
-  network: ws
-  ws-opts:
-    path: /proxyip=ProxyIP.Oracle.cmliussss.net
-    headers:
-      Host: 0229.patterdeng.pp.ua
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 211
-  server: 104.16.34.45
-  port: 443
-  type: vless
-  uuid: be813f12-47ac-4b16-9146-8435ebacae3f
-  tls: true
-  servername: xw0083.dpdns.org
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: xw0083.dpdns.org
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 212
-  server: 104.16.200.182
-  port: 443
-  type: vless
-  uuid: 7ca28380-8f51-4eaa-89c9-6243bdf7f500
-  tls: true
-  servername: www.pjw5.top
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: www.pjw5.top
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 213
-  server: 104.16.86.40
-  port: 2096
-  type: vless
-  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
-  tls: true
-  servername: bitget1.asdasd.click
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: bitget1.asdasd.click
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 217
-  server: 172.64.35.82
-  port: 443
-  type: vless
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  tls: true
-  alpn:
-  - h3
-  servername: edccj.ambercc.filegear-sg.me
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /?ed=2560&proxyip=ts.hpc.tw
-    headers:
-      Host: edccj.ambercc.filegear-sg.me
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 228
-  server: 190.93.244.213
-  port: 2096
-  type: vless
-  uuid: 7ca28380-8f51-4eaa-89c9-6243bdf7f500
-  tls: true
-  servername: www.pjw5.top
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: www.pjw5.top
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 229
-  server: 104.16.168.63
-  port: 443
-  type: vless
-  uuid: 44ae2a63-403b-40b2-9102-45eaf462df02
-  tls: true
-  servername: sol.us.kg
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: sol.us.kg
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 232
-  server: 190.93.247.142
-  port: 2053
-  type: vless
-  uuid: a54f31b2-36ed-4a93-903f-381f7105418b
-  tls: true
-  servername: 241888.xyz
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: 241888.xyz
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 234
-  server: 190.93.245.121
-  port: 2053
-  type: vless
-  uuid: a54f31b2-36ed-4a93-903f-381f7105418b
-  tls: true
-  servername: 241888.xyz
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: 241888.xyz
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 242
-  server: 192.200.160.19
-  port: 8443
-  type: vless
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  tls: true
-  alpn:
-  - h3
-  servername: edccj.ambercc.filegear-sg.me
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /?ed=2560&proxyip=ts.hpc.tw
-    headers:
-      Host: edccj.ambercc.filegear-sg.me
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 245
-  server: 192.0.54.221
-  port: 2083
-  type: vless
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  tls: true
-  alpn:
-  - h3
-  servername: edccj.ambercc.filegear-sg.me
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /?ed=2560&proxyip=ts.hpc.tw
-    headers:
-      Host: edccj.ambercc.filegear-sg.me
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 246
-  server: 27.50.49.136
-  port: 443
-  type: vless
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  tls: true
-  alpn:
-  - h3
-  servername: edccj.ambercc.filegear-sg.me
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /?ed=2560&proxyip=ts.hpc.tw
-    headers:
-      Host: edccj.ambercc.filegear-sg.me
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 247
-  server: pranab.ns.cloudflare.com
-  port: 443
-  type: vless
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  tls: true
-  alpn:
-  - h3
-  servername: edccj.ambercc.filegear-sg.me
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /?ed=2560&proxyip=ts.hpc.tw
-    headers:
-      Host: edccj.ambercc.filegear-sg.me
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 25
-  server: 167.68.4.10
-  port: 2096
-  type: trojan
-  password: Aimer
-  sni: epccj.ambercc.filegear-sg.me
-  alpn:
-  - h3
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560&proxyip=ts.hpc.tw
-    headers:
-      Host: epccj.ambercc.filegear-sg.me
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 254
-  server: 63.141.128.76
-  port: 443
-  type: vless
-  uuid: 7b32d76e-9157-47ef-9cb5-9e71bd9d3be1
-  tls: true
-  servername: v2-150.pages.dev
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: v2-150.pages.dev
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 260
-  server: 104.16.158.197
-  port: 443
-  type: vless
-  uuid: 740edf7e-2c3c-41c8-bb2a-aa0dbfcc36be
-  tls: true
-  servername: taoj.eu.org
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: taoj.eu.org
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 266
-  server: 104.18.8.215
-  port: 8080
-  type: vless
-  uuid: 99678074-122c-46db-97fc-80b604c20158
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: shuige2.ywfmu-qx.workers.dev
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 27
-  server: 172.64.87.97
-  port: 443
-  type: vless
-  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
-  tls: true
-  servername: bitget1.asdasd.click
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: bitget1.asdasd.click
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 28
-  server: 135.84.76.75
-  port: 8880
-  type: vless
-  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
-  tls: false
-  servername: 23-lsjfjwiposkfls.hc2021.cfd
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: 23-lsjfjwiposkfls.hc2021.cfd
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 29
-  server: 104.16.190.87
-  port: 2053
-  type: vless
-  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
-  tls: true
-  servername: bitget1.asdasd.click
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: bitget1.asdasd.click
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 293
-  server: 104.17.102.95
-  port: 443
-  type: vless
-  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
-  tls: true
-  servername: 0229.patterdeng.pp.ua
-  network: ws
-  ws-opts:
-    path: /proxyip=ProxyIP.Oracle.cmliussss.net
-    headers:
-      Host: 0229.patterdeng.pp.ua
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 294
-  server: 141.193.213.238
-  port: 80
-  type: vless
-  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-    headers:
-      Host: 23-lsjfjwiposkfls.hc2021.cfd
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 30
-  server: 185.16.110.70
-  port: 443
-  type: vless
-  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
-  tls: true
-  servername: 0229.patterdeng.pp.ua
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: 0229.patterdeng.pp.ua
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 31
-  server: 104.16.82.210
-  port: 2087
-  type: vless
-  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
-  tls: true
-  servername: bitget1.asdasd.click
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: bitget1.asdasd.click
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 32
-  server: www.speedtest.net
-  port: 80
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  tls: false
-  servername: ipsychO.SUEx12.Ir
-  network: ws
-  ws-opts:
-    path: /re5IzbZ9IZZMddtw?ed=2560/?JOKERRVPNJoin_Bade_Channel@JOKERRVPN
-    headers:
-      Host: ipsycho.suex12.ir
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 33
-  server: 104.16.197.220
-  port: 443
-  type: vless
-  uuid: d4324490-9d8f-4424-9a4d-a5178ebfbeca
-  tls: true
-  servername: cf-wuxianll.xixi.icu
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: cf-wuxianll.xixi.icu
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 34
-  server: 160.123.255.51
-  port: 443
-  type: vless
-  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
-  tls: true
-  servername: 0229.patterdeng.pp.ua
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: 0229.patterdeng.pp.ua
-  udp: true
-- name: _92
-  server: ca-full.privateip.net
-  type: trojan
-  port: 443
-  password: acfef609-b3c7-4e52-b292-8921d5fca90d
-- name: _93
-  server: 104.21.71.8
-  type: trojan
-  port: 2053
-  password: 9kHuEbiX7Bcp
-  alpn:
-  - h3%2Ch2%2Chttp%2F1.1
-  sni: khabaronline.itn24.ir
-  skip-cert-verify: true
-  udp: true
-- name: _95
-  server: 104.21.80.1
-  type: trojan
-  port: 443
-  password: psycho
-  alpn:
-  - http%2F1.1
-  sni: PSYchO.SueX12.Ir
-  skip-cert-verify: true
-  udp: true
-- name: _96
-  server: 104.21.44.185
-  type: trojan
-  port: 2053
-  password: dreDeMpIQpnv
-  alpn:
-  - h3%2Ch2%2Chttp%2F1.1
-  sni: aryanews.onetwothree123.ir
-  skip-cert-verify: true
-  udp: true
-- name: _97
-  server: 104.21.112.1
-  type: trojan
-  port: 443
-  password: psycho
-  alpn:
-  - http%2F1.1
-  sni: pSYcho.sUeX12.IR
-  skip-cert-verify: true
-  udp: true
-- name: _98
-  server: 89.187.181.179
-  type: trojan
-  port: 43118
-  password: ypDt8RkT7J
-  skip-cert-verify: true
-  udp: true
-- name: _99
-  server: 104.21.30.167
-  type: trojan
-  port: 443
-  password: 2fec7227-9abe-46f2-af18-78302b836c45
-  alpn:
-  - http%2F1.1
-  sni: 3y.2032.pp.ua
-  skip-cert-verify: true
-  udp: true
-- name: 🇧🇩 BD_102
-  server: 103.106.1.92
-  type: ss
-  country: 🇧🇩 BD
-  port: 23492
-  password: yMX9WGPgUEcRZmlaa0YHHC
-  cipher: chacha20-ietf-poly1305
-- name: 🇧🇪 BE_103
-  server: 192.71.249.146
-  type: ss
-  country: 🇧🇪 BE
-  port: 990
-  password: f8f7aCzcPKbsF8p3
-  cipher: chacha20-ietf-poly1305
-- name: 🇨🇦CA_110
-  server: ca225.vpnbook.com
-  type: ss
-  country: 🇨🇦CA
-  port: 80
-  password: JIhN6rBKkaEboLNXVSv5rq
-  cipher: chacha20-ietf-poly1305
-- name: 🇨🇿 CZ_116
-  server: 79.127.233.170
-  type: ss
-  country: 🇨🇿 CZ
-  port: 990
-  password: f8f7aCzcPKbsF8p3
-  cipher: chacha20-ietf-poly1305
-- name: 🇨🇿 CZ_117
-  server: 195.181.160.6
-  type: ss
-  country: 🇨🇿 CZ
-  port: 990
-  password: f8f7aCzcPKbsF8p3
-  cipher: chacha20-ietf-poly1305
-- name: 🇱🇹 LT_398
-  server: 45.87.175.181
-  type: ss
-  country: 🇱🇹 LT
-  port: 8080
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  cipher: chacha20-ietf-poly1305
-- name: 🇱🇹 LT_399
-  server: 45.87.175.157
-  type: ss
-  country: 🇱🇹 LT
-  port: 8080
-  password: 4a2rfixophdjffa8KVA4Aa
-  cipher: chacha20-ietf-poly1305
-- name: 🇱🇹 LT_401
-  server: 45.87.175.178
-  type: ss
-  country: 🇱🇹 LT
-  port: 8080
-  password: cvII85TrW6n0OGyfpHVS1u
-  cipher: chacha20-ietf-poly1305
-- name: 🇱🇹 LT_403
-  server: 45.87.175.181
-  type: ss
-  country: 🇱🇹 LT
-  port: 8080
-  password: cvII85TrW6n0OGyfpHVS1u
-  cipher: chacha20-ietf-poly1305
-- name: 🇱🇹 LT_404
-  server: 45.87.175.178
-  type: ss
-  country: 🇱🇹 LT
-  port: 8080
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-  cipher: chacha20-ietf-poly1305
-- name: 🇱🇹 LT_406
-  server: 45.87.175.181
-  type: ss
-  country: 🇱🇹 LT
-  port: 8080
-  password: 4a2rfixophdjffa8KVA4Aa
-  cipher: chacha20-ietf-poly1305
-- name: 🇱🇹 LT_414
-  server: 45.87.175.178
-  type: ss
-  country: 🇱🇹 LT
-  port: 8080
-  password: 4a2rfixophdjffa8KVA4Aa
-  cipher: chacha20-ietf-poly1305
 proxy-groups:
 - name: 节点选择
   type: select
@@ -1244,106 +1170,106 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - _93
-  - _99
-  - _96
-  - _95
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 27
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 213
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 34
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 294
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 266
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 30
-  - _97
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 29
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 182
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 175
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 31
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 211
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 212
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 147
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 254
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 168
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 210
   - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 207
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 148
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 246
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 33
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 208
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 164
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 183
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 188
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 228
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 166
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 154
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 185
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 157
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 245
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 160
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 100
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 159
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 4
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 31
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 64
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 25
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 22
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 20
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 24
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 43
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 28
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 175
+  - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 106
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 29
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 5
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 34
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 168
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 65
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 55
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 14
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 16
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 18
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 15
   - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 190
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 293
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 25
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 247
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 28
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 242
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 232
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 229
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 185
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 182
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 17
   - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 202
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 217
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 196
-  - 🇺🇸 美国 - 紐約 - MASSIVEGRID - 23
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 206
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 234
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 205
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 149
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 260
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 177
-  - 🇺🇸 美国 - 紐約 - MASSIVEGRID - 204
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 198
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 129
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 9
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 236
-  - _98
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 200
-  - 🇺🇸 美国 - 紐約 - MASSIVEGRID - 22
-  - 🇺🇸 美国 - 紐約 - MASSIVEGRID - 203
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 13
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 37
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 47
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 166
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 50
   - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 191
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 32
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 291
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 255
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 8
-  - 🇱🇹 LT_414
-  - 🇱🇹 LT_404
-  - 🇱🇹 LT_398
-  - 🇨🇿 CZ_116
-  - _92
-  - 🇧🇩 BD_102
-  - 🇨🇦CA_110
-  - 🇱🇹 LT_401
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 249
-  - 🇺🇸 美国 - 紐約 - MASSIVEGRID - 70
-  - 🇺🇸 美国 - 紐約 - MASSIVEGRID - 66
-  - 🇨🇿 CZ_117
-  - 🇱🇹 LT_406
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 292
-  - 🇱🇹 LT_403
-  - 🇧🇪 BE_103
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 241
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 188
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 164
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 49
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 32
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 183
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 154
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 160
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 157
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 100
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 147
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 159
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 129
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 148
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 149
+  - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 104
+  - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 171
   - 🇺🇸 美国 - 洛杉矶 - Sharktech - 96
-  - 🇱🇹 LT_399
   - 🇺🇸 美国 - 洛杉矶 - Sharktech - 95
   - 🇺🇸 美国 - 洛杉矶 - Sharktech - 89
-  - 🇺🇸 美国 - 紐約 - Cloudflare, Inc. - 221
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 250
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 46
+  - 🇺🇸 美国 - 紐約 - MASSIVEGRID - 70
+  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 177
+  - 🇨🇦 加拿大 - Beauharnois - OVH SAS - 5
+  - 🇬🇧 英国 - 倫敦金融城 - Krystal Hosting Ltd - 1
+  - 🇺🇸 美国 - 紐約 - MASSIVEGRID - 203
+  - 🇺🇸 美国 - 紐約 - MASSIVEGRID - 204
+  - 🇺🇸 美国 - 紐約 - MASSIVEGRID - 23
   - 🇺🇸 美国 - 洛杉矶 - Sharktech - 63
   - 🇺🇸 美国 - 洛杉矶 - Sharktech - 252
-  - 🇺🇸 美国 - 盐湖城 - Bage Cloud LLC - 62
-  - 🇺🇸 美国 - 盐湖城 - Bage Cloud LLC - 76
   - 🇺🇸 美国 - 盐湖城 - Bage Cloud LLC - 60
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 163
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 161
+  - 🇺🇸 美国 - 盐湖城 - Bage Cloud LLC - 62
+  - 🇩🇪 德国 - 兰河畔林堡 - OVH SAS - 63
+  - 🇻🇳 越南|@ripaojiedian
+  - 🇩🇪 德国 - 法兰克福 - Stark Industries Solutions LTD - 33
+  - 🇫🇷 法国 - 巴黎 - Online S.A.S. - 6
+  - 🇫🇷 法国 - 塞纳河畔伊夫里 - Online S.A.S. - 7
+  - 南极洲 - Kunlun - Cloudflare, Inc. - 1
+  - 🇩🇪 德国 - 法兰克福 - OVH SAS - 56
+  - 🇩🇪 德国 - 纽伦堡 - Hetzner Online GmbH - 53
+  - 🇯🇵 日本2|@ripaojiedian
+  - 🇹🇼 台湾2|@ripaojiedian
+  - 🇬🇧 英国 - 伦敦 - OVH SAS - 2
+  - 🇭🇰 哥伦比亚 - 波哥大 - Kaopu Cloud HK Limited - 1
+  - 🇯🇵 日本 - 东京 - Akile LTD - 14
+  - 阿拉伯联合酋长国 - Warisan - Diamond IP Brokers Fzco - 1
+  - 🇫🇷 法国 - 巴黎 - Online S.A.S. - 4
+  - 🇬🇧 英国 - 伦敦 - Oracle Corporation - 4
+  - 🇨🇦 加拿大 - 多伦多 - Kamatera, Inc. - 3
+  - 🇬🇧 英国 - 考文垂 - Stark Industries Solutions LTD - 11
+  - 🇬🇧 英国 - 考文垂 - Stark Industries Solutions LTD - 7
+  - 🇧🇪 比利时 - 布鲁塞尔 - Stark Industries Solutions LTD - 1
+  - 🇬🇧 英国 - 考文垂 - Stark Industries Solutions LTD - 10
+  - 🇨🇱 智利 - 圣地亚哥 - The Constant Company - 1
+  - 🇨🇿 捷克 - České Budějovice - Stark Industries Solutions LTD - 1
+  - 🇩🇪 德国 - 莱比锡 - Cloudflare, Inc. - 12
+  - 🇮🇹 意大利 - Milano - Kamatera, Inc. - 1
+  - 🇩🇪 德国 - 法兰克福 - Stark Industries Solutions LTD - 11
+  - 🇯🇵 日本 - 东京 - Alibaba (US) Technology Co., Ltd. - 9
+  - 🇦🇺 澳大利亚 - 悉尼 - Marketingboys B.V - 3
+  - 🇨🇦 加拿大 - 旺市 - Cloudflare, Inc. - 1
+  - 🇧🇬 保加利亚 - 索菲亞 - Stark Industries Solutions LTD - 1
+  - 🇩🇪 德国 - 法兰克福 - Stark Industries Solutions LTD - 38
+  - 🇩🇪 德国 - 法兰克福 - Stark Industries Solutions LTD - 10
+  - 🇬🇧 英国 - 伦敦 - OVH SAS - 3
+  - 🇨🇦 加拿大 - 旺市 - Cloudflare, Inc. - 6
+  - 🇨🇦 加拿大 - 旺市 - Cloudflare, Inc. - 4
+  - 🇮🇱 以色列 - 特拉维夫 - O.M.C. COMPUTERS & COMMUNICATIONS LTD - 3
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
@@ -1351,211 +1277,211 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - _93
-  - _99
-  - _96
-  - _95
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 27
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 213
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 34
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 294
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 266
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 30
-  - _97
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 29
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 182
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 175
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 31
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 211
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 212
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 147
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 254
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 168
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 210
   - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 207
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 148
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 246
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 33
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 208
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 164
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 183
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 188
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 228
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 166
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 154
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 185
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 157
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 245
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 160
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 100
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 159
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 4
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 31
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 64
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 25
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 22
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 20
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 24
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 43
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 28
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 175
+  - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 106
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 29
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 5
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 34
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 168
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 65
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 55
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 14
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 16
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 18
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 15
   - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 190
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 293
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 25
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 247
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 28
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 242
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 232
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 229
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 185
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 182
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 17
   - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 202
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 217
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 196
-  - 🇺🇸 美国 - 紐約 - MASSIVEGRID - 23
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 206
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 234
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 205
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 149
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 260
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 177
-  - 🇺🇸 美国 - 紐約 - MASSIVEGRID - 204
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 198
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 129
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 9
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 236
-  - _98
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 200
-  - 🇺🇸 美国 - 紐約 - MASSIVEGRID - 22
-  - 🇺🇸 美国 - 紐約 - MASSIVEGRID - 203
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 13
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 37
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 47
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 166
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 50
   - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 191
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 32
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 291
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 255
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 8
-  - 🇱🇹 LT_414
-  - 🇱🇹 LT_404
-  - 🇱🇹 LT_398
-  - 🇨🇿 CZ_116
-  - _92
-  - 🇧🇩 BD_102
-  - 🇨🇦CA_110
-  - 🇱🇹 LT_401
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 249
-  - 🇺🇸 美国 - 紐約 - MASSIVEGRID - 70
-  - 🇺🇸 美国 - 紐約 - MASSIVEGRID - 66
-  - 🇨🇿 CZ_117
-  - 🇱🇹 LT_406
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 292
-  - 🇱🇹 LT_403
-  - 🇧🇪 BE_103
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 241
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 188
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 164
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 49
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 32
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 183
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 154
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 160
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 157
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 100
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 147
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 159
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 129
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 148
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 149
+  - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 104
+  - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 171
   - 🇺🇸 美国 - 洛杉矶 - Sharktech - 96
-  - 🇱🇹 LT_399
   - 🇺🇸 美国 - 洛杉矶 - Sharktech - 95
   - 🇺🇸 美国 - 洛杉矶 - Sharktech - 89
-  - 🇺🇸 美国 - 紐約 - Cloudflare, Inc. - 221
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 250
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 46
+  - 🇺🇸 美国 - 紐約 - MASSIVEGRID - 70
+  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 177
+  - 🇨🇦 加拿大 - Beauharnois - OVH SAS - 5
+  - 🇬🇧 英国 - 倫敦金融城 - Krystal Hosting Ltd - 1
+  - 🇺🇸 美国 - 紐約 - MASSIVEGRID - 203
+  - 🇺🇸 美国 - 紐約 - MASSIVEGRID - 204
+  - 🇺🇸 美国 - 紐約 - MASSIVEGRID - 23
   - 🇺🇸 美国 - 洛杉矶 - Sharktech - 63
   - 🇺🇸 美国 - 洛杉矶 - Sharktech - 252
-  - 🇺🇸 美国 - 盐湖城 - Bage Cloud LLC - 62
-  - 🇺🇸 美国 - 盐湖城 - Bage Cloud LLC - 76
   - 🇺🇸 美国 - 盐湖城 - Bage Cloud LLC - 60
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 163
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 161
+  - 🇺🇸 美国 - 盐湖城 - Bage Cloud LLC - 62
+  - 🇩🇪 德国 - 兰河畔林堡 - OVH SAS - 63
+  - 🇻🇳 越南|@ripaojiedian
+  - 🇩🇪 德国 - 法兰克福 - Stark Industries Solutions LTD - 33
+  - 🇫🇷 法国 - 巴黎 - Online S.A.S. - 6
+  - 🇫🇷 法国 - 塞纳河畔伊夫里 - Online S.A.S. - 7
+  - 南极洲 - Kunlun - Cloudflare, Inc. - 1
+  - 🇩🇪 德国 - 法兰克福 - OVH SAS - 56
+  - 🇩🇪 德国 - 纽伦堡 - Hetzner Online GmbH - 53
+  - 🇯🇵 日本2|@ripaojiedian
+  - 🇹🇼 台湾2|@ripaojiedian
+  - 🇬🇧 英国 - 伦敦 - OVH SAS - 2
+  - 🇭🇰 哥伦比亚 - 波哥大 - Kaopu Cloud HK Limited - 1
+  - 🇯🇵 日本 - 东京 - Akile LTD - 14
+  - 阿拉伯联合酋长国 - Warisan - Diamond IP Brokers Fzco - 1
+  - 🇫🇷 法国 - 巴黎 - Online S.A.S. - 4
+  - 🇬🇧 英国 - 伦敦 - Oracle Corporation - 4
+  - 🇨🇦 加拿大 - 多伦多 - Kamatera, Inc. - 3
+  - 🇬🇧 英国 - 考文垂 - Stark Industries Solutions LTD - 11
+  - 🇬🇧 英国 - 考文垂 - Stark Industries Solutions LTD - 7
+  - 🇧🇪 比利时 - 布鲁塞尔 - Stark Industries Solutions LTD - 1
+  - 🇬🇧 英国 - 考文垂 - Stark Industries Solutions LTD - 10
+  - 🇨🇱 智利 - 圣地亚哥 - The Constant Company - 1
+  - 🇨🇿 捷克 - České Budějovice - Stark Industries Solutions LTD - 1
+  - 🇩🇪 德国 - 莱比锡 - Cloudflare, Inc. - 12
+  - 🇮🇹 意大利 - Milano - Kamatera, Inc. - 1
+  - 🇩🇪 德国 - 法兰克福 - Stark Industries Solutions LTD - 11
+  - 🇯🇵 日本 - 东京 - Alibaba (US) Technology Co., Ltd. - 9
+  - 🇦🇺 澳大利亚 - 悉尼 - Marketingboys B.V - 3
+  - 🇨🇦 加拿大 - 旺市 - Cloudflare, Inc. - 1
+  - 🇧🇬 保加利亚 - 索菲亞 - Stark Industries Solutions LTD - 1
+  - 🇩🇪 德国 - 法兰克福 - Stark Industries Solutions LTD - 38
+  - 🇩🇪 德国 - 法兰克福 - Stark Industries Solutions LTD - 10
+  - 🇬🇧 英国 - 伦敦 - OVH SAS - 3
+  - 🇨🇦 加拿大 - 旺市 - Cloudflare, Inc. - 6
+  - 🇨🇦 加拿大 - 旺市 - Cloudflare, Inc. - 4
+  - 🇮🇱 以色列 - 特拉维夫 - O.M.C. COMPUTERS & COMMUNICATIONS LTD - 3
   url: http://www.gstatic.com/generate_204
   interval: 300
 - name: 手动选择
   type: select
   proxies:
-  - _93
-  - _99
-  - _96
-  - _95
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 27
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 213
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 34
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 294
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 266
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 30
-  - _97
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 29
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 182
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 175
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 31
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 211
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 212
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 147
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 254
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 168
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 210
   - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 207
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 148
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 246
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 33
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 208
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 164
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 183
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 188
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 228
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 166
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 154
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 185
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 157
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 245
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 160
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 100
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 159
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 4
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 31
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 64
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 25
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 22
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 20
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 24
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 43
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 28
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 175
+  - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 106
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 29
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 5
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 34
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 168
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 65
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 55
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 14
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 16
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 18
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 15
   - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 190
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 293
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 25
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 247
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 28
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 242
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 232
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 229
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 185
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 182
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 17
   - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 202
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 217
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 196
-  - 🇺🇸 美国 - 紐約 - MASSIVEGRID - 23
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 206
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 234
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 205
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 149
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 260
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 177
-  - 🇺🇸 美国 - 紐約 - MASSIVEGRID - 204
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 198
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 129
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 9
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 236
-  - _98
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 200
-  - 🇺🇸 美国 - 紐約 - MASSIVEGRID - 22
-  - 🇺🇸 美国 - 紐約 - MASSIVEGRID - 203
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 13
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 37
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 47
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 166
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 50
   - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 191
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 32
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 291
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 255
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 8
-  - 🇱🇹 LT_414
-  - 🇱🇹 LT_404
-  - 🇱🇹 LT_398
-  - 🇨🇿 CZ_116
-  - _92
-  - 🇧🇩 BD_102
-  - 🇨🇦CA_110
-  - 🇱🇹 LT_401
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 249
-  - 🇺🇸 美国 - 紐約 - MASSIVEGRID - 70
-  - 🇺🇸 美国 - 紐約 - MASSIVEGRID - 66
-  - 🇨🇿 CZ_117
-  - 🇱🇹 LT_406
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 292
-  - 🇱🇹 LT_403
-  - 🇧🇪 BE_103
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 241
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 188
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 164
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 49
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 32
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 183
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 154
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 160
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 157
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 100
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 147
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 159
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 129
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 148
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 149
+  - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 104
+  - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 171
   - 🇺🇸 美国 - 洛杉矶 - Sharktech - 96
-  - 🇱🇹 LT_399
   - 🇺🇸 美国 - 洛杉矶 - Sharktech - 95
   - 🇺🇸 美国 - 洛杉矶 - Sharktech - 89
-  - 🇺🇸 美国 - 紐約 - Cloudflare, Inc. - 221
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 250
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 46
+  - 🇺🇸 美国 - 紐約 - MASSIVEGRID - 70
+  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 177
+  - 🇨🇦 加拿大 - Beauharnois - OVH SAS - 5
+  - 🇬🇧 英国 - 倫敦金融城 - Krystal Hosting Ltd - 1
+  - 🇺🇸 美国 - 紐約 - MASSIVEGRID - 203
+  - 🇺🇸 美国 - 紐約 - MASSIVEGRID - 204
+  - 🇺🇸 美国 - 紐約 - MASSIVEGRID - 23
   - 🇺🇸 美国 - 洛杉矶 - Sharktech - 63
   - 🇺🇸 美国 - 洛杉矶 - Sharktech - 252
-  - 🇺🇸 美国 - 盐湖城 - Bage Cloud LLC - 62
-  - 🇺🇸 美国 - 盐湖城 - Bage Cloud LLC - 76
   - 🇺🇸 美国 - 盐湖城 - Bage Cloud LLC - 60
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 163
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 161
+  - 🇺🇸 美国 - 盐湖城 - Bage Cloud LLC - 62
+  - 🇩🇪 德国 - 兰河畔林堡 - OVH SAS - 63
+  - 🇻🇳 越南|@ripaojiedian
+  - 🇩🇪 德国 - 法兰克福 - Stark Industries Solutions LTD - 33
+  - 🇫🇷 法国 - 巴黎 - Online S.A.S. - 6
+  - 🇫🇷 法国 - 塞纳河畔伊夫里 - Online S.A.S. - 7
+  - 南极洲 - Kunlun - Cloudflare, Inc. - 1
+  - 🇩🇪 德国 - 法兰克福 - OVH SAS - 56
+  - 🇩🇪 德国 - 纽伦堡 - Hetzner Online GmbH - 53
+  - 🇯🇵 日本2|@ripaojiedian
+  - 🇹🇼 台湾2|@ripaojiedian
+  - 🇬🇧 英国 - 伦敦 - OVH SAS - 2
+  - 🇭🇰 哥伦比亚 - 波哥大 - Kaopu Cloud HK Limited - 1
+  - 🇯🇵 日本 - 东京 - Akile LTD - 14
+  - 阿拉伯联合酋长国 - Warisan - Diamond IP Brokers Fzco - 1
+  - 🇫🇷 法国 - 巴黎 - Online S.A.S. - 4
+  - 🇬🇧 英国 - 伦敦 - Oracle Corporation - 4
+  - 🇨🇦 加拿大 - 多伦多 - Kamatera, Inc. - 3
+  - 🇬🇧 英国 - 考文垂 - Stark Industries Solutions LTD - 11
+  - 🇬🇧 英国 - 考文垂 - Stark Industries Solutions LTD - 7
+  - 🇧🇪 比利时 - 布鲁塞尔 - Stark Industries Solutions LTD - 1
+  - 🇬🇧 英国 - 考文垂 - Stark Industries Solutions LTD - 10
+  - 🇨🇱 智利 - 圣地亚哥 - The Constant Company - 1
+  - 🇨🇿 捷克 - České Budějovice - Stark Industries Solutions LTD - 1
+  - 🇩🇪 德国 - 莱比锡 - Cloudflare, Inc. - 12
+  - 🇮🇹 意大利 - Milano - Kamatera, Inc. - 1
+  - 🇩🇪 德国 - 法兰克福 - Stark Industries Solutions LTD - 11
+  - 🇯🇵 日本 - 东京 - Alibaba (US) Technology Co., Ltd. - 9
+  - 🇦🇺 澳大利亚 - 悉尼 - Marketingboys B.V - 3
+  - 🇨🇦 加拿大 - 旺市 - Cloudflare, Inc. - 1
+  - 🇧🇬 保加利亚 - 索菲亞 - Stark Industries Solutions LTD - 1
+  - 🇩🇪 德国 - 法兰克福 - Stark Industries Solutions LTD - 38
+  - 🇩🇪 德国 - 法兰克福 - Stark Industries Solutions LTD - 10
+  - 🇬🇧 英国 - 伦敦 - OVH SAS - 3
+  - 🇨🇦 加拿大 - 旺市 - Cloudflare, Inc. - 6
+  - 🇨🇦 加拿大 - 旺市 - Cloudflare, Inc. - 4
+  - 🇮🇱 以色列 - 特拉维夫 - O.M.C. COMPUTERS & COMMUNICATIONS LTD - 3
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
