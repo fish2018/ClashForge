@@ -32,20 +32,680 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- name: 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 144
-  server: 104.18.121.158
-  port: 80
+- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 252
+  server: 271e9043-sw1z40-t1bnjq-1krtb.los.gotochinatown.net
+  port: 443
+  type: http
+  username: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+  password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+  tls: true
+- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 63
+  server: daadef2d-sw1z40-swy6li-tni2.los.gotochinatown.net
+  port: 443
+  type: http
+  username: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
+  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
+  tls: true
+- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 89
+  server: ce178cf5-sw3ts0-tchszt-1quq9.la3.tcpbbr.net
+  port: 443
+  type: trojan
+  password: 74e74e40-e134-11ee-bded-f23c913c8d2b
+  sni: ce178cf5-sw3ts0-tchszt-1quq9.la3.tcpbbr.net
+  udp: true
+- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 95
+  server: 795f4c1e-sw3ts0-t7fl9b-1q16i.la3.tcpbbr.net
+  port: 443
+  type: trojan
+  password: 94614d84-9986-11ee-be7f-f23c9164ca5d
+  sni: 795f4c1e-sw3ts0-t7fl9b-1q16i.la3.tcpbbr.net
+  udp: true
+- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 96
+  server: bbc02bbb-sw3ts0-sww7b0-1qwp5.la3.tcpbbr.net
+  port: 443
+  type: trojan
+  password: 6e9cdc20-b92a-11ef-973a-f23c913c8d2b
+  sni: bbc02bbb-sw3ts0-sww7b0-1qwp5.la3.tcpbbr.net
+  udp: true
+- name: 🇺🇸 美国 - 盐湖城 - Bage Cloud LLC - 60
+  server: 1.19990409.xyz
+  port: 65527
   type: vless
-  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  uuid: 1df2c193-31f0-4643-9ac7-6283e248399d
+  tls: true
+  reality-opts:
+    public-key: SvDnUeu715X-8wErimPJmE2i9UR6nNuPD_3YWHpaB2c
+    short-id: a08f6e
+  servername: tesla.com
+  client-fingerprint: chrome
+  network: tcp
+- name: 🇺🇸 美国 - 盐湖城 - Bage Cloud LLC - 62
+  server: 1.19990409.xyz
+  port: 65528
+  type: vless
+  uuid: 3c96949f-d73f-4a38-9f6e-ba47a8e0f6bb
+  tls: true
+  reality-opts:
+    public-key: ZqEic2SlBuXpEW7HW7D4WAe2H3rWPTIqqqIx3vxKijo
+    short-id: 018f65bf
+  servername: tesla.com
+  client-fingerprint: chrome
+  network: tcp
+- name: 🇺🇸 美国 - 盐湖城 - Bage Cloud LLC - 76
+  server: 1.19990409.xyz
+  port: 65526
+  type: vless
+  uuid: 6286ecbd-29c3-4e94-9494-dcccae30b498
+  tls: true
+  reality-opts:
+    public-key: 3GAr9Fs6P5bywULijTKlogAPlzyNxVCPTDS40-h7b2Q
+    short-id: aa30e15d
+  servername: tesla.com
+  client-fingerprint: chrome
+  network: tcp
+- name: 🇺🇸 美国 - 紐約 - Cloudflare, Inc. - 221
+  server: 31.59.111.49
+  port: 33718
+  type: vless
+  uuid: e657e5fb-c417-4d3f-d84e-a3a8f010f9fa
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: g1f1wLjim5gOVGnI5LGUV0dL4iFXPoiepOPZfSxJe14
+  servername: icloud.cdn-apple.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 - 紐約 - MASSIVEGRID - 203
+  server: 172.67.135.37
+  port: 443
+  type: vless
+  uuid: 4f435a3a-dfb8-4c90-b637-8df8c5d44550
+  tls: true
+  alpn:
+  - http/1.1
+  servername: m9rrrfgh.459.pp.ua
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vUUL3CyENdTbFYDBimbKYmPIggy
+    headers:
+      Host: m9rrrfgh.459.pp.ua
+  udp: true
+- name: 🇺🇸 美国 - 紐約 - MASSIVEGRID - 204
+  server: 104.21.26.17
+  port: 443
+  type: vless
+  uuid: 4f435a3a-dfb8-4c90-b637-8df8c5d44550
+  tls: true
+  alpn:
+  - http/1.1
+  servername: m9rrrfgh.459.pp.ua
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vUUL3CyENdTbFYDBimbKYmPIggy
+    headers:
+      Host: m9rrrfgh.459.pp.ua
+  udp: true
+- name: 🇺🇸 美国 - 紐約 - MASSIVEGRID - 22
+  server: 104.21.26.17
+  port: 443
+  type: trojan
+  password: 4f435a3a-dfb8-4c90-b637-8df8c5d44550
+  sni: m9rrrfgh.459.pp.ua
+  alpn:
+  - http/1.1
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /l6lvY4hFZriQDBimbKYmPIggy
+    headers:
+      Host: m9rrrfgh.459.pp.ua
+  udp: true
+- name: 🇺🇸 美国 - 紐約 - MASSIVEGRID - 23
+  server: 172.67.135.37
+  port: 443
+  type: trojan
+  password: 4f435a3a-dfb8-4c90-b637-8df8c5d44550
+  sni: m9rrrfgh.459.pp.ua
+  alpn:
+  - http/1.1
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /l6lvY4hFZriQDBimbKYmPIggy
+    headers:
+      Host: m9rrrfgh.459.pp.ua
+  udp: true
+- name: 🇺🇸 美国 - 紐約 - MASSIVEGRID - 66
+  server: 104.21.71.83
+  port: 443
+  type: trojan
+  password: 03c93f49-d573-4889-a4bb-187047c5a314
+  sni: M7Yyu.777162.xYZ
+  network: ws
+  ws-opts:
+    path: /Rij8gsblmlfrZUch7YcAPgiEbt
+    headers:
+      Host: M7Yyu.777162.xYZ
+- name: 🇺🇸 美国 - 紐約 - MASSIVEGRID - 70
+  server: 172.67.158.146
+  port: 443
+  type: vless
+  uuid: 03c93f49-d573-4889-a4bb-187047c5a314
+  tls: true
+  alpn:
+  - http/1.1
+  servername: m7rtTYu.777169.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /bstMMelSTch7YcAPgiEbt
+    headers:
+      Host: m7rttyu.777169.xyz
+  udp: true
+- name: 🇺🇸 美国 - 紐約 - Massivegrid LTD - 161
+  server: 104.21.82.14
+  port: 443
+  type: vless
+  uuid: 53721970-2138-4263-8c9c-21397e759c06
+  tls: true
+  alpn:
+  - http/1.1
+  servername: m3EeerT.777259.xYZ
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /Bt93qlsreYHzV5Ii9WW
+    headers:
+      Host: m3eeert.777259.xyz
+  udp: true
+- name: 🇺🇸 美国 - 紐約 - Massivegrid LTD - 163
+  server: 172.67.150.169
+  port: 443
+  type: vless
+  uuid: 53721970-2138-4263-8c9c-21397e759c06
+  tls: true
+  alpn:
+  - http/1.1
+  servername: m3EeerT.777259.xYZ
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /Bt93qlsreYHzV5Ii9WW
+    headers:
+      Host: m3eeert.777259.xyz
+  udp: true
+- name: 🇺🇸 美国 - 紐約 - Massivegrid LTD - 177
+  server: 104.21.7.147
+  port: 443
+  type: vless
+  uuid: 08355b07-1f90-4225-a420-6373c2e1c059
+  tls: true
+  alpn:
+  - http/1.1
+  servername: m12wErT.HuangSHAnG.dpDNS.Org
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vaETNuCIptYKnk9eiIGVIW
+    headers:
+      Host: m12wert.huangshang.dpdns.org
+  udp: true
+- name: 🇺🇸 美国 - 紐約 - Massivegrid LTD - 200
+  server: 104.21.63.226
+  port: 443
+  type: vless
+  uuid: b30a50bc-0f63-422d-bbd6-8c790c0abb4d
+  tls: true
+  alpn:
+  - http/1.1
+  servername: m8ui9.457.pp.ua
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /32FkuhQSR866TVMXPAl
+    headers:
+      Host: m8ui9.457.pp.ua
+  udp: true
+- name: 🇺🇸 美国 - 紐約 - Massivegrid LTD - 236
+  server: 172.67.150.57
+  port: 443
+  type: vless
+  uuid: 67db0c34-ae7a-4369-a6b5-554c99d8e5c9
+  tls: true
+  servername: M4deRTyU8.999358.XyZ
+  network: ws
+  ws-opts:
+    path: /a2YATZF8eZrBwsbnEcmJLxC
+    headers:
+      Host: M4deRTyU8.999358.XyZ
+- name: 🇺🇸 美国 - 紐約 - Massivegrid LTD - 241
+  server: m8ui9.457.pp.ua
+  port: 443
+  type: vless
+  uuid: b30a50bc-0f63-422d-bbd6-8c790c0abb4d
+  tls: true
+  servername: m8ui9.457.pp.ua
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /32FkuhQSR866TVMXPAl
+    headers:
+      Host: m8ui9.457.pp.ua
+- name: 🇺🇸 美国 - 紐約 - Massivegrid LTD - 249
+  server: 172.67.172.91
+  port: 443
+  type: vless
+  uuid: b30a50bc-0f63-422d-bbd6-8c790c0abb4d
+  tls: true
+  alpn:
+  - http/1.1
+  servername: m8ui9.457.pp.ua
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /32FkuhQSR866TVMXPAl
+    headers:
+      Host: m8ui9.457.pp.ua
+  udp: true
+- name: 🇺🇸 美国 - 紐約 - Massivegrid LTD - 250
+  server: m8yuitr.457.pp.ua
+  port: 443
+  type: trojan
+  password: b30a50bc-0f63-422d-bbd6-8c790c0abb4d
+  sni: m8yuitr.457.pp.ua
+  alpn:
+  - http/1.1
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /KLcD0D18SR866TVMXPAl
+    headers:
+      Host: m8yuitr.457.pp.ua
+  udp: true
+- name: 🇺🇸 美国 - 紐約 - Massivegrid LTD - 255
+  server: m11sdfgrw4rty.859886.xyz
+  port: 443
+  type: vless
+  uuid: 0a28b420-4f7c-43ad-a29e-80068ce08263
+  tls: true
+  alpn:
+  - http/1.1
+  servername: m11SdFgRw4rTy.859886.XYZ
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /dKFj3vjbdiwxY9TZlulnnYPb86csp
+    headers:
+      Host: m11sdfgrw4rty.859886.xyz
+  udp: true
+- name: 🇺🇸 美国 - 紐約 - Massivegrid LTD - 291
+  server: m11wER56.859886.XYZ
+  port: 80
+  type: vmess
+  uuid: 0a28b420-4f7c-43ad-a29e-80068ce08263
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /lhU8ShsoPZlulnnYPb86csp
+    headers:
+      Host: m11wer56.859886.xyz
+  udp: true
+- name: 🇺🇸 美国 - 紐約 - Massivegrid LTD - 292
+  server: m11sERFGH.459.pP.uA
+  port: 443
+  type: vmess
+  uuid: 0a28b420-4f7c-43ad-a29e-80068ce08263
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  servername: m11SERFGh.459.Pp.Ua
+  network: ws
+  ws-opts:
+    path: /lhU8ShsoPZlulnnYPb86csp
+    headers:
+      Host: m11serfgh.459.pp.ua
+  udp: true
+- name: 🇺🇸 美国 - 紐約 - Massivegrid LTD - 8
+  server: m11sdfg.890604.dpdns.org
+  port: 80
+  type: vmess
+  uuid: 0a28b420-4f7c-43ad-a29e-80068ce08263
+  alterId: 0
+  cipher: auto
   tls: false
   network: ws
   ws-opts:
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+    path: /lhU8ShsoPZlulnnYPb86csp
     headers:
-      Host: 23-lsjfjwiposkfls.hc2021.cfd
+      Host: m11sdfg.890604.dpdns.org
+- name: 🇺🇸 美国 - 紐約 - Massivegrid LTD - 9
+  server: m11wer56.859886.xyz
+  port: 80
+  type: vmess
+  uuid: 0a28b420-4f7c-43ad-a29e-80068ce08263
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /lhU8ShsoPZlulnnYPb86csp
+    headers:
+      Host: m11wer56.859886.xyz
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 100
+  server: 104.16.87.86
+  port: 2053
+  type: vless
+  uuid: 647c5c62-01e4-426e-90ac-b97e00d039b5
+  tls: true
+  servername: my126.worldip.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: my126.worldip.dpdns.org
   udp: true
-- name: 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 153
-  server: 104.16.124.207
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 129
+  server: 104.16.156.225
+  port: 443
+  type: vless
+  uuid: f40b19a1-5515-4c93-804c-334873d38449
+  tls: true
+  servername: autumn.norjson.top
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: autumn.norjson.top
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 147
+  server: 104.16.13.0
+  port: 2096
+  type: vless
+  uuid: 647c5c62-01e4-426e-90ac-b97e00d039b5
+  tls: true
+  servername: my126.worldip.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: my126.worldip.dpdns.org
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 148
+  server: 104.16.228.187
+  port: 443
+  type: vless
+  uuid: 647c5c62-01e4-426e-90ac-b97e00d039b5
+  tls: true
+  servername: my126.worldip.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: my126.worldip.dpdns.org
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 149
+  server: 190.93.244.85
+  port: 2087
+  type: vless
+  uuid: 647c5c62-01e4-426e-90ac-b97e00d039b5
+  tls: true
+  servername: my126.worldip.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: my126.worldip.dpdns.org
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 154
+  server: 190.93.246.246
+  port: 8443
+  type: vless
+  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+  tls: true
+  servername: bitget1.asdasd.click
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: bitget1.asdasd.click
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 157
+  server: 104.18.83.92
+  port: 443
+  type: vless
+  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
+  tls: true
+  servername: 0229.patterdeng.pp.ua
+  network: ws
+  ws-opts:
+    path: /proxyip=ProxyIP.Oracle.cmliussss.net
+    headers:
+      Host: 0229.patterdeng.pp.ua
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 159
+  server: 104.16.157.127
+  port: 2083
+  type: vless
+  uuid: 647c5c62-01e4-426e-90ac-b97e00d039b5
+  tls: true
+  servername: my126.worldip.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: my126.worldip.dpdns.org
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 160
+  server: 104.16.41.105
+  port: 2083
+  type: vless
+  uuid: 647c5c62-01e4-426e-90ac-b97e00d039b5
+  tls: true
+  servername: my126.worldip.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: my126.worldip.dpdns.org
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 164
+  server: 104.16.96.80
+  port: 2053
+  type: vless
+  uuid: 7ca28380-8f51-4eaa-89c9-6243bdf7f500
+  tls: true
+  servername: www.pjw5.top
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: www.pjw5.top
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 166
+  server: 104.16.26.37
+  port: 2083
+  type: vless
+  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+  tls: true
+  servername: bitget1.asdasd.click
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: bitget1.asdasd.click
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 168
+  server: 104.16.77.60
+  port: 2087
+  type: vless
+  uuid: 7ca28380-8f51-4eaa-89c9-6243bdf7f500
+  tls: true
+  servername: www.pjw5.top
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: www.pjw5.top
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 175
+  server: 104.17.147.22
+  port: 80
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  tls: false
+  servername: ipsychO.SUEx12.Ir
+  network: ws
+  ws-opts:
+    path: /re5IzbZ9IZZMddtw?ed=2560/?JOKERRVPNJoin_Bade_Channel@JOKERRVPN
+    headers:
+      Host: ipsycho.suex12.ir
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 182
+  server: 190.93.245.36
+  port: 8443
+  type: vless
+  uuid: 7ca28380-8f51-4eaa-89c9-6243bdf7f500
+  tls: true
+  servername: www.pjw5.top
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: www.pjw5.top
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 183
+  server: 104.16.32.247
+  port: 2096
+  type: vless
+  uuid: a54f31b2-36ed-4a93-903f-381f7105418b
+  tls: true
+  servername: 241888.xyz
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: 241888.xyz
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 185
+  server: 104.16.213.210
+  port: 443
+  type: vless
+  uuid: d4324490-9d8f-4424-9a4d-a5178ebfbeca
+  tls: true
+  servername: cf-wuxianll.xixi.icu
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: cf-wuxianll.xixi.icu
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 188
+  server: 172.64.145.179
+  port: 443
+  type: vless
+  uuid: 44ae2a63-403b-40b2-9102-45eaf462df02
+  tls: true
+  servername: sol.us.kg
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: sol.us.kg
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 190
+  server: 104.16.59.79
+  port: 443
+  type: vless
+  uuid: be813f12-47ac-4b16-9146-8435ebacae3f
+  tls: true
+  servername: xw0083.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: xw0083.dpdns.org
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 191
+  server: 190.93.245.89
+  port: 443
+  type: vless
+  uuid: 740edf7e-2c3c-41c8-bb2a-aa0dbfcc36be
+  tls: true
+  servername: taoj.eu.org
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: taoj.eu.org
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 196
+  server: fred.ns.cloudflare.com
+  port: 443
+  type: vless
+  uuid: 5177172c-125a-47fa-bccd-3778b459a75e
+  tls: true
+  servername: vless04.trevely.us.kg
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vless04.trevely.us.kg
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 198
+  server: lynn.ns.cloudflare.com
+  port: 443
+  type: vless
+  uuid: 5177172c-125a-47fa-bccd-3778b459a75e
+  tls: true
+  servername: vless05.trevely.us.kg
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vless05.trevely.us.kg
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 202
+  server: 173.245.59.144
+  port: 443
+  type: vless
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  tls: true
+  alpn:
+  - h3
+  servername: edccj.ambercc.filegear-sg.me
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?ed=2560&proxyip=ts.hpc.tw
+    headers:
+      Host: edccj.ambercc.filegear-sg.me
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 205
+  server: 199.34.228.178
+  port: 8443
+  type: trojan
+  password: Aimer
+  sni: epccj.ambercc.filegear-sg.me
+  alpn:
+  - h3
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560&proxyip=ts.hpc.tw
+    headers:
+      Host: epccj.ambercc.filegear-sg.me
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 206
+  server: 172.64.33.128
+  port: 443
+  type: trojan
+  password: Aimer
+  sni: epccj.ambercc.filegear-sg.me
+  alpn:
+  - h3
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560&proxyip=ts.hpc.tw
+    headers:
+      Host: epccj.ambercc.filegear-sg.me
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 207
+  server: 104.16.74.176
   port: 443
   type: vless
   uuid: 4b7251f3-d895-4c5b-8108-b83e80c73c3f
@@ -56,1320 +716,522 @@ proxies:
     path: /?ed=2560
     headers:
       Host: pzdxlzk97.dpdns.org
-- name: 🇨🇴 CO_125
-  server: 181.119.30.20
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 208
+  server: 104.16.64.172
+  port: 443
+  type: vless
+  uuid: 7ca28380-8f51-4eaa-89c9-6243bdf7f500
+  tls: true
+  servername: www.pjw5.top
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: www.pjw5.top
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 210
+  server: 104.18.80.243
+  port: 443
+  type: vless
+  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
+  tls: true
+  servername: 0229.patterdeng.pp.ua
+  network: ws
+  ws-opts:
+    path: /proxyip=ProxyIP.Oracle.cmliussss.net
+    headers:
+      Host: 0229.patterdeng.pp.ua
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 211
+  server: 104.16.34.45
+  port: 443
+  type: vless
+  uuid: be813f12-47ac-4b16-9146-8435ebacae3f
+  tls: true
+  servername: xw0083.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: xw0083.dpdns.org
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 212
+  server: 104.16.200.182
+  port: 443
+  type: vless
+  uuid: 7ca28380-8f51-4eaa-89c9-6243bdf7f500
+  tls: true
+  servername: www.pjw5.top
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: www.pjw5.top
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 213
+  server: 104.16.86.40
+  port: 2096
+  type: vless
+  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+  tls: true
+  servername: bitget1.asdasd.click
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: bitget1.asdasd.click
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 217
+  server: 172.64.35.82
+  port: 443
+  type: vless
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  tls: true
+  alpn:
+  - h3
+  servername: edccj.ambercc.filegear-sg.me
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?ed=2560&proxyip=ts.hpc.tw
+    headers:
+      Host: edccj.ambercc.filegear-sg.me
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 228
+  server: 190.93.244.213
+  port: 2096
+  type: vless
+  uuid: 7ca28380-8f51-4eaa-89c9-6243bdf7f500
+  tls: true
+  servername: www.pjw5.top
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: www.pjw5.top
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 229
+  server: 104.16.168.63
+  port: 443
+  type: vless
+  uuid: 44ae2a63-403b-40b2-9102-45eaf462df02
+  tls: true
+  servername: sol.us.kg
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: sol.us.kg
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 232
+  server: 190.93.247.142
+  port: 2053
+  type: vless
+  uuid: a54f31b2-36ed-4a93-903f-381f7105418b
+  tls: true
+  servername: 241888.xyz
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: 241888.xyz
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 234
+  server: 190.93.245.121
+  port: 2053
+  type: vless
+  uuid: a54f31b2-36ed-4a93-903f-381f7105418b
+  tls: true
+  servername: 241888.xyz
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: 241888.xyz
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 242
+  server: 192.200.160.19
+  port: 8443
+  type: vless
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  tls: true
+  alpn:
+  - h3
+  servername: edccj.ambercc.filegear-sg.me
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?ed=2560&proxyip=ts.hpc.tw
+    headers:
+      Host: edccj.ambercc.filegear-sg.me
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 245
+  server: 192.0.54.221
+  port: 2083
+  type: vless
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  tls: true
+  alpn:
+  - h3
+  servername: edccj.ambercc.filegear-sg.me
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?ed=2560&proxyip=ts.hpc.tw
+    headers:
+      Host: edccj.ambercc.filegear-sg.me
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 246
+  server: 27.50.49.136
+  port: 443
+  type: vless
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  tls: true
+  alpn:
+  - h3
+  servername: edccj.ambercc.filegear-sg.me
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?ed=2560&proxyip=ts.hpc.tw
+    headers:
+      Host: edccj.ambercc.filegear-sg.me
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 247
+  server: pranab.ns.cloudflare.com
+  port: 443
+  type: vless
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  tls: true
+  alpn:
+  - h3
+  servername: edccj.ambercc.filegear-sg.me
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?ed=2560&proxyip=ts.hpc.tw
+    headers:
+      Host: edccj.ambercc.filegear-sg.me
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 25
+  server: 167.68.4.10
+  port: 2096
+  type: trojan
+  password: Aimer
+  sni: epccj.ambercc.filegear-sg.me
+  alpn:
+  - h3
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560&proxyip=ts.hpc.tw
+    headers:
+      Host: epccj.ambercc.filegear-sg.me
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 254
+  server: 63.141.128.76
+  port: 443
+  type: vless
+  uuid: 7b32d76e-9157-47ef-9cb5-9e71bd9d3be1
+  tls: true
+  servername: v2-150.pages.dev
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: v2-150.pages.dev
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 260
+  server: 104.16.158.197
+  port: 443
+  type: vless
+  uuid: 740edf7e-2c3c-41c8-bb2a-aa0dbfcc36be
+  tls: true
+  servername: taoj.eu.org
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: taoj.eu.org
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 266
+  server: 104.18.8.215
+  port: 8080
+  type: vless
+  uuid: 99678074-122c-46db-97fc-80b604c20158
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: shuige2.ywfmu-qx.workers.dev
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 27
+  server: 172.64.87.97
+  port: 443
+  type: vless
+  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+  tls: true
+  servername: bitget1.asdasd.click
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: bitget1.asdasd.click
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 28
+  server: 135.84.76.75
+  port: 8880
+  type: vless
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  tls: false
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: 23-lsjfjwiposkfls.hc2021.cfd
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 29
+  server: 104.16.190.87
+  port: 2053
+  type: vless
+  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+  tls: true
+  servername: bitget1.asdasd.click
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: bitget1.asdasd.click
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 293
+  server: 104.17.102.95
+  port: 443
+  type: vless
+  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
+  tls: true
+  servername: 0229.patterdeng.pp.ua
+  network: ws
+  ws-opts:
+    path: /proxyip=ProxyIP.Oracle.cmliussss.net
+    headers:
+      Host: 0229.patterdeng.pp.ua
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 294
+  server: 141.193.213.238
+  port: 80
+  type: vless
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  tls: false
+  network: ws
+  ws-opts:
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+    headers:
+      Host: 23-lsjfjwiposkfls.hc2021.cfd
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 30
+  server: 185.16.110.70
+  port: 443
+  type: vless
+  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
+  tls: true
+  servername: 0229.patterdeng.pp.ua
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: 0229.patterdeng.pp.ua
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 31
+  server: 104.16.82.210
+  port: 2087
+  type: vless
+  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+  tls: true
+  servername: bitget1.asdasd.click
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: bitget1.asdasd.click
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 32
+  server: www.speedtest.net
+  port: 80
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  tls: false
+  servername: ipsychO.SUEx12.Ir
+  network: ws
+  ws-opts:
+    path: /re5IzbZ9IZZMddtw?ed=2560/?JOKERRVPNJoin_Bade_Channel@JOKERRVPN
+    headers:
+      Host: ipsycho.suex12.ir
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 33
+  server: 104.16.197.220
+  port: 443
+  type: vless
+  uuid: d4324490-9d8f-4424-9a4d-a5178ebfbeca
+  tls: true
+  servername: cf-wuxianll.xixi.icu
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: cf-wuxianll.xixi.icu
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 34
+  server: 160.123.255.51
+  port: 443
+  type: vless
+  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
+  tls: true
+  servername: 0229.patterdeng.pp.ua
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: 0229.patterdeng.pp.ua
+  udp: true
+- name: _92
+  server: ca-full.privateip.net
+  type: trojan
+  port: 443
+  password: acfef609-b3c7-4e52-b292-8921d5fca90d
+- name: _93
+  server: 104.21.71.8
+  type: trojan
+  port: 2053
+  password: 9kHuEbiX7Bcp
+  alpn:
+  - h3%2Ch2%2Chttp%2F1.1
+  sni: khabaronline.itn24.ir
+  skip-cert-verify: true
+  udp: true
+- name: _95
+  server: 104.21.80.1
+  type: trojan
+  port: 443
+  password: psycho
+  alpn:
+  - http%2F1.1
+  sni: PSYchO.SueX12.Ir
+  skip-cert-verify: true
+  udp: true
+- name: _96
+  server: 104.21.44.185
+  type: trojan
+  port: 2053
+  password: dreDeMpIQpnv
+  alpn:
+  - h3%2Ch2%2Chttp%2F1.1
+  sni: aryanews.onetwothree123.ir
+  skip-cert-verify: true
+  udp: true
+- name: _97
+  server: 104.21.112.1
+  type: trojan
+  port: 443
+  password: psycho
+  alpn:
+  - http%2F1.1
+  sni: pSYcho.sUeX12.IR
+  skip-cert-verify: true
+  udp: true
+- name: _98
+  server: 89.187.181.179
+  type: trojan
+  port: 43118
+  password: ypDt8RkT7J
+  skip-cert-verify: true
+  udp: true
+- name: _99
+  server: 104.21.30.167
+  type: trojan
+  port: 443
+  password: 2fec7227-9abe-46f2-af18-78302b836c45
+  alpn:
+  - http%2F1.1
+  sni: 3y.2032.pp.ua
+  skip-cert-verify: true
+  udp: true
+- name: 🇧🇩 BD_102
+  server: 103.106.1.92
   type: ss
-  country: 🇨🇴 CO
+  country: 🇧🇩 BD
+  port: 23492
+  password: yMX9WGPgUEcRZmlaa0YHHC
+  cipher: chacha20-ietf-poly1305
+- name: 🇧🇪 BE_103
+  server: 192.71.249.146
+  type: ss
+  country: 🇧🇪 BE
   port: 990
   password: f8f7aCzcPKbsF8p3
   cipher: chacha20-ietf-poly1305
-- name: 🇨🇿 CZ_126
-  server: 195.181.160.6
+- name: 🇨🇦CA_110
+  server: ca225.vpnbook.com
   type: ss
-  country: 🇨🇿 CZ
-  port: 990
-  password: f8f7aCzcPKbsF8p3
+  country: 🇨🇦CA
+  port: 80
+  password: JIhN6rBKkaEboLNXVSv5rq
   cipher: chacha20-ietf-poly1305
-- name: 🇨🇿 CZ_127
+- name: 🇨🇿 CZ_116
   server: 79.127.233.170
   type: ss
   country: 🇨🇿 CZ
   port: 990
   password: f8f7aCzcPKbsF8p3
   cipher: chacha20-ietf-poly1305
-- name: 🇩🇪 DE_128
-  server: 92.118.205.228
+- name: 🇨🇿 CZ_117
+  server: 195.181.160.6
   type: ss
-  country: 🇩🇪 DE
+  country: 🇨🇿 CZ
   port: 990
   password: f8f7aCzcPKbsF8p3
   cipher: chacha20-ietf-poly1305
-- name: 🇩🇪 DE_129
-  server: beta.mattenadene.org
+- name: 🇱🇹 LT_398
+  server: 45.87.175.181
   type: ss
-  country: 🇩🇪 DE
-  port: 54075
-  password: o38yuvzSe3m5aDNpHtUPH1zGwbGEXXMDsGwVaub2SYEmHUa2WGZUjiezX3Vvva9CCzpjxYtuJLgKsSnsyKBf9ciPVba3y4o3
+  country: 🇱🇹 LT
+  port: 8080
+  password: QCXDxuDlTTMD7jtgHUjIoj
   cipher: chacha20-ietf-poly1305
-- name: 🇩🇪DE_131
-  server: 80.92.204.106
+- name: 🇱🇹 LT_399
+  server: 45.87.175.157
   type: ss
-  country: 🇩🇪DE
-  port: 9031
-  password: BwcAUZk8hUFAkDGN
-  cipher: aes-256-cfb
-- name: 🇩🇪DE_132
-  server: 80.92.204.106
-  type: ss
-  country: 🇩🇪DE
-  port: 9061
-  password: 4R3hUfZ2FHhDmNcP
-  cipher: aes-256-cfb
-- name: 🇩🇪DE_133
-  server: 80.92.204.106
-  type: ss
-  country: 🇩🇪DE
-  port: 9098
-  password: aLpQtfEZe445QyHk
-  cipher: aes-256-cfb
-- name: 🇩🇪DE_134
-  server: 80.92.204.106
-  type: ss
-  country: 🇩🇪DE
-  port: 9025
-  password: XPtzA9sCug3SPR4c
-  cipher: aes-256-cfb
-- name: 🇩🇪DE_135
-  server: 80.92.204.106
-  type: ss
-  country: 🇩🇪DE
-  port: 9015
-  password: ZpNDDKRu9MagNvaf
-  cipher: aes-256-cfb
-- name: 🇩🇪DE_136
-  server: 80.92.204.106
-  type: ss
-  country: 🇩🇪DE
-  port: 9046
-  password: NvS8N4Vf8qAGPSCL
-  cipher: aes-256-cfb
-- name: 🇩🇪DE_137
-  server: 80.92.204.106
-  type: ss
-  country: 🇩🇪DE
-  port: 9042
-  password: S7KwUu7yBy58S3Ga
-  cipher: aes-256-cfb
-- name: 🇩🇪DE_138
-  server: 80.92.204.106
-  type: ss
-  country: 🇩🇪DE
-  port: 9097
-  password: Sn5B7jTqr76aCJT8
-  cipher: aes-256-cfb
-- name: 🇩🇪DE_139
-  server: 80.92.204.106
-  type: ss
-  country: 🇩🇪DE
-  port: 9006
-  password: FAdUvMJUq5vDgKEq
-  cipher: aes-256-cfb
-- name: 🇩🇪DE_140
-  server: 139.162.158.172
-  type: trojan
-  country: 🇩🇪DE
-  port: 443
-  password: 665c944d-047d-4659-80d5-3eaac70241a9
-  sni: de2-full.privateip.net
-  skip-cert-verify: true
-  udp: true
-- name: 🇪🇸 ES_141
-  server: 92.38.171.215
-  type: ss
-  country: 🇪🇸 ES
-  port: 31348
-  password: 0RsrcFJ1vOsWEqg3P55hvaacKfuShT0cc1h0t8AD0NA8u1uR
+  country: 🇱🇹 LT
+  port: 8080
+  password: 4a2rfixophdjffa8KVA4Aa
   cipher: chacha20-ietf-poly1305
-- name: 🇪🇸 ES_142
-  server: 134.255.210.49
+- name: 🇱🇹 LT_401
+  server: 45.87.175.178
   type: ss
-  country: 🇪🇸 ES
-  port: 990
-  password: f8f7aCzcPKbsF8p3
+  country: 🇱🇹 LT
+  port: 8080
+  password: cvII85TrW6n0OGyfpHVS1u
   cipher: chacha20-ietf-poly1305
-- name: 🇫🇷 FR_144
-  server: 51.195.119.47
+- name: 🇱🇹 LT_403
+  server: 45.87.175.181
   type: ss
-  country: 🇫🇷 FR
-  port: 1080
-  password: qXvO7zYU7KeaB0Md7DQLow
+  country: 🇱🇹 LT
+  port: 8080
+  password: cvII85TrW6n0OGyfpHVS1u
   cipher: chacha20-ietf-poly1305
-- name: 🇬🇧 GB_154
-  server: 185.126.239.250
+- name: 🇱🇹 LT_404
+  server: 45.87.175.178
   type: ss
-  country: 🇬🇧 GB
-  port: 990
-  password: f8f7aCzcPKbsF8p3
+  country: 🇱🇹 LT
+  port: 8080
+  password: 1RWwXhwfAB5gAEozU4G2Pg
   cipher: chacha20-ietf-poly1305
-- name: 🇬🇧GB_159
-  server: 212.102.53.195
+- name: 🇱🇹 LT_406
+  server: 45.87.175.181
   type: ss
-  country: 🇬🇧GB
-  port: 443
-  password: shadowsocks
-  cipher: aes-128-gcm
-- name: 🇬🇧GB_160
-  server: 212.102.53.198
-  type: ss
-  country: 🇬🇧GB
-  port: 443
-  password: shadowsocks
-  cipher: aes-128-gcm
-- name: 🇬🇧GB_161
-  server: uk2-full.privateip.net
-  type: trojan
-  country: 🇬🇧GB
-  port: 443
-  password: 30761083-5dcd-49d6-85b5-33756ef1f7ed
-  skip-cert-verify: true
-  udp: true
-- name: 🇬🇮GI_162
-  server: tr-full.privateip.net
-  type: trojan
-  country: 🇬🇮GI
-  port: 443
-  password: 4d5cc30d-df0f-4d9a-ab3c-6a70ab0ce361
-  skip-cert-verify: true
-  udp: true
-- name: 🇬🇮GI_163
-  server: 95.164.116.35
-  type: trojan
-  country: 🇬🇮GI
-  port: 443
-  password: 4d5cc30d-df0f-4d9a-ab3c-6a70ab0ce361
-  skip-cert-verify: true
-  udp: true
-- name: 🇬🇮GI_164
-  server: 95.164.114.43
-  type: trojan
-  country: 🇬🇮GI
-  port: 443
-  password: 6332d0b6-d5c2-4afa-8170-3bfb5e181879
-  skip-cert-verify: true
-  udp: true
-- name: 🇬🇮GI_165
-  server: kz-full.privateip.net
-  type: trojan
-  country: 🇬🇮GI
-  port: 443
-  password: 6332d0b6-d5c2-4afa-8170-3bfb5e181879
-  skip-cert-verify: true
-  udp: true
-- name: 🇭🇰 HK_166
-  server: 62.60.231.81
-  type: ss
-  country: 🇭🇰 HK
-  port: 39008
-  password: W7fIo8Gp6TLb1YHZNH1fu5
+  country: 🇱🇹 LT
+  port: 8080
+  password: 4a2rfixophdjffa8KVA4Aa
   cipher: chacha20-ietf-poly1305
-- name: 🇭🇰 HK_167
-  server: 103.36.91.23
+- name: 🇱🇹 LT_414
+  server: 45.87.175.178
   type: ss
-  country: 🇭🇰 HK
-  port: 8388
-  password: asd123456
-  cipher: chacha20-ietf
-- name: 🇭🇰 HK_168
-  server: 203.23.128.33
-  type: ss
-  country: 🇭🇰 HK
-  port: 990
-  password: f8f7aCzcPKbsF8p3
+  country: 🇱🇹 LT
+  port: 8080
+  password: 4a2rfixophdjffa8KVA4Aa
   cipher: chacha20-ietf-poly1305
-- name: 🇭🇰 HK_169
-  server: 9e6fe842-sv4n40-t6ctgc-1s3hd.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: 1c641c86-5078-11ef-a585-f23c9164ca5d
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_170
-  server: 261a4cf7-sv2sg0-t6ebrn-1f8zp.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: dd321b8e-a890-11ed-a8bf-f23c91cfbbc9
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_171
-  server: 5c36659d-sv2sg0-swudbv-df1b.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: 9b94a182-5a1b-11ee-b866-f23c9164ca5d
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_172
-  server: 5f39e98f-sv4n40-t6qezp-up3z.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: db8cf8a2-dc88-11ea-87ad-f23c913c8d2b
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_173
-  server: 5f0f42e9-sv4n40-t7udc0-1pqhp.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: b02327ac-a49a-11ef-a673-f23c913c8d2b
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_174
-  server: da79a8fd-sv4n40-t71mow-4cl7.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: 7c129766-8656-11ea-8fc9-f23c913c8d2b
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_175
-  server: cc3bbb47-sv0xs0-svc6zc-tf26.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: baefe2f4-b41a-11ee-91e9-f23c913c8d2b
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_176
-  server: ea2d3cd3-sv0xs0-t9azkv-17xn0.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: 4faf123a-572a-11eb-8684-f23c913c8d2b
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_177
-  server: bcda8de7-sv2sg0-t7uztx-1q41p.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: 3cc92f96-9f36-11ee-9144-f23c9164ca5d
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_178
-  server: 77d7b6e4-sv2sg0-sw5wi7-ufc0.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: 22308988-8548-11ea-a22e-f23c91cfbbc9
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_179
-  server: a1a13b07-sv4n40-svvk7h-1tgdw.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: a19397b8-f7fa-11ef-836a-f23c913c8d2b
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_180
-  server: f42f46ca-sv0xs0-sv37gm-81nv.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: 47e91fb6-25b8-df52-bc18-3cdc8548192f
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_181
-  server: ace57aa9-sv0xs0-svlime-j22e.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: d189a7ec-f038-11ef-bb64-f23c913c8d2b
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_182
-  server: 5a2bfaff-sv2sg0-t32oyt-1k9hc.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: 1c7eef0a-56de-11ee-a993-f23c9164ca5d
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_183
-  server: 1f142dee-sv4n40-sw0aec-1t3oz.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: b3370cdc-c26e-11ef-bd97-f23c9164ca5d
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_184
-  server: 8cb66822-sv4n40-t2ke0u-1tif6.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: 3ec273e4-0087-11f0-ab20-f23c91cfbbc9
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_185
-  server: 0af112c9-sv2sg0-swbdgq-1iddy.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: e168c43e-c6d9-11ed-a8bf-f23c91cfbbc9
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_186
-  server: 2e305220-sv4n40-t4jw17-dr26.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: 5f86d5a4-5e8c-11ea-8f64-f23c91cfbbc9
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_187
-  server: d0c73a75-sv2sg0-svk8tn-l1v4.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: 0d6b74f2-01c0-11ee-9014-f23c91369f2d
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_188
-  server: ecf4d23c-sv4n40-tcjq63-18xa0.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: 1789a3ae-f017-11ef-8eaf-f23c9164ca5d
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_189
-  server: 9818edd4-sv2sg0-td5fm5-4dl0.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: 56b05600-e140-11ec-a3de-f23c91cfbbc9
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_190
-  server: 8ab19792-sv4n40-svxfqo-1hfyu.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: ab0147e4-e673-11ee-8058-f23c91cfbbc9
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_191
-  server: f6330907-sv2sg0-t22oxl-1snx2.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: 81d041d0-91a5-11ef-959c-f23c9164ca5d
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_192
-  server: b79f1757-sv4n40-ta1zbm-1lusm.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: 85d50914-8de0-11ef-83cc-f23c913c8d2b
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_193
-  server: 6b71f268-sv4n40-tdh9w7-ahsb.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: 2e42c1ee-aaaa-11ec-bb74-f23c9164ca5d
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_194
-  server: 8546e833-sv4n40-t4v3jz-1k8ga.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: f860f2da-5035-11ed-bb74-f23c9164ca5d
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_195
-  server: 20e5edcd-sv4n40-tdzlqm-1h1y5.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: ef332c4a-a21b-11ed-9765-f23c9164ca5d
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_196
-  server: aae81205-sva740-sw0nbj-1anhm.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: 3f58d3fe-f4ea-11eb-8673-f23c9164ca5d
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_197
-  server: ac5c4ff4-sv2sg0-swskl4-1rh01.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: 4c0ba4a2-1510-11ef-ba65-f23c91cfbbc9
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_198
-  server: 024a2f7b-sv0xs0-t2whio-1jcwu.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: f93486ce-cc84-11ed-9e98-f23c913c8d2b
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_199
-  server: 00967073-sv4n40-td5fm5-4dl0.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: 56b05600-e140-11ec-a3de-f23c91cfbbc9
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_200
-  server: 01b4291a-sv0xs0-sw2c3o-1thts.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: cb96c846-fd6d-11ef-a910-f23c9164ca5d
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_201
-  server: fe32008f-sv2sg0-t83wtx-2rrb.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: ba64cdc5-c79a-326d-8e63-6903be8183a1
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_202
-  server: 2e3ac5d1-sv2sg0-t7udc0-1pqhp.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: b02327ac-a49a-11ef-a673-f23c913c8d2b
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_203
-  server: fb6f1580-sv2sg0-svpmdc-nx3b.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: 32315324-cf6b-11ed-979b-f23c9164ca5d
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_204
-  server: b2d5cb20-sv2sg0-t7qy26-14g76.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: 4729b4c8-1790-11eb-8684-f23c913c8d2b
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_205
-  server: 8e42f8d1-sv0xs0-szxh9w-46gc.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: 225d1cca-d744-11ef-b790-f23c91cfbbc9
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_206
-  server: 63a845ef-sv4n40-svc6zc-tf26.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: baefe2f4-b41a-11ee-91e9-f23c913c8d2b
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_207
-  server: e7faf98f-sv2sg0-t802lu-1p9qc.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: 37e9a0f8-8ade-11ee-b03a-f23c913c8d2b
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_208
-  server: b66578d7-sv2sg0-t77vub-1kb47.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: d3660af8-6181-11ed-a8bf-f23c91cfbbc9
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_209
-  server: 364bc431-sv2sg0-t17ajj-1n7d9.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: 48e51dfa-db8f-11ed-a23f-f23c91369f2d
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_210
-  server: 272ffc58-sv2sg0-t4v3jz-1k8ga.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: f860f2da-5035-11ed-bb74-f23c9164ca5d
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_211
-  server: 35d66699-sv2sg0-tdzlqm-1h1y5.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: ef332c4a-a21b-11ed-9765-f23c9164ca5d
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_212
-  server: 99561b94-sv0xs0-t5cryd-4w8.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: ba7a37e3-033a-e1ab-06f6-9027aa4630f5
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_213
-  server: 4f8acdc9-sv0xs0-sw5wi7-ufc0.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: 22308988-8548-11ea-a22e-f23c91cfbbc9
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_214
-  server: 87a8ce25-sv2sg0-tbicd9-1go3q.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: 19dd9c70-e4a5-11ed-8347-f23c9164ca5d
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_215
-  server: 9d6913d5-sv0xs0-tcjq63-18xa0.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: 1789a3ae-f017-11ef-8eaf-f23c9164ca5d
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_216
-  server: 0065fbc3-sv2sg0-t12kpr-1feo5.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: a423a1b6-390c-11ee-bde0-f23c9164ca5d
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_217
-  server: 24671c5a-sv4n40-swjbgr-1kcpe.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: 3f514ea2-4662-11ed-a8bf-f23c91cfbbc9
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_218
-  server: 7adb4d04-sv2sg0-t83gk8-1swd2.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: b30b00e8-ec11-11ef-b306-f23c9164ca5d
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_219
-  server: a0ae8f27-sv4n40-sw5wi7-ufc0.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: 22308988-8548-11ea-a22e-f23c91cfbbc9
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_220
-  server: 604cf9a0-sv0xs0-t323lh-1t0nn.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: ba78226c-b772-11ef-ab53-f23c91cfbbc9
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_221
-  server: 8ad47030-sv2sg0-t5wcb1-13x18.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: e4499a62-0cfe-11eb-ad8c-f23c9164ca5d
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_222
-  server: a2121958-sv0xs0-tb36ag-1jfq7.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: baa46fd6-63c1-11ed-8ea9-f23c913c8d2b
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_226
-  server: c22fc613-sv2sg0-t4qa9y-g43g.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: 6ddb6a68-d5f5-ca30-3943-cf0c9876d50c
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_227
-  server: 97ec248c-sv2sg0-t1l34b-s6zq.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: b989d57a-ccc3-11ee-b3a0-f23c9164ca5d
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_229
-  server: 12988683-sv2sg0-t2whio-1jcwu.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: f93486ce-cc84-11ed-9e98-f23c913c8d2b
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_230
-  server: 33e3af20-sv0xs0-t83wtx-2rrb.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: ba64cdc5-c79a-326d-8e63-6903be8183a1
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_231
-  server: ab920dde-sv2sg0-sv8lir-1su7j.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: 0e4ec84a-a324-11ef-81b0-f23c9164ca5d
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_232
-  server: de6cdf0e-sv2sg0-syfj90-1r9dt.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: de003c72-0157-11ef-86da-f23c91cfbbc9
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_233
-  server: 0f64e685-sv0xs0-svwnuh-1t4wg.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: 1b13e20c-e778-11ef-907f-f23c913c8d2b
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_234
-  server: 3fa5b1b6-sv2sg0-sx8y86-uvgv.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: ee67070a-ceb2-11ed-bb7d-f23c913c8d2b
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_235
-  server: b1601217-sv2sg0-tcdlur-1qwom.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: 8d0ec7cc-eefa-11ee-9b59-f23c91cfbbc9
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_236
-  server: 0afadb4a-sv4n40-tc61cs-1tja8.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: d2f0bee2-02f1-11f0-8eb0-f23c9164ca5d
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_237
-  server: 04165a49-sv2sg0-t5cryd-4w8.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: ba7a37e3-033a-e1ab-06f6-9027aa4630f5
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_238
-  server: 418446e2-sv2sg0-t2nkut-jx5r.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: 73bfcc1c-5814-5f2a-b43a-3ef6af011db8
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_239
-  server: df5601b9-sv2sg0-t0c4yu-1qc0q.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: 82fc0c0a-bc59-11ee-a737-f23c9164ca5d
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_240
-  server: c857cef9-sv2sg0-swni7u-1r3y8.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: 0a7a2478-f4d6-11ee-9628-f23c9164ca5d
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_241
-  server: f8579e49-sv4n40-t9hghw-1sdoq.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: 7c077572-6da9-11ef-b786-f23c91cfbbc9
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -1382,106 +1244,106 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 153
-  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 144
-  - 🇨🇿 CZ_127
-  - 🇬🇧GB_159
-  - 🇬🇧GB_160
-  - 🇩🇪DE_136
-  - 🇩🇪DE_138
-  - 🇩🇪DE_131
-  - 🇩🇪DE_132
-  - 🇩🇪DE_135
-  - 🇩🇪DE_134
-  - 🇩🇪DE_137
-  - 🇩🇪DE_133
-  - 🇫🇷 FR_144
-  - 🇩🇪DE_139
-  - 🇨🇿 CZ_126
-  - 🇭🇰 HK_166
-  - 🇩🇪DE_140
-  - 🇩🇪 DE_128
-  - 🇪🇸 ES_141
-  - 🇬🇧GB_161
-  - 🇭🇰 HK_168
-  - 🇪🇸 ES_142
-  - 🇬🇧 GB_154
-  - 🇬🇮GI_163
-  - 🇭🇰 HK_167
-  - 🇩🇪 DE_129
-  - 🇬🇮GI_164
-  - 🇬🇮GI_162
-  - 🇨🇴 CO_125
-  - 🇭🇰 HK_178
-  - 🇭🇰 HK_171
-  - 🇭🇰 HK_189
-  - 🇭🇰 HK_218
-  - 🇭🇰 HK_236
-  - 🇭🇰 HK_175
-  - 🇭🇰 HK_227
-  - 🇭🇰 HK_199
-  - 🇭🇰 HK_192
-  - 🇭🇰 HK_170
-  - 🇭🇰 HK_176
-  - 🇭🇰 HK_177
-  - 🇭🇰 HK_186
-  - 🇭🇰 HK_234
-  - 🇭🇰 HK_232
-  - 🇭🇰 HK_198
-  - 🇭🇰 HK_200
-  - 🇭🇰 HK_201
-  - 🇭🇰 HK_233
-  - 🇭🇰 HK_190
-  - 🇭🇰 HK_173
-  - 🇭🇰 HK_194
-  - 🇭🇰 HK_180
-  - 🇭🇰 HK_219
-  - 🇭🇰 HK_237
-  - 🇭🇰 HK_220
-  - 🇭🇰 HK_202
-  - 🇭🇰 HK_217
-  - 🇭🇰 HK_169
-  - 🇭🇰 HK_222
-  - 🇭🇰 HK_197
-  - 🇭🇰 HK_230
-  - 🇭🇰 HK_188
-  - 🇭🇰 HK_179
-  - 🇭🇰 HK_185
-  - 🇭🇰 HK_195
-  - 🇭🇰 HK_240
-  - 🇭🇰 HK_172
-  - 🇭🇰 HK_215
-  - 🇭🇰 HK_226
-  - 🇭🇰 HK_241
-  - 🇭🇰 HK_191
-  - 🇭🇰 HK_212
-  - 🇭🇰 HK_193
-  - 🇭🇰 HK_216
-  - 🇭🇰 HK_174
-  - 🇭🇰 HK_182
-  - 🇭🇰 HK_238
-  - 🇭🇰 HK_207
-  - 🇭🇰 HK_184
-  - 🇭🇰 HK_187
-  - 🇭🇰 HK_214
-  - 🇭🇰 HK_229
-  - 🇭🇰 HK_203
-  - 🇭🇰 HK_235
-  - 🇭🇰 HK_211
-  - 🇭🇰 HK_205
-  - 🇭🇰 HK_221
-  - 🇭🇰 HK_196
-  - 🇭🇰 HK_210
-  - 🇭🇰 HK_213
-  - 🇭🇰 HK_239
-  - 🇭🇰 HK_181
-  - 🇭🇰 HK_209
-  - 🇭🇰 HK_231
-  - 🇭🇰 HK_208
-  - 🇭🇰 HK_183
-  - 🇭🇰 HK_204
-  - 🇬🇮GI_165
-  - 🇭🇰 HK_206
+  - _93
+  - _99
+  - _96
+  - _95
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 27
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 213
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 34
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 294
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 266
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 30
+  - _97
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 29
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 182
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 175
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 31
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 211
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 212
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 147
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 254
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 168
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 210
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 207
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 148
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 246
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 33
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 208
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 164
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 183
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 188
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 228
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 166
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 154
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 185
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 157
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 245
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 160
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 100
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 159
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 190
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 293
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 25
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 247
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 28
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 242
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 232
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 229
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 202
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 217
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 196
+  - 🇺🇸 美国 - 紐約 - MASSIVEGRID - 23
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 206
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 234
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 205
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 149
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 260
+  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 177
+  - 🇺🇸 美国 - 紐約 - MASSIVEGRID - 204
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 198
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 129
+  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 9
+  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 236
+  - _98
+  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 200
+  - 🇺🇸 美国 - 紐約 - MASSIVEGRID - 22
+  - 🇺🇸 美国 - 紐約 - MASSIVEGRID - 203
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 191
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 32
+  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 291
+  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 255
+  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 8
+  - 🇱🇹 LT_414
+  - 🇱🇹 LT_404
+  - 🇱🇹 LT_398
+  - 🇨🇿 CZ_116
+  - _92
+  - 🇧🇩 BD_102
+  - 🇨🇦CA_110
+  - 🇱🇹 LT_401
+  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 249
+  - 🇺🇸 美国 - 紐約 - MASSIVEGRID - 70
+  - 🇺🇸 美国 - 紐約 - MASSIVEGRID - 66
+  - 🇨🇿 CZ_117
+  - 🇱🇹 LT_406
+  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 292
+  - 🇱🇹 LT_403
+  - 🇧🇪 BE_103
+  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 241
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 96
+  - 🇱🇹 LT_399
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 95
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 89
+  - 🇺🇸 美国 - 紐約 - Cloudflare, Inc. - 221
+  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 250
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 63
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 252
+  - 🇺🇸 美国 - 盐湖城 - Bage Cloud LLC - 62
+  - 🇺🇸 美国 - 盐湖城 - Bage Cloud LLC - 76
+  - 🇺🇸 美国 - 盐湖城 - Bage Cloud LLC - 60
+  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 163
+  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 161
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
@@ -1489,211 +1351,211 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 153
-  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 144
-  - 🇨🇿 CZ_127
-  - 🇬🇧GB_159
-  - 🇬🇧GB_160
-  - 🇩🇪DE_136
-  - 🇩🇪DE_138
-  - 🇩🇪DE_131
-  - 🇩🇪DE_132
-  - 🇩🇪DE_135
-  - 🇩🇪DE_134
-  - 🇩🇪DE_137
-  - 🇩🇪DE_133
-  - 🇫🇷 FR_144
-  - 🇩🇪DE_139
-  - 🇨🇿 CZ_126
-  - 🇭🇰 HK_166
-  - 🇩🇪DE_140
-  - 🇩🇪 DE_128
-  - 🇪🇸 ES_141
-  - 🇬🇧GB_161
-  - 🇭🇰 HK_168
-  - 🇪🇸 ES_142
-  - 🇬🇧 GB_154
-  - 🇬🇮GI_163
-  - 🇭🇰 HK_167
-  - 🇩🇪 DE_129
-  - 🇬🇮GI_164
-  - 🇬🇮GI_162
-  - 🇨🇴 CO_125
-  - 🇭🇰 HK_178
-  - 🇭🇰 HK_171
-  - 🇭🇰 HK_189
-  - 🇭🇰 HK_218
-  - 🇭🇰 HK_236
-  - 🇭🇰 HK_175
-  - 🇭🇰 HK_227
-  - 🇭🇰 HK_199
-  - 🇭🇰 HK_192
-  - 🇭🇰 HK_170
-  - 🇭🇰 HK_176
-  - 🇭🇰 HK_177
-  - 🇭🇰 HK_186
-  - 🇭🇰 HK_234
-  - 🇭🇰 HK_232
-  - 🇭🇰 HK_198
-  - 🇭🇰 HK_200
-  - 🇭🇰 HK_201
-  - 🇭🇰 HK_233
-  - 🇭🇰 HK_190
-  - 🇭🇰 HK_173
-  - 🇭🇰 HK_194
-  - 🇭🇰 HK_180
-  - 🇭🇰 HK_219
-  - 🇭🇰 HK_237
-  - 🇭🇰 HK_220
-  - 🇭🇰 HK_202
-  - 🇭🇰 HK_217
-  - 🇭🇰 HK_169
-  - 🇭🇰 HK_222
-  - 🇭🇰 HK_197
-  - 🇭🇰 HK_230
-  - 🇭🇰 HK_188
-  - 🇭🇰 HK_179
-  - 🇭🇰 HK_185
-  - 🇭🇰 HK_195
-  - 🇭🇰 HK_240
-  - 🇭🇰 HK_172
-  - 🇭🇰 HK_215
-  - 🇭🇰 HK_226
-  - 🇭🇰 HK_241
-  - 🇭🇰 HK_191
-  - 🇭🇰 HK_212
-  - 🇭🇰 HK_193
-  - 🇭🇰 HK_216
-  - 🇭🇰 HK_174
-  - 🇭🇰 HK_182
-  - 🇭🇰 HK_238
-  - 🇭🇰 HK_207
-  - 🇭🇰 HK_184
-  - 🇭🇰 HK_187
-  - 🇭🇰 HK_214
-  - 🇭🇰 HK_229
-  - 🇭🇰 HK_203
-  - 🇭🇰 HK_235
-  - 🇭🇰 HK_211
-  - 🇭🇰 HK_205
-  - 🇭🇰 HK_221
-  - 🇭🇰 HK_196
-  - 🇭🇰 HK_210
-  - 🇭🇰 HK_213
-  - 🇭🇰 HK_239
-  - 🇭🇰 HK_181
-  - 🇭🇰 HK_209
-  - 🇭🇰 HK_231
-  - 🇭🇰 HK_208
-  - 🇭🇰 HK_183
-  - 🇭🇰 HK_204
-  - 🇬🇮GI_165
-  - 🇭🇰 HK_206
+  - _93
+  - _99
+  - _96
+  - _95
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 27
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 213
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 34
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 294
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 266
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 30
+  - _97
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 29
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 182
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 175
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 31
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 211
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 212
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 147
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 254
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 168
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 210
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 207
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 148
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 246
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 33
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 208
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 164
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 183
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 188
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 228
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 166
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 154
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 185
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 157
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 245
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 160
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 100
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 159
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 190
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 293
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 25
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 247
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 28
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 242
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 232
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 229
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 202
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 217
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 196
+  - 🇺🇸 美国 - 紐約 - MASSIVEGRID - 23
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 206
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 234
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 205
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 149
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 260
+  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 177
+  - 🇺🇸 美国 - 紐約 - MASSIVEGRID - 204
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 198
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 129
+  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 9
+  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 236
+  - _98
+  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 200
+  - 🇺🇸 美国 - 紐約 - MASSIVEGRID - 22
+  - 🇺🇸 美国 - 紐約 - MASSIVEGRID - 203
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 191
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 32
+  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 291
+  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 255
+  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 8
+  - 🇱🇹 LT_414
+  - 🇱🇹 LT_404
+  - 🇱🇹 LT_398
+  - 🇨🇿 CZ_116
+  - _92
+  - 🇧🇩 BD_102
+  - 🇨🇦CA_110
+  - 🇱🇹 LT_401
+  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 249
+  - 🇺🇸 美国 - 紐約 - MASSIVEGRID - 70
+  - 🇺🇸 美国 - 紐約 - MASSIVEGRID - 66
+  - 🇨🇿 CZ_117
+  - 🇱🇹 LT_406
+  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 292
+  - 🇱🇹 LT_403
+  - 🇧🇪 BE_103
+  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 241
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 96
+  - 🇱🇹 LT_399
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 95
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 89
+  - 🇺🇸 美国 - 紐約 - Cloudflare, Inc. - 221
+  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 250
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 63
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 252
+  - 🇺🇸 美国 - 盐湖城 - Bage Cloud LLC - 62
+  - 🇺🇸 美国 - 盐湖城 - Bage Cloud LLC - 76
+  - 🇺🇸 美国 - 盐湖城 - Bage Cloud LLC - 60
+  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 163
+  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 161
   url: http://www.gstatic.com/generate_204
   interval: 300
 - name: 手动选择
   type: select
   proxies:
-  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 153
-  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 144
-  - 🇨🇿 CZ_127
-  - 🇬🇧GB_159
-  - 🇬🇧GB_160
-  - 🇩🇪DE_136
-  - 🇩🇪DE_138
-  - 🇩🇪DE_131
-  - 🇩🇪DE_132
-  - 🇩🇪DE_135
-  - 🇩🇪DE_134
-  - 🇩🇪DE_137
-  - 🇩🇪DE_133
-  - 🇫🇷 FR_144
-  - 🇩🇪DE_139
-  - 🇨🇿 CZ_126
-  - 🇭🇰 HK_166
-  - 🇩🇪DE_140
-  - 🇩🇪 DE_128
-  - 🇪🇸 ES_141
-  - 🇬🇧GB_161
-  - 🇭🇰 HK_168
-  - 🇪🇸 ES_142
-  - 🇬🇧 GB_154
-  - 🇬🇮GI_163
-  - 🇭🇰 HK_167
-  - 🇩🇪 DE_129
-  - 🇬🇮GI_164
-  - 🇬🇮GI_162
-  - 🇨🇴 CO_125
-  - 🇭🇰 HK_178
-  - 🇭🇰 HK_171
-  - 🇭🇰 HK_189
-  - 🇭🇰 HK_218
-  - 🇭🇰 HK_236
-  - 🇭🇰 HK_175
-  - 🇭🇰 HK_227
-  - 🇭🇰 HK_199
-  - 🇭🇰 HK_192
-  - 🇭🇰 HK_170
-  - 🇭🇰 HK_176
-  - 🇭🇰 HK_177
-  - 🇭🇰 HK_186
-  - 🇭🇰 HK_234
-  - 🇭🇰 HK_232
-  - 🇭🇰 HK_198
-  - 🇭🇰 HK_200
-  - 🇭🇰 HK_201
-  - 🇭🇰 HK_233
-  - 🇭🇰 HK_190
-  - 🇭🇰 HK_173
-  - 🇭🇰 HK_194
-  - 🇭🇰 HK_180
-  - 🇭🇰 HK_219
-  - 🇭🇰 HK_237
-  - 🇭🇰 HK_220
-  - 🇭🇰 HK_202
-  - 🇭🇰 HK_217
-  - 🇭🇰 HK_169
-  - 🇭🇰 HK_222
-  - 🇭🇰 HK_197
-  - 🇭🇰 HK_230
-  - 🇭🇰 HK_188
-  - 🇭🇰 HK_179
-  - 🇭🇰 HK_185
-  - 🇭🇰 HK_195
-  - 🇭🇰 HK_240
-  - 🇭🇰 HK_172
-  - 🇭🇰 HK_215
-  - 🇭🇰 HK_226
-  - 🇭🇰 HK_241
-  - 🇭🇰 HK_191
-  - 🇭🇰 HK_212
-  - 🇭🇰 HK_193
-  - 🇭🇰 HK_216
-  - 🇭🇰 HK_174
-  - 🇭🇰 HK_182
-  - 🇭🇰 HK_238
-  - 🇭🇰 HK_207
-  - 🇭🇰 HK_184
-  - 🇭🇰 HK_187
-  - 🇭🇰 HK_214
-  - 🇭🇰 HK_229
-  - 🇭🇰 HK_203
-  - 🇭🇰 HK_235
-  - 🇭🇰 HK_211
-  - 🇭🇰 HK_205
-  - 🇭🇰 HK_221
-  - 🇭🇰 HK_196
-  - 🇭🇰 HK_210
-  - 🇭🇰 HK_213
-  - 🇭🇰 HK_239
-  - 🇭🇰 HK_181
-  - 🇭🇰 HK_209
-  - 🇭🇰 HK_231
-  - 🇭🇰 HK_208
-  - 🇭🇰 HK_183
-  - 🇭🇰 HK_204
-  - 🇬🇮GI_165
-  - 🇭🇰 HK_206
+  - _93
+  - _99
+  - _96
+  - _95
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 27
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 213
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 34
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 294
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 266
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 30
+  - _97
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 29
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 182
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 175
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 31
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 211
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 212
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 147
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 254
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 168
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 210
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 207
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 148
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 246
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 33
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 208
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 164
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 183
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 188
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 228
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 166
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 154
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 185
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 157
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 245
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 160
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 100
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 159
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 190
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 293
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 25
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 247
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 28
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 242
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 232
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 229
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 202
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 217
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 196
+  - 🇺🇸 美国 - 紐約 - MASSIVEGRID - 23
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 206
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 234
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 205
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 149
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 260
+  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 177
+  - 🇺🇸 美国 - 紐約 - MASSIVEGRID - 204
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 198
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 129
+  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 9
+  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 236
+  - _98
+  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 200
+  - 🇺🇸 美国 - 紐約 - MASSIVEGRID - 22
+  - 🇺🇸 美国 - 紐約 - MASSIVEGRID - 203
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 191
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 32
+  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 291
+  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 255
+  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 8
+  - 🇱🇹 LT_414
+  - 🇱🇹 LT_404
+  - 🇱🇹 LT_398
+  - 🇨🇿 CZ_116
+  - _92
+  - 🇧🇩 BD_102
+  - 🇨🇦CA_110
+  - 🇱🇹 LT_401
+  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 249
+  - 🇺🇸 美国 - 紐約 - MASSIVEGRID - 70
+  - 🇺🇸 美国 - 紐約 - MASSIVEGRID - 66
+  - 🇨🇿 CZ_117
+  - 🇱🇹 LT_406
+  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 292
+  - 🇱🇹 LT_403
+  - 🇧🇪 BE_103
+  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 241
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 96
+  - 🇱🇹 LT_399
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 95
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 89
+  - 🇺🇸 美国 - 紐約 - Cloudflare, Inc. - 221
+  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 250
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 63
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 252
+  - 🇺🇸 美国 - 盐湖城 - Bage Cloud LLC - 62
+  - 🇺🇸 美国 - 盐湖城 - Bage Cloud LLC - 76
+  - 🇺🇸 美国 - 盐湖城 - Bage Cloud LLC - 60
+  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 163
+  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 161
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
