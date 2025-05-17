@@ -32,7 +32,7 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- name: 轮子1108
+- name: 轮子1209
   type: hysteria
   server: 195.154.200.178
   port: 46938
@@ -45,346 +45,56 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 7
-  server: 172.67.204.84
-  port: 443
-  type: vless
-  uuid: f12977e6-d296-4d94-9aaf-d31770b70f84
-  tls: true
-  servername: cr77.hedieh.dpdns.org
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: cr77.hedieh.dpdns.org
-- name: 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 9
-  server: 188.114.98.184
-  port: 2053
-  type: vless
-  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
-  tls: true
-  servername: bitget1.asdasd.click
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: bitget1.asdasd.click
-- name: 🇳🇱 荷兰 - 鹿特丹 - OVH SAS - 16
-  server: 104.17.148.22
-  port: 80
-  type: vless
-  uuid: ac2bfdf2-7c88-449f-b353-0ff9d026bb6a
-  tls: false
-  network: ws
-  ws-opts:
-    path: /@SavageNet----@SavageNet----@SavageNet----@SavageNet----@SavageNet----@SavageNet----@SavageNet----@SavageNet----@SavageNet----@SavageNet----@SavageNet----@SavageNet?ed=2048
-    headers:
-      Host: www.speedtest.net1.svgspeedtest.net.
-  udp: true
-- name: 🇷🇺 俄罗斯 - 莫斯科 - IT Outsourcing LLC - 2
-  server: 46.29.239.149
-  port: 443
-  type: vless
-  uuid: d2947a55-5fa6-4d21-93c6-b558c662ec8d
-  tls: true
+- name: 轮子2214
+  type: hysteria
+  server: 108.181.24.77
+  port: 11512
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
   alpn:
   - h3
-  - h2
-  - http/1.1
-  servername: unixkey.nobatow.site
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /nobatow
-    headers:
-      Host: unixkey.nobatow.site
-  udp: true
-- name: 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 1
-  server: 170.114.46.6
-  port: 8080
-  type: vless
-  uuid: 291c27a5-34d2-4081-83cc-2196cd208148
-  tls: false
-  servername: xrr.rtxconfigz.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xrr.rtxconfigz.xyz
-  udp: true
-- name: 🇸🇮 斯洛文尼亚 - 卢布尔雅那 - Stark Industries Solutions LTD - 1
-  server: 205.233.181.186
-  port: 8443
-  type: vless
-  uuid: 9e769ce1-34be-4e3f-b0a6-823f30eb8f69
-  tls: true
-  servername: CiR346yL3b.DeRaKhT.iNfO
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: CiR346yL3b.DeRaKhT.iNfO
-  udp: true
-- name: 🇹🇷 土耳其 - 伊兹密尔 - Stark Industries Solutions LTD - 1
-  server: 94.131.108.195
-  port: 53221
-  type: vless
-  uuid: 90efad13-d266-4d10-a914-bc40028ec469
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 - Secaucus - Massivegrid LTD - 105
-  server: 172.67.219.196
-  port: 443
-  type: vless
-  uuid: 9e7caa3b-ca9c-40ba-9ea0-f0c992359239
-  tls: true
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: 轮子2216
+  type: hysteria
+  server: 208.87.243.151
+  port: 17549
+  auth_str: dongtaiwang.com
   alpn:
-  - http/1.1
-  servername: 4.852224.dpdns.org
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /VHDGmboDYeMcCs9
-    headers:
-      Host: 4.852224.dpdns.org
-  udp: true
-- name: 🇺🇸 美国 - Secaucus - Massivegrid LTD - 99
-  server: 172.67.176.196
-  port: 443
+  - h3
+  sni: www.bing.com
+  skip-cert-verify: true
+  up: 11 Mbps
+  down: 55 Mbps
+- name: 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 27
+  server: 104.24.21.212
+  port: 2096
   type: vless
-  uuid: 60af76a9-66c2-461e-8545-6fe0ac2822f8
+  uuid: 9c7e9c02-d37a-4f3c-b860-6460a6ff473b
   tls: true
-  alpn:
-  - http/1.1
-  servername: trre.859885.xyz
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /6pC5ZWNjJLlDlbpi
-    headers:
-      Host: trre.859885.xyz
-- name: 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 107
-  server: 104.18.20.69
-  port: 443
-  type: vless
-  uuid: 222a1c34-96f5-45fd-bedd-b9ac4b477b98
-  tls: true
-  servername: bp.singbox.ggff.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /r6PSatuYdS9gZH6L/c2pjLm8wMG8ub29v
-    headers:
-      Host: bp.singbox.ggff.net
-  udp: true
-- name: 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 163
-  server: 104.16.117.93
-  port: 2087
-  type: vless
-  uuid: d3c62dea-ac54-4163-ab3f-20d6ef9f8420
-  tls: true
-  servername: 1.659118019.uk
+  servername: vless.vvzxyvv.sbs
   client-fingerprint: random
   network: ws
   ws-opts:
     path: /?ed=2560
     headers:
-      Host: 1.659118019.uk
+      Host: vless.vvzxyvv.sbs
   udp: true
-- name: 🇺🇸 美国 - 圣克拉拉 - PEG TECH INC - 125
-  server: 104.21.64.1
-  port: 2053
-  type: vmess
-  uuid: 996016f7-da89-45f1-b3b4-555bc799ed86
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: false
-  servername: rak2d1.777269.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rak2d1.777269.xyz
-  udp: true
-- name: 🇺🇸 美国 - 圣克拉拉 - PEG TECH INC - 126
-  server: 104.21.112.1
-  port: 2053
-  type: vmess
-  uuid: 996016f7-da89-45f1-b3b4-555bc799ed86
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: false
-  servername: rak2d1.777269.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rak2d1.777269.xyz
-  udp: true
-- name: 🇺🇸 美国 - 圣克拉拉 - PEG TECH INC - 127
-  server: 104.21.112.1
-  port: 2087
-  type: vmess
-  uuid: 1c36906e-1a21-4330-b04f-85baf1a6ff26
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: false
-  servername: rak1d3.777269.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rak1d3.777269.xyz
-  udp: true
-- name: 🇺🇸 美国 - 圣克拉拉 - PEG TECH INC - 128
-  server: 104.21.96.1
-  port: 2087
-  type: vmess
-  uuid: 1c36906e-1a21-4330-b04f-85baf1a6ff26
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: false
-  servername: rak1d3.777269.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rak1d3.777269.xyz
-  udp: true
-- name: 🇺🇸 美国 - 圣克拉拉 - PEG TECH INC - 129
-  server: 104.21.32.1
-  port: 2083
-  type: vmess
-  uuid: 996016f7-da89-45f1-b3b4-555bc799ed86
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: false
-  servername: rak2d2.777269.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rak2d2.777269.xyz
-  udp: true
-- name: 🇺🇸 美国 - 圣克拉拉 - PEG TECH INC - 130
-  server: 104.21.64.1
-  port: 2087
-  type: vmess
-  uuid: 1c36906e-1a21-4330-b04f-85baf1a6ff26
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: false
-  servername: rak1d3.777269.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rak1d3.777269.xyz
-  udp: true
-- name: 🇺🇸 美国 - 圣克拉拉 - PEG TECH INC - 131
-  server: 104.21.96.1
-  port: 2053
-  type: vmess
-  uuid: 996016f7-da89-45f1-b3b4-555bc799ed86
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: false
-  servername: rak2d1.777269.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rak2d1.777269.xyz
-  udp: true
-- name: 🇺🇸 美国 - 圣克拉拉 - PEG TECH INC - 132
-  server: 104.21.16.1
-  port: 2053
-  type: vmess
-  uuid: 996016f7-da89-45f1-b3b4-555bc799ed86
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: false
-  servername: rak2d1.777269.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rak2d1.777269.xyz
-  udp: true
-- name: 🇺🇸 美国 - 圣克拉拉 - PEG TECH INC - 133
-  server: 104.21.80.1
-  port: 2053
-  type: vmess
-  uuid: 996016f7-da89-45f1-b3b4-555bc799ed86
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: false
-  servername: rak2d1.777269.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rak2d1.777269.xyz
-  udp: true
-- name: 🇺🇸 美国 - 圣克拉拉 - PEG TECH INC - 134
-  server: 104.21.112.1
-  port: 2083
-  type: vmess
-  uuid: 996016f7-da89-45f1-b3b4-555bc799ed86
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: false
-  servername: rak2d2.777269.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rak2d2.777269.xyz
-  udp: true
-- name: 🇺🇸 美国 - 圣克拉拉 - PEG TECH INC - 3
-  server: 104.21.32.1
-  port: 2053
-  type: vmess
-  uuid: 996016f7-da89-45f1-b3b4-555bc799ed86
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: false
-  servername: rak2d1.777269.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rak2d1.777269.xyz
-  udp: true
-- name: 🇺🇸 美国 - 水牛城 - HostPapa - 102
-  server: 172.67.214.21
+- name: 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 28
+  server: 162.159.153.72
   port: 443
   type: vless
-  uuid: fefba36d-5142-42f1-b14d-db5249511d93
+  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
   tls: true
-  alpn:
-  - http/1.1
-  servername: 5c.191268.xyz
+  servername: 0229.patterdeng.pp.ua
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /dRTvoZIiPpwkqKrjE
+    path: /
     headers:
-      Host: 5c.191268.xyz
+      Host: 0229.patterdeng.pp.ua
   udp: true
 - name: 🇺🇸 美国 - 水牛城 - HostPapa - 88
   server: 172.67.208.155
@@ -456,14 +166,6 @@ proxies:
   auth: 41d69b1e-cbf3-11ea-82ef-f23c9164ca5d
   sni: a27f4d0a-swd340-t02jph-ugw2.hy2.gotochinatown.net
   udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 55
-  server: b5124fe4-swd340-swbre0-zs30.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: 52117af0-0ec7-11f0-a7ca-f23c91cfbbc9
-  auth: 52117af0-0ec7-11f0-a7ca-f23c91cfbbc9
-  sni: b5124fe4-swd340-swbre0-zs30.hy2.gotochinatown.net
-  udp: true
 - name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 57
   server: d525af0e-swd340-tcrvlr-r84q.hy2.gotochinatown.net
   port: 8443
@@ -531,22 +233,6 @@ proxies:
     path: /AMpQdWyvpaPkb7QHHkQBzYO
     headers:
       Host: ddd.890604.filegear-sg.me
-  udp: true
-- name: 🇺🇸 美国 - 紐約 - Massivegrid LTD - 33
-  server: 104.21.11.194
-  port: 443
-  type: vless
-  uuid: ced307a2-af2c-4113-bebc-fb888c702b7d
-  tls: true
-  alpn:
-  - http/1.1
-  servername: m4dfghu.999358.xyz
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /a2YATZF8eZrBwsbnEcmJLxC
-    headers:
-      Host: m4dfghu.999358.xyz
   udp: true
 - name: 🇺🇸 美国 - 紐約 - NetAssist LLC - 2
   server: beta.mattenadene.org
@@ -786,6 +472,16 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- name: 🇺🇸 美国 - 阿瓦達 - OVH US LLC - 68
+  server: 15.204.151.43
+  port: 443
+  type: vless
+  uuid: ea286109-d20f-415e-849e-4af20ab04b65
+  tls: true
+  servername: 147135001195.sec22org.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
 - name: 🇺🇸 美国 - 阿瓦達 - OVH US LLC - 69
   server: 47.251.95.178
   port: 443
@@ -796,420 +492,409 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇻🇳 越南 - Hải Dương - FASTLY - 1
-  server: 103.186.154.35
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 - Hải Dương - FASTLY - 2
-  server: 103.186.154.24
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 - Hải Dương - FASTLY - 3
-  server: 103.186.154.37
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 🇻🇳 越南 - Hải Dương - FASTLY - 4
-  server: 103.186.154.29
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳 越南 - Hải Dương - FASTLY - 5
-  server: 103.186.154.31
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: 14|AT_speednode_0005
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 212.183.88.29
-  skip-cert-verify: true
-  sni: icecream.955850.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-    path: /proxyip=212.183.88.29:443&proxyIP=null
-- name: 14|AT_speednode_0006
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 212.183.88.194
-  skip-cert-verify: true
-  sni: icecream.955850.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-    path: /proxyip=212.183.88.194:443&proxyIP=null
-- name: 14|AT_speednode_0008
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 212.183.88.58
-  skip-cert-verify: true
-  sni: icecream.955850.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-    path: /proxyip=212.183.88.58:443&proxyIP=null
-- name: 14|BR_speednode_0015
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 185.133.35.254
-  skip-cert-verify: true
-  sni: icecream.955850.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-    path: /proxyip=185.133.35.254:443&proxyIP=null
-- name: 14|BR_speednode_0019
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 185.133.35.160
-  skip-cert-verify: true
-  sni: icecream.955850.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-    path: /proxyip=185.133.35.160:443&proxyIP=null
-- name: 14|BR_speednode_0020
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 185.133.35.38
-  skip-cert-verify: true
-  sni: icecream.955850.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-    path: /proxyip=185.133.35.38:443&proxyIP=null
-- name: 14|GB_speednode_0050
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 217.163.76.227
-  skip-cert-verify: true
-  sni: icecream.955850.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-    path: /proxyip=217.163.76.227:443&proxyIP=null
-- name: 14|GB_speednode_0052
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 217.163.76.51
-  skip-cert-verify: false
-  sni: icecream.955850.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-    path: /proxyip=217.163.76.51:443
-- name: 14|GB_speednode_0056
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 217.163.76.237
-  skip-cert-verify: true
-  sni: icecream.955850.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-    path: /proxyip=217.163.76.237:443&proxyIP=null
-- name: 14|GB_speednode_0057
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 217.163.76.221
-  skip-cert-verify: true
-  sni: icecream.955850.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-    path: /proxyip=217.163.76.221:443&proxyIP=null
-- name: 14|KZ_speednode_0063
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 194.76.18.122
-  skip-cert-verify: false
-  sni: icecream.955850.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-    path: /proxyip=194.76.18.122:443
-- name: 14|KZ_speednode_0064
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 194.76.18.129
-  skip-cert-verify: true
-  sni: icecream.955850.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-    path: /proxyip=194.76.18.129:443&proxyIP=null
-- name: 14|RU_speednode_0077
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 45.67.215.196
-  skip-cert-verify: true
-  sni: icecream.955850.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-    path: /proxyip=45.67.215.196:443&proxyIP=null
-- name: 14|RU_speednode_0078
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 45.67.215.234
-  skip-cert-verify: true
-  sni: icecream.955850.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-    path: /proxyip=45.67.215.234:443&proxyIP=null
-- name: 14|US_speednode_0110
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 192.0.54.194
-  skip-cert-verify: true
-  sni: icecream.955850.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-    path: /proxyip=192.0.54.194:443&proxyIP=null
-- name: 14|US_speednode_0111
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 160.79.105.81
-  skip-cert-verify: true
-  sni: icecream.955850.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-    path: /proxyip=160.79.105.81:443&proxyIP=null
-- name: 14|US_speednode_0114
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 162.159.153.209
-  skip-cert-verify: true
-  sni: icecream.955850.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-    path: /proxyip=162.159.153.209:443&proxyIP=null
-- name: 14|US_speednode_0119
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 192.0.54.184
-  skip-cert-verify: true
-  sni: icecream.955850.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-    path: /proxyip=192.0.54.184:443&proxyIP=null
-- name: 14|ZA_speednode_0130
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 160.123.255.243
-  skip-cert-verify: false
-  sni: icecream.955850.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-    path: /proxyip=160.123.255.243:443
 - name: _01
-  server: 45.55.2.232
+  server: 37.143.129.230
   type: ss
-  port: 14293
-  password: 2170f8
+  port: 989
+  password: f8f7aCzcPKbsF8p3
   cipher: aes-256-cfb
-- name: _05
+- name: _02
+  server: 212.102.53.197
+  type: ss
+  port: 443
+  password: shadowsocks
+  cipher: aes-128-gcm
+- name: _04
+  server: uk-dc1.yangon.club
+  type: ss
+  port: 443
+  password: shadowsocks
+  cipher: aes-128-gcm
+- name: _06
   server: 142.4.216.225
   type: ss
   port: 80
   password: JIhN6rBKkaEboLNXVSv5rq
   cipher: chacha20-ietf-poly1305
-- name: 🇨🇦CA_91
-  server: ca225.vpnbook.com
+- name: _10
+  server: 212.102.53.194
   type: ss
-  country: 🇨🇦CA
-  port: 80
-  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 443
+  password: shadowsocks
+  cipher: aes-128-gcm
+- name: 🇺🇸US-156.146.38.169-0281 | 63.302MB
+  server: 156.146.38.169
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸US-173.244.56.6-0279 | 54.611MB
+  server: 173.244.56.6
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸US-156.146.38.168-0283 | 50.957MB
+  server: 156.146.38.168
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸US-173.244.56.9-0280 | 48.228MB
+  server: 173.244.56.9
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸US-212.102.47.132-0290 | 43.262MB
+  server: 212.102.47.132
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇫🇷FR-107.191.63.241-0321 | 41.688MB
+  server: 107.191.63.241
+  port: 30665
+  type: ss
   cipher: chacha20-ietf-poly1305
-- name: 🇨🇿 CZ_98
-  server: 79.127.233.170
+  password: 44fe4b7d-cd48-45fc-a036-60ea40e4a96c
+- name: 🇬🇧GB-85.210.35.5-0347 | 28.152MB
+  server: admin.c1.webramz.co
+  port: 443
   type: ss
-  country: 🇨🇿 CZ
-  port: 990
-  password: f8f7aCzcPKbsF8p3
   cipher: chacha20-ietf-poly1305
-- name: 🇨🇿 CZ_99
-  server: 195.181.160.6
+  password: 1xO2cqPazqjGfCfd
+- name: 🇬🇧GB-85.210.120.237-0330 | 27.887MB
+  server: series-a2-me.samanehha.co
+  port: 443
   type: ss
-  country: 🇨🇿 CZ
-  port: 990
-  password: f8f7aCzcPKbsF8p3
   cipher: chacha20-ietf-poly1305
-- name: 🇩🇪DE_102
-  server: 80.92.204.106
-  type: ss
-  country: 🇩🇪DE
-  port: 9025
-  password: XPtzA9sCug3SPR4c
-  cipher: aes-256-cfb
-- name: 🇩🇪DE_104
-  server: 80.92.204.106
-  type: ss
-  country: 🇩🇪DE
-  port: 9006
-  password: FAdUvMJUq5vDgKEq
-  cipher: aes-256-cfb
-- name: 🇩🇪DE_105
-  server: 80.92.204.106
-  type: ss
-  country: 🇩🇪DE
-  port: 9015
-  password: ZpNDDKRu9MagNvaf
-  cipher: aes-256-cfb
-- name: 🇩🇪DE_106
-  server: 80.92.204.106
-  type: ss
-  country: 🇩🇪DE
-  port: 9061
-  password: 4R3hUfZ2FHhDmNcP
-  cipher: aes-256-cfb
-- name: 🇩🇪DE_108
-  server: 80.92.204.106
-  type: ss
-  country: 🇩🇪DE
-  port: 9046
-  password: NvS8N4Vf8qAGPSCL
-  cipher: aes-256-cfb
-- name: 🇩🇪DE_109
-  server: 139.162.158.172
+  password: Bog0ELmMM9DSxDdQ
+- name: 🇫🇷FR-51.68.13.106-0354 | 27.618MB
+  server: 51.68.13.106
+  port: 1935
   type: trojan
-  country: 🇩🇪DE
+  password: FiSo7J6vfS
+  sni: x1fr-ovh.devefun.net
+  skip-cert-verify: false
+- name: 🇬🇧GB-85.210.120.237-0346 | 27.111MB
+  server: admin.c3.webramz.co
   port: 443
-  password: 665c944d-047d-4659-80d5-3eaac70241a9
-  sni: de2-full.privateip.net
-  skip-cert-verify: true
-  udp: true
-- name: 🇫🇷 FR_112
-  server: 51.195.119.47
   type: ss
-  country: 🇫🇷 FR
-  port: 1080
-  password: qXvO7zYU7KeaB0Md7DQLow
   cipher: chacha20-ietf-poly1305
-- name: 🇫🇷FR_116
-  server: 195.154.185.174
+  password: Bog0ELmMM9DSxDdQ
+- name: 🇫🇷FR-57.128.190.110-0341 | 27.104MB
+  server: 57.128.190.110
+  port: 11703
   type: ss
-  country: 🇫🇷FR
+  cipher: chacha20-ietf-poly1305
+  password: d275849ebcfcec7e
+- name: 🇬🇧GB-85.210.120.237-0335 | 26.981MB
+  server: 85.210.120.237
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: Bog0ELmMM9DSxDdQ
+- name: 🇬🇧GB-85.210.35.5-0364 | 26.912MB
+  server: series-a2.varzesh360.co
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: mps3FwmDjLrWaOVg
+- name: 🇬🇧GB-85.210.120.237-0350 | 26.883MB
+  server: series-a2-me.varzesh360.co
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: Bog0ELmMM9DSxDdQ
+- name: 🇬🇧GB-131.145.9.236-0331 | 26.517MB
+  server: admin.c4.webramz.co
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 69MUii7VDwMqh7Hz
+- name: 🇬🇧GB-212.102.53.196-0368 | 25.813MB
+  server: 212.102.53.196
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇬🇧GB-85.210.35.5-0348 | 25.56MB
+  server: series-a2.samanehha.co
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: W74XFALLLuw6m5IA
+- name: 🇬🇧GB-131.145.59.172-0359 | 25.234MB
+  server: admin.c2.webramz.co
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: WstuSnlu4ieA9M0L
+- name: 🇬🇧GB-85.210.35.5-0372 | 25.062MB
+  server: series-a1.samanehha.co
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: W74XFALLLuw6m5IA
+- name: 🇬🇧GB-131.145.59.172-0345 | 24.391MB
+  server: series-a2-mec.samanehha.co
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: u17T3BvpYaaiuW2c
+- name: 🇬🇧GB-85.210.35.5-0363 | 23.237MB
+  server: freakconfig13.felafel.org
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 1xO2cqPazqjGfCfd
+- name: 🇫🇷FR-57.128.190.171-0427 | 22.74MB
+  server: 57.128.190.171
+  port: 11259
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: f9d73c84e32a10f3
+- name: 🇨🇦CA-149.22.95.183-0292 | 22.564MB
+  server: 149.22.95.183
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸US-212.102.47.129-0286 | 22.277MB
+  server: 212.102.47.129
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇬🇧GB-131.145.59.172-0360 | 22.102MB
+  server: api.namasha.co
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: u17T3BvpYaaiuW2c
+- name: 🇳🇱NL-149.34.244.68-0334 | 21.913MB
+  server: 149.34.244.68
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: SE-121.127.46.147-9766 | 21.815MB
+  server: 121.127.46.147
   port: 989
-  password: f8f7aCzcPKbsF8p3
+  type: ss
   cipher: aes-256-cfb
-- name: 🇬🇧GB_124
-  server: 212.102.53.195
-  type: ss
-  country: 🇬🇧GB
+  password: f8f7aCzcPKbsF8p3
+- name: 🇺🇸US-212.102.47.131-0289 | 21.761MB
+  server: 212.102.47.131
   port: 443
-  password: shadowsocks
-  cipher: aes-128-gcm
-- name: 🇬🇧GB_125
-  server: 212.102.53.198
   type: ss
-  country: 🇬🇧GB
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: RO-194.14.217.38-0357 | 21.685MB
+  server: 194.14.217.38
+  port: 989
+  type: ss
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: 🇬🇧GB-131.145.59.172-0361 | 21.303MB
+  server: series-a2-mec.varzesh360.co
   port: 443
-  password: shadowsocks
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: u17T3BvpYaaiuW2c
+- name: FI-77.91.103.73-0362 | 20.077MB
+  server: 77.91.103.73
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: Lcc1lw8IP2KI
+- name: 🇺🇸US-217.77.3.42-0352 | 18.888MB
+  server: 217.77.3.42
+  port: 40410
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 0072c5e241aecfb7
+- name: 🇯🇵JP-149.22.87.204-0311 | 18.375MB
+  server: 149.22.87.204
+  port: 443
+  type: ss
   cipher: aes-128-gcm
-- name: 🇱🇹 LT_138
-  server: 45.87.175.199
+  password: shadowsocks
+- name: 🇯🇵JP-149.22.87.241-0310 | 18.106MB
+  server: 149.22.87.241
+  port: 443
   type: ss
-  country: 🇱🇹 LT
-  port: 8080
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  cipher: chacha20-ietf-poly1305
-- name: 🇱🇹 LT_143
-  server: 45.158.171.146
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇯🇵JP-149.22.87.240-0314 | 14.025MB
+  server: 149.22.87.240
+  port: 443
   type: ss
-  country: 🇱🇹 LT
-  port: 8080
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  cipher: chacha20-ietf-poly1305
-- name: 🇱🇹 LT_145
-  server: 45.158.171.110
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: VN-103.163.218.2-9979 | 10.614MB
+  server: 103.163.218.2
+  port: 989
   type: ss
-  country: 🇱🇹 LT
-  port: 8080
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  cipher: chacha20-ietf-poly1305
-- name: 🇱🇹 LT_148
-  server: 45.87.175.178
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: 🇨🇳TW-185.189.160.98-0443 | 10.278MB
+  server: 185.189.160.98
+  port: 64759
   type: ss
-  country: 🇱🇹 LT
-  port: 8080
-  password: QCXDxuDlTTMD7jtgHUjIoj
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: VN-221.132.29.208-0391 | 7.981MB
+  server: 221.132.29.208
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: CH-204.136.10.115-1173 | 7.608MB
+  server: 204.136.10.115
+  port: 1866
+  type: ss
   cipher: chacha20-ietf-poly1305
+  password: oXGp1+ihlfKg826H
+- name: VN-103.186.154.18-0430 | 6.698MB
+  server: 103.186.154.18
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: VN-103.186.154.33-0403 | 6.681MB
+  server: 103.186.154.33
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: VN-103.186.155.19-6091 | 5.943MB
+  server: 103.186.155.19
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: VN-103.186.154.19-0405 | 4.967MB
+  server: 103.186.154.19
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: RELAY-104.21.48.1-1204 | 3.907MB
+  server: 104.21.48.1
+  port: 2083
+  type: vmess
+  uuid: 996016f7-da89-45f1-b3b4-555bc799ed86
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: rak2d2.777269.xyz
+- name: VN-103.186.155.25-0411 | 3.477MB
+  server: 103.186.155.25
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: RELAY-104.21.96.1-0951 | 3.358MB
+  server: 104.21.96.1
+  port: 8443
+  type: vmess
+  uuid: 914584ee-3515-46ac-a09d-4677a2e9dc9a
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: us01.sh-cloudflare.sbs
+- name: VN-103.186.154.27-0402 | 3.298MB
+  server: 103.186.154.27
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: VN-103.186.154.38-0416 | 3.06MB
+  server: 103.186.154.38
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: VN-103.186.154.30-0428 | 3.046MB
+  server: 103.186.154.30
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: VN-103.186.155.23-0414 | 2.945MB
+  server: 103.186.155.23
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: VN-103.186.154.36-0429 | 2.813MB
+  server: 103.186.154.36
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: VN-103.186.155.133-6085 | 2.754MB
+  server: 103.186.155.133
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: VN-103.186.154.26-0432 | 2.703MB
+  server: 103.186.154.26
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: VN-103.186.154.20-0413 | 2.295MB
+  server: 103.186.154.20
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: RELAY-104.21.3.219-0386 | 2.138MB
+  server: uswuxian.pai50288.uk
+  port: 8443
+  type: vmess
+  uuid: c313606f-98c2-4d7b-ba74-48b94f61b11d
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uswuxian.pai50288.uk
+- name: TR-45.89.52.66-5804 | 1.536MB
+  server: 45.89.52.66
+  port: 9030
+  type: ss
+  cipher: aes-256-cfb
+  password: GeregetR8cvQHzYr
+- name: 🇺🇸US-38.114.114.108-0461 | 0.887MB
+  server: 38.114.114.108
+  port: 8881
+  type: ss
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
+- name: 🇺🇸US-38.114.114.108-0448 | 0.66MB
+  server: 38.114.114.108
+  port: 8091
+  type: ss
+  cipher: aes-256-gcm
+  password: PCnnH6SQSnfoS27
 proxy-groups:
 - name: 节点选择
   type: select
@@ -1222,106 +907,106 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 17
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 13
-  - 14|US_speednode_0119
-  - 14|BR_speednode_0015
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 18
-  - 14|RU_speednode_0077
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 44
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 43
-  - 14|US_speednode_0114
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 42
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 24
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 161
-  - 14|GB_speednode_0056
-  - 14|ZA_speednode_0130
-  - 14|US_speednode_0111
-  - 14|GB_speednode_0050
-  - 14|RU_speednode_0078
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 45
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 41
-  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 9
-  - 14|KZ_speednode_0064
-  - 14|GB_speednode_0052
-  - 14|AT_speednode_0008
-  - 14|AT_speednode_0005
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 83
-  - 14|KZ_speednode_0063
-  - 14|BR_speednode_0020
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 15
-  - 14|US_speednode_0110
-  - 14|BR_speednode_0019
-  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 163
-  - 14|AT_speednode_0006
-  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 107
-  - 14|GB_speednode_0057
+  - 🇺🇸 美国 - 阿瓦達 - OVH US LLC - 68
   - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 11
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 12
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 101
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 43
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 13
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 17
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 18
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 42
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 45
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 28
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 15
   - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 23
-  - _05
-  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 7
   - 🇺🇸 美国 - 阿瓦達 - OVH US LLC - 159
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 27
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 24
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 101
   - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 14
-  - _01
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 122
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 83
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 161
+  - _06
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 44
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 41
   - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 160
-  - 🇺🇸 美国 - Secaucus - Massivegrid LTD - 99
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 158
+  - 🇺🇸US-156.146.38.168-0283 | 50.957MB
   - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 103
-  - 🇺🇸 美国 - 水牛城 - HostPapa - 98
-  - 🇺🇸 美国 - Secaucus - Massivegrid LTD - 105
-  - 🇺🇸 美国 - 水牛城 - HostPapa - 102
-  - 🇬🇧GB_124
-  - 🇨🇿 CZ_98
-  - 🇬🇧GB_125
-  - 🇨🇦CA_91
-  - 🇫🇷FR_116
-  - 🇱🇹 LT_145
+  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 122
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 12
+  - 🇺🇸US-156.146.38.169-0281 | 63.302MB
+  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 158
+  - 🇺🇸US-217.77.3.42-0352 | 18.888MB
+  - 🇺🇸US-173.244.56.6-0279 | 54.611MB
+  - 🇺🇸US-38.114.114.108-0461 | 0.887MB
+  - 🇺🇸US-38.114.114.108-0448 | 0.66MB
+  - 🇺🇸US-173.244.56.9-0280 | 48.228MB
+  - 🇺🇸US-212.102.47.129-0286 | 22.277MB
+  - 🇺🇸US-212.102.47.131-0289 | 21.761MB
+  - _10
+  - 🇬🇧GB-212.102.53.196-0368 | 25.813MB
+  - 🇫🇷FR-107.191.63.241-0321 | 41.688MB
+  - 🇫🇷FR-57.128.190.171-0427 | 22.74MB
+  - 🇫🇷FR-57.128.190.110-0341 | 27.104MB
+  - 🇳🇱NL-149.34.244.68-0334 | 21.913MB
+  - _02
+  - 🇨🇦CA-149.22.95.183-0292 | 22.564MB
+  - 🇺🇸US-212.102.47.132-0290 | 43.262MB
+  - 🇬🇧GB-85.210.120.237-0335 | 26.981MB
+  - _01
   - 🇺🇸 美国 - 水牛城 - HostPapa - 88
-  - 🇫🇷 FR_112
-  - 🇱🇹 LT_138
-  - 🇱🇹 LT_143
-  - 🇺🇸 美国 - 圣克拉拉 - PEG TECH INC - 130
-  - 🇺🇸 美国 - 圣克拉拉 - PEG TECH INC - 128
-  - 🇱🇹 LT_148
-  - 🇨🇿 CZ_99
-  - 🇺🇸 美国 - 圣克拉拉 - PEG TECH INC - 127
-  - 🇩🇪DE_109
-  - 🇺🇸 美国 - 水牛城 - HostPapa - 89
+  - CH-204.136.10.115-1173 | 7.608MB
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 98
+  - SE-121.127.46.147-9766 | 21.815MB
+  - FI-77.91.103.73-0362 | 20.077MB
+  - RO-194.14.217.38-0357 | 21.685MB
   - 🇺🇸 美国 - 洛杉矶 - HostPapa - 113
-  - 🇺🇸 美国 - 阿瓦達 - OVH US LLC - 69
-  - 🇩🇪DE_108
-  - 🇩🇪DE_106
+  - 🇯🇵JP-149.22.87.204-0311 | 18.375MB
+  - 🇯🇵JP-149.22.87.240-0314 | 14.025MB
+  - 🇯🇵JP-149.22.87.241-0310 | 18.106MB
+  - _04
+  - RELAY-104.21.3.219-0386 | 2.138MB
+  - 🇫🇷FR-51.68.13.106-0354 | 27.618MB
   - 🇺🇸 美国 - 紐約 - NetAssist LLC - 4
-  - 🇩🇪DE_104
-  - 🇺🇸 美国 - 圣克拉拉 - PEG TECH INC - 133
-  - 🇺🇸 美国 - 圣克拉拉 - PEG TECH INC - 132
-  - 🇺🇸 美国 - 圣克拉拉 - PEG TECH INC - 134
-  - 🇺🇸 美国 - 圣克拉拉 - PEG TECH INC - 129
-  - 🇺🇸 美国 - 圣克拉拉 - PEG TECH INC - 131
-  - 🇹🇷 土耳其 - 伊兹密尔 - Stark Industries Solutions LTD - 1
-  - 🇺🇸 美国 - 圣克拉拉 - PEG TECH INC - 3
-  - 🇺🇸 美国 - 圣克拉拉 - PEG TECH INC - 126
-  - 🇩🇪DE_102
-  - 🇩🇪DE_105
-  - 🇺🇸 美国 - 圣克拉拉 - PEG TECH INC - 125
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 55
-  - 🇻🇳 越南 - Hải Dương - FASTLY - 5
-  - 🇻🇳 越南 - Hải Dương - FASTLY - 1
-  - 🇻🇳 越南 - Hải Dương - FASTLY - 2
-  - 🇻🇳 越南 - Hải Dương - FASTLY - 4
-  - 🇻🇳 越南 - Hải Dương - FASTLY - 3
-  - 🇳🇱 荷兰 - 鹿特丹 - OVH SAS - 16
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 33
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 52
+  - RELAY-104.21.48.1-1204 | 3.907MB
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 89
+  - 轮子2216
+  - 🇺🇸 美国 - 阿瓦達 - OVH US LLC - 69
+  - 🇨🇳TW-185.189.160.98-0443 | 10.278MB
+  - TR-45.89.52.66-5804 | 1.536MB
+  - 轮子2214
   - 🇺🇸 美国 - 紐約 - NetAssist LLC - 2
-  - 🇸🇮 斯洛文尼亚 - 卢布尔雅那 - Stark Industries Solutions LTD - 1
-  - 轮子1108
-  - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 1
+  - 轮子1209
+  - VN-221.132.29.208-0391 | 7.981MB
+  - 🇬🇧GB-85.210.35.5-0364 | 26.912MB
+  - VN-103.186.154.20-0413 | 2.295MB
+  - 🇬🇧GB-85.210.35.5-0372 | 25.062MB
+  - VN-103.186.154.27-0402 | 3.298MB
+  - VN-103.186.155.19-6091 | 5.943MB
+  - VN-103.163.218.2-9979 | 10.614MB
+  - VN-103.186.154.26-0432 | 2.703MB
+  - VN-103.186.154.19-0405 | 4.967MB
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 52
+  - VN-103.186.154.30-0428 | 3.046MB
+  - VN-103.186.154.18-0430 | 6.698MB
+  - VN-103.186.155.25-0411 | 3.477MB
+  - VN-103.186.154.38-0416 | 3.06MB
+  - VN-103.186.155.133-6085 | 2.754MB
+  - VN-103.186.154.36-0429 | 2.813MB
+  - VN-103.186.155.23-0414 | 2.945MB
+  - VN-103.186.154.33-0403 | 6.681MB
+  - 🇬🇧GB-131.145.9.236-0331 | 26.517MB
   - 🇺🇸 美国 - 洛杉矶 - Sharktech - 57
-  - 🇷🇺 俄罗斯 - 莫斯科 - IT Outsourcing LLC - 2
+  - 🇬🇧GB-85.210.35.5-0363 | 23.237MB
+  - RELAY-104.21.96.1-0951 | 3.358MB
+  - 🇬🇧GB-131.145.59.172-0361 | 21.303MB
+  - 🇬🇧GB-85.210.35.5-0348 | 25.56MB
+  - 🇬🇧GB-131.145.59.172-0345 | 24.391MB
+  - 🇬🇧GB-131.145.59.172-0359 | 25.234MB
+  - 🇬🇧GB-85.210.35.5-0347 | 28.152MB
+  - 🇬🇧GB-131.145.59.172-0360 | 22.102MB
+  - 🇬🇧GB-85.210.120.237-0346 | 27.111MB
+  - 🇬🇧GB-85.210.120.237-0330 | 27.887MB
+  - 🇬🇧GB-85.210.120.237-0350 | 26.883MB
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
@@ -1329,211 +1014,211 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 17
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 13
-  - 14|US_speednode_0119
-  - 14|BR_speednode_0015
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 18
-  - 14|RU_speednode_0077
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 44
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 43
-  - 14|US_speednode_0114
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 42
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 24
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 161
-  - 14|GB_speednode_0056
-  - 14|ZA_speednode_0130
-  - 14|US_speednode_0111
-  - 14|GB_speednode_0050
-  - 14|RU_speednode_0078
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 45
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 41
-  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 9
-  - 14|KZ_speednode_0064
-  - 14|GB_speednode_0052
-  - 14|AT_speednode_0008
-  - 14|AT_speednode_0005
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 83
-  - 14|KZ_speednode_0063
-  - 14|BR_speednode_0020
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 15
-  - 14|US_speednode_0110
-  - 14|BR_speednode_0019
-  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 163
-  - 14|AT_speednode_0006
-  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 107
-  - 14|GB_speednode_0057
+  - 🇺🇸 美国 - 阿瓦達 - OVH US LLC - 68
   - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 11
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 12
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 101
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 43
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 13
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 17
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 18
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 42
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 45
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 28
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 15
   - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 23
-  - _05
-  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 7
   - 🇺🇸 美国 - 阿瓦達 - OVH US LLC - 159
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 27
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 24
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 101
   - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 14
-  - _01
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 122
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 83
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 161
+  - _06
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 44
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 41
   - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 160
-  - 🇺🇸 美国 - Secaucus - Massivegrid LTD - 99
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 158
+  - 🇺🇸US-156.146.38.168-0283 | 50.957MB
   - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 103
-  - 🇺🇸 美国 - 水牛城 - HostPapa - 98
-  - 🇺🇸 美国 - Secaucus - Massivegrid LTD - 105
-  - 🇺🇸 美国 - 水牛城 - HostPapa - 102
-  - 🇬🇧GB_124
-  - 🇨🇿 CZ_98
-  - 🇬🇧GB_125
-  - 🇨🇦CA_91
-  - 🇫🇷FR_116
-  - 🇱🇹 LT_145
+  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 122
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 12
+  - 🇺🇸US-156.146.38.169-0281 | 63.302MB
+  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 158
+  - 🇺🇸US-217.77.3.42-0352 | 18.888MB
+  - 🇺🇸US-173.244.56.6-0279 | 54.611MB
+  - 🇺🇸US-38.114.114.108-0461 | 0.887MB
+  - 🇺🇸US-38.114.114.108-0448 | 0.66MB
+  - 🇺🇸US-173.244.56.9-0280 | 48.228MB
+  - 🇺🇸US-212.102.47.129-0286 | 22.277MB
+  - 🇺🇸US-212.102.47.131-0289 | 21.761MB
+  - _10
+  - 🇬🇧GB-212.102.53.196-0368 | 25.813MB
+  - 🇫🇷FR-107.191.63.241-0321 | 41.688MB
+  - 🇫🇷FR-57.128.190.171-0427 | 22.74MB
+  - 🇫🇷FR-57.128.190.110-0341 | 27.104MB
+  - 🇳🇱NL-149.34.244.68-0334 | 21.913MB
+  - _02
+  - 🇨🇦CA-149.22.95.183-0292 | 22.564MB
+  - 🇺🇸US-212.102.47.132-0290 | 43.262MB
+  - 🇬🇧GB-85.210.120.237-0335 | 26.981MB
+  - _01
   - 🇺🇸 美国 - 水牛城 - HostPapa - 88
-  - 🇫🇷 FR_112
-  - 🇱🇹 LT_138
-  - 🇱🇹 LT_143
-  - 🇺🇸 美国 - 圣克拉拉 - PEG TECH INC - 130
-  - 🇺🇸 美国 - 圣克拉拉 - PEG TECH INC - 128
-  - 🇱🇹 LT_148
-  - 🇨🇿 CZ_99
-  - 🇺🇸 美国 - 圣克拉拉 - PEG TECH INC - 127
-  - 🇩🇪DE_109
-  - 🇺🇸 美国 - 水牛城 - HostPapa - 89
+  - CH-204.136.10.115-1173 | 7.608MB
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 98
+  - SE-121.127.46.147-9766 | 21.815MB
+  - FI-77.91.103.73-0362 | 20.077MB
+  - RO-194.14.217.38-0357 | 21.685MB
   - 🇺🇸 美国 - 洛杉矶 - HostPapa - 113
-  - 🇺🇸 美国 - 阿瓦達 - OVH US LLC - 69
-  - 🇩🇪DE_108
-  - 🇩🇪DE_106
+  - 🇯🇵JP-149.22.87.204-0311 | 18.375MB
+  - 🇯🇵JP-149.22.87.240-0314 | 14.025MB
+  - 🇯🇵JP-149.22.87.241-0310 | 18.106MB
+  - _04
+  - RELAY-104.21.3.219-0386 | 2.138MB
+  - 🇫🇷FR-51.68.13.106-0354 | 27.618MB
   - 🇺🇸 美国 - 紐約 - NetAssist LLC - 4
-  - 🇩🇪DE_104
-  - 🇺🇸 美国 - 圣克拉拉 - PEG TECH INC - 133
-  - 🇺🇸 美国 - 圣克拉拉 - PEG TECH INC - 132
-  - 🇺🇸 美国 - 圣克拉拉 - PEG TECH INC - 134
-  - 🇺🇸 美国 - 圣克拉拉 - PEG TECH INC - 129
-  - 🇺🇸 美国 - 圣克拉拉 - PEG TECH INC - 131
-  - 🇹🇷 土耳其 - 伊兹密尔 - Stark Industries Solutions LTD - 1
-  - 🇺🇸 美国 - 圣克拉拉 - PEG TECH INC - 3
-  - 🇺🇸 美国 - 圣克拉拉 - PEG TECH INC - 126
-  - 🇩🇪DE_102
-  - 🇩🇪DE_105
-  - 🇺🇸 美国 - 圣克拉拉 - PEG TECH INC - 125
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 55
-  - 🇻🇳 越南 - Hải Dương - FASTLY - 5
-  - 🇻🇳 越南 - Hải Dương - FASTLY - 1
-  - 🇻🇳 越南 - Hải Dương - FASTLY - 2
-  - 🇻🇳 越南 - Hải Dương - FASTLY - 4
-  - 🇻🇳 越南 - Hải Dương - FASTLY - 3
-  - 🇳🇱 荷兰 - 鹿特丹 - OVH SAS - 16
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 33
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 52
+  - RELAY-104.21.48.1-1204 | 3.907MB
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 89
+  - 轮子2216
+  - 🇺🇸 美国 - 阿瓦達 - OVH US LLC - 69
+  - 🇨🇳TW-185.189.160.98-0443 | 10.278MB
+  - TR-45.89.52.66-5804 | 1.536MB
+  - 轮子2214
   - 🇺🇸 美国 - 紐約 - NetAssist LLC - 2
-  - 🇸🇮 斯洛文尼亚 - 卢布尔雅那 - Stark Industries Solutions LTD - 1
-  - 轮子1108
-  - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 1
+  - 轮子1209
+  - VN-221.132.29.208-0391 | 7.981MB
+  - 🇬🇧GB-85.210.35.5-0364 | 26.912MB
+  - VN-103.186.154.20-0413 | 2.295MB
+  - 🇬🇧GB-85.210.35.5-0372 | 25.062MB
+  - VN-103.186.154.27-0402 | 3.298MB
+  - VN-103.186.155.19-6091 | 5.943MB
+  - VN-103.163.218.2-9979 | 10.614MB
+  - VN-103.186.154.26-0432 | 2.703MB
+  - VN-103.186.154.19-0405 | 4.967MB
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 52
+  - VN-103.186.154.30-0428 | 3.046MB
+  - VN-103.186.154.18-0430 | 6.698MB
+  - VN-103.186.155.25-0411 | 3.477MB
+  - VN-103.186.154.38-0416 | 3.06MB
+  - VN-103.186.155.133-6085 | 2.754MB
+  - VN-103.186.154.36-0429 | 2.813MB
+  - VN-103.186.155.23-0414 | 2.945MB
+  - VN-103.186.154.33-0403 | 6.681MB
+  - 🇬🇧GB-131.145.9.236-0331 | 26.517MB
   - 🇺🇸 美国 - 洛杉矶 - Sharktech - 57
-  - 🇷🇺 俄罗斯 - 莫斯科 - IT Outsourcing LLC - 2
+  - 🇬🇧GB-85.210.35.5-0363 | 23.237MB
+  - RELAY-104.21.96.1-0951 | 3.358MB
+  - 🇬🇧GB-131.145.59.172-0361 | 21.303MB
+  - 🇬🇧GB-85.210.35.5-0348 | 25.56MB
+  - 🇬🇧GB-131.145.59.172-0345 | 24.391MB
+  - 🇬🇧GB-131.145.59.172-0359 | 25.234MB
+  - 🇬🇧GB-85.210.35.5-0347 | 28.152MB
+  - 🇬🇧GB-131.145.59.172-0360 | 22.102MB
+  - 🇬🇧GB-85.210.120.237-0346 | 27.111MB
+  - 🇬🇧GB-85.210.120.237-0330 | 27.887MB
+  - 🇬🇧GB-85.210.120.237-0350 | 26.883MB
   url: http://www.gstatic.com/generate_204
   interval: 300
 - name: 手动选择
   type: select
   proxies:
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 17
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 13
-  - 14|US_speednode_0119
-  - 14|BR_speednode_0015
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 18
-  - 14|RU_speednode_0077
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 44
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 43
-  - 14|US_speednode_0114
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 42
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 24
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 161
-  - 14|GB_speednode_0056
-  - 14|ZA_speednode_0130
-  - 14|US_speednode_0111
-  - 14|GB_speednode_0050
-  - 14|RU_speednode_0078
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 45
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 41
-  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 9
-  - 14|KZ_speednode_0064
-  - 14|GB_speednode_0052
-  - 14|AT_speednode_0008
-  - 14|AT_speednode_0005
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 83
-  - 14|KZ_speednode_0063
-  - 14|BR_speednode_0020
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 15
-  - 14|US_speednode_0110
-  - 14|BR_speednode_0019
-  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 163
-  - 14|AT_speednode_0006
-  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 107
-  - 14|GB_speednode_0057
+  - 🇺🇸 美国 - 阿瓦達 - OVH US LLC - 68
   - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 11
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 12
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 101
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 43
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 13
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 17
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 18
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 42
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 45
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 28
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 15
   - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 23
-  - _05
-  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 7
   - 🇺🇸 美国 - 阿瓦達 - OVH US LLC - 159
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 27
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 24
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 101
   - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 14
-  - _01
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 122
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 83
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 161
+  - _06
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 44
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 41
   - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 160
-  - 🇺🇸 美国 - Secaucus - Massivegrid LTD - 99
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 158
+  - 🇺🇸US-156.146.38.168-0283 | 50.957MB
   - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 103
-  - 🇺🇸 美国 - 水牛城 - HostPapa - 98
-  - 🇺🇸 美国 - Secaucus - Massivegrid LTD - 105
-  - 🇺🇸 美国 - 水牛城 - HostPapa - 102
-  - 🇬🇧GB_124
-  - 🇨🇿 CZ_98
-  - 🇬🇧GB_125
-  - 🇨🇦CA_91
-  - 🇫🇷FR_116
-  - 🇱🇹 LT_145
+  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 122
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 12
+  - 🇺🇸US-156.146.38.169-0281 | 63.302MB
+  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 158
+  - 🇺🇸US-217.77.3.42-0352 | 18.888MB
+  - 🇺🇸US-173.244.56.6-0279 | 54.611MB
+  - 🇺🇸US-38.114.114.108-0461 | 0.887MB
+  - 🇺🇸US-38.114.114.108-0448 | 0.66MB
+  - 🇺🇸US-173.244.56.9-0280 | 48.228MB
+  - 🇺🇸US-212.102.47.129-0286 | 22.277MB
+  - 🇺🇸US-212.102.47.131-0289 | 21.761MB
+  - _10
+  - 🇬🇧GB-212.102.53.196-0368 | 25.813MB
+  - 🇫🇷FR-107.191.63.241-0321 | 41.688MB
+  - 🇫🇷FR-57.128.190.171-0427 | 22.74MB
+  - 🇫🇷FR-57.128.190.110-0341 | 27.104MB
+  - 🇳🇱NL-149.34.244.68-0334 | 21.913MB
+  - _02
+  - 🇨🇦CA-149.22.95.183-0292 | 22.564MB
+  - 🇺🇸US-212.102.47.132-0290 | 43.262MB
+  - 🇬🇧GB-85.210.120.237-0335 | 26.981MB
+  - _01
   - 🇺🇸 美国 - 水牛城 - HostPapa - 88
-  - 🇫🇷 FR_112
-  - 🇱🇹 LT_138
-  - 🇱🇹 LT_143
-  - 🇺🇸 美国 - 圣克拉拉 - PEG TECH INC - 130
-  - 🇺🇸 美国 - 圣克拉拉 - PEG TECH INC - 128
-  - 🇱🇹 LT_148
-  - 🇨🇿 CZ_99
-  - 🇺🇸 美国 - 圣克拉拉 - PEG TECH INC - 127
-  - 🇩🇪DE_109
-  - 🇺🇸 美国 - 水牛城 - HostPapa - 89
+  - CH-204.136.10.115-1173 | 7.608MB
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 98
+  - SE-121.127.46.147-9766 | 21.815MB
+  - FI-77.91.103.73-0362 | 20.077MB
+  - RO-194.14.217.38-0357 | 21.685MB
   - 🇺🇸 美国 - 洛杉矶 - HostPapa - 113
-  - 🇺🇸 美国 - 阿瓦達 - OVH US LLC - 69
-  - 🇩🇪DE_108
-  - 🇩🇪DE_106
+  - 🇯🇵JP-149.22.87.204-0311 | 18.375MB
+  - 🇯🇵JP-149.22.87.240-0314 | 14.025MB
+  - 🇯🇵JP-149.22.87.241-0310 | 18.106MB
+  - _04
+  - RELAY-104.21.3.219-0386 | 2.138MB
+  - 🇫🇷FR-51.68.13.106-0354 | 27.618MB
   - 🇺🇸 美国 - 紐約 - NetAssist LLC - 4
-  - 🇩🇪DE_104
-  - 🇺🇸 美国 - 圣克拉拉 - PEG TECH INC - 133
-  - 🇺🇸 美国 - 圣克拉拉 - PEG TECH INC - 132
-  - 🇺🇸 美国 - 圣克拉拉 - PEG TECH INC - 134
-  - 🇺🇸 美国 - 圣克拉拉 - PEG TECH INC - 129
-  - 🇺🇸 美国 - 圣克拉拉 - PEG TECH INC - 131
-  - 🇹🇷 土耳其 - 伊兹密尔 - Stark Industries Solutions LTD - 1
-  - 🇺🇸 美国 - 圣克拉拉 - PEG TECH INC - 3
-  - 🇺🇸 美国 - 圣克拉拉 - PEG TECH INC - 126
-  - 🇩🇪DE_102
-  - 🇩🇪DE_105
-  - 🇺🇸 美国 - 圣克拉拉 - PEG TECH INC - 125
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 55
-  - 🇻🇳 越南 - Hải Dương - FASTLY - 5
-  - 🇻🇳 越南 - Hải Dương - FASTLY - 1
-  - 🇻🇳 越南 - Hải Dương - FASTLY - 2
-  - 🇻🇳 越南 - Hải Dương - FASTLY - 4
-  - 🇻🇳 越南 - Hải Dương - FASTLY - 3
-  - 🇳🇱 荷兰 - 鹿特丹 - OVH SAS - 16
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 33
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 52
+  - RELAY-104.21.48.1-1204 | 3.907MB
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 89
+  - 轮子2216
+  - 🇺🇸 美国 - 阿瓦達 - OVH US LLC - 69
+  - 🇨🇳TW-185.189.160.98-0443 | 10.278MB
+  - TR-45.89.52.66-5804 | 1.536MB
+  - 轮子2214
   - 🇺🇸 美国 - 紐約 - NetAssist LLC - 2
-  - 🇸🇮 斯洛文尼亚 - 卢布尔雅那 - Stark Industries Solutions LTD - 1
-  - 轮子1108
-  - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 1
+  - 轮子1209
+  - VN-221.132.29.208-0391 | 7.981MB
+  - 🇬🇧GB-85.210.35.5-0364 | 26.912MB
+  - VN-103.186.154.20-0413 | 2.295MB
+  - 🇬🇧GB-85.210.35.5-0372 | 25.062MB
+  - VN-103.186.154.27-0402 | 3.298MB
+  - VN-103.186.155.19-6091 | 5.943MB
+  - VN-103.163.218.2-9979 | 10.614MB
+  - VN-103.186.154.26-0432 | 2.703MB
+  - VN-103.186.154.19-0405 | 4.967MB
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 52
+  - VN-103.186.154.30-0428 | 3.046MB
+  - VN-103.186.154.18-0430 | 6.698MB
+  - VN-103.186.155.25-0411 | 3.477MB
+  - VN-103.186.154.38-0416 | 3.06MB
+  - VN-103.186.155.133-6085 | 2.754MB
+  - VN-103.186.154.36-0429 | 2.813MB
+  - VN-103.186.155.23-0414 | 2.945MB
+  - VN-103.186.154.33-0403 | 6.681MB
+  - 🇬🇧GB-131.145.9.236-0331 | 26.517MB
   - 🇺🇸 美国 - 洛杉矶 - Sharktech - 57
-  - 🇷🇺 俄罗斯 - 莫斯科 - IT Outsourcing LLC - 2
+  - 🇬🇧GB-85.210.35.5-0363 | 23.237MB
+  - RELAY-104.21.96.1-0951 | 3.358MB
+  - 🇬🇧GB-131.145.59.172-0361 | 21.303MB
+  - 🇬🇧GB-85.210.35.5-0348 | 25.56MB
+  - 🇬🇧GB-131.145.59.172-0345 | 24.391MB
+  - 🇬🇧GB-131.145.59.172-0359 | 25.234MB
+  - 🇬🇧GB-85.210.35.5-0347 | 28.152MB
+  - 🇬🇧GB-131.145.59.172-0360 | 22.102MB
+  - 🇬🇧GB-85.210.120.237-0346 | 27.111MB
+  - 🇬🇧GB-85.210.120.237-0330 | 27.887MB
+  - 🇬🇧GB-85.210.120.237-0350 | 26.883MB
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
