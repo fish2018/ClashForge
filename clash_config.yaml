@@ -32,55 +32,325 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- name: _01
-  server: 212.102.53.79
-  type: ss
-  port: 443
-  password: shadowsocks
-  cipher: aes-128-gcm
-- name: _02
-  server: 38.121.43.71
-  type: ss
-  port: 2375
+- name: 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 27
+  server: 104.24.21.212
+  port: 2096
+  type: vless
+  uuid: 9c7e9c02-d37a-4f3c-b860-6460a6ff473b
+  tls: true
+  servername: vless.vvzxyvv.sbs
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vless.vvzxyvv.sbs
   udp: true
-  password: faBAoD54k87UJG7
+- name: 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 28
+  server: 162.159.153.72
+  port: 443
+  type: vless
+  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
+  tls: true
+  servername: 0229.patterdeng.pp.ua
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 0229.patterdeng.pp.ua
+  udp: true
+- name: 14|AT_speednode_0006
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 212.183.88.194
+  skip-cert-verify: true
+  sni: icecream.955850.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=212.183.88.194:443&proxyIP=null
+- name: 14|AT_speednode_0008
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 212.183.88.58
+  skip-cert-verify: true
+  sni: icecream.955850.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=212.183.88.58:443&proxyIP=null
+- name: 14|BR_speednode_0015
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 185.133.35.254
+  skip-cert-verify: true
+  sni: icecream.955850.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=185.133.35.254:443&proxyIP=null
+- name: 14|BR_speednode_0019
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 185.133.35.160
+  skip-cert-verify: true
+  sni: icecream.955850.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=185.133.35.160:443&proxyIP=null
+- name: 14|BR_speednode_0020
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 185.133.35.38
+  skip-cert-verify: true
+  sni: icecream.955850.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=185.133.35.38:443&proxyIP=null
+- name: 14|CH_speednode_0024
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 140.238.212.95
+  skip-cert-verify: true
+  sni: icecream.955850.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=140.238.212.95:443&proxyIP=null
+- name: 14|GB_speednode_0050
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 217.163.76.227
+  skip-cert-verify: true
+  sni: icecream.955850.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=217.163.76.227:443&proxyIP=null
+- name: 14|GB_speednode_0052
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 217.163.76.51
+  skip-cert-verify: false
+  sni: icecream.955850.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=217.163.76.51:443
+- name: 14|GB_speednode_0056
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 217.163.76.237
+  skip-cert-verify: true
+  sni: icecream.955850.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=217.163.76.237:443&proxyIP=null
+- name: 14|GB_speednode_0057
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 217.163.76.221
+  skip-cert-verify: true
+  sni: icecream.955850.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=217.163.76.221:443&proxyIP=null
+- name: 14|KZ_speednode_0063
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 194.76.18.122
+  skip-cert-verify: false
+  sni: icecream.955850.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=194.76.18.122:443
+- name: 14|KZ_speednode_0064
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 194.76.18.129
+  skip-cert-verify: true
+  sni: icecream.955850.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=194.76.18.129:443&proxyIP=null
+- name: 14|NL_speednode_0067
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 4002
+  server: 45.154.98.100
+  skip-cert-verify: true
+  sni: icecream.955850.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=45.154.98.100:4002&proxyIP=null
+- name: 14|RU_speednode_0077
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 45.67.215.196
+  skip-cert-verify: true
+  sni: icecream.955850.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=45.67.215.196:443&proxyIP=null
+- name: 14|RU_speednode_0078
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 45.67.215.234
+  skip-cert-verify: true
+  sni: icecream.955850.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=45.67.215.234:443&proxyIP=null
+- name: 14|US_speednode_0110
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 192.0.54.194
+  skip-cert-verify: true
+  sni: icecream.955850.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=192.0.54.194:443&proxyIP=null
+- name: 14|US_speednode_0111
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 160.79.105.81
+  skip-cert-verify: true
+  sni: icecream.955850.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=160.79.105.81:443&proxyIP=null
+- name: 14|US_speednode_0114
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 162.159.153.209
+  skip-cert-verify: true
+  sni: icecream.955850.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=162.159.153.209:443&proxyIP=null
+- name: 14|US_speednode_0119
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 192.0.54.184
+  skip-cert-verify: true
+  sni: icecream.955850.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=192.0.54.184:443&proxyIP=null
+- name: 14|ZA_speednode_0130
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 160.123.255.243
+  skip-cert-verify: false
+  sni: icecream.955850.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=160.123.255.243:443
+- name: _01
+  server: 38.110.1.88
+  type: ss
+  port: 5499
+  udp: true
+  password: lGqs95QkFHo2NV
+  cipher: aes-256-gcm
+- name: _02
+  server: 38.143.66.87
+  type: ss
+  port: 6379
+  password: zDNVedRFPQexG9v
   cipher: aes-256-gcm
 - name: _03
-  server: 217.30.10.18
-  type: ss
-  port: 9060
-  password: ueLXVkvh4hckhErQ
-  cipher: aes-256-cfb
-- name: _04
   server: uk-dc1.yangon.club
   type: ss
   port: 443
   password: shadowsocks
   cipher: aes-128-gcm
 - name: _05
-  server: 217.30.10.18
+  server: 142.4.216.225
   type: ss
-  port: 9019
-  password: GA9KzeEgvfxNrgmM
-  cipher: aes-256-cfb
-- name: _07
-  server: 38.121.43.71
-  type: ss
-  port: 2376
-  password: faBAoD54k87UJG7
-  cipher: aes-256-gcm
-- name: _08
+  port: 80
+  password: JIhN6rBKkaEboLNXVSv5rq
+  cipher: chacha20-ietf-poly1305
+- name: _06
   server: 23.154.136.51
   type: ss
   port: 5499
   password: lGqs95QkFHo2NV
   cipher: aes-256-gcm
-- name: _09
-  server: 80.92.204.106
-  type: ss
-  port: 9005
-  password: ZET59LF6DvCC8KVt
-  cipher: aes-256-cfb
 - name: _10
   server: 212.102.53.194
   type: ss
@@ -100,90 +370,76 @@ proxies:
   password: d3837224ed465f00
   cipher: chacha20-ietf-poly1305
 - name: _13
-  server: 38.121.43.71
-  type: ss
-  port: 8008
-  password: XKFKl2rULjIp74
-  cipher: aes-256-gcm
-- name: _14
   server: war.ssvpnapp.win
   type: ss
   port: 57456
   password: d3837224ed465f00
   cipher: chacha20-ietf-poly1305
-- name: _15
-  server: 38.121.43.71
+- name: _14
+  server: 5.188.181.201
   type: ss
-  port: 8000
-  udp: true
-  password: KixLvKzwjekG00rm
-  cipher: aes-256-gcm
-- name: _17
-  server: 38.143.66.87
-  type: ss
-  port: 6379
-  password: zDNVedRFPQexG9v
-  cipher: aes-256-gcm
-- name: _18
-  server: 45.89.52.66
-  type: ss
-  port: 9037
-  password: TN2YqghxeFDKZfLU
+  port: 9003
+  password: JdmRK9gMEqFgs8nP
   cipher: aes-256-cfb
-- name: _19
+- name: _15
   server: 45.89.52.66
   type: ss
   port: 9000
   password: a3GFYt36Sm82Vys9
   cipher: aes-256-cfb
-- name: _20
+- name: _16
   server: 45.89.52.66
   type: ss
   port: 9029
   password: dU3DSNS8wYPXzEKw
   cipher: aes-256-cfb
-- name: _21
+- name: _17
   server: 80.92.204.106
   type: ss
   port: 9037
   udp: true
   password: TN2YqghxeFDKZfLU
   cipher: aes-256-cfb
-- name: _22
-  server: 80.92.204.106
-  type: ss
-  port: 9084
-  udp: true
-  password: c3NtHJ5ujV2tGDfj
-  cipher: aes-256-cfb
-- name: _23
-  server: 80.92.204.106
-  type: ss
-  port: 9094
-  udp: true
-  password: rpgbNnU9rDDU4aWZ
-  cipher: aes-256-cfb
-- name: _24
+- name: _19
   server: 80.92.204.106
   type: ss
   port: 9010
   udp: true
   password: f63gg8EruDnUrmz4
   cipher: aes-256-cfb
-- name: _25
-  server: 38.121.43.71
+- name: _20
+  server: 80.92.204.106
   type: ss
-  port: 5003
-  password: g5MeD6Ft3CWlJId
-  cipher: aes-256-gcm
-- name: _26
-  server: 38.143.66.87
-  type: ss
-  port: 6697
+  port: 9020
   udp: true
-  password: TEzjfAYq2IjtuoS
+  password: BNmAXXxAHYpTRdzu
+  cipher: aes-256-cfb
+- name: _21
+  server: 38.121.43.97
+  type: ss
+  port: 8091
+  password: PCnnH6SQSnfoS27
   cipher: aes-256-gcm
-- name: _27
+- name: _22
+  server: 38.121.43.97
+  type: ss
+  port: 8080
+  password: KixLvKzwjekG00rm
+  cipher: aes-256-gcm
+- name: _24
+  server: 38.121.43.97
+  type: ss
+  port: 8881
+  password: kDWvXYZoTBcGkC4
+  cipher: aes-256-gcm
+- name: _25
+  server: 154.223.20.79
+  type: ss
+  port: 989
+  udp: true
+  password: f8f7aCzcPKbsF8p3
+  cipher: aes-256-cfb
+- name: _26
   server: 38.143.66.87
   type: ss
   port: 5000
@@ -193,484 +449,403 @@ proxies:
 - name: _28
   server: 5.188.181.201
   type: ss
-  port: 9020
-  password: BNmAXXxAHYpTRdzu
-  cipher: aes-256-cfb
-- name: _29
-  server: 5.188.181.201
-  type: ss
   port: 9019
   password: GA9KzeEgvfxNrgmM
   cipher: aes-256-cfb
-- name: _30
+- name: _29
   server: 5.188.181.201
   type: ss
   port: 9025
   password: XPtzA9sCug3SPR4c
   cipher: aes-256-cfb
-- name: _31
+- name: _30
   server: 5.188.181.201
   type: ss
-  port: 9054
-  password: VcFuyXvND2yQWSFY
+  port: 9029
+  password: dU3DSNS8wYPXzEKw
   cipher: aes-256-cfb
-- name: _32
-  server: 5.188.181.201
-  type: ss
-  port: 9003
-  password: JdmRK9gMEqFgs8nP
-  cipher: aes-256-cfb
-- name: _33
-  server: 38.121.43.71
-  type: ss
-  port: 5001
-  password: Y6R9pAtvxxzmGC
-  cipher: aes-256-gcm
 - name: _34
-  server: 38.110.1.88
+  server: 212.102.53.197
   type: ss
-  port: 5499
-  udp: true
-  password: lGqs95QkFHo2NV
-  cipher: aes-256-gcm
+  port: 443
+  password: shadowsocks
+  cipher: aes-128-gcm
 - name: _35
-  server: 38.121.43.71
+  server: 38.143.66.87
   type: ss
-  port: 7002
-  password: RexnBgU7EV5ADxG
-  cipher: aes-256-gcm
-- name: _36
-  server: 38.121.43.71
-  type: ss
-  port: 6679
+  port: 6697
+  udp: true
   password: TEzjfAYq2IjtuoS
   cipher: aes-256-gcm
-- name: _37
-  server: 38.121.43.71
-  type: ss
-  port: 5004
-  password: g5MeD6Ft3CWlJId
-  cipher: aes-256-gcm
-- name: _38
-  server: 38.121.43.71
-  type: ss
-  port: 3306
-  password: Y6R9pAtvxxzmGC
-  cipher: aes-256-gcm
-- name: _39
-  server: 38.121.43.71
-  type: ss
-  port: 5500
-  password: KixLvKzwjekG00rm
-  cipher: aes-256-gcm
-- name: _40
-  server: 38.121.43.71
-  type: ss
-  port: 5000
-  password: Y6R9pAtvxxzmGC
-  cipher: aes-256-gcm
-- name: _41
-  server: 38.121.43.71
-  type: ss
-  port: 8888
-  password: Y6R9pAtvxxzmGC
-  cipher: aes-256-gcm
-- name: _42
-  server: 38.121.43.71
-  type: ss
-  port: 7001
-  password: RexnBgU7EV5ADxG
-  cipher: aes-256-gcm
-- name: _43
+- name: _36
   server: 38.110.1.197
   type: ss
   port: 5003
   udp: true
   password: g5MeD6Ft3CWlJId
   cipher: aes-256-gcm
-- name: _44
-  server: 38.121.43.71
-  type: ss
-  port: 8091
-  udp: true
-  password: PCnnH6SQSnfoS27
-  cipher: aes-256-gcm
-- name: _45
+- name: _37
   server: 38.143.66.87
   type: ss
   port: 3389
   udp: true
   password: Y6R9pAtvxxzmGC
   cipher: aes-256-gcm
-- name: _46
+- name: _38
   server: 38.114.114.143
   type: ss
   port: 443
   udp: true
   password: pKEW8JPByTVTLtM
   cipher: aes-256-gcm
-- name: _47
-  server: 38.121.43.71
-  type: ss
-  port: 9101
-  udp: true
-  password: e4FCWrgpkji3QY
-  cipher: aes-256-gcm
-- name: _48
+- name: _39
   server: 38.110.1.88
   type: ss
   port: 5600
   udp: true
   password: Y6R9pAtvxxzmGC
   cipher: aes-256-gcm
-- name: _49
-  server: 38.121.43.71
-  type: ss
-  port: 3389
-  udp: true
-  password: Y6R9pAtvxxzmGC
-  cipher: aes-256-gcm
-- name: _50
-  server: 38.114.114.143
-  type: ss
-  port: 2376
-  password: faBAoD54k87UJG7
-  cipher: aes-256-gcm
-- name: _51
+- name: _40
   server: 38.110.1.88
   type: ss
   port: 2376
   udp: true
   password: faBAoD54k87UJG7
   cipher: aes-256-gcm
-- name: _55
+- name: _41
   server: 5.188.181.201
   type: ss
-  port: 9042
-  udp: true
-  password: S7KwUu7yBy58S3Ga
+  port: 9001
+  password: UkXRsXvR6buDMG2Y
   cipher: aes-256-cfb
-- name: _56
+- name: _43
   server: 5.188.181.201
+  type: ss
+  port: 9031
+  udp: true
+  password: BwcAUZk8hUFAkDGN
+  cipher: aes-256-cfb
+- name: _44
+  server: 45.89.52.66
+  type: ss
+  port: 9001
+  udp: true
+  password: UkXRsXvR6buDMG2Y
+  cipher: aes-256-cfb
+- name: _45
+  server: 45.89.52.66
   type: ss
   port: 9041
   udp: true
   password: U6qnYRhfyDmn8sgn
   cipher: aes-256-cfb
-- name: _57
-  server: 38.121.43.71
+- name: _46
+  server: 45.89.52.66
   type: ss
-  port: 8882
-  password: kDWvXYZoTBcGkC4
-  cipher: aes-256-gcm
-- name: _58
+  port: 9040
+  udp: true
+  password: p9z5BVADH2YFs3MN
+  cipher: aes-256-cfb
+- name: _47
   server: 109.201.152.181
   type: ss
   port: 443
   udp: true
   password: shadowsocks
   cipher: aes-128-cfb
-- name: _59
+- name: _48
   server: 195.154.169.198
   type: ss
   port: 989
   udp: true
   password: f8f7aCzcPKbsF8p3
   cipher: aes-256-cfb
-- name: _61
-  server: 38.121.43.71
+- name: _49
+  server: 184.170.241.194
   type: ss
-  port: 8119
-  password: cdBIDV42DCwnfIN
-  cipher: aes-256-gcm
-- name: _62
-  server: 212.102.53.197
+  port: 443
+  password: shadowsocks
+  cipher: aes-128-cfb
+- name: _50
+  server: 212.102.53.79
   type: ss
   port: 443
   password: shadowsocks
   cipher: aes-128-gcm
-- name: _63
-  server: 5.188.181.201
+- name: _51
+  server: 38.114.114.143
   type: ss
-  port: 9000
-  password: a3GFYt36Sm82Vys9
+  port: 2376
+  password: faBAoD54k87UJG7
+  cipher: aes-256-gcm
+- name: _52
+  server: 45.55.2.232
+  type: ss
+  port: 14293
+  password: 2170f8
   cipher: aes-256-cfb
-- name: _65
+- name: _53
   server: 212.102.53.193
   type: ss
   port: 443
   password: shadowsocks
   cipher: aes-128-gcm
-- name: _66
+- name: _54
   server: 212.102.53.80
   type: ss
   port: 443
   password: shadowsocks
   cipher: aes-128-gcm
-- name: 日本1-Trojan
-  type: trojan
-  server: jp1.sstank.top
-  port: 443
-  password: b8e7b9eb-877a-382a-81d5-610021a53abd
-  sni: jp1.sstank.top
-  udp: true
-- name: 日本2-Trojan
-  type: trojan
-  server: jp2.sstank.top
-  port: 443
-  password: b8e7b9eb-877a-382a-81d5-610021a53abd
-  sni: jp2.sstank.top
-  udp: true
-- name: 日本3-Trojan
-  type: trojan
-  server: jp3.sstank.top
-  port: 443
-  password: b8e7b9eb-877a-382a-81d5-610021a53abd
-  sni: jp3.sstank.top
-  udp: true
-- name: 日本4-Trojan
-  type: trojan
-  server: jp4.sstank.top
-  port: 443
-  password: b8e7b9eb-877a-382a-81d5-610021a53abd
-  sni: jp4.sstank.top
-  udp: true
-- name: 日本5-Trojan
-  type: trojan
-  server: jp5.sstank.top
-  port: 443
-  password: b8e7b9eb-877a-382a-81d5-610021a53abd
-  sni: jp5.sstank.top
-  udp: true
-- name: 美国-Trojan
-  type: trojan
-  server: usa.sstank.top
-  port: 443
-  password: b8e7b9eb-877a-382a-81d5-610021a53abd
-  sni: usa.sstank.top
-  udp: true
-- name: 美国1-Trojan
-  type: trojan
-  server: usa1.sstank.top
-  port: 443
-  password: b8e7b9eb-877a-382a-81d5-610021a53abd
-  sni: usa1.sstank.top
-  udp: true
-- name: 香港2-Trojan
-  type: trojan
-  server: hk2.sstank.top
-  port: 443
-  password: b8e7b9eb-877a-382a-81d5-610021a53abd
-  sni: hk2.sstank.top
-  udp: true
-- name: 🇺🇸US-37.19.198.244-0956 | 220.684MB
-  server: 37.19.198.244
-  port: 443
+- name: _55
+  server: 212.102.53.81
   type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸US-138.197.5.103-1686 | 213.165MB
-  server: us.blazeppn.info
   port: 443
+  password: shadowsocks
+  cipher: aes-128-gcm
+- name: _56
+  server: 212.102.53.196
+  type: ss
+  port: 443
+  password: shadowsocks
+  cipher: aes-128-gcm
+- name: _57
+  server: 212.102.53.78
+  type: ss
+  port: 443
+  password: shadowsocks
+  cipher: aes-128-gcm
+- name: _58
+  server: 194.116.173.21
+  type: ss
+  port: 9038
+  password: gYCYXfkUQEs2TaJQ
+  cipher: aes-256-cfb
+- name: _59
+  server: 37.143.129.230
+  type: ss
+  port: 989
+  password: f8f7aCzcPKbsF8p3
+  cipher: aes-256-cfb
+- name: _60
+  server: 192.71.249.78
+  type: ss
+  port: 989
+  password: f8f7aCzcPKbsF8p3
+  cipher: aes-256-cfb
+- name: _61
+  server: 185.123.101.241
+  type: ss
+  port: 989
+  udp: true
+  password: f8f7aCzcPKbsF8p3
+  cipher: aes-256-cfb
+- name: _63
+  server: 46.183.184.60
+  type: ss
+  port: 989
+  udp: true
+  password: f8f7aCzcPKbsF8p3
+  cipher: aes-256-cfb
+- name: _64
+  server: 194.71.126.31
+  type: ss
+  port: 989
+  password: f8f7aCzcPKbsF8p3
+  cipher: aes-256-cfb
+- name: _65
+  server: 192.36.27.94
+  type: ss
+  port: 989
+  password: f8f7aCzcPKbsF8p3
+  cipher: aes-256-cfb
+- name: _66
+  server: 46.183.185.15
+  type: ss
+  port: 989
+  password: f8f7aCzcPKbsF8p3
+  cipher: aes-256-cfb
+- name: _67
+  server: 171.22.254.17
+  type: ss
+  port: 989
+  password: f8f7aCzcPKbsF8p3
+  cipher: aes-256-cfb
+- name: _69
+  server: jp-full.privateip.net
   type: trojan
+  port: 443
+  password: d9576e81-fc34-46f2-b624-0c1e99cde4be
+- name: _70
+  server: 89.187.181.179
+  type: trojan
+  port: 43118
+  password: ypDt8RkT7J
+  skip-cert-verify: true
+  udp: true
+- name: _71
+  server: 104.21.44.185
+  type: trojan
+  port: 2053
+  password: dreDeMpIQpnv
+  alpn:
+  - h3%2Ch2%2Chttp%2F1.1
+  sni: aryanews.onetwothree123.ir
+  skip-cert-verify: true
+  udp: true
+- name: _73
+  server: automq3-proxy.automq-sg.com
+  type: trojan
+  port: 443
+  password: dQUWbcwECl
+  udp: true
+- name: _74
+  server: 104.21.71.8
+  type: trojan
+  port: 2053
+  password: 9kHuEbiX7Bcp
+  alpn:
+  - h3%2Ch2%2Chttp%2F1.1
+  sni: khabaronline.itn24.ir
+  skip-cert-verify: true
+  udp: true
+- name: _75
+  server: 138.197.5.103
+  type: trojan
+  port: 443
+  password: xxoo
+  skip-cert-verify: true
+  udp: true
+- name: _76
+  server: us.blazeppn.info
+  type: trojan
+  port: 443
   password: xxoo
   sni: us.blazeppn.info
-  skip-cert-verify: false
-- name: 🇺🇸US-37.19.198.243-0995 | 138.787MB
-  server: 37.19.198.243
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸US-149.28.106.134-0948 | 136.255MB
-  server: 149.28.106.134
-  port: 31444
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 46e67f5a-63e4-4566-870c-76eaa9cf76fe
-- name: 🇺🇸US-37.19.198.236-1051 | 99.227MB
-  server: 37.19.198.236
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸US-37.19.198.160-1026 | 84.457MB
-  server: 37.19.198.160
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸US-194.5.215.59-0949 | 80.886MB
-  server: 194.5.215.59
-  port: 8080
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇺🇸US-156.146.38.168-1061 | 65.878MB
-  server: 156.146.38.168
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸US-156.146.38.169-0955 | 57.486MB
-  server: 156.146.38.169
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: RELAY-172.67.153.156-1145 | 42.798MB
-  server: uswuxian.pai50288.uk
-  port: 8443
-  type: vmess
-  uuid: c313606f-98c2-4d7b-ba74-48b94f61b11d
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uswuxian.pai50288.uk
-- name: 🇬🇧GB-146.70.61.18-0971 | 41.688MB
-  server: 146.70.61.18
-  port: 8080
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇺🇸US-173.244.56.6-0962 | 41.539MB
-  server: 173.244.56.6
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇳🇱NL-193.29.139.179-0985 | 40.415MB
-  server: 193.29.139.179
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: cvII85TrW6n0OGyfpHVS1u
-- name: 🇺🇸US-173.244.56.9-0961 | 39.41MB
-  server: 173.244.56.9
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: LT-45.87.175.69-0981 | 37.95MB
-  server: 45.87.175.69
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇫🇷FR-45.158.171.60-7183 | 37.538MB
-  server: 45.158.171.60
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: LT-45.87.175.157-0974 | 37.146MB
-  server: 45.87.175.157
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: QCXDxuDlTTMD7jtgHUjIoj
-- name: LT-45.87.175.154-0206 | 36.444MB
-  server: 45.87.175.154
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 4a2rfixophdjffa8KVA4Aa
-- name: LT-45.87.175.178-0213 | 36.29MB
-  server: beesyar.org
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 4a2rfixophdjffa8KVA4Aa
-- name: 🇺🇸US-212.102.47.132-0967 | 36.262MB
-  server: 212.102.47.132
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇫🇷FR-107.191.63.241-0987 | 36.16MB
-  server: 107.191.63.241
-  port: 30665
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 44fe4b7d-cd48-45fc-a036-60ea40e4a96c
-- name: LT-45.87.175.181-0205 | 36.07MB
-  server: 45.87.175.181
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: cvII85TrW6n0OGyfpHVS1u
-- name: LT-45.87.175.166-0973 | 35.686MB
-  server: 45.87.175.166
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-- name: 🇫🇷FR-57.128.190.171-1058 | 34.89MB
-  server: 57.128.190.171
-  port: 11259
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: f9d73c84e32a10f3
-- name: 🇫🇷FR-57.128.190.110-0994 | 34.5MB
-  server: 57.128.190.110
-  port: 11703
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: d275849ebcfcec7e
-- name: 🇬🇧GB-85.210.120.237-1042 | 34.129MB
-  server: series-a2-me.varzesh360.co
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: Bog0ELmMM9DSxDdQ
-- name: 🇬🇧GB-85.210.120.237-0996 | 33.943MB
-  server: admin.c3.webramz.co
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: Bog0ELmMM9DSxDdQ
-- name: 🇬🇧GB-85.210.120.237-1003 | 33.497MB
-  server: series-a2-me.samanehha.co
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: Bog0ELmMM9DSxDdQ
-- name: 🇬🇧GB-74.177.124.170-0997 | 32.646MB
-  server: admin.c1.webramz.co
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 1xO2cqPazqjGfCfd
-- name: 🇫🇷FR-51.68.13.106-0998 | 32.459MB
-  server: 51.68.13.106
-  port: 1935
+  skip-cert-verify: true
+  udp: true
+- name: _77
+  server: 104.21.30.167
   type: trojan
-  password: FiSo7J6vfS
-  sni: x1fr-ovh.devefun.net
-  skip-cert-verify: false
-- name: 🇬🇧GB-85.210.120.237-1004 | 31.856MB
-  server: 85.210.120.237
   port: 443
+  password: 2fec7227-9abe-46f2-af18-78302b836c45
+  alpn:
+  - http%2F1.1
+  sni: 3y.2032.pp.ua
+  skip-cert-verify: true
+  udp: true
+- name: _78
+  server: 104.21.112.1
+  type: trojan
+  port: 443
+  password: psycho
+  alpn:
+  - http%2F1.1
+  sni: pSYcho.sUeX12.IR
+  skip-cert-verify: true
+  udp: true
+- name: _79
+  server: 104.21.80.1
+  type: trojan
+  port: 443
+  password: psycho
+  alpn:
+  - http%2F1.1
+  sni: PSYchO.SueX12.Ir
+  skip-cert-verify: true
+  udp: true
+- name: 🇧🇩 BD_81
+  server: 103.106.1.92
   type: ss
+  country: 🇧🇩 BD
+  port: 23492
+  password: yMX9WGPgUEcRZmlaa0YHHC
   cipher: chacha20-ietf-poly1305
-  password: Bog0ELmMM9DSxDdQ
-- name: 🇬🇧GB-74.177.124.170-1001 | 31.381MB
-  server: series-a2.samanehha.co
-  port: 443
+- name: 🇧🇪 BE_82
+  server: 192.71.249.146
   type: ss
+  country: 🇧🇪 BE
+  port: 990
+  password: f8f7aCzcPKbsF8p3
   cipher: chacha20-ietf-poly1305
-  password: W74XFALLLuw6m5IA
-- name: 🇺🇸US-212.102.47.129-0970 | 15.219MB
-  server: 212.102.47.129
-  port: 443
+- name: 🇨🇦CA_89
+  server: ca225.vpnbook.com
   type: ss
-  cipher: aes-128-gcm
+  country: 🇨🇦CA
+  port: 80
+  password: JIhN6rBKkaEboLNXVSv5rq
+  cipher: chacha20-ietf-poly1305
+- name: 🇨🇿 CZ_95
+  server: 195.181.160.6
+  type: ss
+  country: 🇨🇿 CZ
+  port: 990
+  password: f8f7aCzcPKbsF8p3
+  cipher: chacha20-ietf-poly1305
+- name: 🇨🇿 CZ_96
+  server: 79.127.233.170
+  type: ss
+  country: 🇨🇿 CZ
+  port: 990
+  password: f8f7aCzcPKbsF8p3
+  cipher: chacha20-ietf-poly1305
+- name: 🇩🇪DE_101
+  server: 80.92.204.106
+  type: ss
+  country: 🇩🇪DE
+  port: 9061
+  password: 4R3hUfZ2FHhDmNcP
+  cipher: aes-256-cfb
+- name: 🇩🇪DE_106
+  server: 80.92.204.106
+  type: ss
+  country: 🇩🇪DE
+  port: 9042
+  password: S7KwUu7yBy58S3Ga
+  cipher: aes-256-cfb
+- name: 🇩🇪DE_107
+  server: 139.162.158.172
+  type: trojan
+  country: 🇩🇪DE
+  port: 443
+  password: 665c944d-047d-4659-80d5-3eaac70241a9
+  sni: de2-full.privateip.net
+  skip-cert-verify: true
+  udp: true
+- name: 🇪🇸ES_109
+  server: 5.188.181.201
+  type: ss
+  country: 🇪🇸ES
+  port: 9040
+  password: p9z5BVADH2YFs3MN
+  cipher: aes-256-cfb
+- name: 🇫🇷 FR_110
+  server: 51.195.119.47
+  type: ss
+  country: 🇫🇷 FR
+  port: 1080
+  password: qXvO7zYU7KeaB0Md7DQLow
+  cipher: chacha20-ietf-poly1305
+- name: 🇫🇷FR_112
+  server: 195.154.185.174
+  type: ss
+  country: 🇫🇷FR
+  port: 989
+  password: f8f7aCzcPKbsF8p3
+  cipher: aes-256-cfb
+- name: 🇬🇧GB_124
+  server: 212.102.53.198
+  type: ss
+  country: 🇬🇧GB
+  port: 443
   password: shadowsocks
+  cipher: aes-128-gcm
+- name: 🇬🇧GB_125
+  server: 212.102.53.195
+  type: ss
+  country: 🇬🇧GB
+  port: 443
+  password: shadowsocks
+  cipher: aes-128-gcm
 proxy-groups:
 - name: 节点选择
   type: select
@@ -683,106 +858,106 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 🇺🇸US-37.19.198.160-1026 | 84.457MB
-  - _49
-  - _37
-  - _44
-  - _42
-  - _33
-  - _47
-  - _35
-  - _40
-  - _02
-  - _41
-  - 🇺🇸US-194.5.215.59-0949 | 80.886MB
-  - _39
-  - 🇺🇸US-37.19.198.243-0995 | 138.787MB
+  - _74
+  - _77
+  - _79
+  - _78
+  - _71
+  - _52
+  - 14|KZ_speednode_0064
+  - 14|GB_speednode_0057
+  - 14|AT_speednode_0008
+  - 14|AT_speednode_0006
+  - 14|GB_speednode_0056
   - _38
-  - _36
-  - _15
-  - 🇺🇸US-37.19.198.236-1051 | 99.227MB
-  - _13
-  - 🇺🇸US-156.146.38.168-1061 | 65.878MB
-  - 🇺🇸US-156.146.38.169-0955 | 57.486MB
-  - 🇺🇸US-37.19.198.244-0956 | 220.684MB
-  - 🇺🇸US-149.28.106.134-0948 | 136.255MB
-  - _07
-  - _25
-  - _57
-  - _43
+  - 14|US_speednode_0111
   - _51
-  - _50
-  - 🇺🇸US-173.244.56.6-0962 | 41.539MB
-  - _46
-  - 🇺🇸US-173.244.56.9-0961 | 39.41MB
-  - 🇺🇸US-212.102.47.129-0970 | 15.219MB
-  - _63
-  - _55
-  - _48
-  - 🇫🇷FR-57.128.190.110-0994 | 34.5MB
-  - _61
-  - _10
-  - 🇫🇷FR-107.191.63.241-0987 | 36.16MB
-  - 🇫🇷FR-57.128.190.171-1058 | 34.89MB
-  - 🇬🇧GB-85.210.120.237-1004 | 31.856MB
-  - _01
-  - _34
-  - 🇬🇧GB-146.70.61.18-0971 | 41.688MB
-  - _65
-  - _58
-  - _32
-  - _59
-  - _62
-  - _66
-  - 🇳🇱NL-193.29.139.179-0985 | 40.415MB
-  - 🇫🇷FR-45.158.171.60-7183 | 37.538MB
-  - LT-45.87.175.181-0205 | 36.07MB
-  - _29
-  - 🇺🇸US-138.197.5.103-1686 | 213.165MB
-  - RELAY-172.67.153.156-1145 | 42.798MB
-  - _17
-  - _26
-  - 🇺🇸US-212.102.47.132-0967 | 36.262MB
-  - LT-45.87.175.166-0973 | 35.686MB
-  - _45
-  - LT-45.87.175.157-0974 | 37.146MB
-  - _28
-  - _56
-  - LT-45.87.175.154-0206 | 36.444MB
-  - _23
-  - _09
+  - 14|US_speednode_0119
+  - 14|US_speednode_0110
+  - 14|US_speednode_0114
+  - 14|GB_speednode_0050
+  - 14|GB_speednode_0052
+  - 14|BR_speednode_0020
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 28
+  - 14|RU_speednode_0078
+  - 14|BR_speednode_0015
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 27
+  - 14|KZ_speednode_0063
+  - 14|RU_speednode_0077
+  - 14|BR_speednode_0019
+  - 14|ZA_speednode_0130
+  - _49
+  - 🇨🇿 CZ_96
   - _05
-  - _27
-  - _30
-  - _31
-  - _03
-  - 🇬🇧GB-85.210.120.237-0996 | 33.943MB
-  - 🇬🇧GB-85.210.120.237-1003 | 33.497MB
-  - _24
-  - 🇬🇧GB-85.210.120.237-1042 | 34.129MB
-  - 🇫🇷FR-51.68.13.106-0998 | 32.459MB
-  - 🇬🇧GB-74.177.124.170-1001 | 31.381MB
-  - LT-45.87.175.69-0981 | 37.95MB
-  - _04
-  - _12
-  - _11
-  - 🇬🇧GB-74.177.124.170-0997 | 32.646MB
-  - LT-45.87.175.178-0213 | 36.29MB
-  - _22
-  - _08
+  - _58
+  - _35
+  - _37
+  - _26
+  - _02
+  - _70
+  - _36
+  - _40
+  - _75
+  - _01
+  - 🇨🇦CA_89
+  - _56
+  - _10
+  - _34
+  - _55
+  - 🇬🇧GB_125
+  - 🇪🇸ES_109
+  - _53
+  - _57
+  - 🇬🇧GB_124
+  - _54
+  - _50
+  - _41
+  - _47
   - _14
-  - _21
+  - 🇫🇷FR_112
+  - _25
+  - _43
+  - _39
+  - _48
+  - 🇧🇩 BD_81
+  - _30
   - _19
+  - _28
+  - _60
+  - _29
+  - 🇫🇷 FR_110
+  - 🇧🇪 BE_82
   - _20
-  - _18
-  - 美国-Trojan
-  - 美国1-Trojan
-  - 日本5-Trojan
-  - 日本4-Trojan
-  - 日本2-Trojan
-  - 日本3-Trojan
-  - 日本1-Trojan
-  - 香港2-Trojan
+  - _63
+  - _76
+  - 🇨🇿 CZ_95
+  - _59
+  - _03
+  - _11
+  - 🇩🇪DE_101
+  - _66
+  - _64
+  - _61
+  - _65
+  - _69
+  - _21
+  - _06
+  - _17
+  - _67
+  - _24
+  - _12
+  - 🇩🇪DE_107
+  - _22
+  - 🇩🇪DE_106
+  - _13
+  - 14|NL_speednode_0067
+  - _45
+  - 14|CH_speednode_0024
+  - _73
+  - _16
+  - _15
+  - _46
+  - _44
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
@@ -790,211 +965,211 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 🇺🇸US-37.19.198.160-1026 | 84.457MB
-  - _49
-  - _37
-  - _44
-  - _42
-  - _33
-  - _47
-  - _35
-  - _40
-  - _02
-  - _41
-  - 🇺🇸US-194.5.215.59-0949 | 80.886MB
-  - _39
-  - 🇺🇸US-37.19.198.243-0995 | 138.787MB
+  - _74
+  - _77
+  - _79
+  - _78
+  - _71
+  - _52
+  - 14|KZ_speednode_0064
+  - 14|GB_speednode_0057
+  - 14|AT_speednode_0008
+  - 14|AT_speednode_0006
+  - 14|GB_speednode_0056
   - _38
-  - _36
-  - _15
-  - 🇺🇸US-37.19.198.236-1051 | 99.227MB
-  - _13
-  - 🇺🇸US-156.146.38.168-1061 | 65.878MB
-  - 🇺🇸US-156.146.38.169-0955 | 57.486MB
-  - 🇺🇸US-37.19.198.244-0956 | 220.684MB
-  - 🇺🇸US-149.28.106.134-0948 | 136.255MB
-  - _07
-  - _25
-  - _57
-  - _43
+  - 14|US_speednode_0111
   - _51
-  - _50
-  - 🇺🇸US-173.244.56.6-0962 | 41.539MB
-  - _46
-  - 🇺🇸US-173.244.56.9-0961 | 39.41MB
-  - 🇺🇸US-212.102.47.129-0970 | 15.219MB
-  - _63
-  - _55
-  - _48
-  - 🇫🇷FR-57.128.190.110-0994 | 34.5MB
-  - _61
-  - _10
-  - 🇫🇷FR-107.191.63.241-0987 | 36.16MB
-  - 🇫🇷FR-57.128.190.171-1058 | 34.89MB
-  - 🇬🇧GB-85.210.120.237-1004 | 31.856MB
-  - _01
-  - _34
-  - 🇬🇧GB-146.70.61.18-0971 | 41.688MB
-  - _65
-  - _58
-  - _32
-  - _59
-  - _62
-  - _66
-  - 🇳🇱NL-193.29.139.179-0985 | 40.415MB
-  - 🇫🇷FR-45.158.171.60-7183 | 37.538MB
-  - LT-45.87.175.181-0205 | 36.07MB
-  - _29
-  - 🇺🇸US-138.197.5.103-1686 | 213.165MB
-  - RELAY-172.67.153.156-1145 | 42.798MB
-  - _17
-  - _26
-  - 🇺🇸US-212.102.47.132-0967 | 36.262MB
-  - LT-45.87.175.166-0973 | 35.686MB
-  - _45
-  - LT-45.87.175.157-0974 | 37.146MB
-  - _28
-  - _56
-  - LT-45.87.175.154-0206 | 36.444MB
-  - _23
-  - _09
+  - 14|US_speednode_0119
+  - 14|US_speednode_0110
+  - 14|US_speednode_0114
+  - 14|GB_speednode_0050
+  - 14|GB_speednode_0052
+  - 14|BR_speednode_0020
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 28
+  - 14|RU_speednode_0078
+  - 14|BR_speednode_0015
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 27
+  - 14|KZ_speednode_0063
+  - 14|RU_speednode_0077
+  - 14|BR_speednode_0019
+  - 14|ZA_speednode_0130
+  - _49
+  - 🇨🇿 CZ_96
   - _05
-  - _27
-  - _30
-  - _31
-  - _03
-  - 🇬🇧GB-85.210.120.237-0996 | 33.943MB
-  - 🇬🇧GB-85.210.120.237-1003 | 33.497MB
-  - _24
-  - 🇬🇧GB-85.210.120.237-1042 | 34.129MB
-  - 🇫🇷FR-51.68.13.106-0998 | 32.459MB
-  - 🇬🇧GB-74.177.124.170-1001 | 31.381MB
-  - LT-45.87.175.69-0981 | 37.95MB
-  - _04
-  - _12
-  - _11
-  - 🇬🇧GB-74.177.124.170-0997 | 32.646MB
-  - LT-45.87.175.178-0213 | 36.29MB
-  - _22
-  - _08
+  - _58
+  - _35
+  - _37
+  - _26
+  - _02
+  - _70
+  - _36
+  - _40
+  - _75
+  - _01
+  - 🇨🇦CA_89
+  - _56
+  - _10
+  - _34
+  - _55
+  - 🇬🇧GB_125
+  - 🇪🇸ES_109
+  - _53
+  - _57
+  - 🇬🇧GB_124
+  - _54
+  - _50
+  - _41
+  - _47
   - _14
-  - _21
+  - 🇫🇷FR_112
+  - _25
+  - _43
+  - _39
+  - _48
+  - 🇧🇩 BD_81
+  - _30
   - _19
+  - _28
+  - _60
+  - _29
+  - 🇫🇷 FR_110
+  - 🇧🇪 BE_82
   - _20
-  - _18
-  - 美国-Trojan
-  - 美国1-Trojan
-  - 日本5-Trojan
-  - 日本4-Trojan
-  - 日本2-Trojan
-  - 日本3-Trojan
-  - 日本1-Trojan
-  - 香港2-Trojan
+  - _63
+  - _76
+  - 🇨🇿 CZ_95
+  - _59
+  - _03
+  - _11
+  - 🇩🇪DE_101
+  - _66
+  - _64
+  - _61
+  - _65
+  - _69
+  - _21
+  - _06
+  - _17
+  - _67
+  - _24
+  - _12
+  - 🇩🇪DE_107
+  - _22
+  - 🇩🇪DE_106
+  - _13
+  - 14|NL_speednode_0067
+  - _45
+  - 14|CH_speednode_0024
+  - _73
+  - _16
+  - _15
+  - _46
+  - _44
   url: http://www.gstatic.com/generate_204
   interval: 300
 - name: 手动选择
   type: select
   proxies:
-  - 🇺🇸US-37.19.198.160-1026 | 84.457MB
-  - _49
-  - _37
-  - _44
-  - _42
-  - _33
-  - _47
-  - _35
-  - _40
-  - _02
-  - _41
-  - 🇺🇸US-194.5.215.59-0949 | 80.886MB
-  - _39
-  - 🇺🇸US-37.19.198.243-0995 | 138.787MB
+  - _74
+  - _77
+  - _79
+  - _78
+  - _71
+  - _52
+  - 14|KZ_speednode_0064
+  - 14|GB_speednode_0057
+  - 14|AT_speednode_0008
+  - 14|AT_speednode_0006
+  - 14|GB_speednode_0056
   - _38
-  - _36
-  - _15
-  - 🇺🇸US-37.19.198.236-1051 | 99.227MB
-  - _13
-  - 🇺🇸US-156.146.38.168-1061 | 65.878MB
-  - 🇺🇸US-156.146.38.169-0955 | 57.486MB
-  - 🇺🇸US-37.19.198.244-0956 | 220.684MB
-  - 🇺🇸US-149.28.106.134-0948 | 136.255MB
-  - _07
-  - _25
-  - _57
-  - _43
+  - 14|US_speednode_0111
   - _51
-  - _50
-  - 🇺🇸US-173.244.56.6-0962 | 41.539MB
-  - _46
-  - 🇺🇸US-173.244.56.9-0961 | 39.41MB
-  - 🇺🇸US-212.102.47.129-0970 | 15.219MB
-  - _63
-  - _55
-  - _48
-  - 🇫🇷FR-57.128.190.110-0994 | 34.5MB
-  - _61
-  - _10
-  - 🇫🇷FR-107.191.63.241-0987 | 36.16MB
-  - 🇫🇷FR-57.128.190.171-1058 | 34.89MB
-  - 🇬🇧GB-85.210.120.237-1004 | 31.856MB
-  - _01
-  - _34
-  - 🇬🇧GB-146.70.61.18-0971 | 41.688MB
-  - _65
-  - _58
-  - _32
-  - _59
-  - _62
-  - _66
-  - 🇳🇱NL-193.29.139.179-0985 | 40.415MB
-  - 🇫🇷FR-45.158.171.60-7183 | 37.538MB
-  - LT-45.87.175.181-0205 | 36.07MB
-  - _29
-  - 🇺🇸US-138.197.5.103-1686 | 213.165MB
-  - RELAY-172.67.153.156-1145 | 42.798MB
-  - _17
-  - _26
-  - 🇺🇸US-212.102.47.132-0967 | 36.262MB
-  - LT-45.87.175.166-0973 | 35.686MB
-  - _45
-  - LT-45.87.175.157-0974 | 37.146MB
-  - _28
-  - _56
-  - LT-45.87.175.154-0206 | 36.444MB
-  - _23
-  - _09
+  - 14|US_speednode_0119
+  - 14|US_speednode_0110
+  - 14|US_speednode_0114
+  - 14|GB_speednode_0050
+  - 14|GB_speednode_0052
+  - 14|BR_speednode_0020
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 28
+  - 14|RU_speednode_0078
+  - 14|BR_speednode_0015
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 27
+  - 14|KZ_speednode_0063
+  - 14|RU_speednode_0077
+  - 14|BR_speednode_0019
+  - 14|ZA_speednode_0130
+  - _49
+  - 🇨🇿 CZ_96
   - _05
-  - _27
-  - _30
-  - _31
-  - _03
-  - 🇬🇧GB-85.210.120.237-0996 | 33.943MB
-  - 🇬🇧GB-85.210.120.237-1003 | 33.497MB
-  - _24
-  - 🇬🇧GB-85.210.120.237-1042 | 34.129MB
-  - 🇫🇷FR-51.68.13.106-0998 | 32.459MB
-  - 🇬🇧GB-74.177.124.170-1001 | 31.381MB
-  - LT-45.87.175.69-0981 | 37.95MB
-  - _04
-  - _12
-  - _11
-  - 🇬🇧GB-74.177.124.170-0997 | 32.646MB
-  - LT-45.87.175.178-0213 | 36.29MB
-  - _22
-  - _08
+  - _58
+  - _35
+  - _37
+  - _26
+  - _02
+  - _70
+  - _36
+  - _40
+  - _75
+  - _01
+  - 🇨🇦CA_89
+  - _56
+  - _10
+  - _34
+  - _55
+  - 🇬🇧GB_125
+  - 🇪🇸ES_109
+  - _53
+  - _57
+  - 🇬🇧GB_124
+  - _54
+  - _50
+  - _41
+  - _47
   - _14
-  - _21
+  - 🇫🇷FR_112
+  - _25
+  - _43
+  - _39
+  - _48
+  - 🇧🇩 BD_81
+  - _30
   - _19
+  - _28
+  - _60
+  - _29
+  - 🇫🇷 FR_110
+  - 🇧🇪 BE_82
   - _20
-  - _18
-  - 美国-Trojan
-  - 美国1-Trojan
-  - 日本5-Trojan
-  - 日本4-Trojan
-  - 日本2-Trojan
-  - 日本3-Trojan
-  - 日本1-Trojan
-  - 香港2-Trojan
+  - _63
+  - _76
+  - 🇨🇿 CZ_95
+  - _59
+  - _03
+  - _11
+  - 🇩🇪DE_101
+  - _66
+  - _64
+  - _61
+  - _65
+  - _69
+  - _21
+  - _06
+  - _17
+  - _67
+  - _24
+  - _12
+  - 🇩🇪DE_107
+  - _22
+  - 🇩🇪DE_106
+  - _13
+  - 14|NL_speednode_0067
+  - _45
+  - 14|CH_speednode_0024
+  - _73
+  - _16
+  - _15
+  - _46
+  - _44
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
