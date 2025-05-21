@@ -32,14 +32,6 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- name: 🇰🇷 韩国|@ripaojiedian
-  server: 125.141.31.72
-  port: 15098
-  client-fingerprint: chrome
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-  tfo: false
 - name: 🇻🇳 越南|@ripaojiedian
   server: 103.186.154.33
   port: 38388
@@ -230,18 +222,10 @@ proxies:
     path: /?ed=2048
     headers:
       Host: warp.irss.eu.org
-- name: 轮子2
-  type: hysteria2
-  server: hy2.694463.xyz
-  port: '30033'
-  password: dongtaiwang.com
-  fast-open: true
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 轮子7
+- name: 轮子1
   type: hysteria
-  server: 195.154.200.178
-  port: 46938
+  server: 185.22.155.71
+  port: '10803'
   auth_str: dongtaiwang.com
   up: 11
   down: 55
@@ -251,40 +235,231 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: 轮子3215
-  type: hysteria
-  server: 108.181.24.77
-  port: 11512
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-- name: 轮子3216
-  type: hysteria
-  server: 208.87.243.151
-  port: 17549
-  auth_str: dongtaiwang.com
-  alpn:
-  - h3
+- name: 轮子2
+  type: hysteria2
+  server: hy2.694463.xyz
+  port: '30033'
+  password: dongtaiwang.com
+  fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-  up: 11 Mbps
-  down: 55 Mbps
-- name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 100
-  server: 108.181.5.130
-  port: 57773
-  type: hysteria2
-  password: dongtaiwang.com
-  auth: dongtaiwang.com
-  sni: apple.com
+- name: 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 54
+  server: dnschecker.org
+  port: 443
+  type: vless
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  tls: true
+  servername: xl.ylka.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: xl.ylka.dpdns.org
+  udp: true
+- name: 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 55
+  server: www.hugedomains.com
+  port: 443
+  type: vless
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  tls: true
+  servername: xl.ylka.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: xl.ylka.dpdns.org
+  udp: true
+- name: 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 68
+  server: 150.230.159.76
+  port: 443
+  type: vless
+  uuid: 82fd9622-83a8-4378-92d6-dcb4a2787d63
+  tls: true
+  servername: qwok.feidyql.dpdns.org
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: qwok.feidyql.dpdns.org
+- name: 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 7
+  server: 162.159.136.20
+  port: 8880
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: reedfree8mahsang2.redorg.ir
+- name: 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 8
+  server: 162.159.152.81
+  port: 8443
+  type: vless
+  uuid: 908fe4f8-eb66-42eb-bd97-8d88be7f0ac4
+  tls: true
+  servername: txmt.conetcdata.dpdns.org
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: txmt.conetcdata.dpdns.org
+- name: 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 9
+  server: 104.24.165.134
+  port: 2096
+  type: vless
+  uuid: 9431a0a9-3ead-4255-af11-faddffeff062
+  tls: true
+  servername: www.pjw5.top
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: www.pjw5.top
+- name: 🇩🇪 德国 - 法兰克福 - DigitalOcean, LLC - 1
+  server: nextstepcareer.online
+  port: 443
+  type: trojan
+  password: 4732adfa16c6450bbef87264e41332db
+  sni: nextstepcareer.online
   skip-cert-verify: true
-- name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 101
-  server: 208.87.243.187
-  port: 40528
+  udp: true
+- name: 🇩🇪 德国 - 法兰克福 - DigitalOcean, LLC - 2
+  server: 165.22.74.230
+  port: 443
+  type: trojan
+  password: 4732adfa16c6450bbef87264e41332db
+  sni: nextstepcareer.online
+  skip-cert-verify: true
+  udp: true
+- name: 🇩🇪 德国 - 法兰克福 - DigitalOcean, LLC - 60
+  server: n1.boutiqueman.shop
+  port: 80
+  type: vless
+  uuid: jointelegram@V2rayvpn_official
+  tls: false
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: n1.boutiqueman.shop
+  udp: true
+- name: 🇩🇪 德国 - 法兰克福 - DigitalOcean, LLC - 69
+  server: 167.172.180.77
+  port: 443
+  type: vmess
+  uuid: 3b78ed6a-3b1b-4fd2-8457-a358314be6b7
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: http
+  http-opts:
+    method: GET
+    path:
+    - /
+    headers:
+      Host:
+      - parsabr.com
+  udp: true
+- name: 🇩🇪 德国 - 法兰克福 - Stark Industries Solutions LTD - 56
+  server: fra5.vpntype.dev
+  port: 443
+  type: vless
+  uuid: e9bdb5cc-77a7-408e-bbdd-a99fb767adc2
+  tls: true
+  alpn:
+  - h2
+  - http/1.1
+  flow: xtls-rprx-vision
+  servername: fra5.vpntype.dev
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 - 法兰克福 - firstcolo GmbH - 30
+  server: de1.shiyuandian.shop
+  port: 26246
+  type: hysteria2
+  password: 000fe3b3-88e4-4bbf-8b41-6ae7466b1d20
+  auth: 000fe3b3-88e4-4bbf-8b41-6ae7466b1d20
+  sni: de1.shiyuandian.shop
+  skip-cert-verify: true
+- name: 🇩🇪 德国 - 纽伦堡 - Hetzner Online GmbH - 4
+  server: 162.55.185.143
+  port: 22000
+  type: vless
+  uuid: f93a6388-c998-4864-8eb7-c61de4754aca
+  tls: true
+  reality-opts:
+    public-key: f8YkaG5qTpO4VrwZAXriDsuhM_OB1vEtcq_XQ3Y040A
+    short-id: a14a0330c8ede1cd
+  servername: refersion.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: Tok
+  udp: true
+- name: 🇩🇪 德国 - 纽伦堡 - Hetzner Online GmbH - 53
+  server: aether.rosha-studio.ir
+  port: 22000
+  type: vless
+  uuid: f93a6388-c998-4864-8eb7-c61de4754aca
+  tls: true
+  reality-opts:
+    public-key: f8YkaG5qTpO4VrwZAXriDsuhM_OB1vEtcq_XQ3Y040A
+    short-id: a14a0330c8ede1cd
+  servername: refersion.com
+  client-fingerprint: random
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: Tok
+  udp: true
+- name: 🇩🇪 德国 - 纽伦堡 - Parsonline - 31
+  server: NUFiLTER.fastly80-2.hosting-ip.com
+  port: 80
+  type: vless
+  uuid: TELEGRAM-NUFiLTER
+  tls: false
+  network: ws
+  ws-opts:
+    path: /telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER?ed=8080
+    headers:
+      Host: nufilterasli.org
+  udp: true
+- name: 🇩🇰 丹麦 - 哥本哈根 - ONEPROVIDER - 1
+  server: 185.186.79.135
+  port: 20028
+  type: ss
+  cipher: aes-256-gcm
+  password: HV3A9PGXES95FBQT
+  udp: true
+- name: 🇪🇨 厄瓜多尔 - 基多 - ONEPROVIDER - 2
+  server: 185.47.253.144
+  port: 20010
+  type: ss
+  cipher: aes-256-gcm
+  password: Q2JZ1UA7KHXBHRU0
+  udp: true
+- name: 🇪🇸 西班牙 - 查馬丁區 - Cloudflare, Inc. - 2
+  server: 141.101.90.116
+  port: 443
+  type: vless
+  uuid: 9431a0a9-3ead-4255-af11-faddffeff062
+  tls: true
+  servername: www.pjw5.top
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: www.pjw5.top
+- name: 🇫🇷 法国 - 塞纳河畔伊夫里 - Online S.A.S. - 4
+  server: 195.154.200.40
+  port: 15010
   type: hysteria
   auth_str: dongtaiwang.com
   auth-str: dongtaiwang.com
@@ -294,611 +469,728 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 272
-  server: 108.181.23.241
-  port: 443
+- name: 🇫🇷 法国 - 巴黎 - Regxa Company for Information Technology Ltd - 6
+  server: jiangzhifg.54264944.xyz
+  port: 43999
   type: hysteria2
-  password: b8bd42a9-551f-419d-b70d-4aefdd2cb074
-  auth: b8bd42a9-551f-419d-b70d-4aefdd2cb074
-  sni: www.bing.com
+  password: d4b6d698-8568-4636-9578-f6f75f86d3d6
+  auth: d4b6d698-8568-4636-9578-f6f75f86d3d6
+  sni: jiangzhifr.54264944.xyz
   skip-cert-verify: true
-- name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 273
-  server: 208.87.242.79
-  port: 443
+  udp: true
+- name: 🇫🇷 法国 - 巴黎 - SCALEWAY - 8
+  server: 51.159.111.32
+  port: 31180
   type: hysteria2
-  password: b8bd42a9-551f-419d-b70d-4aefdd2cb074
-  auth: b8bd42a9-551f-419d-b70d-4aefdd2cb074
-  sni: www.bing.com
+  password: dongtaiwang.com
+  auth: dongtaiwang.com
+  sni: apple.com
   skip-cert-verify: true
-- name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 274
-  server: 208.87.242.189
-  port: 443
-  type: hysteria2
-  password: b8bd42a9-551f-419d-b70d-4aefdd2cb074
-  auth: b8bd42a9-551f-419d-b70d-4aefdd2cb074
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 41
-  server: 108.181.23.255
-  port: 443
-  type: hysteria2
-  password: b8bd42a9-551f-419d-b70d-4aefdd2cb074
-  auth: b8bd42a9-551f-419d-b70d-4aefdd2cb074
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 48
-  server: 208.87.242.215
-  port: 443
-  type: hysteria2
-  password: b8bd42a9-551f-419d-b70d-4aefdd2cb074
-  auth: b8bd42a9-551f-419d-b70d-4aefdd2cb074
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 105
-  server: af230121-swd340-tcvn0z-1tlyg.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: be8ba532-0dcf-11f0-9a65-f23c9164ca5d
-  auth: be8ba532-0dcf-11f0-9a65-f23c9164ca5d
-  sni: af230121-swd340-tcvn0z-1tlyg.hy2.gotochinatown.net
-  udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 110
-  server: a46e2b02-swexs0-sx4b2t-tng5.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: 2ec58858-976b-11ea-82ef-f23c9164ca5d
-  auth: 2ec58858-976b-11ea-82ef-f23c9164ca5d
-  sni: a46e2b02-swexs0-sx4b2t-tng5.hy2.gotochinatown.net
-  udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 111
-  server: 6be32764-sw3ts0-t6ouc9-13xtu.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: 4a7f880c-72f4-11ed-b0b5-f23c9164ca5d
-  auth: 4a7f880c-72f4-11ed-b0b5-f23c9164ca5d
-  sni: 6be32764-sw3ts0-t6ouc9-13xtu.hy2.gotochinatown.net
-  udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 112
-  server: 2fa3e7cb-sw5og0-tchszt-1quq9.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: 74e74e40-e134-11ee-bded-f23c913c8d2b
-  auth: 74e74e40-e134-11ee-bded-f23c913c8d2b
-  sni: 2fa3e7cb-sw5og0-tchszt-1quq9.hy2.gotochinatown.net
-  skip-cert-verify: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 115
-  server: 5514f9ee-swexs0-syhw90-1rsuw.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: 0de37cdc-abff-11ef-b7c6-f23c913c8d2b
-  auth: 0de37cdc-abff-11ef-b7c6-f23c913c8d2b
-  sni: 5514f9ee-swexs0-syhw90-1rsuw.hy2.gotochinatown.net
-  udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 116
-  server: 01089b68-swd340-sx0fe4-1j6h0.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: dcccacba-fa44-11ef-8400-f23c9164ca5d
-  auth: dcccacba-fa44-11ef-8400-f23c9164ca5d
-  sni: 01089b68-swd340-sx0fe4-1j6h0.hy2.gotochinatown.net
-  udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 117
-  server: 9b6af554-swexs0-sx3h07-1g8k0.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: d4018e28-e328-11ed-98a7-f23c913c8d2b
-  auth: d4018e28-e328-11ed-98a7-f23c913c8d2b
-  sni: 9b6af554-swexs0-sx3h07-1g8k0.hy2.gotochinatown.net
-  udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 119
-  server: 7065741c-swd340-t67sv3-1snfs.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: b79d79ae-8bce-11ef-a2b8-f23c9164ca5d
-  auth: b79d79ae-8bce-11ef-a2b8-f23c9164ca5d
-  sni: 7065741c-swd340-t67sv3-1snfs.hy2.gotochinatown.net
-  udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 120
-  server: 5dec7e17-swd340-swp71a-25xl.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: 7ddc7156-57be-11ee-9acd-f23c9164ca5d
-  auth: 7ddc7156-57be-11ee-9acd-f23c9164ca5d
-  sni: 5dec7e17-swd340-swp71a-25xl.hy2.gotochinatown.net
-  udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 121
-  server: 32fe3b1a-swd340-sx3h07-1g8k0.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: d4018e28-e328-11ed-98a7-f23c913c8d2b
-  auth: d4018e28-e328-11ed-98a7-f23c913c8d2b
-  sni: 32fe3b1a-swd340-sx3h07-1g8k0.hy2.gotochinatown.net
-  udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 122
-  server: 7edb7ffb-sw5og0-sznzxg-1jfvb.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: 06b2ac52-fcc6-11ec-bb74-f23c9164ca5d
-  auth: 06b2ac52-fcc6-11ec-bb74-f23c9164ca5d
-  sni: 7edb7ffb-sw5og0-sznzxg-1jfvb.hy2.gotochinatown.net
-  udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 124
-  server: d5a9f8af-swd340-syfwbx-1k0yf.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: 9cc3c03e-21fd-11ee-a642-f23c91369f2d
-  auth: 9cc3c03e-21fd-11ee-a642-f23c91369f2d
-  sni: d5a9f8af-swd340-syfwbx-1k0yf.hy2.gotochinatown.net
-  udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 128
-  server: c06817ee-swexs0-sxzls8-1gxvd.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: 398e0d38-8649-11ef-959c-f23c9164ca5d
-  auth: 398e0d38-8649-11ef-959c-f23c9164ca5d
-  sni: c06817ee-swexs0-sxzls8-1gxvd.hy2.gotochinatown.net
-  udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 132
-  server: ee84d812-swexs0-sxmlck-1ta58.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: e2d8b574-e089-11ef-9cc7-f23c9164ca5d
-  auth: e2d8b574-e089-11ef-9cc7-f23c9164ca5d
-  sni: ee84d812-swexs0-sxmlck-1ta58.hy2.gotochinatown.net
-  udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 144
-  server: 8b908bab-swd340-t5w83q-1slpx.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: b55123f4-0ba2-11f0-a2ef-f23c91cfbbc9
-  auth: b55123f4-0ba2-11f0-a2ef-f23c91cfbbc9
-  sni: 8b908bab-swd340-t5w83q-1slpx.hy2.gotochinatown.net
-  skip-cert-verify: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 149
-  server: b7d516b4-swd340-t0dyyh-jjv2.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: 31676725-b0fd-fed2-c857-2da8ce5a6e4f
-  auth: 31676725-b0fd-fed2-c857-2da8ce5a6e4f
-  sni: b7d516b4-swd340-t0dyyh-jjv2.hy2.gotochinatown.net
-  udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 153
-  server: 4446642d-swexs0-sxf56z-1f596.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: e3975a05-b89e-11ec-a50d-f23c91cfbbc9
-  auth: e3975a05-b89e-11ec-a50d-f23c91cfbbc9
-  sni: 4446642d-swexs0-sxf56z-1f596.hy2.gotochinatown.net
-  udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 154
-  server: 2e026bef-swexs0-t3o6u7-1osdm.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: 91365a7a-46d7-11ee-a8b9-f23c9164ca5d
-  auth: 91365a7a-46d7-11ee-a8b9-f23c9164ca5d
-  sni: 2e026bef-swexs0-t3o6u7-1osdm.hy2.gotochinatown.net
-  udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 156
-  server: d00ee557-swexs0-sx9b4u-1sd8z.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: 861b5684-062c-11f0-8eb0-f23c9164ca5d
-  auth: 861b5684-062c-11f0-8eb0-f23c9164ca5d
-  sni: d00ee557-swexs0-sx9b4u-1sd8z.hy2.gotochinatown.net
-  udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 162
-  server: d165ac7b-swexs0-swsmkh-1s0a7.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: 1b9c460e-f026-11ef-b737-f23c91cfbbc9
-  auth: 1b9c460e-f026-11ef-b737-f23c91cfbbc9
-  sni: d165ac7b-swexs0-swsmkh-1s0a7.hy2.gotochinatown.net
-  udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 165
-  server: 450cbb6d-swd340-sxhurg-1th8j.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: 7d7c111e-fbc1-11ef-ab5f-f23c913c8d2b
-  auth: 7d7c111e-fbc1-11ef-ab5f-f23c913c8d2b
-  sni: 450cbb6d-swd340-sxhurg-1th8j.hy2.gotochinatown.net
-  udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 167
-  server: 16dd8807-swexs0-sxkhay-1jdha.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: de629d50-1711-11ed-bd7c-f23c913c8d2b
-  auth: de629d50-1711-11ed-bd7c-f23c913c8d2b
-  sni: 16dd8807-swexs0-sxkhay-1jdha.hy2.gotochinatown.net
-  udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 169
-  server: 71c9123b-swexs0-szapkm-1hpo0.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: c3dc8d26-ab2b-11ec-a8bf-f23c91cfbbc9
-  auth: c3dc8d26-ab2b-11ec-a8bf-f23c91cfbbc9
-  sni: 71c9123b-swexs0-szapkm-1hpo0.hy2.gotochinatown.net
-  udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 172
-  server: 47b39173-swexs0-t0dyyh-jjv2.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: 31676725-b0fd-fed2-c857-2da8ce5a6e4f
-  auth: 31676725-b0fd-fed2-c857-2da8ce5a6e4f
-  sni: 47b39173-swexs0-t0dyyh-jjv2.hy2.gotochinatown.net
-  udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 173
-  server: 35278cfc-swd340-sxd0pj-1rgsa.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: 096d1c9a-9e52-11ef-87a8-f23c9164ca5d
-  auth: 096d1c9a-9e52-11ef-87a8-f23c9164ca5d
-  sni: 35278cfc-swd340-sxd0pj-1rgsa.hy2.gotochinatown.net
-  udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 185
-  server: 0fb557d2-swin40-t68qxm-1j0r7.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: 0b0a2954-c9a8-11ef-a46e-f23c913c8d2b
-  auth: 0b0a2954-c9a8-11ef-a46e-f23c913c8d2b
-  sni: 0fb557d2-swin40-t68qxm-1j0r7.hy2.gotochinatown.net
-  udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 186
-  server: ee6a9d89-swd340-sxlsd4-3z3v.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: 48c1e014-28d6-11ec-a0fc-f23c913c8d2b
-  auth: 48c1e014-28d6-11ec-a0fc-f23c913c8d2b
-  sni: ee6a9d89-swd340-sxlsd4-3z3v.hy2.gotochinatown.net
-  udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 187
-  server: 05c7780a-swin40-sxd0pj-1rgsa.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: 096d1c9a-9e52-11ef-87a8-f23c9164ca5d
-  auth: 096d1c9a-9e52-11ef-87a8-f23c9164ca5d
-  sni: 05c7780a-swin40-sxd0pj-1rgsa.hy2.gotochinatown.net
-  udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 188
-  server: e15eadd7-swin40-t5vrf3-716s.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: 088a0bbe-4f9f-11ea-a15d-f23c913c8d2b
-  auth: 088a0bbe-4f9f-11ea-a15d-f23c913c8d2b
-  sni: e15eadd7-swin40-t5vrf3-716s.hy2.gotochinatown.net
-  udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 189
-  server: b5c6e084-swexs0-sx0fe4-1j6h0.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: dcccacba-fa44-11ef-8400-f23c9164ca5d
-  auth: dcccacba-fa44-11ef-8400-f23c9164ca5d
-  sni: b5c6e084-swexs0-sx0fe4-1j6h0.hy2.gotochinatown.net
-  udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 201
-  server: cb26f497-swexs0-t6ouc9-13xtu.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: 4a7f880c-72f4-11ed-b0b5-f23c9164ca5d
-  auth: 4a7f880c-72f4-11ed-b0b5-f23c9164ca5d
-  sni: cb26f497-swexs0-t6ouc9-13xtu.hy2.gotochinatown.net
-  udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 203
-  server: 12066e05-swd340-syhw90-1rsuw.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: 0de37cdc-abff-11ef-b7c6-f23c913c8d2b
-  auth: 0de37cdc-abff-11ef-b7c6-f23c913c8d2b
-  sni: 12066e05-swd340-syhw90-1rsuw.hy2.gotochinatown.net
-  skip-cert-verify: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 218
-  server: 24710604-swin40-sznzxg-1jfvb.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: 06b2ac52-fcc6-11ec-bb74-f23c9164ca5d
-  auth: 06b2ac52-fcc6-11ec-bb74-f23c9164ca5d
-  sni: 24710604-swin40-sznzxg-1jfvb.hy2.gotochinatown.net
-  udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 219
-  server: 2e1f4b7c-swin40-sxkhay-1jdha.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: de629d50-1711-11ed-bd7c-f23c913c8d2b
-  auth: de629d50-1711-11ed-bd7c-f23c913c8d2b
-  sni: 2e1f4b7c-swin40-sxkhay-1jdha.hy2.gotochinatown.net
-  udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 221
-  server: 71521478-swin40-tchszt-1quq9.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: 74e74e40-e134-11ee-bded-f23c913c8d2b
-  auth: 74e74e40-e134-11ee-bded-f23c913c8d2b
-  sni: 71521478-swin40-tchszt-1quq9.hy2.gotochinatown.net
-  udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 222
-  server: e00973b3-swin40-sxf56z-1f596.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: e3975a05-b89e-11ec-a50d-f23c91cfbbc9
-  auth: e3975a05-b89e-11ec-a50d-f23c91cfbbc9
-  sni: e00973b3-swin40-sxf56z-1f596.hy2.gotochinatown.net
-  udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 226
-  server: a62452a0-swin40-t6ouc9-13xtu.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: 4a7f880c-72f4-11ed-b0b5-f23c9164ca5d
-  auth: 4a7f880c-72f4-11ed-b0b5-f23c9164ca5d
-  sni: a62452a0-swin40-t6ouc9-13xtu.hy2.gotochinatown.net
-  udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 229
-  server: c367281f-swexs0-sznzxg-1jfvb.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: 06b2ac52-fcc6-11ec-bb74-f23c9164ca5d
-  auth: 06b2ac52-fcc6-11ec-bb74-f23c9164ca5d
-  sni: c367281f-swexs0-sznzxg-1jfvb.hy2.gotochinatown.net
-  udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 230
-  server: ae19093f-swin40-swp71a-25xl.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: 7ddc7156-57be-11ee-9acd-f23c9164ca5d
-  auth: 7ddc7156-57be-11ee-9acd-f23c9164ca5d
-  sni: ae19093f-swin40-swp71a-25xl.hy2.gotochinatown.net
-  udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 231
-  server: 69c5c5e9-swexs0-tchszt-1quq9.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: 74e74e40-e134-11ee-bded-f23c913c8d2b
-  auth: 74e74e40-e134-11ee-bded-f23c913c8d2b
-  sni: 69c5c5e9-swexs0-tchszt-1quq9.hy2.gotochinatown.net
-  udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 233
-  server: 9b454679-swin40-sx3h07-1g8k0.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: d4018e28-e328-11ed-98a7-f23c913c8d2b
-  auth: d4018e28-e328-11ed-98a7-f23c913c8d2b
-  sni: 9b454679-swin40-sx3h07-1g8k0.hy2.gotochinatown.net
-  udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 234
-  server: 47e6484a-swd340-sww7b0-1qwp5.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: 6e9cdc20-b92a-11ef-973a-f23c913c8d2b
-  auth: 6e9cdc20-b92a-11ef-973a-f23c913c8d2b
-  sni: 47e6484a-swd340-sww7b0-1qwp5.hy2.gotochinatown.net
-  udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 27
-  server: fe934234-sw7j40-syfwbx-1k0yf.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: 9cc3c03e-21fd-11ee-a642-f23c91369f2d
-  auth: 9cc3c03e-21fd-11ee-a642-f23c91369f2d
-  sni: fe934234-sw7j40-syfwbx-1k0yf.hy2.gotochinatown.net
-  skip-cert-verify: false
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 28
-  server: 6150e203-svy9s0-sx4b2t-tng5.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: 2ec58858-976b-11ea-82ef-f23c9164ca5d
-  auth: 2ec58858-976b-11ea-82ef-f23c9164ca5d
-  sni: 6150e203-svy9s0-sx4b2t-tng5.hy2.gotochinatown.net
-  udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 282
-  server: 590e48f8-swgsg0-swy6li-tni2.los.gotochinatown.net
-  port: 443
-  type: http
-  username: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
-  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
+- name: 🇫🇷 法国 - 格拉沃利讷 - OVH SAS - 9
+  server: whatismyipaddress.com
+  port: 2096
+  type: vless
+  uuid: 2404f667-5969-4883-a71a-ea2e0db2d25b
   tls: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 284
-  server: dbcf97a0-swgsg0-t1bnjq-1krtb.los.gotochinatown.net
-  port: 443
-  type: http
-  username: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-  password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-  tls: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 292
-  server: cde895e9-swkhs0-szapkm-1hpo0.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: c3dc8d26-ab2b-11ec-a8bf-f23c91cfbbc9
-  auth: c3dc8d26-ab2b-11ec-a8bf-f23c91cfbbc9
-  sni: cde895e9-swkhs0-szapkm-1hpo0.hy2.gotochinatown.net
+  servername: wwwspeedtestnetwhiteberinsistomd6625996s13.opswebhosting.ir
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: wwwspeedtestnetwhiteberinsistomd6625996s13.opswebhosting.ir
   udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 294
-  server: f11e9c30-swkhs0-sxlsd4-3z3v.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: 48c1e014-28d6-11ec-a0fc-f23c913c8d2b
-  auth: 48c1e014-28d6-11ec-a0fc-f23c913c8d2b
-  sni: f11e9c30-swkhs0-sxlsd4-3z3v.hy2.gotochinatown.net
-  udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 295
-  server: 9b686548-swkhs0-t8kd6j-1c9em.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: 336501b6-51d2-11ee-a993-f23c9164ca5d
-  auth: 336501b6-51d2-11ee-a993-f23c9164ca5d
-  sni: 9b686548-swkhs0-t8kd6j-1c9em.hy2.gotochinatown.net
-  udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 296
-  server: a3aef0c0-swkhs0-swp71a-25xl.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: 7ddc7156-57be-11ee-9acd-f23c9164ca5d
-  auth: 7ddc7156-57be-11ee-9acd-f23c9164ca5d
-  sni: a3aef0c0-swkhs0-swp71a-25xl.hy2.gotochinatown.net
-  udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 297
-  server: 8b18ad20-swin40-ta5nd4-e06r.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: 861726bb-c61a-b0e0-99fa-5ddfdcf21902
-  auth: 861726bb-c61a-b0e0-99fa-5ddfdcf21902
-  sni: 8b18ad20-swin40-ta5nd4-e06r.hy2.gotochinatown.net
-  udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 30
-  server: 7c8eb5c8-sw3ts0-sxlsd4-3z3v.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: 48c1e014-28d6-11ec-a0fc-f23c913c8d2b
-  auth: 48c1e014-28d6-11ec-a0fc-f23c913c8d2b
-  sni: 7c8eb5c8-sw3ts0-sxlsd4-3z3v.hy2.gotochinatown.net
-  skip-cert-verify: false
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 300
-  server: a4e3ef78-swin40-sxlsd4-3z3v.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: 48c1e014-28d6-11ec-a0fc-f23c913c8d2b
-  auth: 48c1e014-28d6-11ec-a0fc-f23c913c8d2b
-  sni: a4e3ef78-swin40-sxlsd4-3z3v.hy2.gotochinatown.net
-  udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 303
-  server: af75493e-swkhs0-sx9b4u-1sd8z.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: 861b5684-062c-11f0-8eb0-f23c9164ca5d
-  auth: 861b5684-062c-11f0-8eb0-f23c9164ca5d
-  sni: af75493e-swkhs0-sx9b4u-1sd8z.hy2.gotochinatown.net
-  udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 305
-  server: ae3e3106-swkhs0-tf70jh-vm13.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: 3fa7157d-efe8-832e-9b3c-582d78efbc52
-  auth: 3fa7157d-efe8-832e-9b3c-582d78efbc52
-  sni: ae3e3106-swkhs0-tf70jh-vm13.hy2.gotochinatown.net
-  udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 309
-  server: d01e520d-swin40-sx9b4u-1sd8z.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: 861b5684-062c-11f0-8eb0-f23c9164ca5d
-  auth: 861b5684-062c-11f0-8eb0-f23c9164ca5d
-  sni: d01e520d-swin40-sx9b4u-1sd8z.hy2.gotochinatown.net
-  udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 310
-  server: 72eaf30d-swin40-sx1srd-1m0fq.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: a698c4a6-c3c9-11ee-9693-f23c91cfbbc9
-  auth: a698c4a6-c3c9-11ee-9693-f23c91cfbbc9
-  sni: 72eaf30d-swin40-sx1srd-1m0fq.hy2.gotochinatown.net
-  udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 313
-  server: 2eb71968-swexs0-t5w83q-1slpx.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: b55123f4-0ba2-11f0-a2ef-f23c91cfbbc9
-  auth: b55123f4-0ba2-11f0-a2ef-f23c91cfbbc9
-  sni: 2eb71968-swexs0-t5w83q-1slpx.hy2.gotochinatown.net
-  udp: true
-- name: 🇺🇸US_285
-  server: 38.121.43.71
+- name: 🇮🇳 印度 - 孟买 - The Constant Company - 2
+  server: 65.20.88.54
+  port: 14567
   type: ss
-  country: 🇺🇸US
-  port: 4444
-  password: pKEW8JPByTVTLtM
   cipher: aes-256-gcm
-- name: 🇯🇵JP-149.22.87.241-0512 | 3.76MB
-  server: 149.22.87.241
+  password: 31Zf8O2s
+- name: 🇮🇹 意大利 - Gallarate - Cloudflare, Inc. - 2
+  server: 158.180.231.216
+  port: 443
+  type: vless
+  uuid: 82fd9622-83a8-4378-92d6-dcb4a2787d63
+  tls: true
+  servername: qwok.feidyql.dpdns.org
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: qwok.feidyql.dpdns.org
+- name: 🇯🇵 日本 - Ōkubo-naka - Cloudflare, Inc. - 21
+  server: 140.83.56.110
+  port: 56417
+  type: vless
+  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+  tls: true
+  servername: steep.skyfigure.top
+  network: ws
+  ws-opts:
+    path: /Telegram🇨🇳 @pgkj666 /?ed=2560
+    headers:
+      Host: steep.skyfigure.top
+- name: 🇯🇵 日本 - 东京 - Akamai Technologies, Inc. - 7
+  server: jp2.interld123456789.com
+  port: 56702
+  type: vless
+  uuid: a21bd0f9-e11a-4c69-aa66-31fb9d31c1cb
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: sW8BfHeovVzmbFuAnr9nH8oJaKYze6shKoKMdek5ai8
+    short-id: 792147b8
+  servername: addons.mozilla.org
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇯🇵 日本 - 东京 - Amazon Technologies Inc - 22
+  server: 13.112.39.1
+  port: 28332
+  type: trojan
+  password: CpFKYCc9yO25F2e4CyaxIB38ZaRXYeAu3FD6B3DSlDgIp8e0lz3qYN330F7jDTpZO43SE
+  sni: infinity.meijireform.com
+  skip-cert-verify: false
+  udp: true
+- name: 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 17
+  server: 54.168.106.133
   port: 443
   type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇰🇷KR-221.150.109.89-5827 | 2.665MB
+  cipher: aes-256-cfb
+  password: awsps0501
+- name: 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 18
+  server: 54.150.211.136
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: awsps0501
+- name: 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 20
+  server: 18.183.132.103
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: awsps0501
+- name: 🇯🇵 日本 - 東京都 - Akari Networks - 1
+  server: d5a328754dc21eeb6f58423cf44dceeb.v1.cac.node-is.green
+  port: 40287
+  type: trojan
+  password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
+  sni: jp1.bilibili.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇯🇵 日本 - 東京都 - Akari Networks - 2
+  server: 54.176.57.222
+  port: 40287
+  type: trojan
+  password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
+  sni: jp1.bilibili.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇯🇵 日本 - 東京都 - Akari Networks - 3
+  server: 18.144.8.165
+  port: 40287
+  type: trojan
+  password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
+  sni: jp1.bilibili.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇰🇷 韩国 - Gwanak-gu - Korea Telecom - 4
   server: p231.panda004.net
   port: 11389
   type: ss
   cipher: aes-256-cfb
   password: qwerREWQ@@
-- name: VN-103.163.218.2-0530 | 2.588MB
-  server: 103.163.218.2
-  port: 989
-  type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: RELAY-104.21.96.1-0525 | 1.999MB
-  server: 104.21.96.1
-  port: 8443
-  type: vmess
-  uuid: 914584ee-3515-46ac-a09d-4677a2e9dc9a
-  alterId: 0
-  cipher: auto
+- name: 🇰🇷 韩国 - Yeongdong-gun - Cloudflare, Inc. - 11
+  server: 132.145.94.80
+  port: 443
+  type: vless
+  uuid: 82fd9622-83a8-4378-92d6-dcb4a2787d63
   tls: true
-  skip-cert-verify: false
+  servername: qwok.feidyql.dpdns.org
+  client-fingerprint: random
   network: ws
   ws-opts:
-    path: /
+    path: /?ed=2560
     headers:
-      Host: us01.sh-cloudflare.sbs
-- name: 🇩🇪DE-185.177.229.245-0538 | 1.813MB
-  server: 185.177.229.245
-  port: 1866
+      Host: qwok.feidyql.dpdns.org
+- name: 🇰🇷 韩国 - Yeongdong-gun - Cloudflare, Inc. - 13
+  server: 59.31.58.157
+  port: 50000
+  type: vless
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  tls: true
+  servername: edccn.ambercc.filegear-sg.me
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2560&proxyip=ts.hpc.tw
+    headers:
+      Host: edccn.ambercc.filegear-sg.me
+  udp: true
+- name: 🇰🇷 韩国 - 首尔特别市 - Amazon Technologies Inc. - 12
+  server: 52.79.161.51
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: yijian0503
+- name: 🇰🇷 韩国 - 首尔特别市 - Amazon.com, Inc. - 10
+  server: 43.201.55.126
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: yijian0503
+- name: 🇰🇷 韩国 - 首尔特别市 - Amazon.com, Inc. - 8
+  server: 3.36.86.55
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: yijian0503
+- name: 🇰🇷 韩国 - 首尔特别市 - KOR VULTR - 1
+  server: 36.151.251.62
+  port: 28548
+  type: trojan
+  password: RlzoEILU
+  sni: cdn.egvra.cn
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 - 首尔特别市 - KOR VULTR - 2
+  server: 141.164.63.32
+  port: 30936
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: oXGp1+ihlfKg826H
-- name: 🇨🇳TW-185.189.160.98-0533 | 1.724MB
-  server: 185.189.160.98
-  port: 64759
+  password: b25727df-15ea-453c-a006-13fe98fee1d2
+  udp: true
+- name: 🇰🇷 韩国 - 首尔特别市 - SK Broadband Co Ltd - 3
+  server: 218.237.185.230
+  port: 4652
   type: ss
   cipher: aes-256-cfb
   password: qwerREWQ@@
-- name: CH-204.136.10.115-0537 | 1.253MB
-  server: 204.136.10.115
-  port: 1866
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oXGp1+ihlfKg826H
-- name: VN-103.186.154.36-0564 | 1.075MB
-  server: 103.186.154.36
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇩🇪DE-80.92.204.106-5567 | 1.074MB
-  server: 80.92.204.106
-  port: 9024
-  type: ss
-  cipher: aes-256-cfb
-  password: BejrQvtu9sqUeNuZ
-- name: VN-103.186.155.23-0558 | 1.072MB
-  server: 103.186.155.23
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇩🇪DE-80.92.204.106-5573 | 1.071MB
-  server: 80.92.204.106
-  port: 9019
-  type: ss
-  cipher: aes-256-cfb
-  password: GA9KzeEgvfxNrgmM
-- name: 🇩🇪DE-80.92.204.106-5662 | 1.071MB
-  server: 80.92.204.106
-  port: 9015
-  type: ss
-  cipher: aes-256-cfb
-  password: ZpNDDKRu9MagNvaf
-- name: VN-103.186.155.25-0617 | 1.071MB
-  server: 103.186.155.25
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇺🇸 US LA Hysteria 2
-  password: 92b2a3d4-f353-11ef-b714-f23c93136cb3
-  port: 1443
-  server: 549ea0c3-swq1s0-sxscwg-63bp.la.shifen.uk
+- name: 🇱🇻 拉脱维亚 - Riga - SIA VEESP - 1
+  server: cs_office.hideshots.eu
+  port: 6003
+  type: vless
+  uuid: e34e5748-c75c-4847-bbc9-a389da28a1a2
+  tls: true
+  alpn:
+  - h1
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: EnZCoW0ZE047unVnwVg6jOTWxCvAbj3OrweS_ANYCVg
+    short-id: 34d8ddb4971913eb
+  servername: t.me
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 10
+  server: 172.67.162.242
+  port: 2053
+  type: vless
+  uuid: 908fe4f8-eb66-42eb-bd97-8d88be7f0ac4
+  tls: true
+  servername: txmt.conetcdata.dpdns.org
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: txmt.conetcdata.dpdns.org
+- name: 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 11
+  server: 104.21.18.93
+  port: 2053
+  type: vless
+  uuid: 908fe4f8-eb66-42eb-bd97-8d88be7f0ac4
+  tls: true
+  servername: txmt.conetcdata.dpdns.org
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: txmt.conetcdata.dpdns.org
+- name: 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 12
+  server: 172.67.199.26
+  port: 2053
+  type: vless
+  uuid: 908fe4f8-eb66-42eb-bd97-8d88be7f0ac4
+  tls: true
+  servername: txmt.conetcdata.dpdns.org
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: txmt.conetcdata.dpdns.org
+- name: 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 13
+  server: 172.67.171.1
+  port: 2053
+  type: vless
+  uuid: 908fe4f8-eb66-42eb-bd97-8d88be7f0ac4
+  tls: true
+  servername: txmt.conetcdata.dpdns.org
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: txmt.conetcdata.dpdns.org
+- name: 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 14
+  server: 172.67.193.74
+  port: 2053
+  type: vless
+  uuid: 908fe4f8-eb66-42eb-bd97-8d88be7f0ac4
+  tls: true
+  servername: txmt.conetcdata.dpdns.org
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: txmt.conetcdata.dpdns.org
+- name: 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 15
+  server: 188.114.99.244
+  port: 443
+  type: vless
+  uuid: 3525d96c-0ec0-4974-9259-46dc1531022e
+  tls: true
+  servername: wk.625229.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: wk.625229.xyz
+- name: 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 16
+  server: 188.114.96.143
+  port: 2087
+  type: vless
+  uuid: c8a1782e-2b67-4933-b80b-5a87b5653f04
+  tls: true
+  servername: robook.dpdns.org
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: robook.dpdns.org
+- name: 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 17
+  server: 188.114.97.191
+  port: 2053
+  type: vless
+  uuid: c8a1782e-2b67-4933-b80b-5a87b5653f04
+  tls: true
+  servername: robook.dpdns.org
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: robook.dpdns.org
+- name: 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 18
+  server: 188.114.96.20
+  port: 2083
+  type: vless
+  uuid: 9431a0a9-3ead-4255-af11-faddffeff062
+  tls: true
+  servername: www.pjw5.top
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: www.pjw5.top
+- name: 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 19
+  server: netb.5678919.xyz
+  port: 443
+  type: vless
+  uuid: be0efe12-7ff0-46aa-8769-560c4d7d5dae
+  tls: true
+  servername: netb.5678919.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: netb.5678919.xyz
+- name: 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 2
+  server: 188.114.99.20
+  port: 8880
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: reedfree8mahsang2.redorg.ir
+  udp: true
+- name: 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 22
+  server: 188.114.98.113
+  port: 2096
+  type: vless
+  uuid: 057f3046-26d4-4f92-9046-df8f8cf3bb6e
+  tls: true
+  servername: ezdriv-server.help
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ezdriv-server.help
+- name: 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 23
+  server: 188.114.96.32
+  port: 443
+  type: vless
+  uuid: 67fa5212-9ce6-4a2c-b57d-7b15c5ac3b6e
+  tls: true
+  servername: free.5niu.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: free.5niu.xyz
+- name: 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 24
+  server: 188.114.97.59
+  port: 8443
+  type: vless
+  uuid: 107bd41d-4599-431e-8e1c-01dbdd4ca33f
+  tls: true
+  servername: ball.757718.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ball.757718.xyz
+- name: 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 3
+  server: 104.21.56.44
+  port: 80
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  tls: false
+  servername: REEdfREe8MahSaNg2.rEDOrG.IR
+  network: ws
+  ws-opts:
+    path: /vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl?ed=2560
+    headers:
+      Host: REEdfREe8MahSaNg2.rEDOrG.IR
+  udp: true
+- name: 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 31
+  server: www.ipget.net
+  port: 8080
+  type: vless
+  uuid: 464d644c-9c10-4c02-9117-4c75b0c347cd
+  tls: false
+  servername: wwwvisacomsg.mshcgb8q.workers.dev
+  client-fingerprint: randomized
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: wwwvisacomsg.mshcgb8q.workers.dev
+- name: 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 34
+  server: 150.230.20.4
+  port: 443
+  type: vless
+  uuid: 82fd9622-83a8-4378-92d6-dcb4a2787d63
+  tls: true
+  servername: qwok.feidyql.dpdns.org
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: qwok.feidyql.dpdns.org
+- name: 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 8
+  server: 172.67.165.216
+  port: 2053
+  type: vless
+  uuid: 908fe4f8-eb66-42eb-bd97-8d88be7f0ac4
+  tls: true
+  servername: txmt.conetcdata.dpdns.org
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: txmt.conetcdata.dpdns.org
+- name: 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 9
+  server: 172.67.195.73
+  port: 2053
+  type: vless
+  uuid: 908fe4f8-eb66-42eb-bd97-8d88be7f0ac4
+  tls: true
+  servername: txmt.conetcdata.dpdns.org
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: txmt.conetcdata.dpdns.org
+- name: 🇳🇱 荷兰 - 阿姆斯特丹 - DigitalOcean, LLC - 4
+  server: 151.101.2.133
+  port: 80
+  type: vless
+  uuid: 75ecef77-2050-4250-99f7-936d0188edf2
+  tls: false
+  network: ws
+  ws-opts:
+    path: /ws/?ed=2048
+    headers:
+      Host: xasshsga---RUBIKA.ir.speedtest.net.ARCHYU.IR
+  udp: true
+- name: 🇳🇱 荷兰 - 阿姆斯特丹 - Matteo Martelloni trading as DELUXHOST - 20
+  server: 5.181.177.22
+  port: 38777
   type: hysteria2
-- name: 🇺🇸 US LA Hysteria 2-MtDj
-  password: 564b440a-700f-11ee-a90c-f23c9313b177
-  port: 1443
-  server: 2cbb381a-swq1s0-t0sfr3-1qgn.la.shifen.uk
-  type: hysteria2
+  password: 4af95db1
+  auth: 4af95db1
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇳🇱 荷兰 - 鹿特丹 - OVH SAS - 7
+  server: 104.17.147.22
+  port: 80
+  type: vless
+  uuid: ac2bfdf2-7c88-449f-b353-0ff9d026bb6a
+  tls: false
+  network: ws
+  ws-opts:
+    path: /@SavageNet----@SavageNet----@SavageNet----@SavageNet----@SavageNet----@SavageNet----@SavageNet----@SavageNet----@SavageNet----@SavageNet----@SavageNet----@SavageNet?ed=2048
+    headers:
+      Host: www.speedtest.net1.svgspeedtest.net.
+  udp: true
+- name: 🇳🇴 挪威 - 奥斯陆 - BrainStorm Network, Inc - 1
+  server: 185.90.61.157
+  port: 20034
+  type: ss
+  cipher: aes-256-gcm
+  password: X98EWV59GZBSJMTE
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 191
+  server: 92.243.75.29
+  port: 8880
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  tls: false
+  servername: hk.laoyoutiao.link
+  network: ws
+  ws-opts:
+    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
+    headers:
+      Host: hk.laoyoutiao.link
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 192
+  server: 92.53.188.20
+  port: 8880
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  tls: false
+  servername: reedfree8mahsang2.redorg.ir
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: reedfree8mahsang2.redorg.ir
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 193
+  server: 92.53.191.29
+  port: 8880
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  tls: false
+  servername: hk.laoyoutiao.link
+  network: ws
+  ws-opts:
+    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
+    headers:
+      Host: hk.laoyoutiao.link
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 194
+  server: 156.243.246.29
+  port: 8880
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  tls: false
+  servername: hk.laoyoutiao.link
+  network: ws
+  ws-opts:
+    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
+    headers:
+      Host: hk.laoyoutiao.link
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 195
+  server: 91.124.127.29
+  port: 8880
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  tls: false
+  servername: hk.laoyoutiao.link
+  network: ws
+  ws-opts:
+    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
+    headers:
+      Host: hk.laoyoutiao.link
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 197
+  server: 167.68.42.20
+  port: 8880
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: reedfree8mahsang2.redorg.ir
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 198
+  server: 141.101.114.20
+  port: 8880
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: reedfree8mahsang2.redorg.ir
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 200
+  server: 135.84.65.11
+  port: 80
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  tls: false
+  network: ws
+  ws-opts:
+    path: /Telegram🇨🇳
+    headers:
+      Host: reedfree8mahsang2.redorg.ir
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 201
+  server: 199.34.229.29
+  port: 8880
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  tls: false
+  servername: hk.laoyoutiao.link
+  network: ws
+  ws-opts:
+    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
+    headers:
+      Host: hk.laoyoutiao.link
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 202
+  server: 108.165.216.29
+  port: 8880
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  tls: false
+  servername: hk.laoyoutiao.link
+  network: ws
+  ws-opts:
+    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
+    headers:
+      Host: hk.laoyoutiao.link
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 203
+  server: 160.79.105.29
+  port: 8880
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  tls: false
+  servername: hk.laoyoutiao.link
+  network: ws
+  ws-opts:
+    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
+    headers:
+      Host: hk.laoyoutiao.link
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 204
+  server: 199.181.197.29
+  port: 8880
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  tls: false
+  servername: hk.laoyoutiao.link
+  network: ws
+  ws-opts:
+    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
+    headers:
+      Host: hk.laoyoutiao.link
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 205
+  server: 155.46.213.29
+  port: 8880
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  tls: false
+  servername: hk.laoyoutiao.link
+  network: ws
+  ws-opts:
+    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
+    headers:
+      Host: hk.laoyoutiao.link
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 207
+  server: 66.225.252.29
+  port: 8880
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  tls: false
+  servername: hk.laoyoutiao.link
+  network: ws
+  ws-opts:
+    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
+    headers:
+      Host: hk.laoyoutiao.link
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 208
+  server: 209.46.30.20
+  port: 8880
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: reedfree8mahsang2.redorg.ir
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 210
+  server: 184.174.80.29
+  port: 8880
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  tls: false
+  network: ws
+  ws-opts:
+    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
+    headers:
+      Host: hk.laoyoutiao.link
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 211
+  server: 108.165.216.20
+  port: 8880
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: reedfree8mahsang2.redorg.ir
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 212
+  server: 159.112.235.29
+  port: 8880
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  tls: false
+  servername: hk.laoyoutiao.link
+  network: ws
+  ws-opts:
+    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
+    headers:
+      Host: hk.laoyoutiao.link
+  udp: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -911,106 +1203,106 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 48
-  - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 273
-  - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 274
-  - warp.irss.eu.org 11
-  - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 41
-  - warp.irss.eu.org 15
-  - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 272
-  - warp.irss.eu.org 12
-  - warp.irss.eu.org 6
-  - warp.irss.eu.org 9
-  - warp.irss.eu.org 5
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 205
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 207
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 211
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 3
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 197
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 2
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 194
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 201
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 192
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 208
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 195
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 210
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 204
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 203
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 202
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 191
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 9
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 18
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 193
   - warp.irss.eu.org 14
-  - 轮子3215
-  - warp.irss.eu.org 2
-  - warp.irss.eu.org 3
-  - warp.irss.eu.org 8
-  - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 101
-  - 轮子3216
-  - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 100
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 16
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 212
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 23
+  - warp.irss.eu.org 15
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 15
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 24
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 8
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 17
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 14
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 13
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 12
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 22
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 31
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 9
   - warp.irss.eu.org 4
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 7
+  - warp.irss.eu.org 9
+  - warp.irss.eu.org 3
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 11
+  - warp.irss.eu.org 6
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 19
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 200
+  - warp.irss.eu.org 11
   - warp.irss.eu.org 10
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 198
+  - warp.irss.eu.org 2
+  - warp.irss.eu.org 12
+  - warp.irss.eu.org 5
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 8
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 10
+  - warp.irss.eu.org 8
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 54
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 55
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - DigitalOcean, LLC - 4
   - warp.irss.eu.org 7
-  - 🇺🇸US_285
-  - 🇯🇵JP-149.22.87.241-0512 | 3.76MB
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 282
-  - 🇰🇷 韩国|@ripaojiedian
-  - 🇩🇪DE-80.92.204.106-5573 | 1.071MB
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 230
-  - 🇩🇪DE-80.92.204.106-5567 | 1.074MB
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 284
-  - CH-204.136.10.115-0537 | 1.253MB
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 165
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 115
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 122
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 128
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 105
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 117
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 120
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 119
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 156
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 313
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 121
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 112
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 110
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 124
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 116
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 229
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 233
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 132
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 172
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 111
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 310
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 295
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 186
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 292
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 297
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 234
-  - 🇨🇳TW-185.189.160.98-0533 | 1.724MB
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 154
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 309
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 28
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 153
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 30
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 294
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 27
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 144
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 203
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 305
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 162
-  - VN-103.163.218.2-0530 | 2.588MB
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 296
-  - 🇩🇪DE-80.92.204.106-5662 | 1.071MB
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 173
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 303
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 169
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 201
+  - 🇩🇪 德国 - 法兰克福 - DigitalOcean, LLC - 69
+  - 🇳🇱 荷兰 - 鹿特丹 - OVH SAS - 7
+  - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 20
+  - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 17
+  - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 18
+  - 🇳🇴 挪威 - 奥斯陆 - BrainStorm Network, Inc - 1
+  - 🇩🇪 德国 - 法兰克福 - DigitalOcean, LLC - 2
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Matteo Martelloni trading as DELUXHOST - 20
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 34
+  - 🇰🇷 韩国 - 首尔特别市 - Amazon.com, Inc. - 10
+  - 🇩🇰 丹麦 - 哥本哈根 - ONEPROVIDER - 1
+  - 🇰🇷 韩国 - 首尔特别市 - Amazon Technologies Inc. - 12
+  - 🇮🇹 意大利 - Gallarate - Cloudflare, Inc. - 2
+  - 🇩🇪 德国 - 法兰克福 - DigitalOcean, LLC - 60
+  - 🇰🇷 韩国 - 首尔特别市 - SK Broadband Co Ltd - 3
+  - 🇩🇪 德国 - 纽伦堡 - Hetzner Online GmbH - 4
+  - 🇫🇷 法国 - 巴黎 - SCALEWAY - 8
+  - 🇮🇳 印度 - 孟买 - The Constant Company - 2
+  - 🇪🇸 西班牙 - 查馬丁區 - Cloudflare, Inc. - 2
+  - 🇩🇪 德国 - 纽伦堡 - Parsonline - 31
+  - 🇯🇵 日本 - 东京 - Amazon Technologies Inc - 22
+  - 🇪🇨 厄瓜多尔 - 基多 - ONEPROVIDER - 2
+  - 🇫🇷 法国 - 巴黎 - Regxa Company for Information Technology Ltd - 6
+  - 🇰🇷 韩国 - 首尔特别市 - Amazon.com, Inc. - 8
+  - 🇩🇪 德国 - 法兰克福 - DigitalOcean, LLC - 1
+  - 🇰🇷 韩国 - 首尔特别市 - KOR VULTR - 2
+  - 🇯🇵 日本 - 東京都 - Akari Networks - 3
+  - 🇩🇪 德国 - 法兰克福 - Stark Industries Solutions LTD - 56
+  - 🇩🇪 德国 - 纽伦堡 - Hetzner Online GmbH - 53
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 68
+  - 🇯🇵 日本 - 東京都 - Akari Networks - 2
+  - 🇰🇷 韩国 - Gwanak-gu - Korea Telecom - 4
+  - 🇱🇻 拉脱维亚 - Riga - SIA VEESP - 1
+  - 轮子1
   - 🇻🇳 越南|@ripaojiedian
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 188
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 300
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 231
-  - VN-103.186.155.23-0558 | 1.072MB
-  - VN-103.186.154.36-0564 | 1.075MB
-  - VN-103.186.155.25-0617 | 1.071MB
-  - 🇺🇸 US LA Hysteria 2
-  - RELAY-104.21.96.1-0525 | 1.999MB
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 167
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 218
-  - 🇰🇷KR-221.150.109.89-5827 | 2.665MB
-  - 🇺🇸 US LA Hysteria 2-MtDj
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 149
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 219
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 185
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 189
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 187
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 221
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 226
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 222
-  - 🇩🇪DE-185.177.229.245-0538 | 1.813MB
-  - 轮子7
+  - 🇯🇵 日本 - 東京都 - Akari Networks - 1
+  - 🇯🇵 日本 - 东京 - Akamai Technologies, Inc. - 7
+  - 🇫🇷 法国 - 格拉沃利讷 - OVH SAS - 9
+  - 🇯🇵 日本 - Ōkubo-naka - Cloudflare, Inc. - 21
+  - 🇩🇪 德国 - 法兰克福 - firstcolo GmbH - 30
   - 轮子2
+  - 🇰🇷 韩国 - Yeongdong-gun - Cloudflare, Inc. - 11
+  - 🇫🇷 法国 - 塞纳河畔伊夫里 - Online S.A.S. - 4
+  - 🇰🇷 韩国 - 首尔特别市 - KOR VULTR - 1
+  - 🇰🇷 韩国 - Yeongdong-gun - Cloudflare, Inc. - 13
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
@@ -1018,211 +1310,211 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 48
-  - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 273
-  - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 274
-  - warp.irss.eu.org 11
-  - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 41
-  - warp.irss.eu.org 15
-  - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 272
-  - warp.irss.eu.org 12
-  - warp.irss.eu.org 6
-  - warp.irss.eu.org 9
-  - warp.irss.eu.org 5
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 205
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 207
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 211
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 3
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 197
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 2
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 194
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 201
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 192
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 208
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 195
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 210
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 204
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 203
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 202
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 191
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 9
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 18
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 193
   - warp.irss.eu.org 14
-  - 轮子3215
-  - warp.irss.eu.org 2
-  - warp.irss.eu.org 3
-  - warp.irss.eu.org 8
-  - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 101
-  - 轮子3216
-  - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 100
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 16
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 212
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 23
+  - warp.irss.eu.org 15
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 15
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 24
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 8
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 17
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 14
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 13
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 12
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 22
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 31
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 9
   - warp.irss.eu.org 4
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 7
+  - warp.irss.eu.org 9
+  - warp.irss.eu.org 3
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 11
+  - warp.irss.eu.org 6
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 19
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 200
+  - warp.irss.eu.org 11
   - warp.irss.eu.org 10
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 198
+  - warp.irss.eu.org 2
+  - warp.irss.eu.org 12
+  - warp.irss.eu.org 5
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 8
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 10
+  - warp.irss.eu.org 8
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 54
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 55
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - DigitalOcean, LLC - 4
   - warp.irss.eu.org 7
-  - 🇺🇸US_285
-  - 🇯🇵JP-149.22.87.241-0512 | 3.76MB
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 282
-  - 🇰🇷 韩国|@ripaojiedian
-  - 🇩🇪DE-80.92.204.106-5573 | 1.071MB
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 230
-  - 🇩🇪DE-80.92.204.106-5567 | 1.074MB
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 284
-  - CH-204.136.10.115-0537 | 1.253MB
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 165
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 115
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 122
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 128
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 105
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 117
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 120
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 119
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 156
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 313
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 121
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 112
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 110
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 124
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 116
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 229
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 233
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 132
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 172
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 111
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 310
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 295
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 186
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 292
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 297
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 234
-  - 🇨🇳TW-185.189.160.98-0533 | 1.724MB
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 154
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 309
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 28
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 153
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 30
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 294
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 27
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 144
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 203
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 305
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 162
-  - VN-103.163.218.2-0530 | 2.588MB
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 296
-  - 🇩🇪DE-80.92.204.106-5662 | 1.071MB
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 173
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 303
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 169
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 201
+  - 🇩🇪 德国 - 法兰克福 - DigitalOcean, LLC - 69
+  - 🇳🇱 荷兰 - 鹿特丹 - OVH SAS - 7
+  - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 20
+  - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 17
+  - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 18
+  - 🇳🇴 挪威 - 奥斯陆 - BrainStorm Network, Inc - 1
+  - 🇩🇪 德国 - 法兰克福 - DigitalOcean, LLC - 2
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Matteo Martelloni trading as DELUXHOST - 20
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 34
+  - 🇰🇷 韩国 - 首尔特别市 - Amazon.com, Inc. - 10
+  - 🇩🇰 丹麦 - 哥本哈根 - ONEPROVIDER - 1
+  - 🇰🇷 韩国 - 首尔特别市 - Amazon Technologies Inc. - 12
+  - 🇮🇹 意大利 - Gallarate - Cloudflare, Inc. - 2
+  - 🇩🇪 德国 - 法兰克福 - DigitalOcean, LLC - 60
+  - 🇰🇷 韩国 - 首尔特别市 - SK Broadband Co Ltd - 3
+  - 🇩🇪 德国 - 纽伦堡 - Hetzner Online GmbH - 4
+  - 🇫🇷 法国 - 巴黎 - SCALEWAY - 8
+  - 🇮🇳 印度 - 孟买 - The Constant Company - 2
+  - 🇪🇸 西班牙 - 查馬丁區 - Cloudflare, Inc. - 2
+  - 🇩🇪 德国 - 纽伦堡 - Parsonline - 31
+  - 🇯🇵 日本 - 东京 - Amazon Technologies Inc - 22
+  - 🇪🇨 厄瓜多尔 - 基多 - ONEPROVIDER - 2
+  - 🇫🇷 法国 - 巴黎 - Regxa Company for Information Technology Ltd - 6
+  - 🇰🇷 韩国 - 首尔特别市 - Amazon.com, Inc. - 8
+  - 🇩🇪 德国 - 法兰克福 - DigitalOcean, LLC - 1
+  - 🇰🇷 韩国 - 首尔特别市 - KOR VULTR - 2
+  - 🇯🇵 日本 - 東京都 - Akari Networks - 3
+  - 🇩🇪 德国 - 法兰克福 - Stark Industries Solutions LTD - 56
+  - 🇩🇪 德国 - 纽伦堡 - Hetzner Online GmbH - 53
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 68
+  - 🇯🇵 日本 - 東京都 - Akari Networks - 2
+  - 🇰🇷 韩国 - Gwanak-gu - Korea Telecom - 4
+  - 🇱🇻 拉脱维亚 - Riga - SIA VEESP - 1
+  - 轮子1
   - 🇻🇳 越南|@ripaojiedian
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 188
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 300
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 231
-  - VN-103.186.155.23-0558 | 1.072MB
-  - VN-103.186.154.36-0564 | 1.075MB
-  - VN-103.186.155.25-0617 | 1.071MB
-  - 🇺🇸 US LA Hysteria 2
-  - RELAY-104.21.96.1-0525 | 1.999MB
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 167
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 218
-  - 🇰🇷KR-221.150.109.89-5827 | 2.665MB
-  - 🇺🇸 US LA Hysteria 2-MtDj
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 149
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 219
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 185
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 189
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 187
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 221
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 226
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 222
-  - 🇩🇪DE-185.177.229.245-0538 | 1.813MB
-  - 轮子7
+  - 🇯🇵 日本 - 東京都 - Akari Networks - 1
+  - 🇯🇵 日本 - 东京 - Akamai Technologies, Inc. - 7
+  - 🇫🇷 法国 - 格拉沃利讷 - OVH SAS - 9
+  - 🇯🇵 日本 - Ōkubo-naka - Cloudflare, Inc. - 21
+  - 🇩🇪 德国 - 法兰克福 - firstcolo GmbH - 30
   - 轮子2
+  - 🇰🇷 韩国 - Yeongdong-gun - Cloudflare, Inc. - 11
+  - 🇫🇷 法国 - 塞纳河畔伊夫里 - Online S.A.S. - 4
+  - 🇰🇷 韩国 - 首尔特别市 - KOR VULTR - 1
+  - 🇰🇷 韩国 - Yeongdong-gun - Cloudflare, Inc. - 13
   url: http://www.gstatic.com/generate_204
   interval: 300
 - name: 手动选择
   type: select
   proxies:
-  - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 48
-  - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 273
-  - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 274
-  - warp.irss.eu.org 11
-  - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 41
-  - warp.irss.eu.org 15
-  - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 272
-  - warp.irss.eu.org 12
-  - warp.irss.eu.org 6
-  - warp.irss.eu.org 9
-  - warp.irss.eu.org 5
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 205
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 207
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 211
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 3
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 197
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 2
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 194
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 201
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 192
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 208
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 195
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 210
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 204
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 203
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 202
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 191
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 9
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 18
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 193
   - warp.irss.eu.org 14
-  - 轮子3215
-  - warp.irss.eu.org 2
-  - warp.irss.eu.org 3
-  - warp.irss.eu.org 8
-  - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 101
-  - 轮子3216
-  - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 100
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 16
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 212
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 23
+  - warp.irss.eu.org 15
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 15
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 24
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 8
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 17
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 14
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 13
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 12
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 22
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 31
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 9
   - warp.irss.eu.org 4
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 7
+  - warp.irss.eu.org 9
+  - warp.irss.eu.org 3
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 11
+  - warp.irss.eu.org 6
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 19
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 200
+  - warp.irss.eu.org 11
   - warp.irss.eu.org 10
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 198
+  - warp.irss.eu.org 2
+  - warp.irss.eu.org 12
+  - warp.irss.eu.org 5
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 8
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 10
+  - warp.irss.eu.org 8
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 54
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 55
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - DigitalOcean, LLC - 4
   - warp.irss.eu.org 7
-  - 🇺🇸US_285
-  - 🇯🇵JP-149.22.87.241-0512 | 3.76MB
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 282
-  - 🇰🇷 韩国|@ripaojiedian
-  - 🇩🇪DE-80.92.204.106-5573 | 1.071MB
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 230
-  - 🇩🇪DE-80.92.204.106-5567 | 1.074MB
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 284
-  - CH-204.136.10.115-0537 | 1.253MB
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 165
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 115
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 122
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 128
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 105
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 117
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 120
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 119
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 156
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 313
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 121
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 112
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 110
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 124
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 116
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 229
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 233
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 132
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 172
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 111
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 310
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 295
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 186
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 292
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 297
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 234
-  - 🇨🇳TW-185.189.160.98-0533 | 1.724MB
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 154
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 309
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 28
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 153
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 30
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 294
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 27
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 144
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 203
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 305
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 162
-  - VN-103.163.218.2-0530 | 2.588MB
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 296
-  - 🇩🇪DE-80.92.204.106-5662 | 1.071MB
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 173
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 303
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 169
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 201
+  - 🇩🇪 德国 - 法兰克福 - DigitalOcean, LLC - 69
+  - 🇳🇱 荷兰 - 鹿特丹 - OVH SAS - 7
+  - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 20
+  - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 17
+  - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 18
+  - 🇳🇴 挪威 - 奥斯陆 - BrainStorm Network, Inc - 1
+  - 🇩🇪 德国 - 法兰克福 - DigitalOcean, LLC - 2
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Matteo Martelloni trading as DELUXHOST - 20
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 34
+  - 🇰🇷 韩国 - 首尔特别市 - Amazon.com, Inc. - 10
+  - 🇩🇰 丹麦 - 哥本哈根 - ONEPROVIDER - 1
+  - 🇰🇷 韩国 - 首尔特别市 - Amazon Technologies Inc. - 12
+  - 🇮🇹 意大利 - Gallarate - Cloudflare, Inc. - 2
+  - 🇩🇪 德国 - 法兰克福 - DigitalOcean, LLC - 60
+  - 🇰🇷 韩国 - 首尔特别市 - SK Broadband Co Ltd - 3
+  - 🇩🇪 德国 - 纽伦堡 - Hetzner Online GmbH - 4
+  - 🇫🇷 法国 - 巴黎 - SCALEWAY - 8
+  - 🇮🇳 印度 - 孟买 - The Constant Company - 2
+  - 🇪🇸 西班牙 - 查馬丁區 - Cloudflare, Inc. - 2
+  - 🇩🇪 德国 - 纽伦堡 - Parsonline - 31
+  - 🇯🇵 日本 - 东京 - Amazon Technologies Inc - 22
+  - 🇪🇨 厄瓜多尔 - 基多 - ONEPROVIDER - 2
+  - 🇫🇷 法国 - 巴黎 - Regxa Company for Information Technology Ltd - 6
+  - 🇰🇷 韩国 - 首尔特别市 - Amazon.com, Inc. - 8
+  - 🇩🇪 德国 - 法兰克福 - DigitalOcean, LLC - 1
+  - 🇰🇷 韩国 - 首尔特别市 - KOR VULTR - 2
+  - 🇯🇵 日本 - 東京都 - Akari Networks - 3
+  - 🇩🇪 德国 - 法兰克福 - Stark Industries Solutions LTD - 56
+  - 🇩🇪 德国 - 纽伦堡 - Hetzner Online GmbH - 53
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 68
+  - 🇯🇵 日本 - 東京都 - Akari Networks - 2
+  - 🇰🇷 韩国 - Gwanak-gu - Korea Telecom - 4
+  - 🇱🇻 拉脱维亚 - Riga - SIA VEESP - 1
+  - 轮子1
   - 🇻🇳 越南|@ripaojiedian
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 188
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 300
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 231
-  - VN-103.186.155.23-0558 | 1.072MB
-  - VN-103.186.154.36-0564 | 1.075MB
-  - VN-103.186.155.25-0617 | 1.071MB
-  - 🇺🇸 US LA Hysteria 2
-  - RELAY-104.21.96.1-0525 | 1.999MB
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 167
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 218
-  - 🇰🇷KR-221.150.109.89-5827 | 2.665MB
-  - 🇺🇸 US LA Hysteria 2-MtDj
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 149
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 219
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 185
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 189
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 187
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 221
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 226
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 222
-  - 🇩🇪DE-185.177.229.245-0538 | 1.813MB
-  - 轮子7
+  - 🇯🇵 日本 - 東京都 - Akari Networks - 1
+  - 🇯🇵 日本 - 东京 - Akamai Technologies, Inc. - 7
+  - 🇫🇷 法国 - 格拉沃利讷 - OVH SAS - 9
+  - 🇯🇵 日本 - Ōkubo-naka - Cloudflare, Inc. - 21
+  - 🇩🇪 德国 - 法兰克福 - firstcolo GmbH - 30
   - 轮子2
+  - 🇰🇷 韩国 - Yeongdong-gun - Cloudflare, Inc. - 11
+  - 🇫🇷 法国 - 塞纳河畔伊夫里 - Online S.A.S. - 4
+  - 🇰🇷 韩国 - 首尔特别市 - KOR VULTR - 1
+  - 🇰🇷 韩国 - Yeongdong-gun - Cloudflare, Inc. - 13
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
