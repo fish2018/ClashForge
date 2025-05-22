@@ -32,173 +32,470 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 70
-  server: 8725de56-swkhs0-t3o6u7-1osdm.hy2.gotochinatown.net
-  port: 8443
+- name: 🇭🇰 香港9|@ripaojiedian
+  server: 154.197.26.237
+  port: 8388
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf
+  password: asd123456
+  tfo: false
+- name: 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 31
+  server: www.ipget.net
+  port: 8080
+  type: vless
+  uuid: 464d644c-9c10-4c02-9117-4c75b0c347cd
+  tls: false
+  servername: wwwvisacomsg.mshcgb8q.workers.dev
+  client-fingerprint: randomized
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: wwwvisacomsg.mshcgb8q.workers.dev
+- name: 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 34
+  server: 150.230.20.4
+  port: 443
+  type: vless
+  uuid: 82fd9622-83a8-4378-92d6-dcb4a2787d63
+  tls: true
+  servername: qwok.feidyql.dpdns.org
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: qwok.feidyql.dpdns.org
+- name: 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 8
+  server: 172.67.165.216
+  port: 2053
+  type: vless
+  uuid: 908fe4f8-eb66-42eb-bd97-8d88be7f0ac4
+  tls: true
+  servername: txmt.conetcdata.dpdns.org
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: txmt.conetcdata.dpdns.org
+- name: 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 9
+  server: 172.67.195.73
+  port: 2053
+  type: vless
+  uuid: 908fe4f8-eb66-42eb-bd97-8d88be7f0ac4
+  tls: true
+  servername: txmt.conetcdata.dpdns.org
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: txmt.conetcdata.dpdns.org
+- name: 🇳🇱 荷兰 - 阿姆斯特丹 - DigitalOcean, LLC - 4
+  server: 151.101.2.133
+  port: 80
+  type: vless
+  uuid: 75ecef77-2050-4250-99f7-936d0188edf2
+  tls: false
+  network: ws
+  ws-opts:
+    path: /ws/?ed=2048
+    headers:
+      Host: xasshsga---RUBIKA.ir.speedtest.net.ARCHYU.IR
+  udp: true
+- name: 🇵🇱 波兰 - 普魯斯科夫 - Cloudflare, Inc. - 1
+  server: 185.188.147.79
+  port: 443
+  type: vless
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  tls: true
+  servername: edccn.ambercc.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: /?ed=2560&proxyip=ts.hpc.tw
+    headers:
+      Host: edccn.ambercc.filegear-sg.me
+  udp: true
+- name: 🇷🇺 俄罗斯 - Zelenograd - LLC Baxet - 4
+  server: 185.22.155.105
+  port: 43516
+  type: tuic
+  password: f3ba3679-f2f4-465f-92a5-de320b775a88
+  uuid: f3ba3679-f2f4-465f-92a5-de320b775a88
+  sni: www.bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  disable-sni: false
+  reduce-rtt: false
+  request-timeout: 0
+  udp-relay-mode: native
+- name: 🇷🇺 俄罗斯 - 莫斯科 - IT Outsourcing LLC - 2
+  server: 46.29.239.149
+  port: 443
+  type: vless
+  uuid: d2947a55-5fa6-4d21-93c6-b558c662ec8d
+  tls: true
+  alpn:
+  - h3
+  - h2
+  - http/1.1
+  servername: unixkey.nobatow.site
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /nobatow
+    headers:
+      Host: unixkey.nobatow.site
+  udp: true
+- name: 🇷🇺 俄罗斯 - 莫斯科 - LLC BAXET - 1
+  server: 46.17.41.5
+  port: 12904
   type: hysteria2
-  password: 91365a7a-46d7-11ee-a8b9-f23c9164ca5d
-  auth: 91365a7a-46d7-11ee-a8b9-f23c9164ca5d
-  sni: 8725de56-swkhs0-t3o6u7-1osdm.hy2.gotochinatown.net
-  udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 72
-  server: 40f7a0f9-swkhs0-t3imuc-2nr6.hy2.gotochinatown.net
-  port: 8443
+  password: dongtaiwang.com
+  auth: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 - 莫斯科 - LLC Baxet - 3
+  server: hy2.694463.xyz
+  port: 30033
   type: hysteria2
-  password: dab27b58-5210-11ea-a15d-f23c913c8d2b
-  auth: dab27b58-5210-11ea-a15d-f23c913c8d2b
-  sni: 40f7a0f9-swkhs0-t3imuc-2nr6.hy2.gotochinatown.net
+  password: dongtaiwang.com
+  auth: dongtaiwang.com
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 - 莫斯科 - LLC Baxet - 5
+  server: 45.135.134.33
+  port: 10297
+  type: hysteria2
+  password: 6c7a6a6a-6a6a-4000-8000-000000000002
+  auth: 6c7a6a6a-6a6a-4000-8000-000000000002
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 - 莫斯科 - LLC Baxet - 7
+  server: 185.22.153.67
+  port: 2029
+  type: ss
+  cipher: aes-256-gcm
+  password: b55c7e84afdd52cb
+- name: 🇸🇬 新加坡 - 新加坡 - Coaxial Cable LLC - 3
+  server: hkg.gtnet.uk
+  port: 81
+  type: vless
+  uuid: de2036da-d30f-4bad-a7f6-389fe1b00ef5
+  tls: false
+  network: tcp
   udp: true
-- name: 🇺🇸 美国 - 紐約 - Massivegrid LTD - 295
-  server: 172.67.216.240
+- name: 🇸🇬 新加坡 - 新加坡 - Oracle Corporation - 12
+  server: 104.25.253.197
+  port: 8443
+  type: vless
+  uuid: e46d518d-4a20-4f9a-873d-a86e9455321c
+  tls: true
+  servername: tactics-beverly-complications-immigrants.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: /e46d518d-4a20-4f9a-873d-a86e9455321c-vless?ed=2048
+    headers:
+      Host: tactics-beverly-complications-immigrants.trycloudflare.com
+  udp: true
+- name: 🇸🇬 新加坡 - 新加坡 - Oracle Corporation - 13
+  server: 64.176.38.232
   port: 443
   type: vless
-  uuid: d6f051d2-b704-4434-a4b9-872037153372
+  uuid: e46d518d-4a20-4f9a-873d-a86e9455321c
+  tls: true
+  servername: tactics-beverly-complications-immigrants.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: /e46d518d-4a20-4f9a-873d-a86e9455321c-vless?ed=2048
+    headers:
+      Host: tactics-beverly-complications-immigrants.trycloudflare.com
+  udp: true
+- name: 🇹🇷 土耳其 - Kocasinan - Cloudflare, Inc. - 1
+  server: 62.3.12.76
+  port: 80
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  tls: false
+  servername: reedfree8mahsang2.redorg.ir
+  network: ws
+  ws-opts:
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+    headers:
+      Host: reedfree8mahsang2.redorg.ir
+  udp: true
+- name: 🇺🇸 美国 - Cheektowaga - Cloudflare, Inc. - 404
+  server: 172.64.67.151
+  port: 2096
+  type: vless
+  uuid: 057f3046-26d4-4f92-9046-df8f8cf3bb6e
+  tls: true
+  servername: ezdriv-server.help
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ezdriv-server.help
+- name: 🇺🇸 美国 - Elk Grove Village - HostPapa - 103
+  server: 172.67.204.177
+  port: 443
+  type: vless
+  uuid: f82fb954-06a1-4f0b-9180-17e07585b61f
   tls: true
   alpn:
   - http/1.1
-  servername: MnBVc.857856.XyZ
+  servername: 6yhj7.191292.xyz
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /aNjfTh80CxZmq1LOYwi
+    path: /0HKVAwzpuQtCNTI3SlZor0
     headers:
-      Host: mnbvc.857856.xyz
+      Host: 6yhj7.191292.xyz
   udp: true
-- name: 🇺🇸 美国 - 紐約 - Massivegrid LTD - 301
-  server: 104.21.32.1
+- name: 🇺🇸 美国 - Elk Grove Village - HostPapa - 273
+  server: 104.21.16.1
   port: 443
   type: vless
-  uuid: 52c0e96b-b8d7-44a5-a995-bd866bf39ec6
+  uuid: ca48571a-403f-44b9-b2a6-e17c36d7cacc
   tls: true
   alpn:
   - http/1.1
-  servername: M10EEeeEEeEEeEEeEeeEeeEeeeeeEe.7777128.xYZ
+  servername: 10d.445.pp.ua
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /YzFLmzNIEQsAmceLxv94lPbgMw
+    path: /uDLWPKXENxF2ulPWRIwOavJd
     headers:
-      Host: m10eeeeeeeeeeeeeeeeeeeeeeeeeee.7777128.xyz
+      Host: 10d.445.pp.ua
+- name: 🇺🇸 美国 - Elk Grove Village - HostPapa - 282
+  server: 104.21.64.1
+  port: 443
+  type: vless
+  uuid: ca48571a-403f-44b9-b2a6-e17c36d7cacc
+  tls: true
+  alpn:
+  - http/1.1
+  servername: 10d.445.pp.ua
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /uDLWPKXENxF2ulPWRIwOavJd
+    headers:
+      Host: 10d.445.pp.ua
+- name: 🇺🇸 美国 - Elk Grove Village - HostPapa - 351
+  server: 104.21.69.50
+  port: 443
+  type: vless
+  uuid: f82fb954-06a1-4f0b-9180-17e07585b61f
+  tls: true
+  alpn:
+  - http/1.1
+  servername: 6yhj7.191292.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /0HKVAwzpuQtCNTI3SlZor0
+    headers:
+      Host: 6yhj7.191292.xyz
   udp: true
-- name: 🇺🇸 美国 - 紐約 - Massivegrid LTD - 313
-  server: 104.21.48.1
+- name: 🇺🇸 美国 - Elk Grove Village - HostPapa - 363
+  server: 104.21.16.1
   port: 443
   type: trojan
-  password: a926af96-2cfe-4169-8107-6c5f0d74a938
-  sni: zsde.7777128.xyz
+  password: f82fb954-06a1-4f0b-9180-17e07585b61f
+  sni: 6hj8.191262.xyz
   alpn:
   - http/1.1
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /5NB3RVAWa3Uo1P5zFPkui
+    path: /Yu29UN3Yz8hcnI3SlZor0
     headers:
-      Host: zsde.7777128.xyz
+      Host: 6hj8.191262.xyz
   udp: true
-- name: 🇺🇸 美国 - 紐約 - Massivegrid LTD - 331
-  server: 104.21.83.113
-  port: 443
-  type: trojan
-  password: 4a3ee276-f50f-46f6-ba4d-13571732ab70
-  sni: SxcDe3.859886.XYz
-  alpn:
-  - http/1.1
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /COp52Dbu3dvwvDWUxOqxq
-    headers:
-      Host: SxcDe3.859886.XYz
-  udp: true
-- name: 🇺🇸 美国 - 紐約 - Massivegrid LTD - 429
-  server: 104.21.82.14
+- name: 🇺🇸 美国 - Elk Grove Village - HostPapa - 381
+  server: 172.67.214.21
   port: 443
   type: vless
-  uuid: e74d7639-3755-4624-b770-efa6e7ec09a8
+  uuid: 072f4db4-d89d-420d-9d9e-045ed8d5c9cc
   tls: true
   alpn:
   - http/1.1
-  servername: M3SDf.777259.xyz
+  servername: 10e.191268.xyz
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /Bt93qlsreYHzV5Ii9WW
+    path: /uDLWPKXENxF2ulPWRIwOavJd
     headers:
-      Host: m3sdf.777259.xyz
+      Host: 10e.191268.xyz
   udp: true
-- name: 🇺🇸 美国 - 紐約 - Massivegrid LTD - 431
-  server: 104.21.32.1
-  port: 443
-  type: trojan
-  password: a926af96-2cfe-4169-8107-6c5f0d74a938
-  sni: zsde.7777128.xyz
-  alpn:
-  - http/1.1
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /5NB3RVAWa3Uo1P5zFPkui
-    headers:
-      Host: zsde.7777128.xyz
-  udp: true
-- name: 🇺🇸 美国 - 紐約 - Massivegrid LTD - 472
+- name: 🇺🇸 美国 - Elk Grove Village - HostPapa - 422
   server: 104.21.112.1
   port: 443
   type: trojan
-  password: a926af96-2cfe-4169-8107-6c5f0d74a938
-  sni: zsde.7777128.xyz
+  password: ca48571a-403f-44b9-b2a6-e17c36d7cacc
+  sni: 10r.iran1912.dpdns.org
   alpn:
   - http/1.1
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /5NB3RVAWa3Uo1P5zFPkui
+    path: /VEP415T5mby2DulPWRIwOavJd
     headers:
-      Host: zsde.7777128.xyz
+      Host: 10r.iran1912.dpdns.org
   udp: true
-- name: 🇺🇸 美国 - 紐約 - Massivegrid LTD - 73
-  server: 104.21.88.226
+- name: 🇺🇸 美国 - Elk Grove Village - HostPapa - 423
+  server: 104.21.32.1
   port: 443
-  type: vless
-  uuid: 895552fa-6284-4c1d-ba00-3944e0c7c626
-  tls: true
+  type: trojan
+  password: ca48571a-403f-44b9-b2a6-e17c36d7cacc
+  sni: 10r.iran1912.dpdns.org
   alpn:
   - http/1.1
-  servername: 5eR.WWW890604.dPDNS.OrG
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /VEP415T5mby2DulPWRIwOavJd
+    headers:
+      Host: 10r.iran1912.dpdns.org
+  udp: true
+- name: 🇺🇸 美国 - Reston - OVH SAS - 307
+  server: cloudgetservice.mcloudservice.site
+  port: 443
+  type: vless
+  uuid: 84630ddd-b04a-4494-aa3a-b831a9873b81
+  tls: true
+  servername: maxnetvipaP-us4.NetKh3.sItE
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /C1SukvGdr58yeduy9AOG
+    path: /linkws?ed=2560
     headers:
-      Host: 5er.www890604.dpdns.org
+      Host: maxnetvipaP-us4.NetKh3.sItE
   udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 105
-  server: 103.245.229.29
-  port: 8880
+- name: 🇺🇸 美国 - Reston - OVH SAS - 308
+  server: 135.148.206.76
+  port: 443
   type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
+  uuid: c4fa89d4-fcb9-48ba-adbc-665181cc817f
+  tls: true
+  servername: 147135010072.sec21org.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 - Reston - OVH SAS - 309
+  server: 51.81.37.20
+  port: 443
+  type: vless
+  uuid: c4fa89d4-fcb9-48ba-adbc-665181cc817f
+  tls: true
+  servername: 147135010072.sec21org.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 - Reston - OVH SAS - 310
+  server: 15.204.166.17
+  port: 443
+  type: vless
+  uuid: c4fa89d4-fcb9-48ba-adbc-665181cc817f
+  tls: true
+  servername: 147135010072.sec21org.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 - Reston - OVH SAS - 314
+  server: 135.148.186.250
+  port: 443
+  type: vless
+  uuid: 0a44145f-59dc-4e5b-a233-677b97f5114c
+  tls: true
+  servername: 147135011033.sec21org.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 - Reston - OVH SAS - 409
+  server: 147135010072.sec21org.com
+  port: 443
+  type: vless
+  uuid: c4fa89d4-fcb9-48ba-adbc-665181cc817f
+  tls: true
+  servername: 147135010072.sec21org.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 - Reston - OVH SAS - 410
+  server: 135.148.177.165
+  port: 443
+  type: vless
+  uuid: c4fa89d4-fcb9-48ba-adbc-665181cc817f
+  tls: true
+  servername: 147135010072.sec21org.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 - San Jose - Oracle Corporation - 23
+  server: sj-arm.nfsn666.gq
+  port: 8888
+  type: hysteria2
+  password: nfsn666
+  auth: nfsn666
+  sni: sj-arm.nfsn666.gq
+  skip-cert-verify: true
+- name: 🇺🇸 美国 - San Jose - Oracle Corporation - 24
+  server: 192.9.129.48
+  port: 8888
+  type: hysteria2
+  password: nfsn666
+  auth: nfsn666
+  sni: sj-arm.nfsn666.gq
+  skip-cert-verify: true
+- name: 🇺🇸 美国 - San Jose - Oracle Corporation - 281
+  server: 148.135.106.248
+  port: 18454
+  type: vless
+  uuid: 2c66c3e9-56b6-4401-e2b5-ea6f872e7a59
+  tls: true
+  servername: zedwareoracle.lzj520hxw.dpdns.org
   network: ws
   ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
+    path: /by-zedware-network/
     headers:
-      Host: hk.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 106
-  server: 103.245.228.29
-  port: 8880
+      Host: zedwareoracle.lzj520hxw.dpdns.org
+- name: 🇺🇸 美国 - Secaucus - Massivegrid LTD - 367
+  server: 172.67.170.132
+  port: 443
   type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: hk.laoyoutiao.link
+  uuid: 60af76a9-66c2-461e-8545-6fe0ac2822f8
+  tls: true
+  alpn:
+  - http/1.1
+  servername: m1swxrtk.777236.xyz
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
+    path: /6pC5ZWNjJLlDlbpi
     headers:
-      Host: hk.laoyoutiao.link
+      Host: m1swxrtk.777236.xyz
   udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 107
-  server: 181.214.1.20
+- name: 🇺🇸 美国 - Spring - The Optimal Link Corporation - 355
+  server: 216.230.233.49
+  port: 25536
+  type: vless
+  uuid: 4a3dc64b-17e1-4ae7-a9a4-851f9794d4c6
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: ydfJ-qHuqDCqmGnFbRwzqYT7gA9mWoh0gtYvMzt8OmI
+    short-id: fc3d
+  servername: apps.apple.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 206
+  server: 162.159.45.20
   port: 8880
   type: vless
   uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
@@ -208,47 +505,8 @@ proxies:
     path: /?ed=2560
     headers:
       Host: reedfree8mahsang2.redorg.ir
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 108
-  server: 94.140.0.29
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: hk.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: hk.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 109
-  server: 181.214.1.29
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: hk.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: hk.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 110
-  server: 188.164.159.29
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: hk.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: hk.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 111
-  server: 192.65.217.20
+- name: 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 277
+  server: 162.159.38.20
   port: 8880
   type: vless
   uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
@@ -258,124 +516,20 @@ proxies:
     path: /?ed=2560
     headers:
       Host: reedfree8mahsang2.redorg.ir
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 112
-  server: 192.65.217.29
-  port: 8880
+- name: 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 280
+  server: 34.160.118.77
+  port: 80
   type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: hk.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: hk.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 113
-  server: 185.207.199.29
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: hk.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: hk.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 114
-  server: 103.169.142.29
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: hk.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: hk.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 115
-  server: 185.207.198.29
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: hk.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: hk.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 116
-  server: 77.74.228.29
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: hk.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: hk.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 117
-  server: 147.78.140.29
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: hk.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: hk.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 118
-  server: 74.49.214.29
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: hk.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: hk.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 119
-  server: 104.234.239.29
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: hk.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: hk.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 120
-  server: 74.49.215.29
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   tls: false
   network: ws
   ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
+    path: /Telegram
     headers:
-      Host: hk.laoyoutiao.link
+      Host: reedfree8mahsang2.redorg.ir
   udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 125
-  server: 213.109.205.20
+- name: 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 325
+  server: 162.159.245.20
   port: 8880
   type: vless
   uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
@@ -385,189 +539,8 @@ proxies:
     path: /?ed=2560
     headers:
       Host: reedfree8mahsang2.redorg.ir
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 126
-  server: 45.67.214.29
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: hk.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: hk.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 127
-  server: 193.124.224.29
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: hk.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: hk.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 128
-  server: 5.182.34.29
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: hk.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: hk.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 129
-  server: 45.80.111.29
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: hk.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: hk.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 130
-  server: 140.99.233.29
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: hk.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: hk.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 131
-  server: 5.10.215.29
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: hk.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: hk.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 132
-  server: 77.37.33.29
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: hk.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: hk.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 133
-  server: 5.10.214.29
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: hk.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: hk.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 134
-  server: 185.135.9.29
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: hk.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: hk.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 135
-  server: 45.80.110.20
-  port: 8880
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  tls: false
-  servername: reedfree8mahsang2.redorg.ir
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 136
-  server: 45.80.110.29
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: hk.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 137
-  server: 185.251.80.29
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: hk.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: hk.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 138
-  server: 185.251.81.29
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: hk.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: hk.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 139
-  server: 185.238.228.29
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: hk.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: hk.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 140
-  server: 141.11.203.20
+- name: 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 333
+  server: 162.159.254.20
   port: 8880
   type: vless
   uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
@@ -577,248 +550,492 @@ proxies:
     path: /?ed=2560
     headers:
       Host: reedfree8mahsang2.redorg.ir
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 142
-  server: 25.26.27.29
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: hk.laoyoutiao.link
   udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 145
-  server: 94.247.142.29
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: hk.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: hk.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 146
-  server: 194.36.55.29
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: hk.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: hk.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 147
-  server: 25.25.25.29
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: hk.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 149
-  server: 45.192.222.29
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: hk.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 150
-  server: 45.192.224.29
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: hk.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 151
-  server: 154.218.15.29
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: hk.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: hk.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 152
-  server: 45.192.223.29
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: hk.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: hk.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 153
-  server: 213.182.199.29
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: hk.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: hk.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 154
-  server: 154.194.12.29
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: hk.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: hk.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 155
-  server: 62.72.166.29
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: hk.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: hk.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 156
-  server: 103.116.7.29
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: hk.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: hk.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 157
-  server: 154.92.9.29
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: hk.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: hk.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 158
-  server: 194.59.5.29
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: hk.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: hk.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 159
-  server: 194.76.18.29
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: hk.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: hk.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 160
-  server: 89.117.112.29
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: hk.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: hk.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 161
-  server: 88.216.69.29
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: hk.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: hk.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 162
-  server: 86.38.214.29
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: hk.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: hk.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 163
-  server: 89.116.250.20
+- name: 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 341
+  server: 162.159.246.20
   port: 8880
   type: vless
   uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   tls: false
-  servername: reedfree8mahsang2.redorg.ir
   network: ws
   ws-opts:
     path: /?ed=2560
     headers:
       Host: reedfree8mahsang2.redorg.ir
+  udp: true
+- name: 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 35
+  server: 162.159.252.20
+  port: 8880
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: reedfree8mahsang2.redorg.ir
+  udp: true
+- name: 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 36
+  server: 162.159.250.20
+  port: 8880
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: reedfree8mahsang2.redorg.ir
+  udp: true
+- name: 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 382
+  server: 162.159.255.20
+  port: 8880
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: reedfree8mahsang2.redorg.ir
+- name: 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 387
+  server: 104.16.119.104
+  port: 443
+  type: vless
+  uuid: 9431a0a9-3ead-4255-af11-faddffeff062
+  tls: true
+  servername: www.pjw5.top
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: www.pjw5.top
+- name: 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 443
+  server: 104.16.116.238
+  port: 443
+  type: vless
+  uuid: 7be8c1f3-3d79-44d4-800a-5e417817b6ab
+  tls: true
+  servername: xw0083.dpdns.org
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: xw0083.dpdns.org
+- name: 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 521
+  server: wilson.ns.cloudflare.com
+  port: 443
+  type: vless
+  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
+  tls: true
+  servername: dk.youlingkais.filegear-sg.me
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: dk.youlingkais.filegear-sg.me
+  udp: true
+- name: 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 522
+  server: 141.148.189.124
+  port: 443
+  type: vless
+  uuid: 82fd9622-83a8-4378-92d6-dcb4a2787d63
+  tls: true
+  servername: qwok.feidyql.dpdns.org
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: qwok.feidyql.dpdns.org
+- name: 🇺🇸 美国 - 水牛城 - HostPapa - 100
+  server: 172.67.138.187
+  port: 443
+  type: vless
+  uuid: 585acd30-52bf-4b70-a537-e13649fafefc
+  tls: true
+  alpn:
+  - http/1.1
+  servername: XszAW34.7282728.xYZ
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /rU9rSjDSOd4yY2fOe
+    headers:
+      Host: xszaw34.7282728.xyz
+  udp: true
+- name: 🇺🇸 美国 - 水牛城 - HostPapa - 101
+  server: 172.67.144.126
+  port: 443
+  type: vless
+  uuid: 2734c14b-e4ce-48b3-b3de-f80788cb4c47
+  tls: true
+  alpn:
+  - http/1.1
+  servername: xCdF4.288288.ShOP
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /eq5Bb2boLXSG8DqNAB
+    headers:
+      Host: xcdf4.288288.shop
+  udp: true
+- name: 🇺🇸 美国 - 水牛城 - HostPapa - 102
+  server: 172.67.211.136
+  port: 443
+  type: vless
+  uuid: 4e41764d-ac31-43f5-8e9b-231ddf252d1f
+  tls: true
+  alpn:
+  - http/1.1
+  servername: KKiuyTr.191266.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /wAlPWPCQWnsVcNgLsMVz
+    headers:
+      Host: kkiuytr.191266.xyz
+  udp: true
+- name: 🇺🇸 美国 - 水牛城 - HostPapa - 263
+  server: 104.21.46.90
+  port: 443
+  type: vless
+  uuid: 508a5202-d450-42d2-a74c-9326dcda8b63
+  tls: true
+  alpn:
+  - http/1.1
+  servername: XCdvFRTtt.fREEvpnATM.dPDNS.oRg
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /prUFeqTNsRZbl4sVHqtMKS
+    headers:
+      Host: xcdvfrttt.freevpnatm.dpdns.org
+  udp: true
+- name: 🇺🇸 美国 - 水牛城 - HostPapa - 406
+  server: 104.21.80.1
+  port: 443
+  type: vless
+  uuid: ad4a124c-12fb-4467-9ad0-dc6d9b509ac0
+  tls: true
+  alpn:
+  - http/1.1
+  servername: 7ui.191262.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /rdcXpTqcZpByZyxgvJgLl
+    headers:
+      Host: 7ui.191262.xyz
+  udp: true
+- name: 🇺🇸 美国 - 水牛城 - HostPapa - 408
+  server: 104.21.48.1
+  port: 443
+  type: vless
+  uuid: ad4a124c-12fb-4467-9ad0-dc6d9b509ac0
+  tls: true
+  servername: 7ui.191262.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /rdcXpTqcZpByZyxgvJgLl
+    headers:
+      Host: 7ui.191262.xyz
+- name: 🇺🇸 美国 - 水牛城 - HostPapa - 425
+  server: 104.21.81.192
+  port: 443
+  type: vless
+  uuid: 508a5202-d450-42d2-a74c-9326dcda8b63
+  tls: true
+  alpn:
+  - http/1.1
+  servername: sssdeCVBnh.999156.XYz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /prUFeqTNsRZbl4sVHqtMKS
+    headers:
+      Host: sssdecvbnh.999156.xyz
+  udp: true
+- name: 🇺🇸 美国 - 水牛城 - HostPapa - 428
+  server: d3332856-cd74.2032.pp.ua
+  port: 443
+  type: vless
+  uuid: 15b24b56-d667-4fa8-b548-f3dc942fb461
+  tls: true
+  alpn:
+  - http/1.1
+  servername: d3332856-cd74.2032.pp.ua
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ok1UBnf7txQ8YJFJxz
+    headers:
+      Host: d3332856-cd74.2032.pp.ua
+  udp: true
+- name: 🇺🇸 美国 - 水牛城 - HostPapa - 460
+  server: sscdfr5.999182.xyz
+  port: 443
+  type: trojan
+  password: 21e5535e-4783-4a80-a735-24a1162d315c
+  sni: sscDfr5.999182.XyZ
+  alpn:
+  - http/1.1
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /cxZq9RPkYdTWbh4hKwvQX9
+    headers:
+      Host: sscDfr5.999182.XyZ
+  udp: true
+- name: 🇺🇸 美国 - 水牛城 - HostPapa - 493
+  server: 104.21.96.1
+  port: 443
+  type: trojan
+  password: ad4a124c-12fb-4467-9ad0-dc6d9b509ac0
+  sni: 7nnn.191262.xyz
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /wGgR8FyAGgRCKSiyxgvJgLl
+    headers:
+      Host: 7nnn.191262.xyz
+  udp: true
+- name: 🇺🇸 美国 - 水牛城 - HostPapa - 505
+  server: 172.67.137.6
+  port: 443
+  type: vless
+  uuid: 508a5202-d450-42d2-a74c-9326dcda8b63
+  tls: true
+  alpn:
+  - http/1.1
+  servername: XCdvFRTtt.fREEvpnATM.dPDNS.oRg
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /prUFeqTNsRZbl4sVHqtMKS
+    headers:
+      Host: xcdvfrttt.freevpnatm.dpdns.org
+  udp: true
+- name: 🇺🇸 美国 - 水牛城 - HostPapa - 510
+  server: 162.159.140.167
+  port: 443
+  type: vless
+  uuid: 585acd30-52bf-4b70-a537-e13649fafefc
+  tls: true
+  alpn:
+  - http/1.1
+  servername: XszAW34.7282728.xYZ
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /rU9rSjDSOd4yY2fOe?ed=2048/@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn
+    headers:
+      Host: xszaw34.7282728.xyz
+  udp: true
+- name: 🇺🇸 美国 - 波特蘭 - Amazon.com, Inc. - 433
+  server: 34.217.14.49
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: awsps0501
+- name: 🇺🇸 美国 - 波特蘭 - Amazon.com, Inc. - 495
+  server: 35.91.242.68
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: awsps0501
+- name: 🇺🇸 美国 - 洛杉矶 - Baxet Group Inc. - 334
+  server: justhost1.jiahe.buzz
+  port: 34967
+  type: vless
+  uuid: d7100dfe-c436-48f0-a08c-27305e57b1b3
+  tls: true
+  reality-opts:
+    public-key: 0a8BKBZN_4918hSg64eff_a1McETfBbKvY6m_U5gciA
+    short-id: a4f96fae
+  servername: yahoo.com
+  client-fingerprint: chrome
+  network: tcp
+- name: 🇺🇸 美国 - 洛杉矶 - Baxet Group Inc. - 335
+  server: justhost1.jiahe.buzz
+  port: 36884
+  type: vless
+  uuid: bef00c53-2011-4ec5-8a8d-a571d4b2732c
+  tls: true
+  alpn:
+  - h3,h2,http/1.1
+  servername: justhost1.jiahe.buzz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /just04
+    headers:
+      Host: justhost1.jiahe.buzz
+- name: 🇺🇸 美国 - 洛杉矶 - DMIT Cloud Services - 258
+  server: 154.21.81.144
+  port: 36785
+  type: snell
+  psk: 9jsGZmPOY9U3wM7Q
+  version: 3
+  obfs-opts:
+    mode: http
+    host: icloud.com
+- name: 🇺🇸 美国 - 洛杉矶 - DMIT Cloud Services - 525
+  server: 154.17.17.149
+  port: 28331
+  type: trojan
+  password: Z3aXaKZnXxNc3y03OnKcaq4CN3OcqA8SwSzSRZ3O3Sa3NnaFD4xzgCSR7AaOZ983y0yY3lBOYCAOAzx
+  sni: hanger.homeofbrave.net
+  skip-cert-verify: false
+  udp: true
+- name: 🇺🇸 美国 - 洛杉矶 - DMIT Cloud Services - 526
+  server: 154.17.25.96
+  port: 443
+  type: trojan
+  password: 3lSlAcxDSNpeKOyZ3pIlyYRC7328C3X93Aa8SFOgDX4D7An0zYSRDRuaRE8lCpCASE6Bu
+  sni: theory.wireshop.net
+  skip-cert-verify: false
+  udp: true
+- name: 🇺🇸 美国 - 洛杉矶 - Fast GEO Hosting S.R.L. - 466
+  server: 88.218.95.12
+  port: 2052
+  type: vless
+  uuid: cee39e0d-60e7-5bb3-93ba-7d687c43da39
+  tls: false
+  servername: mihanwebhost.iri
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: mihanwebhost.iri
+  udp: true
+- name: 🇺🇸 美国 - 洛杉矶 - HostPapa - 311
+  server: c1swer.777159.xyz
+  port: 443
+  type: trojan
+  password: cad5a49f-14e5-4a05-aae9-c5df8fad394f
+  sni: c1sWER.777159.XYz
+  alpn:
+  - http/1.1
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /5txgrUN3oqXENw4Z4
+    headers:
+      Host: c1sWER.777159.XYz
+  udp: true
+- name: 🇺🇸 美国 - 洛杉矶 - Madcityservers LLC - 419
+  server: 5.10.244.109
+  port: 443
+  type: vless
+  uuid: e3820a55-ff58-4e42-ac82-df9a9376e699
+  tls: true
+  alpn:
+  - h3%2Ch2%2Chttp%2F1.1
+  servername: madcity2.777999.lol
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: madcity2.777999.lol
+  udp: true
+- name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 37
+  server: 108.181.5.130
+  port: 57773
+  type: hysteria2
+  password: dongtaiwang.com
+  auth: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+- name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 38
+  server: 208.87.243.187
+  port: 40528
+  type: hysteria
+  auth_str: dongtaiwang.com
+  auth-str: dongtaiwang.com
+  up: 100
+  down: 100
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 21
+  server: 7edb7ffb-sw5og0-sznzxg-1jfvb.hy2.gotochinatown.net
+  port: 8443
+  type: hysteria2
+  password: 06b2ac52-fcc6-11ec-bb74-f23c9164ca5d
+  auth: 06b2ac52-fcc6-11ec-bb74-f23c9164ca5d
+  sni: 7edb7ffb-sw5og0-sznzxg-1jfvb.hy2.gotochinatown.net
+  udp: true
+- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 248
+  server: dc5faa24-svukg0-t1bnjq-1krtb.los.gotochinatown.net
+  port: 443
+  type: http
+  username: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+  password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+  tls: true
+- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 249
+  server: 9e43eb01-svwf40-t1bnjq-1krtb.los.gotochinatown.net
+  port: 443
+  type: http
+  username: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+  password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+  tls: true
+- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 26
+  server: 2ef15a2a-svi800-sw77c8-dnss.la.shifen.uk
+  port: 1443
+  type: hysteria2
+  password: 16955d72-1794-11f0-a035-f23c95b6f51d
+  auth: 16955d72-1794-11f0-a035-f23c95b6f51d
+  sni: 2ef15a2a-svi800-sw77c8-dnss.la.shifen.uk
+  skip-cert-verify: false
+  udp: true
+- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 261
+  server: 39f5217d-swq1s0-swwcfg-1eijl.hy2.gotochinatown.net
+  port: 8443
+  type: hysteria2
+  password: c2b58ae0-d21c-11ef-b414-f23c91cfbbc9
+  auth: c2b58ae0-d21c-11ef-b414-f23c91cfbbc9
+  sni: 39f5217d-swq1s0-swwcfg-1eijl.hy2.gotochinatown.net
+  udp: true
+- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 28
+  server: b6ea3219-supts0-swbd0b-716s.hy2.gotochinatown.net
+  port: 8443
+  type: hysteria2
+  password: 088a0bbe-4f9f-11ea-a15d-f23c913c8d2b
+  auth: 088a0bbe-4f9f-11ea-a15d-f23c913c8d2b
+  sni: b6ea3219-supts0-swbd0b-716s.hy2.gotochinatown.net
+  skip-cert-verify: false
+  udp: true
+- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 29
+  server: 6b99ff62-svy9s0-sww7b0-1qwp5.hy2.gotochinatown.net
+  port: 8443
+  type: hysteria2
+  password: 6e9cdc20-b92a-11ef-973a-f23c913c8d2b
+  auth: 6e9cdc20-b92a-11ef-973a-f23c913c8d2b
+  sni: 6b99ff62-svy9s0-sww7b0-1qwp5.hy2.gotochinatown.net
+  udp: true
+- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 30
+  server: 4b3d7ffd-svwf40-t12cnj-1ol97.hy2.gotochinatown.net
+  port: 8443
+  type: hysteria2
+  password: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  auth: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  sni: 4b3d7ffd-svwf40-t12cnj-1ol97.hy2.gotochinatown.net
+  skip-cert-verify: false
+  udp: true
+- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 31
+  server: fbb59c4b-sw7j40-tchszt-1quq9.hy2.gotochinatown.net
+  port: 8443
+  type: hysteria2
+  password: 74e74e40-e134-11ee-bded-f23c913c8d2b
+  auth: 74e74e40-e134-11ee-bded-f23c913c8d2b
+  sni: fbb59c4b-sw7j40-tchszt-1quq9.hy2.gotochinatown.net
   udp: true
 - name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 164
   server: 45.81.58.29
@@ -937,183 +1154,7 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
   udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 173
-  server: 45.8.211.29
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: hk.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: hk.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 174
-  server: 185.176.24.29
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: hk.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: hk.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 175
-  server: 31.12.75.20
-  port: 8880
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  tls: false
-  servername: reedfree8mahsang2.redorg.ir
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 176
-  server: 185.221.160.29
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: hk.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: hk.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 177
-  server: 77.105.163.29
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: hk.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: hk.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 178
-  server: 185.176.24.20
-  port: 8880
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 179
-  server: 45.67.215.29
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: hk.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: hk.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 180
-  server: 193.233.132.29
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: hk.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 181
-  server: 185.174.138.29
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: hk.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: hk.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 182
-  server: 45.8.211.20
-  port: 8880
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 183
-  server: 46.254.93.29
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: hk.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: hk.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 184
-  server: 77.232.140.29
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: hk.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: hk.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 185
-  server: 5.182.85.29
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: hk.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 186
-  server: 154.198.173.29
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: hk.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: hk.laoyoutiao.link
-  udp: true
-- name: 13|US_speednode_0218
+- name: 14|US_speednode_0218
   network: ws
   password: Ng35283528
   port: 443
@@ -1126,19 +1167,6 @@ proxies:
     headers:
       Host: c2.validbv3528.eu.org
     path: /?ed=2560
-- name: _02
-  server: 38.121.43.71
-  type: ss
-  port: 3389
-  udp: true
-  password: Y6R9pAtvxxzmGC
-  cipher: aes-256-gcm
-- name: _04
-  server: uk-dc1.yangon.club
-  type: ss
-  port: 443
-  password: shadowsocks
-  cipher: aes-128-gcm
 - name: _06
   server: 142.4.216.225
   type: ss
@@ -1151,74 +1179,29 @@ proxies:
   port: 2376
   password: faBAoD54k87UJG7
   cipher: aes-256-gcm
-- name: _09
-  server: 23.154.136.51
-  type: ss
-  port: 5499
-  password: lGqs95QkFHo2NV
-  cipher: aes-256-gcm
-- name: _10
-  server: 80.92.204.106
-  type: ss
-  port: 9000
-  password: a3GFYt36Sm82Vys9
-  cipher: aes-256-cfb
-- name: _15
-  server: 212.102.53.194
-  type: ss
-  port: 443
-  password: shadowsocks
-  cipher: aes-128-gcm
-- name: _17
+- name: _13
   server: 38.121.43.71
   type: ss
   port: 8008
   password: XKFKl2rULjIp74
   cipher: aes-256-gcm
-- name: _19
+- name: _14
   server: 38.121.43.71
   type: ss
   port: 8000
   udp: true
   password: KixLvKzwjekG00rm
   cipher: aes-256-gcm
-- name: _20
-  server: 38.143.66.87
-  type: ss
-  port: 6379
-  password: zDNVedRFPQexG9v
-  cipher: aes-256-gcm
-- name: _25
-  server: 38.121.43.97
-  type: ss
-  port: 8091
-  password: PCnnH6SQSnfoS27
-  cipher: aes-256-gcm
-- name: _26
-  server: 38.121.43.71
-  type: ss
-  port: 6697
-  password: TEzjfAYq2IjtuoS
-  cipher: aes-256-gcm
-- name: _27
-  server: 38.121.43.71
-  type: ss
-  port: 5003
-  password: g5MeD6Ft3CWlJId
-  cipher: aes-256-gcm
-- name: _28
-  server: 38.121.43.71
-  type: ss
-  port: 7307
-  password: FoOiGlkAA9yPEGP
-  cipher: aes-256-gcm
-- name: _32
-  server: 38.143.66.87
-  type: ss
-  port: 6697
-  udp: true
-  password: TEzjfAYq2IjtuoS
-  cipher: aes-256-gcm
+- name: 🇺🇸 US LA Hysteria 2
+  password: 92b2a3d4-f353-11ef-b714-f23c93136cb3
+  port: 1443
+  server: 59147311-swrwg0-sxscwg-63bp.la.shifen.uk
+  type: hysteria2
+- name: 🇺🇸 US LA Hysteria 2-jwy0
+  password: 564b440a-700f-11ee-a90c-f23c9313b177
+  port: 1443
+  server: 4a0c4de3-swrwg0-t0sfr3-1qgn.la.shifen.uk
+  type: hysteria2
 proxy-groups:
 - name: 节点选择
   type: select
@@ -1231,106 +1214,106 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 152
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 176
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 178
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 164
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 162
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 181
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 163
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 165
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 130
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 175
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 186
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 170
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 169
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 183
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 173
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 135
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 139
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 155
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 177
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 118
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 180
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 147
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 140
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 145
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 185
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 134
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 153
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 132
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 151
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 137
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 146
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 129
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 127
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 172
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 161
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 167
-  - _19
-  - _17
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 116
-  - _27
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 131
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 149
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 115
-  - _26
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 150
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 166
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 157
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 111
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 184
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 138
-  - _28
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 126
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 133
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 159
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 160
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 156
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 158
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 179
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 142
-  - _02
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 112
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 110
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 119
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 128
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 136
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 174
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 171
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 107
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 182
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 106
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 108
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 113
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 105
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 117
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 125
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 109
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 154
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 120
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 114
-  - _25
-  - _06
-  - _20
   - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 168
-  - _32
-  - _15
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 472
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 331
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 295
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 166
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 164
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 170
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 171
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 36
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 325
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 172
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 382
   - _08
-  - _09
-  - 13|US_speednode_0218
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 431
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 313
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 429
-  - _10
-  - _04
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 72
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 70
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 73
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 301
+  - _13
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 341
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 169
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 333
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 167
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 165
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 387
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 35
+  - _14
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 8
+  - 🇺🇸 美国 - Reston - OVH SAS - 309
+  - 🇺🇸 美国 - Reston - OVH SAS - 310
+  - _06
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 280
+  - 🇺🇸 美国 - Reston - OVH SAS - 308
+  - 🇺🇸 美国 - Reston - OVH SAS - 410
+  - 🇺🇸 美国 - Reston - OVH SAS - 314
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 31
+  - 🇺🇸 美国 - 洛杉矶 - DMIT Cloud Services - 258
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 443
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 9
+  - 🇺🇸 美国 - Secaucus - Massivegrid LTD - 367
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 521
+  - 🇺🇸 美国 - Elk Grove Village - HostPapa - 422
+  - 🇺🇸 美国 - Elk Grove Village - HostPapa - 423
+  - 🇺🇸 美国 - 波特蘭 - Amazon.com, Inc. - 495
+  - 🇺🇸 美国 - Elk Grove Village - HostPapa - 282
+  - 🇺🇸 美国 - 波特蘭 - Amazon.com, Inc. - 433
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 510
+  - 🇺🇸 美国 - San Jose - Oracle Corporation - 24
+  - 🇺🇸 美国 - Elk Grove Village - HostPapa - 381
+  - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 37
+  - 🇺🇸 美国 - 洛杉矶 - DMIT Cloud Services - 526
+  - 🇺🇸 美国 - Elk Grove Village - HostPapa - 273
+  - 14|US_speednode_0218
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 102
+  - 🇺🇸 美国 - 洛杉矶 - DMIT Cloud Services - 525
+  - 🇺🇸 美国 - Reston - OVH SAS - 409
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 101
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 100
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 493
+  - 🇺🇸 美国 - 洛杉矶 - HostPapa - 311
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 522
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - DigitalOcean, LLC - 4
+  - 🇺🇸 美国 - 洛杉矶 - Madcityservers LLC - 419
+  - 🇺🇸 美国 - San Jose - Oracle Corporation - 281
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 460
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 408
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 206
+  - 🇺🇸 美国 - San Jose - Oracle Corporation - 23
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 406
+  - 🇺🇸 美国 - Elk Grove Village - HostPapa - 363
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 277
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 505
+  - 🇺🇸 美国 - Elk Grove Village - HostPapa - 351
+  - 🇺🇸 美国 - Spring - The Optimal Link Corporation - 355
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 34
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 425
+  - 🇭🇰 香港9|@ripaojiedian
+  - 🇷🇺 俄罗斯 - 莫斯科 - LLC Baxet - 7
+  - 🇷🇺 俄罗斯 - Zelenograd - LLC Baxet - 4
+  - 🇺🇸 美国 - 洛杉矶 - Baxet Group Inc. - 335
+  - 🇺🇸 美国 - Elk Grove Village - HostPapa - 103
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 263
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 249
+  - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 38
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 248
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 21
+  - 🇺🇸 美国 - Reston - OVH SAS - 307
+  - 🇺🇸 美国 - 洛杉矶 - Baxet Group Inc. - 334
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 428
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 31
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 29
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 30
+  - 🇷🇺 俄罗斯 - 莫斯科 - LLC BAXET - 1
+  - 🇵🇱 波兰 - 普魯斯科夫 - Cloudflare, Inc. - 1
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 28
+  - 🇸🇬 新加坡 - 新加坡 - Coaxial Cable LLC - 3
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 26
+  - 🇺🇸 US LA Hysteria 2
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 261
+  - 🇷🇺 俄罗斯 - 莫斯科 - IT Outsourcing LLC - 2
+  - 🇺🇸 US LA Hysteria 2-jwy0
+  - 🇺🇸 美国 - 洛杉矶 - Fast GEO Hosting S.R.L. - 466
+  - 🇸🇬 新加坡 - 新加坡 - Oracle Corporation - 12
+  - 🇺🇸 美国 - Cheektowaga - Cloudflare, Inc. - 404
+  - 🇸🇬 新加坡 - 新加坡 - Oracle Corporation - 13
+  - 🇷🇺 俄罗斯 - 莫斯科 - LLC Baxet - 3
+  - 🇹🇷 土耳其 - Kocasinan - Cloudflare, Inc. - 1
+  - 🇷🇺 俄罗斯 - 莫斯科 - LLC Baxet - 5
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
@@ -1338,211 +1321,211 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 152
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 176
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 178
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 164
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 162
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 181
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 163
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 165
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 130
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 175
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 186
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 170
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 169
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 183
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 173
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 135
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 139
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 155
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 177
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 118
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 180
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 147
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 140
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 145
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 185
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 134
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 153
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 132
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 151
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 137
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 146
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 129
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 127
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 172
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 161
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 167
-  - _19
-  - _17
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 116
-  - _27
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 131
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 149
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 115
-  - _26
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 150
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 166
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 157
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 111
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 184
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 138
-  - _28
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 126
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 133
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 159
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 160
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 156
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 158
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 179
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 142
-  - _02
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 112
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 110
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 119
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 128
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 136
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 174
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 171
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 107
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 182
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 106
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 108
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 113
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 105
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 117
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 125
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 109
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 154
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 120
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 114
-  - _25
-  - _06
-  - _20
   - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 168
-  - _32
-  - _15
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 472
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 331
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 295
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 166
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 164
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 170
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 171
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 36
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 325
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 172
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 382
   - _08
-  - _09
-  - 13|US_speednode_0218
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 431
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 313
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 429
-  - _10
-  - _04
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 72
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 70
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 73
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 301
+  - _13
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 341
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 169
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 333
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 167
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 165
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 387
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 35
+  - _14
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 8
+  - 🇺🇸 美国 - Reston - OVH SAS - 309
+  - 🇺🇸 美国 - Reston - OVH SAS - 310
+  - _06
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 280
+  - 🇺🇸 美国 - Reston - OVH SAS - 308
+  - 🇺🇸 美国 - Reston - OVH SAS - 410
+  - 🇺🇸 美国 - Reston - OVH SAS - 314
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 31
+  - 🇺🇸 美国 - 洛杉矶 - DMIT Cloud Services - 258
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 443
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 9
+  - 🇺🇸 美国 - Secaucus - Massivegrid LTD - 367
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 521
+  - 🇺🇸 美国 - Elk Grove Village - HostPapa - 422
+  - 🇺🇸 美国 - Elk Grove Village - HostPapa - 423
+  - 🇺🇸 美国 - 波特蘭 - Amazon.com, Inc. - 495
+  - 🇺🇸 美国 - Elk Grove Village - HostPapa - 282
+  - 🇺🇸 美国 - 波特蘭 - Amazon.com, Inc. - 433
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 510
+  - 🇺🇸 美国 - San Jose - Oracle Corporation - 24
+  - 🇺🇸 美国 - Elk Grove Village - HostPapa - 381
+  - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 37
+  - 🇺🇸 美国 - 洛杉矶 - DMIT Cloud Services - 526
+  - 🇺🇸 美国 - Elk Grove Village - HostPapa - 273
+  - 14|US_speednode_0218
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 102
+  - 🇺🇸 美国 - 洛杉矶 - DMIT Cloud Services - 525
+  - 🇺🇸 美国 - Reston - OVH SAS - 409
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 101
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 100
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 493
+  - 🇺🇸 美国 - 洛杉矶 - HostPapa - 311
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 522
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - DigitalOcean, LLC - 4
+  - 🇺🇸 美国 - 洛杉矶 - Madcityservers LLC - 419
+  - 🇺🇸 美国 - San Jose - Oracle Corporation - 281
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 460
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 408
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 206
+  - 🇺🇸 美国 - San Jose - Oracle Corporation - 23
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 406
+  - 🇺🇸 美国 - Elk Grove Village - HostPapa - 363
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 277
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 505
+  - 🇺🇸 美国 - Elk Grove Village - HostPapa - 351
+  - 🇺🇸 美国 - Spring - The Optimal Link Corporation - 355
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 34
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 425
+  - 🇭🇰 香港9|@ripaojiedian
+  - 🇷🇺 俄罗斯 - 莫斯科 - LLC Baxet - 7
+  - 🇷🇺 俄罗斯 - Zelenograd - LLC Baxet - 4
+  - 🇺🇸 美国 - 洛杉矶 - Baxet Group Inc. - 335
+  - 🇺🇸 美国 - Elk Grove Village - HostPapa - 103
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 263
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 249
+  - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 38
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 248
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 21
+  - 🇺🇸 美国 - Reston - OVH SAS - 307
+  - 🇺🇸 美国 - 洛杉矶 - Baxet Group Inc. - 334
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 428
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 31
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 29
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 30
+  - 🇷🇺 俄罗斯 - 莫斯科 - LLC BAXET - 1
+  - 🇵🇱 波兰 - 普魯斯科夫 - Cloudflare, Inc. - 1
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 28
+  - 🇸🇬 新加坡 - 新加坡 - Coaxial Cable LLC - 3
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 26
+  - 🇺🇸 US LA Hysteria 2
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 261
+  - 🇷🇺 俄罗斯 - 莫斯科 - IT Outsourcing LLC - 2
+  - 🇺🇸 US LA Hysteria 2-jwy0
+  - 🇺🇸 美国 - 洛杉矶 - Fast GEO Hosting S.R.L. - 466
+  - 🇸🇬 新加坡 - 新加坡 - Oracle Corporation - 12
+  - 🇺🇸 美国 - Cheektowaga - Cloudflare, Inc. - 404
+  - 🇸🇬 新加坡 - 新加坡 - Oracle Corporation - 13
+  - 🇷🇺 俄罗斯 - 莫斯科 - LLC Baxet - 3
+  - 🇹🇷 土耳其 - Kocasinan - Cloudflare, Inc. - 1
+  - 🇷🇺 俄罗斯 - 莫斯科 - LLC Baxet - 5
   url: http://www.gstatic.com/generate_204
   interval: 300
 - name: 手动选择
   type: select
   proxies:
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 152
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 176
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 178
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 164
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 162
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 181
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 163
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 165
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 130
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 175
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 186
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 170
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 169
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 183
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 173
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 135
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 139
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 155
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 177
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 118
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 180
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 147
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 140
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 145
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 185
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 134
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 153
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 132
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 151
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 137
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 146
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 129
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 127
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 172
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 161
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 167
-  - _19
-  - _17
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 116
-  - _27
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 131
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 149
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 115
-  - _26
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 150
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 166
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 157
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 111
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 184
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 138
-  - _28
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 126
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 133
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 159
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 160
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 156
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 158
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 179
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 142
-  - _02
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 112
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 110
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 119
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 128
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 136
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 174
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 171
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 107
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 182
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 106
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 108
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 113
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 105
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 117
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 125
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 109
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 154
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 120
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 114
-  - _25
-  - _06
-  - _20
   - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 168
-  - _32
-  - _15
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 472
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 331
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 295
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 166
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 164
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 170
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 171
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 36
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 325
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 172
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 382
   - _08
-  - _09
-  - 13|US_speednode_0218
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 431
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 313
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 429
-  - _10
-  - _04
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 72
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 70
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 73
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 301
+  - _13
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 341
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 169
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 333
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 167
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 165
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 387
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 35
+  - _14
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 8
+  - 🇺🇸 美国 - Reston - OVH SAS - 309
+  - 🇺🇸 美国 - Reston - OVH SAS - 310
+  - _06
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 280
+  - 🇺🇸 美国 - Reston - OVH SAS - 308
+  - 🇺🇸 美国 - Reston - OVH SAS - 410
+  - 🇺🇸 美国 - Reston - OVH SAS - 314
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 31
+  - 🇺🇸 美国 - 洛杉矶 - DMIT Cloud Services - 258
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 443
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 9
+  - 🇺🇸 美国 - Secaucus - Massivegrid LTD - 367
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 521
+  - 🇺🇸 美国 - Elk Grove Village - HostPapa - 422
+  - 🇺🇸 美国 - Elk Grove Village - HostPapa - 423
+  - 🇺🇸 美国 - 波特蘭 - Amazon.com, Inc. - 495
+  - 🇺🇸 美国 - Elk Grove Village - HostPapa - 282
+  - 🇺🇸 美国 - 波特蘭 - Amazon.com, Inc. - 433
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 510
+  - 🇺🇸 美国 - San Jose - Oracle Corporation - 24
+  - 🇺🇸 美国 - Elk Grove Village - HostPapa - 381
+  - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 37
+  - 🇺🇸 美国 - 洛杉矶 - DMIT Cloud Services - 526
+  - 🇺🇸 美国 - Elk Grove Village - HostPapa - 273
+  - 14|US_speednode_0218
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 102
+  - 🇺🇸 美国 - 洛杉矶 - DMIT Cloud Services - 525
+  - 🇺🇸 美国 - Reston - OVH SAS - 409
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 101
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 100
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 493
+  - 🇺🇸 美国 - 洛杉矶 - HostPapa - 311
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 522
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - DigitalOcean, LLC - 4
+  - 🇺🇸 美国 - 洛杉矶 - Madcityservers LLC - 419
+  - 🇺🇸 美国 - San Jose - Oracle Corporation - 281
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 460
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 408
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 206
+  - 🇺🇸 美国 - San Jose - Oracle Corporation - 23
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 406
+  - 🇺🇸 美国 - Elk Grove Village - HostPapa - 363
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 277
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 505
+  - 🇺🇸 美国 - Elk Grove Village - HostPapa - 351
+  - 🇺🇸 美国 - Spring - The Optimal Link Corporation - 355
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 34
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 425
+  - 🇭🇰 香港9|@ripaojiedian
+  - 🇷🇺 俄罗斯 - 莫斯科 - LLC Baxet - 7
+  - 🇷🇺 俄罗斯 - Zelenograd - LLC Baxet - 4
+  - 🇺🇸 美国 - 洛杉矶 - Baxet Group Inc. - 335
+  - 🇺🇸 美国 - Elk Grove Village - HostPapa - 103
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 263
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 249
+  - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 38
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 248
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 21
+  - 🇺🇸 美国 - Reston - OVH SAS - 307
+  - 🇺🇸 美国 - 洛杉矶 - Baxet Group Inc. - 334
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 428
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 31
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 29
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 30
+  - 🇷🇺 俄罗斯 - 莫斯科 - LLC BAXET - 1
+  - 🇵🇱 波兰 - 普魯斯科夫 - Cloudflare, Inc. - 1
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 28
+  - 🇸🇬 新加坡 - 新加坡 - Coaxial Cable LLC - 3
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 26
+  - 🇺🇸 US LA Hysteria 2
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 261
+  - 🇷🇺 俄罗斯 - 莫斯科 - IT Outsourcing LLC - 2
+  - 🇺🇸 US LA Hysteria 2-jwy0
+  - 🇺🇸 美国 - 洛杉矶 - Fast GEO Hosting S.R.L. - 466
+  - 🇸🇬 新加坡 - 新加坡 - Oracle Corporation - 12
+  - 🇺🇸 美国 - Cheektowaga - Cloudflare, Inc. - 404
+  - 🇸🇬 新加坡 - 新加坡 - Oracle Corporation - 13
+  - 🇷🇺 俄罗斯 - 莫斯科 - LLC Baxet - 3
+  - 🇹🇷 土耳其 - Kocasinan - Cloudflare, Inc. - 1
+  - 🇷🇺 俄罗斯 - 莫斯科 - LLC Baxet - 5
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
