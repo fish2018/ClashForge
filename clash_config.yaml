@@ -32,63 +32,353 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 405
-  server: 5.10.244.50
-  port: 8880
+- name: warp.irss.eu.org 2
+  server: 172.67.78.65
+  port: 80
+  client-fingerprint: randomized
   type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
+  tls: false
+  tfo: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: warp.irss.eu.org
+- name: warp.irss.eu.org 3
+  server: 172.67.72.209
+  port: 80
+  client-fingerprint: randomized
+  type: vless
+  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
+  tls: false
+  tfo: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: warp.irss.eu.org
+- name: warp.irss.eu.org 4
+  server: 190.93.247.46
+  port: 80
+  client-fingerprint: randomized
+  type: vless
+  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
+  tls: false
+  tfo: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: warp.irss.eu.org
+- name: warp.irss.eu.org 5
+  server: 172.67.196.125
+  port: 80
+  client-fingerprint: randomized
+  type: vless
+  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
+  tls: false
+  tfo: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: warp.irss.eu.org
+- name: warp.irss.eu.org 6
+  server: 162.159.249.78
+  port: 80
+  client-fingerprint: randomized
+  type: vless
+  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
+  tls: false
+  tfo: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: warp.irss.eu.org
+- name: warp.irss.eu.org 7
+  server: 104.21.233.205
+  port: 80
+  client-fingerprint: randomized
+  type: vless
+  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
+  tls: false
+  tfo: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: warp.irss.eu.org
+- name: warp.irss.eu.org 8
+  server: 104.16.237.83
+  port: 80
+  client-fingerprint: randomized
+  type: vless
+  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
+  tls: false
+  tfo: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: warp.irss.eu.org
+- name: warp.irss.eu.org 9
+  server: 162.159.255.155
+  port: 80
+  client-fingerprint: randomized
+  type: vless
+  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
+  tls: false
+  tfo: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: warp.irss.eu.org
+- name: warp.irss.eu.org 10
+  server: 104.17.50.101
+  port: 80
+  client-fingerprint: randomized
+  type: vless
+  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
+  tls: false
+  tfo: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: warp.irss.eu.org
+- name: warp.irss.eu.org 11
+  server: 172.67.167.116
+  port: 80
+  client-fingerprint: randomized
+  type: vless
+  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
+  tls: false
+  tfo: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: warp.irss.eu.org
+- name: warp.irss.eu.org 12
+  server: 172.67.34.93
+  port: 80
+  client-fingerprint: randomized
+  type: vless
+  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
+  tls: false
+  tfo: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: warp.irss.eu.org
+- name: warp.irss.eu.org 14
+  server: 172.67.23.7
+  port: 80
+  client-fingerprint: randomized
+  type: vless
+  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
+  tls: false
+  tfo: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: warp.irss.eu.org
+- name: warp.irss.eu.org 15
+  server: 172.64.90.89
+  port: 80
+  client-fingerprint: randomized
+  type: vless
+  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
+  tls: false
+  tfo: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: warp.irss.eu.org
+- name: 轮子1
+  type: hysteria
+  server: 185.22.155.71
+  port: '10803'
+  auth_str: dongtaiwang.com
+  up: 11
+  down: 55
+  fast-open: true
+  protocol: udp
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+- name: 轮子2
+  type: hysteria2
+  server: hy2.694463.xyz
+  port: '30033'
+  password: dongtaiwang.com
+  fast-open: true
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇺🇸 美国 - 水牛城 - HostPapa - 7
+  server: dcvfgt6.999161.xyz
+  port: 80
+  type: vmess
+  uuid: 90f357dd-79ac-47c6-b0b8-958e2d19de07
+  alterId: 0
+  cipher: auto
   tls: false
   network: ws
   ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
+    path: /10W6SJaK0F0oVXeNU6S2RVRP
     headers:
-      Host: reedfree8mahsang2.redorg.ir
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 406
-  server: 5.10.244.25
-  port: 8880
+      Host: dcvfgt6.999161.xyz
+- name: 🇺🇸 美国 - 水牛城 - HostPapa - 719
+  server: 104.21.71.112
+  port: 443
   type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  uuid: 4e41764d-ac31-43f5-8e9b-231ddf252d1f
+  tls: true
+  alpn:
+  - http/1.1
+  servername: xSWe34.288288.ShoP
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /wAlPWPCQWnsVcNgLsMVz
+    headers:
+      Host: xSWe34.288288.ShoP
+- name: 🇺🇸 美国 - 水牛城 - HostPapa - 8
+  server: xcvfgt6.999161.xyz
+  port: 80
+  type: vmess
+  uuid: 90f357dd-79ac-47c6-b0b8-958e2d19de07
+  alterId: 0
+  cipher: auto
   tls: false
   network: ws
   ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
+    path: /10W6SJaK0F0oVXeNU6S2RVRP
     headers:
-      Host: reedfree8mahsang2.redorg.ir
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 407
-  server: 5.10.214.80
-  port: 8880
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+      Host: xcvfgt6.999161.xyz
+- name: 🇺🇸 美国 - 水牛城 - HostPapa - 9
+  server: cvbght56.999836.xyz
+  port: 80
+  type: vmess
+  uuid: 90f357dd-79ac-47c6-b0b8-958e2d19de07
+  alterId: 0
+  cipher: auto
   tls: false
+  skip-cert-verify: false
+  servername: cvbght56.999836.xyz
   network: ws
   ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
+    path: /10W6SJaK0F0oVXeNU6S2RVRP
     headers:
-      Host: reedfree8mahsang2.redorg.ir
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 408
-  server: 5.10.245.118
-  port: 8880
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  tls: false
+      Host: cvbght56.999836.xyz
+  udp: true
+- name: 🇺🇸 美国 - 洛杉矶 - HostPapa - 50
+  server: c1swer.777159.xyz
+  port: 443
+  type: trojan
+  password: cad5a49f-14e5-4a05-aae9-c5df8fad394f
+  sni: c1sWER.777159.XYz
+  alpn:
+  - http/1.1
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
+    path: /5txgrUN3oqXENw4Z4
     headers:
-      Host: reedfree8mahsang2.redorg.ir
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 409
-  server: 5.10.214.23
-  port: 8880
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 410
-  server: 5.10.214.127
+      Host: c1sWER.777159.XYz
+  udp: true
+- name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 52
+  server: 108.181.5.130
+  port: 57773
+  type: hysteria2
+  password: dongtaiwang.com
+  auth: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+- name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 53
+  server: 208.87.243.187
+  port: 40528
+  type: hysteria
+  auth_str: dongtaiwang.com
+  auth-str: dongtaiwang.com
+  up: 100
+  down: 100
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 26
+  server: 3e8cbc42-svwf40-sw0dp4-3z3v.hy2.gotochinatown.net
+  port: 8443
+  type: hysteria2
+  password: 48c1e014-28d6-11ec-a0fc-f23c913c8d2b
+  auth: 48c1e014-28d6-11ec-a0fc-f23c913c8d2b
+  sni: 3e8cbc42-svwf40-sw0dp4-3z3v.hy2.gotochinatown.net
+  skip-cert-verify: false
+- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 30
+  server: 4b3d7ffd-svwf40-t12cnj-1ol97.hy2.gotochinatown.net
+  port: 8443
+  type: hysteria2
+  password: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  auth: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  sni: 4b3d7ffd-svwf40-t12cnj-1ol97.hy2.gotochinatown.net
+  skip-cert-verify: false
+  udp: true
+- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 32
+  server: 7edb7ffb-sw5og0-sznzxg-1jfvb.hy2.gotochinatown.net
+  port: 8443
+  type: hysteria2
+  password: 06b2ac52-fcc6-11ec-bb74-f23c9164ca5d
+  auth: 06b2ac52-fcc6-11ec-bb74-f23c9164ca5d
+  sni: 7edb7ffb-sw5og0-sznzxg-1jfvb.hy2.gotochinatown.net
+  udp: true
+- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 33
+  server: 6b99ff62-svy9s0-sww7b0-1qwp5.hy2.gotochinatown.net
+  port: 8443
+  type: hysteria2
+  password: 6e9cdc20-b92a-11ef-973a-f23c913c8d2b
+  auth: 6e9cdc20-b92a-11ef-973a-f23c913c8d2b
+  sni: 6b99ff62-svy9s0-sww7b0-1qwp5.hy2.gotochinatown.net
+  skip-cert-verify: false
+- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 34
+  server: b6ea3219-supts0-swbd0b-716s.hy2.gotochinatown.net
+  port: 8443
+  type: hysteria2
+  password: 088a0bbe-4f9f-11ea-a15d-f23c913c8d2b
+  auth: 088a0bbe-4f9f-11ea-a15d-f23c913c8d2b
+  sni: b6ea3219-supts0-swbd0b-716s.hy2.gotochinatown.net
+  skip-cert-verify: false
+  udp: true
+- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 35
+  server: d5d8af9a-svlb40-sxf56z-1f596.hy2.gotochinatown.net
+  port: 8443
+  type: hysteria2
+  password: e3975a05-b89e-11ec-a50d-f23c91cfbbc9
+  auth: e3975a05-b89e-11ec-a50d-f23c91cfbbc9
+  sni: d5d8af9a-svlb40-sxf56z-1f596.hy2.gotochinatown.net
+  skip-cert-verify: false
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 812
+  server: 5.10.214.120
   port: 8880
   type: vless
   uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
@@ -99,8 +389,20 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
   udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 411
-  server: 5.10.214.71
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 813
+  server: 91.193.58.164
+  port: 8880
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  tls: false
+  network: ws
+  ws-opts:
+    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
+    headers:
+      Host: us.laoyoutiao.link
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 814
+  server: 5.10.214.31
   port: 8880
   type: vless
   uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
@@ -110,8 +412,45 @@ proxies:
     path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
     headers:
       Host: reedfree8mahsang2.redorg.ir
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 412
-  server: 5.10.244.185
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 815
+  server: 91.193.58.173
+  port: 8880
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  tls: false
+  network: ws
+  ws-opts:
+    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
+    headers:
+      Host: us.laoyoutiao.link
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 816
+  server: 91.193.58.46
+  port: 8880
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  tls: false
+  network: ws
+  ws-opts:
+    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
+    headers:
+      Host: us.laoyoutiao.link
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 817
+  server: 91.193.58.72
+  port: 8880
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  tls: false
+  network: ws
+  ws-opts:
+    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
+    headers:
+      Host: us.laoyoutiao.link
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 819
+  server: 5.10.244.199
   port: 8880
   type: vless
   uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
@@ -121,54 +460,19 @@ proxies:
     path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
     headers:
       Host: reedfree8mahsang2.redorg.ir
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 413
-  server: 5.10.244.19
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 82
+  server: 141.11.203.20
   port: 8880
   type: vless
   uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 414
-  server: 5.10.247.82
-  port: 8880
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 415
-  server: 5.10.244.208
-  port: 8880
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 416
-  server: 176.124.223.20
-  port: 8880
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  tls: false
-  servername: reedfree8mahsang2.redorg.ir
   network: ws
   ws-opts:
     path: /?ed=2560
     headers:
       Host: reedfree8mahsang2.redorg.ir
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 417
-  server: 5.10.244.40
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 820
+  server: 5.10.244.188
   port: 8880
   type: vless
   uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
@@ -178,8 +482,8 @@ proxies:
     path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
     headers:
       Host: reedfree8mahsang2.redorg.ir
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 418
-  server: 5.10.244.195
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 821
+  server: 5.10.244.157
   port: 8880
   type: vless
   uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
@@ -189,8 +493,8 @@ proxies:
     path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
     headers:
       Host: reedfree8mahsang2.redorg.ir
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 419
-  server: 5.10.214.180
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 822
+  server: 5.10.247.246
   port: 8880
   type: vless
   uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
@@ -200,31 +504,8 @@ proxies:
     path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
     headers:
       Host: reedfree8mahsang2.redorg.ir
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 420
-  server: 5.10.215.124
-  port: 8880
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 421
-  server: 5.10.244.248
-  port: 8880
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 422
-  server: 141.193.213.49
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 823
+  server: 141.193.213.166
   port: 80
   type: vless
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
@@ -234,57 +515,22 @@ proxies:
     path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
     headers:
       Host: us.laoyoutiao.link
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 423
-  server: 5.10.244.61
-  port: 8880
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 426
-  server: 104.16.186.41
-  port: 443
-  type: vless
-  uuid: 102e5f34-1913-4dd3-a1f2-f831d891a490
-  tls: true
-  servername: cr7.traneh.dpdns.org
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /sinavm-sinavm/?ed=2560
-    headers:
-      Host: cr7.traneh.dpdns.org
   udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 427
-  server: 141.193.213.196
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 824
+  server: 141.193.213.104
   port: 80
   type: vless
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   tls: false
   network: ws
   ws-opts:
-    path: /Telegram🇨🇳
+    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
     headers:
       Host: us.laoyoutiao.link
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 428
-  server: 45.80.111.184
-  port: 8880
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram@ShadowProxy66/?ed=2560
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
   udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 429
-  server: 188.244.122.20
-  port: 8880
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 825
+  server: 141.193.213.150
+  port: 80
   type: vless
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   tls: false
@@ -293,105 +539,10 @@ proxies:
     path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
     headers:
       Host: us.laoyoutiao.link
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 431
-  server: 195.85.59.38
-  port: 8880
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram@ShadowProxy66/?ed=2560
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
   udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 432
-  server: 185.176.24.238
-  port: 8880
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram@vpnAndroid2/?ed=2560
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 433
-  server: 103.160.204.20
-  port: 8880
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 434
-  server: 31.43.179.52
-  port: 8880
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram@ShadowProxy66/?ed=2560
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 435
-  server: 45.131.7.174
-  port: 8880
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram@ShadowProxy66/?ed=2560
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 436
-  server: 45.131.211.203
-  port: 8880
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram@ShadowProxy66/?ed=2560
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 437
-  server: 45.131.7.115
-  port: 8880
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram@ShadowProxy66/?ed=2560
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 438
-  server: 45.142.120.195
-  port: 8880
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram@ShadowProxy66/?ed=2560
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 439
-  server: 91.193.58.231
-  port: 8880
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 826
+  server: 141.193.213.113
+  port: 80
   type: vless
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   tls: false
@@ -400,45 +551,70 @@ proxies:
     path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
     headers:
       Host: us.laoyoutiao.link
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 440
-  server: 104.16.188.41
-  port: 443
-  type: vless
-  uuid: 102e5f34-1913-4dd3-a1f2-f831d891a490
-  tls: true
-  servername: cr7.traneh.dpdns.org
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cr7.traneh.dpdns.org
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 441
-  server: 14.102.229.20
-  port: 8880
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
   udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 442
-  server: 5.10.215.20
-  port: 8880
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 827
+  server: 141.193.213.7
+  port: 80
   type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   tls: false
-  servername: reedfree8mahsang2.redorg.ir
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
     headers:
-      Host: reedfree8mahsang2.redorg.ir
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 443
-  server: 141.193.213.0
+      Host: us.laoyoutiao.link
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 828
+  server: 141.193.213.122
+  port: 80
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  tls: false
+  network: ws
+  ws-opts:
+    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
+    headers:
+      Host: us.laoyoutiao.link
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 829
+  server: 141.193.213.165
+  port: 80
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  tls: false
+  network: ws
+  ws-opts:
+    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
+    headers:
+      Host: us.laoyoutiao.link
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 83
+  server: 25.26.27.29
+  port: 8880
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  tls: false
+  servername: hk.laoyoutiao.link
+  network: ws
+  ws-opts:
+    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
+    headers:
+      Host: hk.laoyoutiao.link
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 830
+  server: 141.193.213.244
+  port: 80
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  tls: false
+  network: ws
+  ws-opts:
+    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
+    headers:
+      Host: us.laoyoutiao.link
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 831
+  server: 141.193.213.191
   port: 80
   type: vless
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
@@ -446,23 +622,12 @@ proxies:
   servername: us.laoyoutiao.link
   network: ws
   ws-opts:
-    path: /Telegram🇨🇳@WangCai2/?ed
+    path: /Telegram@WangCai2/?ed=2560
     headers:
       Host: us.laoyoutiao.link
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 444
-  server: 141.193.213.36
-  port: 80
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: cs.laoyoutiao.link
   udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 445
-  server: 141.193.213.146
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 832
+  server: 141.193.213.235
   port: 80
   type: vless
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
@@ -471,55 +636,10 @@ proxies:
   ws-opts:
     path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
     headers:
-      Host: cs.laoyoutiao.link
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 446
-  server: 141.193.213.15
-  port: 80
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: cs.laoyoutiao.link
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 447
-  server: 141.193.213.214
-  port: 80
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: cs.laoyoutiao.link
+      Host: us.laoyoutiao.link
   udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 448
-  server: 141.193.213.134
-  port: 80
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: cs.laoyoutiao.link
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 449
-  server: 141.193.213.9
-  port: 80
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: cs.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 450
-  server: 156.238.18.147
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 833
+  server: 156.238.18.121
   port: 8880
   type: vless
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
@@ -529,108 +649,9 @@ proxies:
     path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
     headers:
       Host: us.laoyoutiao.link
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 451
-  server: 141.193.213.223
-  port: 80
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: cs.laoyoutiao.link
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 452
-  server: 91.193.58.185
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: sk.laoyoutiao.link
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 453
-  server: 91.193.58.95
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: sk.laoyoutiao.link
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 454
-  server: 91.193.58.54
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: sk.laoyoutiao.link
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 455
-  server: 91.193.58.180
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: sk.laoyoutiao.link
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 456
-  server: 91.193.58.203
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: sk.laoyoutiao.link
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 457
-  server: 91.193.58.249
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: sk.laoyoutiao.link
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 458
-  server: 91.193.58.8
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: sk.laoyoutiao.link
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 459
-  server: 91.193.58.248
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: sk.laoyoutiao.link
   udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 460
-  server: 91.193.58.137
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 834
+  server: 91.193.58.165
   port: 8880
   type: vless
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
@@ -639,22 +660,10 @@ proxies:
   ws-opts:
     path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
     headers:
-      Host: sk.laoyoutiao.link
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 461
-  server: 91.193.58.126
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: sk.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: sk.laoyoutiao.link
+      Host: us.laoyoutiao.link
   udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 462
-  server: 91.193.58.218
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 835
+  server: 91.193.58.254
   port: 8880
   type: vless
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
@@ -663,460 +672,385 @@ proxies:
   ws-opts:
     path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
     headers:
-      Host: sk.laoyoutiao.link
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 463
-  server: 91.193.58.251
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: sk.laoyoutiao.link
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 464
-  server: 91.193.58.93
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: sk.laoyoutiao.link
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 465
-  server: 91.193.58.37
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: sk.laoyoutiao.link
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 466
-  server: 91.193.58.197
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: sk.laoyoutiao.link
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 467
-  server: 91.193.58.132
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: sk.laoyoutiao.link
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 468
-  server: 91.193.58.179
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: sk.laoyoutiao.link
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 469
-  server: 91.193.58.41
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳@WangCai2/?ed=2560
-    headers:
-      Host: sk.laoyoutiao.link
+      Host: us.laoyoutiao.link
   udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 470
-  server: 91.193.58.241
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 86
+  server: 194.36.55.29
   port: 8880
   type: vless
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   tls: false
+  servername: hk.laoyoutiao.link
   network: ws
   ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
+    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
     headers:
-      Host: sk.laoyoutiao.link
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 471
-  server: 91.193.58.145
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: sk.laoyoutiao.link
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 472
-  server: 91.193.58.91
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: sk.laoyoutiao.link
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 473
-  server: 91.193.58.102
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: sk.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳@WangCai2/?ed=2560
-    headers:
-      Host: sk.laoyoutiao.link
+      Host: hk.laoyoutiao.link
   udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 474
-  server: 91.193.58.133
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 88
+  server: 194.76.18.29
   port: 8880
   type: vless
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   tls: false
+  servername: hk.laoyoutiao.link
   network: ws
   ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
+    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
     headers:
-      Host: sk.laoyoutiao.link
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 475
-  server: 91.193.58.106
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: sk.laoyoutiao.link
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 476
-  server: 91.193.58.204
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: sk.laoyoutiao.link
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 477
-  server: 91.193.58.127
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: sk.laoyoutiao.link
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 478
-  server: 91.193.58.223
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: sk.laoyoutiao.link
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 479
-  server: 91.193.58.151
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: sk.laoyoutiao.link
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 480
-  server: 91.193.58.176
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: sk.laoyoutiao.link
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 481
-  server: 91.193.58.115
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: sk.laoyoutiao.link
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 482
-  server: 91.193.58.111
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: sk.laoyoutiao.link
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 483
-  server: 91.193.58.166
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: sk.laoyoutiao.link
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 484
-  server: 91.193.58.6
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: sk.laoyoutiao.link
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 485
-  server: 91.193.58.209
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: sk.laoyoutiao.link
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 486
-  server: 91.193.58.1
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: sk.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: sk.laoyoutiao.link
+      Host: hk.laoyoutiao.link
   udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 487
-  server: 91.193.58.237
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 89
+  server: 89.117.112.29
   port: 8880
   type: vless
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   tls: false
+  servername: hk.laoyoutiao.link
   network: ws
   ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
+    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
     headers:
-      Host: sk.laoyoutiao.link
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 488
-  server: 91.193.58.118
+      Host: hk.laoyoutiao.link
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 90
+  server: 88.216.69.29
   port: 8880
   type: vless
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   tls: false
+  servername: hk.laoyoutiao.link
   network: ws
   ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
+    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
     headers:
-      Host: sk.laoyoutiao.link
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 489
-  server: 91.193.58.107
+      Host: hk.laoyoutiao.link
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 91
+  server: 86.38.214.29
   port: 8880
   type: vless
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   tls: false
+  servername: hk.laoyoutiao.link
   network: ws
   ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
+    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
     headers:
-      Host: sk.laoyoutiao.link
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 490
-  server: 91.193.58.73
+      Host: hk.laoyoutiao.link
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 92
+  server: 89.116.250.20
+  port: 8880
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: reedfree8mahsang2.redorg.ir
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 93
+  server: 188.164.248.29
   port: 8880
   type: vless
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   tls: false
+  servername: hk.laoyoutiao.link
   network: ws
   ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
+    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
     headers:
-      Host: sk.laoyoutiao.link
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 492
-  server: 91.193.58.253
+      Host: hk.laoyoutiao.link
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 94
+  server: 46.254.92.29
   port: 8880
   type: vless
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   tls: false
+  servername: hk.laoyoutiao.link
   network: ws
   ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
+    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
     headers:
-      Host: sk.laoyoutiao.link
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 493
-  server: 91.193.58.49
+      Host: hk.laoyoutiao.link
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 95
+  server: 5.182.84.29
   port: 8880
   type: vless
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   tls: false
+  servername: hk.laoyoutiao.link
   network: ws
   ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
+    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
     headers:
-      Host: sk.laoyoutiao.link
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 494
-  server: 91.193.58.123
+      Host: hk.laoyoutiao.link
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 96
+  server: 193.9.49.29
   port: 8880
   type: vless
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   tls: false
+  servername: hk.laoyoutiao.link
   network: ws
   ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
+    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
     headers:
-      Host: sk.laoyoutiao.link
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 495
-  server: 91.193.58.228
+      Host: hk.laoyoutiao.link
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 97
+  server: 45.8.211.29
   port: 8880
   type: vless
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   tls: false
+  servername: hk.laoyoutiao.link
   network: ws
   ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
+    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
     headers:
-      Host: sk.laoyoutiao.link
-- name: 🇳🇱NL-77.110.102.235-0371 | 8.134MB
-  server: 77.110.102.235
-  port: 31080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 74J5gS8i6FiGupqrahFvM9
-- name: 🇩🇪DE-80.92.204.106-0460 | 5.722MB
-  server: 80.92.204.106
-  port: 9031
+      Host: hk.laoyoutiao.link
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 98
+  server: 185.176.24.29
+  port: 8880
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  tls: false
+  servername: hk.laoyoutiao.link
+  network: ws
+  ws-opts:
+    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
+    headers:
+      Host: hk.laoyoutiao.link
+  udp: true
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 99
+  server: 185.221.160.29
+  port: 8880
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  tls: false
+  servername: hk.laoyoutiao.link
+  network: ws
+  ws-opts:
+    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
+    headers:
+      Host: hk.laoyoutiao.link
+  udp: true
+- name: 🇺🇸 美国 - 芝加哥 - Cloudflare, Inc. - 31
+  server: 64.181.207.162
+  port: 47262
+  type: hysteria2
+  password: b72ba5d5-2d5e-45b7-93b5-236d343baa7c
+  auth: b72ba5d5-2d5e-45b7-93b5-236d343baa7c
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇻🇳 越南 - Hải Dương - FASTLY - 2
+  server: 103.186.154.25
+  port: 38388
   type: ss
   cipher: aes-256-cfb
-  password: BwcAUZk8hUFAkDGN
-- name: 🇵🇱PL-45.144.48.63-0367 | 5.633MB
-  server: 45.144.48.63
-  port: 57456
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳 越南 - Hải Dương - FASTLY - 3
+  server: 103.186.154.28
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: _01
+  server: 212.102.53.79
+  type: ss
+  port: 443
+  password: shadowsocks
+  cipher: aes-128-gcm
+- name: _02
+  server: 80.92.204.106
+  type: ss
+  port: 9005
+  password: ZET59LF6DvCC8KVt
+  cipher: aes-256-cfb
+- name: _05
+  server: 142.4.216.225
+  type: ss
+  port: 80
+  password: JIhN6rBKkaEboLNXVSv5rq
+  cipher: chacha20-ietf-poly1305
+- name: _07
+  server: 38.121.43.71
+  type: ss
+  port: 2376
+  password: faBAoD54k87UJG7
+  cipher: aes-256-gcm
+- name: _08
+  server: 23.154.136.51
+  type: ss
+  port: 5499
+  password: lGqs95QkFHo2NV
+  cipher: aes-256-gcm
+- name: 🇬🇧GB-85.210.120.237-0375 | 25.503MB
+  server: series-a2-me.varzesh360.co
+  port: 443
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: d3837224ed465f00
-- name: 🇺🇸US-94.131.20.3-0366 | 5.325MB
+  password: Bog0ELmMM9DSxDdQ
+- name: 🇬🇧GB-131.145.124.103-0351 | 25.377MB
+  server: admin.c1.webramz.co
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 1xO2cqPazqjGfCfd
+- name: 🇬🇧GB-131.145.124.103-0330 | 25.113MB
+  server: freakconfig13.felafel.org
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 1xO2cqPazqjGfCfd
+- name: 🇬🇧GB-85.210.120.237-0344 | 25.043MB
+  server: 85.210.120.237
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: Bog0ELmMM9DSxDdQ
+- name: 🇬🇧GB-85.210.120.237-0374 | 24.798MB
+  server: admin.c3.webramz.co
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: Bog0ELmMM9DSxDdQ
+- name: 🇬🇧GB-85.210.222.97-0323 | 24.65MB
+  server: admin.c4.webramz.co
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 69MUii7VDwMqh7Hz
+- name: 🇬🇧GB-131.145.124.103-0326 | 24.57MB
+  server: series-a1.samanehha.co
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: W74XFALLLuw6m5IA
+- name: 🇬🇧GB-131.145.124.17-0327 | 24.285MB
+  server: api.namasha.co
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: u17T3BvpYaaiuW2c
+- name: SE-121.127.46.147-0353 | 24.174MB
+  server: 121.127.46.147
+  port: 989
+  type: ss
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: 🇬🇧GB-131.145.124.103-0339 | 23.992MB
+  server: series-a2.samanehha.co
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: W74XFALLLuw6m5IA
+- name: 🇬🇧GB-131.145.124.17-0332 | 23.818MB
+  server: admin.c2.webramz.co
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: WstuSnlu4ieA9M0L
+- name: 🇬🇧GB-85.210.120.237-0345 | 23.806MB
+  server: series-a2-me.samanehha.co
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: Bog0ELmMM9DSxDdQ
+- name: 🇬🇧GB-131.145.124.17-0342 | 23.773MB
+  server: series-a2-mec.varzesh360.co
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: u17T3BvpYaaiuW2c
+- name: 🇬🇧GB-131.145.124.17-0340 | 23.752MB
+  server: series-a2-mec.samanehha.co
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: u17T3BvpYaaiuW2c
+- name: 🇳🇱NL-149.34.244.68-0346 | 23.618MB
+  server: 149.34.244.68
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: FI-77.91.103.73-0446 | 23.148MB
+  server: 77.91.103.73
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: Lcc1lw8IP2KI
+- name: 🇬🇧GB-141.98.101.178-0370 | 22.277MB
+  server: 141.98.101.178
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸US-94.131.20.3-0413 | 21.742MB
   server: chop-wrist-bud.stark-industries.solutions
   port: 443
   type: trojan
   password: 3482c71a-d01c-4ae5-b454-fa8cb3785f66
   sni: chop-wrist-bud.stark-industries.solutions
   skip-cert-verify: false
-- name: 🇺🇸US-94.131.20.3-0363 | 4.477MB
-  server: 94.131.20.3
+- name: 🇯🇵JP-149.22.87.241-0383 | 21.528MB
+  server: 149.22.87.241
   port: 443
-  type: trojan
-  password: 3482c71a-d01c-4ae5-b454-fa8cb3785f66
-  sni: chop-wrist-bud.stark-industries.solutions
-  skip-cert-verify: false
-- name: TR-185.123.101.241-0396 | 3.667MB
-  server: 185.123.101.241
-  port: 990
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇯🇵JP-149.22.87.240-0379 | 21.295MB
+  server: 149.22.87.240
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇯🇵JP-149.22.87.204-0384 | 20.245MB
+  server: 149.22.87.204
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇰🇷KR-141.164.63.32-0382 | 20.179MB
+  server: 141.164.63.32
+  port: 30936
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: f8f7aCzcPKbsF8p3
-- name: RELAY-104.21.96.1-0413 | 3.185MB
-  server: 104.21.96.1
-  port: 2087
-  type: vmess
-  uuid: 1c36906e-1a21-4330-b04f-85baf1a6ff26
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rak1d3.777269.xyz
-- name: RELAY-104.21.112.1-0449 | 3.176MB
-  server: 104.21.112.1
-  port: 2087
-  type: vmess
-  uuid: 1c36906e-1a21-4330-b04f-85baf1a6ff26
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rak1d3.777269.xyz
-- name: 🇪🇸ES-5.188.181.201-0436 | 2.427MB
-  server: 5.188.181.201
-  port: 9029
+  password: b25727df-15ea-453c-a006-13fe98fee1d2
+- name: RO-194.14.217.38-0358 | 20.101MB
+  server: 194.14.217.38
+  port: 989
   type: ss
   cipher: aes-256-cfb
-  password: dU3DSNS8wYPXzEKw
-- name: 🇩🇪DE-185.177.229.245-0420 | 2.154MB
-  server: 185.177.229.245
-  port: 1866
+  password: f8f7aCzcPKbsF8p3
+- name: 🇫🇷FR-51.68.13.106-0331 | 20.042MB
+  server: 51.68.13.106
+  port: 1935
+  type: trojan
+  password: FiSo7J6vfS
+  sni: x1fr-ovh.devefun.net
+  skip-cert-verify: false
+- name: 🇳🇱NL-77.110.102.235-0442 | 17.343MB
+  server: 77.110.102.235
+  port: 31080
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: oXGp1+ihlfKg826H
-- name: CH-204.136.10.115-0424 | 1.807MB
+  password: 74J5gS8i6FiGupqrahFvM9
+- name: CH-204.136.10.115-0431 | 11.703MB
   server: 204.136.10.115
   port: 1866
   type: ss
   cipher: chacha20-ietf-poly1305
   password: oXGp1+ihlfKg826H
-- name: 🇪🇸ES-5.188.181.201-0438 | 1.19MB
-  server: 5.188.181.201
-  port: 9031
-  type: ss
-  cipher: aes-256-cfb
-  password: BwcAUZk8hUFAkDGN
-- name: 🇪🇸ES-5.188.181.201-0440 | 1.141MB
-  server: 5.188.181.201
-  port: 9025
-  type: ss
-  cipher: aes-256-cfb
-  password: XPtzA9sCug3SPR4c
 proxy-groups:
 - name: 节点选择
   type: select
@@ -1129,106 +1063,106 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 438
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 410
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 437
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 419
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 417
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 446
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 469
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 409
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 416
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 474
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 442
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 406
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 466
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 473
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 453
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 472
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 408
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 454
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 477
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 483
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 471
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 413
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 479
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 415
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 492
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 436
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 428
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 434
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 475
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 439
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 495
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 420
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 435
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 488
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 478
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 414
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 476
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 465
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 493
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 486
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 480
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 455
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 490
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 433
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 464
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 418
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 494
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 467
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 429
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 457
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 458
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 412
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 481
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 487
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 432
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 411
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 431
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 407
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 489
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 468
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 450
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 427
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 484
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 444
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 451
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 485
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 422
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 452
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 460
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 443
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 405
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 456
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 482
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 449
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 463
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 462
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 461
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 459
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 448
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 441
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 470
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 447
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 423
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 426
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 440
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 445
-  - RELAY-104.21.112.1-0449 | 3.176MB
-  - RELAY-104.21.96.1-0413 | 3.185MB
-  - 🇪🇸ES-5.188.181.201-0436 | 2.427MB
-  - 🇪🇸ES-5.188.181.201-0438 | 1.19MB
-  - 🇳🇱NL-77.110.102.235-0371 | 8.134MB
-  - 🇩🇪DE-185.177.229.245-0420 | 2.154MB
-  - CH-204.136.10.115-0424 | 1.807MB
-  - 🇪🇸ES-5.188.181.201-0440 | 1.141MB
-  - 🇵🇱PL-45.144.48.63-0367 | 5.633MB
-  - 🇩🇪DE-80.92.204.106-0460 | 5.722MB
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 421
-  - TR-185.123.101.241-0396 | 3.667MB
-  - 🇺🇸US-94.131.20.3-0363 | 4.477MB
-  - 🇺🇸US-94.131.20.3-0366 | 5.325MB
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 814
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 820
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 82
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 822
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 89
+  - warp.irss.eu.org 3
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 819
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 825
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 97
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 94
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 86
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 90
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 92
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 812
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 91
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 833
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 835
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 829
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 99
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 815
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 93
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 813
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 832
+  - warp.irss.eu.org 12
+  - warp.irss.eu.org 8
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 816
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 826
+  - warp.irss.eu.org 11
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 83
+  - warp.irss.eu.org 10
+  - warp.irss.eu.org 15
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 817
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 98
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 828
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 95
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 821
+  - warp.irss.eu.org 6
+  - warp.irss.eu.org 4
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 96
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 88
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 827
+  - warp.irss.eu.org 2
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 823
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 834
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 831
+  - warp.irss.eu.org 14
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 830
+  - warp.irss.eu.org 9
+  - warp.irss.eu.org 5
+  - _08
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 824
+  - _05
+  - warp.irss.eu.org 7
+  - _07
+  - _01
+  - 🇬🇧GB-141.98.101.178-0370 | 22.277MB
+  - 🇳🇱NL-149.34.244.68-0346 | 23.618MB
+  - 🇬🇧GB-85.210.120.237-0344 | 25.043MB
+  - 🇳🇱NL-77.110.102.235-0442 | 17.343MB
+  - CH-204.136.10.115-0431 | 11.703MB
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 9
+  - SE-121.127.46.147-0353 | 24.174MB
+  - RO-194.14.217.38-0358 | 20.101MB
+  - FI-77.91.103.73-0446 | 23.148MB
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 719
+  - 🇯🇵JP-149.22.87.240-0379 | 21.295MB
+  - 🇯🇵JP-149.22.87.204-0384 | 20.245MB
+  - 🇯🇵JP-149.22.87.241-0383 | 21.528MB
+  - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 52
+  - 🇫🇷FR-51.68.13.106-0331 | 20.042MB
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 7
+  - 🇬🇧GB-85.210.222.97-0323 | 24.65MB
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 8
+  - _02
+  - 🇬🇧GB-131.145.124.103-0326 | 24.57MB
+  - 🇰🇷KR-141.164.63.32-0382 | 20.179MB
+  - 🇬🇧GB-131.145.124.103-0351 | 25.377MB
+  - 🇬🇧GB-131.145.124.103-0339 | 23.992MB
+  - 🇬🇧GB-131.145.124.17-0340 | 23.752MB
+  - 🇬🇧GB-131.145.124.17-0332 | 23.818MB
+  - 🇬🇧GB-85.210.120.237-0345 | 23.806MB
+  - 🇬🇧GB-85.210.120.237-0374 | 24.798MB
+  - 🇬🇧GB-131.145.124.17-0342 | 23.773MB
+  - 🇬🇧GB-131.145.124.103-0330 | 25.113MB
+  - 🇬🇧GB-131.145.124.17-0327 | 24.285MB
+  - 🇬🇧GB-85.210.120.237-0375 | 25.503MB
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 35
+  - 🇺🇸 美国 - 洛杉矶 - HostPapa - 50
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 30
+  - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 53
+  - 🇻🇳 越南 - Hải Dương - FASTLY - 3
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 33
+  - 🇻🇳 越南 - Hải Dương - FASTLY - 2
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 34
+  - 🇺🇸 美国 - 芝加哥 - Cloudflare, Inc. - 31
+  - 🇺🇸US-94.131.20.3-0413 | 21.742MB
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 26
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 32
+  - 轮子2
+  - 轮子1
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
@@ -1236,211 +1170,211 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 438
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 410
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 437
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 419
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 417
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 446
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 469
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 409
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 416
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 474
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 442
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 406
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 466
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 473
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 453
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 472
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 408
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 454
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 477
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 483
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 471
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 413
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 479
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 415
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 492
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 436
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 428
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 434
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 475
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 439
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 495
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 420
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 435
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 488
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 478
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 414
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 476
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 465
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 493
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 486
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 480
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 455
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 490
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 433
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 464
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 418
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 494
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 467
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 429
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 457
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 458
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 412
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 481
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 487
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 432
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 411
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 431
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 407
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 489
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 468
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 450
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 427
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 484
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 444
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 451
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 485
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 422
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 452
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 460
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 443
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 405
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 456
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 482
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 449
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 463
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 462
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 461
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 459
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 448
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 441
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 470
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 447
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 423
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 426
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 440
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 445
-  - RELAY-104.21.112.1-0449 | 3.176MB
-  - RELAY-104.21.96.1-0413 | 3.185MB
-  - 🇪🇸ES-5.188.181.201-0436 | 2.427MB
-  - 🇪🇸ES-5.188.181.201-0438 | 1.19MB
-  - 🇳🇱NL-77.110.102.235-0371 | 8.134MB
-  - 🇩🇪DE-185.177.229.245-0420 | 2.154MB
-  - CH-204.136.10.115-0424 | 1.807MB
-  - 🇪🇸ES-5.188.181.201-0440 | 1.141MB
-  - 🇵🇱PL-45.144.48.63-0367 | 5.633MB
-  - 🇩🇪DE-80.92.204.106-0460 | 5.722MB
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 421
-  - TR-185.123.101.241-0396 | 3.667MB
-  - 🇺🇸US-94.131.20.3-0363 | 4.477MB
-  - 🇺🇸US-94.131.20.3-0366 | 5.325MB
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 814
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 820
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 82
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 822
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 89
+  - warp.irss.eu.org 3
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 819
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 825
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 97
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 94
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 86
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 90
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 92
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 812
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 91
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 833
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 835
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 829
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 99
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 815
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 93
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 813
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 832
+  - warp.irss.eu.org 12
+  - warp.irss.eu.org 8
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 816
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 826
+  - warp.irss.eu.org 11
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 83
+  - warp.irss.eu.org 10
+  - warp.irss.eu.org 15
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 817
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 98
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 828
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 95
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 821
+  - warp.irss.eu.org 6
+  - warp.irss.eu.org 4
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 96
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 88
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 827
+  - warp.irss.eu.org 2
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 823
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 834
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 831
+  - warp.irss.eu.org 14
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 830
+  - warp.irss.eu.org 9
+  - warp.irss.eu.org 5
+  - _08
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 824
+  - _05
+  - warp.irss.eu.org 7
+  - _07
+  - _01
+  - 🇬🇧GB-141.98.101.178-0370 | 22.277MB
+  - 🇳🇱NL-149.34.244.68-0346 | 23.618MB
+  - 🇬🇧GB-85.210.120.237-0344 | 25.043MB
+  - 🇳🇱NL-77.110.102.235-0442 | 17.343MB
+  - CH-204.136.10.115-0431 | 11.703MB
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 9
+  - SE-121.127.46.147-0353 | 24.174MB
+  - RO-194.14.217.38-0358 | 20.101MB
+  - FI-77.91.103.73-0446 | 23.148MB
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 719
+  - 🇯🇵JP-149.22.87.240-0379 | 21.295MB
+  - 🇯🇵JP-149.22.87.204-0384 | 20.245MB
+  - 🇯🇵JP-149.22.87.241-0383 | 21.528MB
+  - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 52
+  - 🇫🇷FR-51.68.13.106-0331 | 20.042MB
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 7
+  - 🇬🇧GB-85.210.222.97-0323 | 24.65MB
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 8
+  - _02
+  - 🇬🇧GB-131.145.124.103-0326 | 24.57MB
+  - 🇰🇷KR-141.164.63.32-0382 | 20.179MB
+  - 🇬🇧GB-131.145.124.103-0351 | 25.377MB
+  - 🇬🇧GB-131.145.124.103-0339 | 23.992MB
+  - 🇬🇧GB-131.145.124.17-0340 | 23.752MB
+  - 🇬🇧GB-131.145.124.17-0332 | 23.818MB
+  - 🇬🇧GB-85.210.120.237-0345 | 23.806MB
+  - 🇬🇧GB-85.210.120.237-0374 | 24.798MB
+  - 🇬🇧GB-131.145.124.17-0342 | 23.773MB
+  - 🇬🇧GB-131.145.124.103-0330 | 25.113MB
+  - 🇬🇧GB-131.145.124.17-0327 | 24.285MB
+  - 🇬🇧GB-85.210.120.237-0375 | 25.503MB
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 35
+  - 🇺🇸 美国 - 洛杉矶 - HostPapa - 50
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 30
+  - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 53
+  - 🇻🇳 越南 - Hải Dương - FASTLY - 3
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 33
+  - 🇻🇳 越南 - Hải Dương - FASTLY - 2
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 34
+  - 🇺🇸 美国 - 芝加哥 - Cloudflare, Inc. - 31
+  - 🇺🇸US-94.131.20.3-0413 | 21.742MB
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 26
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 32
+  - 轮子2
+  - 轮子1
   url: http://www.gstatic.com/generate_204
   interval: 300
 - name: 手动选择
   type: select
   proxies:
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 438
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 410
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 437
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 419
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 417
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 446
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 469
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 409
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 416
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 474
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 442
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 406
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 466
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 473
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 453
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 472
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 408
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 454
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 477
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 483
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 471
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 413
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 479
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 415
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 492
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 436
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 428
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 434
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 475
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 439
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 495
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 420
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 435
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 488
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 478
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 414
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 476
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 465
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 493
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 486
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 480
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 455
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 490
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 433
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 464
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 418
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 494
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 467
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 429
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 457
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 458
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 412
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 481
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 487
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 432
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 411
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 431
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 407
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 489
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 468
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 450
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 427
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 484
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 444
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 451
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 485
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 422
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 452
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 460
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 443
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 405
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 456
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 482
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 449
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 463
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 462
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 461
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 459
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 448
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 441
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 470
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 447
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 423
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 426
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 440
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 445
-  - RELAY-104.21.112.1-0449 | 3.176MB
-  - RELAY-104.21.96.1-0413 | 3.185MB
-  - 🇪🇸ES-5.188.181.201-0436 | 2.427MB
-  - 🇪🇸ES-5.188.181.201-0438 | 1.19MB
-  - 🇳🇱NL-77.110.102.235-0371 | 8.134MB
-  - 🇩🇪DE-185.177.229.245-0420 | 2.154MB
-  - CH-204.136.10.115-0424 | 1.807MB
-  - 🇪🇸ES-5.188.181.201-0440 | 1.141MB
-  - 🇵🇱PL-45.144.48.63-0367 | 5.633MB
-  - 🇩🇪DE-80.92.204.106-0460 | 5.722MB
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 421
-  - TR-185.123.101.241-0396 | 3.667MB
-  - 🇺🇸US-94.131.20.3-0363 | 4.477MB
-  - 🇺🇸US-94.131.20.3-0366 | 5.325MB
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 814
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 820
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 82
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 822
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 89
+  - warp.irss.eu.org 3
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 819
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 825
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 97
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 94
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 86
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 90
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 92
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 812
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 91
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 833
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 835
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 829
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 99
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 815
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 93
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 813
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 832
+  - warp.irss.eu.org 12
+  - warp.irss.eu.org 8
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 816
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 826
+  - warp.irss.eu.org 11
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 83
+  - warp.irss.eu.org 10
+  - warp.irss.eu.org 15
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 817
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 98
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 828
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 95
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 821
+  - warp.irss.eu.org 6
+  - warp.irss.eu.org 4
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 96
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 88
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 827
+  - warp.irss.eu.org 2
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 823
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 834
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 831
+  - warp.irss.eu.org 14
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 830
+  - warp.irss.eu.org 9
+  - warp.irss.eu.org 5
+  - _08
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 824
+  - _05
+  - warp.irss.eu.org 7
+  - _07
+  - _01
+  - 🇬🇧GB-141.98.101.178-0370 | 22.277MB
+  - 🇳🇱NL-149.34.244.68-0346 | 23.618MB
+  - 🇬🇧GB-85.210.120.237-0344 | 25.043MB
+  - 🇳🇱NL-77.110.102.235-0442 | 17.343MB
+  - CH-204.136.10.115-0431 | 11.703MB
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 9
+  - SE-121.127.46.147-0353 | 24.174MB
+  - RO-194.14.217.38-0358 | 20.101MB
+  - FI-77.91.103.73-0446 | 23.148MB
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 719
+  - 🇯🇵JP-149.22.87.240-0379 | 21.295MB
+  - 🇯🇵JP-149.22.87.204-0384 | 20.245MB
+  - 🇯🇵JP-149.22.87.241-0383 | 21.528MB
+  - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 52
+  - 🇫🇷FR-51.68.13.106-0331 | 20.042MB
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 7
+  - 🇬🇧GB-85.210.222.97-0323 | 24.65MB
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 8
+  - _02
+  - 🇬🇧GB-131.145.124.103-0326 | 24.57MB
+  - 🇰🇷KR-141.164.63.32-0382 | 20.179MB
+  - 🇬🇧GB-131.145.124.103-0351 | 25.377MB
+  - 🇬🇧GB-131.145.124.103-0339 | 23.992MB
+  - 🇬🇧GB-131.145.124.17-0340 | 23.752MB
+  - 🇬🇧GB-131.145.124.17-0332 | 23.818MB
+  - 🇬🇧GB-85.210.120.237-0345 | 23.806MB
+  - 🇬🇧GB-85.210.120.237-0374 | 24.798MB
+  - 🇬🇧GB-131.145.124.17-0342 | 23.773MB
+  - 🇬🇧GB-131.145.124.103-0330 | 25.113MB
+  - 🇬🇧GB-131.145.124.17-0327 | 24.285MB
+  - 🇬🇧GB-85.210.120.237-0375 | 25.503MB
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 35
+  - 🇺🇸 美国 - 洛杉矶 - HostPapa - 50
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 30
+  - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 53
+  - 🇻🇳 越南 - Hải Dương - FASTLY - 3
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 33
+  - 🇻🇳 越南 - Hải Dương - FASTLY - 2
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 34
+  - 🇺🇸 美国 - 芝加哥 - Cloudflare, Inc. - 31
+  - 🇺🇸US-94.131.20.3-0413 | 21.742MB
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 26
+  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 32
+  - 轮子2
+  - 轮子1
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
