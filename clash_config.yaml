@@ -32,1375 +32,737 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- name: 🇹🇷 土耳其 - Ataşehir - Netlen Internet Hizmetleri Ltd. Sti. - 1
-  server: 176.223.66.8
-  port: 39948
-  type: vless
-  uuid: 2558c819-1363-4859-8fb9-f8cb104d49d2
-  tls: false
-  servername: divarcdn.com
-  network: http
-  http-opts:
-    method: GET
-    path:
-    - /
-    headers:
-      Host:
-      - divarcdn.com
-  udp: true
-- name: 🇺🇸 美国 - Reston - OVH SAS - 104
-  server: 135.148.177.165
+- name: tg频道:@ripaojiedian
+  server: 3.35.54.68
   port: 443
-  type: vless
-  uuid: c4fa89d4-fcb9-48ba-adbc-665181cc817f
-  tls: true
-  servername: 147135010072.sec21org.com
   client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 - 威尔明顿 - Internet Utilities NA LLC - 111
-  server: 184.174.96.158
-  port: 2052
-  type: vless
-  uuid: cb1bd2cd-0635-4b6e-a05c-2f45cd1c140e
-  tls: false
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: vless-grpc
-  udp: true
-- name: 🇺🇸 美国 - 水牛城 - HostPapa - 3
-  server: xcvfgt6.999165.xyz
-  port: 80
-  type: vmess
-  uuid: 90f357dd-79ac-47c6-b0b8-958e2d19de07
-  alterId: 0
-  cipher: auto
-  tls: false
+  type: ss
+  cipher: aes-256-cfb
+  password: yijian0503
+  tfo: false
+- name: 🇯🇵 日本2|@ripaojiedian
+  server: 43.226.17.17
+  port: 25356
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 2e96aa2f3054
+  tfo: false
+  plugin: v2ray-plugin
+  plugin-opts:
+    mode: websocket
+    host: kr7v1.pmxiaonan.xyz
+    path: /lornlqecrjwe
+    tls: true
+    mux: true
+    skip-cert-verify: false
+- name: 轮子2216
+  type: hysteria
+  server: 108.181.24.77
+  port: 11512
+  auth-str: dongtaiwang.com
+  sni: apple.com
   skip-cert-verify: true
-  servername: xcvfgt6.999165.xyz
-  network: ws
-  ws-opts:
-    path: /10W6SJaK0F0oVXeNU6S2RVRP
-    headers:
-      Host: xcvfgt6.999165.xyz
-- name: 🇺🇸 美国 - 洛杉矶 - Madcityservers LLC - 101
-  server: 154.17.238.64
-  port: 18899
-  type: vless
-  uuid: ebcdd90c-d374-4f88-a4b4-7d9df8c0bad6
-  tls: true
   alpn:
   - h3
-  - h2
-  - http/1.1
-  servername: madcity3.mianfeicf.lol
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: madcity3.mianfeicf.lol
-  udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 22
-  server: 8f2e1b19-swd340-t7a4xd-1ln9e.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: e35ea0a0-0634-11f0-8eb0-f23c9164ca5d
-  auth: e35ea0a0-0634-11f0-8eb0-f23c9164ca5d
-  sni: 8f2e1b19-swd340-t7a4xd-1ln9e.hy2.gotochinatown.net
-  udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 26
-  server: 3e8cbc42-svwf40-sw0dp4-3z3v.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: 48c1e014-28d6-11ec-a0fc-f23c913c8d2b
-  auth: 48c1e014-28d6-11ec-a0fc-f23c913c8d2b
-  sni: 3e8cbc42-svwf40-sw0dp4-3z3v.hy2.gotochinatown.net
-  skip-cert-verify: false
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 30
-  server: fe021254-suk9s0-sve5if-z93q.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: 40639730-e027-11ea-87ad-f23c913c8d2b
-  auth: 40639730-e027-11ea-87ad-f23c913c8d2b
-  sni: fe021254-suk9s0-sve5if-z93q.hy2.gotochinatown.net
-  skip-cert-verify: false
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 31
-  server: d446948b-sunz40-svabg7-1td06.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: de5486da-f19c-11ef-8eaf-f23c9164ca5d
-  auth: de5486da-f19c-11ef-8eaf-f23c9164ca5d
-  sni: d446948b-sunz40-svabg7-1td06.hy2.gotochinatown.net
-  skip-cert-verify: false
-  udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 34
-  server: c26d0357-supts0-tfvcxz-1nq4g.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: 80aa5178-f936-11ed-8ce6-f23c91369f2d
-  auth: 80aa5178-f936-11ed-8ce6-f23c91369f2d
-  sni: c26d0357-supts0-tfvcxz-1nq4g.hy2.gotochinatown.net
-  skip-cert-verify: false
-  udp: true
-- name: 🇺🇸 美国 - 洛杉矶 - Sharktech - 38
-  server: ea9b4647-supts0-sxw44d-1re2s.hy2.gotochinatown.net
-  port: 8443
-  type: hysteria2
-  password: a6a3c7fc-0de8-11ef-ba67-f23c91cfbbc9
-  auth: a6a3c7fc-0de8-11ef-ba67-f23c91cfbbc9
-  sni: ea9b4647-supts0-sxw44d-1re2s.hy2.gotochinatown.net
-  skip-cert-verify: false
-  udp: true
-- name: 🇺🇸 美国 - 紐約 - Massivegrid LTD - 39
-  server: 172.67.211.136
-  port: 443
-  type: trojan
-  password: c6840587-7ac4-40be-aa4b-ae327eb4fa53
-  sni: ddFRTy.191266.XYZ
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: 轮子3218
+  type: hysteria
+  server: 208.87.243.151
+  port: 17549
+  auth_str: dongtaiwang.com
   alpn:
-  - http/1.1
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ogSVyJu0ksqZjqvVUXlLhk95Ad
-    headers:
-      Host: ddFRTy.191266.XYZ
-  udp: true
-- name: 🇺🇸 美国 - 紐約 - Massivegrid LTD - 40
-  server: 104.21.35.247
+  - h3
+  sni: www.bing.com
+  skip-cert-verify: true
+  up: 11 Mbps
+  down: 55 Mbps
+- name: 🇫🇮 芬兰 - 赫尔辛基 - Hetzner Online GmbH - 1
+  server: ip.sb
   port: 443
-  type: trojan
-  password: c8eac4b7-95ba-4ce0-920d-c3279eb3b391
-  sni: ff.HuangSHANg2030.DPDnS.oRg
-  alpn:
-  - http/1.1
-  skip-cert-verify: false
+  type: vmess
+  uuid: cfa8c36c-9652-484a-89e1-34dcc98faac3
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /ptGwaGzcA4KNAXX
+    path: /vmess?ed=2048
     headers:
-      Host: ff.HuangSHANg2030.DPDnS.oRg
+      Host: cdn.3iapps.com
   udp: true
-- name: 🇺🇸 美国 - 紐約 - Massivegrid LTD - 44
-  server: 172.67.200.117
+- name: 🇫🇷 法国 - 巴黎 - Online S.A.S. - 7
+  server: 51.158.205.126
+  port: 4489
+  type: hysteria2
+  password: dongtaiwang.com
+  auth: dongtaiwang.com
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇬🇧 英国 - 伦敦 - Oracle Corporation - 2
+  server: ld-arm.nfsn666.gq
+  port: 8888
+  type: hysteria2
+  password: nfsn666
+  auth: nfsn666
+  sni: ld-arm.nfsn666.gq
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰 韩国 - 首尔特别市 - Kaopu Cloud HK Limited - 3
+  server: 154.90.63.177
+  port: 989
+  type: ss
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+  udp: true
+- name: 🇱🇹 LT_628
+  server: 45.87.175.199
+  type: ss
+  country: 🇱🇹 LT
+  port: 8080
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  cipher: chacha20-ietf-poly1305
+- name: 🇱🇹 LT_629
+  server: 45.87.175.181
+  type: ss
+  country: 🇱🇹 LT
+  port: 8080
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+  cipher: chacha20-ietf-poly1305
+- name: 🇱🇹 LT_630
+  server: 45.87.175.154
+  type: ss
+  country: 🇱🇹 LT
+  port: 8080
+  password: cvII85TrW6n0OGyfpHVS1u
+  cipher: chacha20-ietf-poly1305
+- name: 🇱🇹 LT_631
+  server: 45.87.175.164
+  type: ss
+  country: 🇱🇹 LT
+  port: 8080
+  password: 4a2rfixophdjffa8KVA4Aa
+  cipher: chacha20-ietf-poly1305
+- name: 🇱🇹 LT_632
+  server: beesyar.org
+  type: ss
+  country: 🇱🇹 LT
+  port: 8080
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+  cipher: chacha20-ietf-poly1305
+- name: 🇱🇹 LT_633
+  server: 45.87.175.154
+  type: ss
+  country: 🇱🇹 LT
+  port: 8080
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  cipher: chacha20-ietf-poly1305
+- name: 🇱🇹 LT_634
+  server: 45.87.175.157
+  type: ss
+  country: 🇱🇹 LT
+  port: 8080
+  password: cvII85TrW6n0OGyfpHVS1u
+  cipher: chacha20-ietf-poly1305
+- name: 🇱🇹 LT_635
+  server: 45.87.175.166
+  type: ss
+  country: 🇱🇹 LT
+  port: 8080
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+  cipher: chacha20-ietf-poly1305
+- name: 🇱🇹 LT_636
+  server: 45.87.175.181
+  type: ss
+  country: 🇱🇹 LT
+  port: 8080
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  cipher: chacha20-ietf-poly1305
+- name: 🇱🇹 LT_637
+  server: 45.87.175.199
+  type: ss
+  country: 🇱🇹 LT
+  port: 8080
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+  cipher: chacha20-ietf-poly1305
+- name: 🇱🇹 LT_638
+  server: 45.87.175.188
+  type: ss
+  country: 🇱🇹 LT
+  port: 8080
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+  cipher: chacha20-ietf-poly1305
+- name: 🇱🇹 LT_639
+  server: 45.87.175.188
+  type: ss
+  country: 🇱🇹 LT
+  port: 8080
+  password: cvII85TrW6n0OGyfpHVS1u
+  cipher: chacha20-ietf-poly1305
+- name: 🇱🇹 LT_640
+  server: beesyar.org
+  type: ss
+  country: 🇱🇹 LT
+  port: 8080
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  cipher: chacha20-ietf-poly1305
+- name: 🇱🇹 LT_642
+  server: beesyar.org
+  type: ss
+  country: 🇱🇹 LT
+  port: 8080
+  password: 4a2rfixophdjffa8KVA4Aa
+  cipher: chacha20-ietf-poly1305
+- name: 🇱🇹 LT_643
+  server: 45.87.175.166
+  type: ss
+  country: 🇱🇹 LT
+  port: 8080
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  cipher: chacha20-ietf-poly1305
+- name: 🇱🇹 LT_644
+  server: 45.87.175.164
+  type: ss
+  country: 🇱🇹 LT
+  port: 8080
+  password: cvII85TrW6n0OGyfpHVS1u
+  cipher: chacha20-ietf-poly1305
+- name: 🇱🇹 LT_645
+  server: beesyar.org
+  type: ss
+  country: 🇱🇹 LT
+  port: 8080
+  password: cvII85TrW6n0OGyfpHVS1u
+  cipher: chacha20-ietf-poly1305
+- name: 🇱🇹 LT_646
+  server: 45.87.175.181
+  type: ss
+  country: 🇱🇹 LT
+  port: 8080
+  password: 4a2rfixophdjffa8KVA4Aa
+  cipher: chacha20-ietf-poly1305
+- name: 🇱🇹 LT_647
+  server: 45.87.175.178
+  type: ss
+  country: 🇱🇹 LT
+  port: 8080
+  password: cvII85TrW6n0OGyfpHVS1u
+  cipher: chacha20-ietf-poly1305
+- name: 🇱🇹 LT_648
+  server: 45.87.175.157
+  type: ss
+  country: 🇱🇹 LT
+  port: 8080
+  password: 4a2rfixophdjffa8KVA4Aa
+  cipher: chacha20-ietf-poly1305
+- name: 🇱🇹 LT_649
+  server: 45.87.175.178
+  type: ss
+  country: 🇱🇹 LT
+  port: 8080
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+  cipher: chacha20-ietf-poly1305
+- name: 🇱🇹 LT_650
+  server: 45.158.171.132
+  type: ss
+  country: 🇱🇹 LT
+  port: 8080
+  password: cvII85TrW6n0OGyfpHVS1u
+  cipher: chacha20-ietf-poly1305
+- name: 🇱🇹 LT_651
+  server: 45.158.171.146
+  type: ss
+  country: 🇱🇹 LT
+  port: 8080
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  cipher: chacha20-ietf-poly1305
+- name: 🇱🇹 LT_652
+  server: 45.87.175.178
+  type: ss
+  country: 🇱🇹 LT
+  port: 8080
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  cipher: chacha20-ietf-poly1305
+- name: 🇱🇹 LT_653
+  server: 45.87.175.166
+  type: ss
+  country: 🇱🇹 LT
+  port: 8080
+  password: 4a2rfixophdjffa8KVA4Aa
+  cipher: chacha20-ietf-poly1305
+- name: 🇱🇹 LT_654
+  server: 45.87.175.164
+  type: ss
+  country: 🇱🇹 LT
+  port: 8080
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+  cipher: chacha20-ietf-poly1305
+- name: 🇱🇹 LT_655
+  server: 45.87.175.181
+  type: ss
+  country: 🇱🇹 LT
+  port: 8080
+  password: cvII85TrW6n0OGyfpHVS1u
+  cipher: chacha20-ietf-poly1305
+- name: 🇱🇹 LT_656
+  server: 45.87.175.188
+  type: ss
+  country: 🇱🇹 LT
+  port: 8080
+  password: 4a2rfixophdjffa8KVA4Aa
+  cipher: chacha20-ietf-poly1305
+- name: 🇱🇹 LT_657
+  server: 45.158.171.132
+  type: ss
+  country: 🇱🇹 LT
+  port: 8080
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  cipher: chacha20-ietf-poly1305
+- name: 🇱🇹 LT_658
+  server: 45.158.171.141
+  type: ss
+  country: 🇱🇹 LT
+  port: 8080
+  password: 4a2rfixophdjffa8KVA4Aa
+  cipher: chacha20-ietf-poly1305
+- name: 🇱🇹 LT_660
+  server: 45.87.175.154
+  type: ss
+  country: 🇱🇹 LT
+  port: 8080
+  password: 4a2rfixophdjffa8KVA4Aa
+  cipher: chacha20-ietf-poly1305
+- name: 🇱🇹 LT_661
+  server: 45.87.175.199
+  type: ss
+  country: 🇱🇹 LT
+  port: 8080
+  password: cvII85TrW6n0OGyfpHVS1u
+  cipher: chacha20-ietf-poly1305
+- name: 🇱🇹 LT_662
+  server: 45.87.175.178
+  type: ss
+  country: 🇱🇹 LT
+  port: 8080
+  password: 4a2rfixophdjffa8KVA4Aa
+  cipher: chacha20-ietf-poly1305
+- name: 🇱🇹 LT_663
+  server: 45.87.175.199
+  type: ss
+  country: 🇱🇹 LT
+  port: 8080
+  password: 4a2rfixophdjffa8KVA4Aa
+  cipher: chacha20-ietf-poly1305
+- name: 🇱🇹 LT_664
+  server: 45.158.171.151
+  type: ss
+  country: 🇱🇹 LT
+  port: 8080
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+  cipher: chacha20-ietf-poly1305
+- name: 🇱🇹 LT_665
+  server: 45.87.175.166
+  type: ss
+  country: 🇱🇹 LT
+  port: 8080
+  password: cvII85TrW6n0OGyfpHVS1u
+  cipher: chacha20-ietf-poly1305
+- name: 🇲🇩 MD_666
+  server: 185.93.173.218
+  type: ss
+  country: 🇲🇩 MD
+  port: 990
+  password: f8f7aCzcPKbsF8p3
+  cipher: chacha20-ietf-poly1305
+- name: 🇳🇱 NL_668
+  server: 193.29.139.138
+  type: ss
+  country: 🇳🇱 NL
+  port: 8080
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  cipher: chacha20-ietf-poly1305
+- name: 🇳🇱 NL_669
+  server: 103.104.247.47
+  type: ss
+  country: 🇳🇱 NL
+  port: 8080
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
+- name: 🇳🇱 NL_670
+  server: 103.104.247.49
+  type: ss
+  country: 🇳🇱 NL
+  port: 8080
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
+- name: 🇳🇱 NL_671
+  server: 193.29.139.179
+  type: ss
+  country: 🇳🇱 NL
+  port: 8080
+  password: cvII85TrW6n0OGyfpHVS1u
+  cipher: chacha20-ietf-poly1305
+- name: 🇵🇦 PA_675
+  server: 186.190.215.193
+  type: vmess
+  country: 🇵🇦 PA
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  network: tcp
+  ws-path: /
+  http-opts: {}
+  h2-opts: {}
+  skip-cert-verify: true
+- name: 🇵🇦 PA_676
+  server: toward.taiwanesefood.link
+  type: trojan
+  country: 🇵🇦 PA
   port: 443
-  type: trojan
-  password: c6840587-7ac4-40be-aa4b-ae327eb4fa53
-  sni: ccdfRt6.890634.Xyz
-  alpn:
-  - http/1.1
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ogSVyJu0ksqZjqvVUXlLhk95Ad
-    headers:
-      Host: ccdfRt6.890634.Xyz
+  password: 5Z3RglCCyER3pjlSe0gSyqOOeExx4qTpwKxBR63XjIa8eNzaaO84pDDBA2DlZYI2n37CX
+  skip-cert-verify: true
   udp: true
-- name: 🇺🇸 美国 - 紐約 - Massivegrid LTD - 84
-  server: 172.67.175.139
+- name: 🇵🇱PL_677
+  server: 217.30.10.18
+  type: ss
+  country: 🇵🇱PL
+  port: 9033
+  password: UTJA57ypk2XKQpnm
+  cipher: aes-256-cfb
+- name: 🇷🇴 RO_678
+  server: 86.104.74.243
+  type: ss
+  country: 🇷🇴 RO
+  port: 14255
+  password: fDDmH4QefmWqMJ8UURZrGh
+  cipher: chacha20-ietf-poly1305
+- name: 🇷🇺 RU_680
+  server: 89.23.103.125
+  type: ss
+  country: 🇷🇺 RU
+  port: 42090
+  password: uQS5ntVqC00sSKkeNzUiD3
+  cipher: chacha20-ietf-poly1305
+- name: 🇷🇺 RU_681
+  server: 45.151.62.54
+  type: ss
+  country: 🇷🇺 RU
+  port: 28825
+  password: 0zyDRZ1XmNXaaCAN7KEA8a
+  cipher: chacha20-ietf-poly1305
+- name: 🇷🇺 RU_683
+  server: 5.181.21.194
+  type: ss
+  country: 🇷🇺 RU
+  port: 18660
+  password: pV5BAzqLZosOfuIrkyoadT
+  cipher: chacha20-ietf-poly1305
+- name: 🇸🇪 SE_691
+  server: 45.154.206.192
+  type: ss
+  country: 🇸🇪 SE
+  port: 990
+  password: f8f7aCzcPKbsF8p3
+  cipher: chacha20-ietf-poly1305
+- name: 🇺🇸US_777
+  server: 38.114.114.143
+  type: ss
+  country: 🇺🇸US
+  port: 4444
+  password: pKEW8JPByTVTLtM
+  cipher: aes-256-gcm
+- name: 🇺🇸US_778
+  server: 38.121.43.97
+  type: ss
+  country: 🇺🇸US
+  port: 5000
+  password: Y6R9pAtvxxzmGC
+  cipher: aes-256-gcm
+- name: 🇺🇸US_780
+  server: 38.143.66.87
+  type: ss
+  country: 🇺🇸US
+  port: 3306
+  password: Y6R9pAtvxxzmGC
+  cipher: aes-256-gcm
+- name: 🇺🇸US_781
+  server: 38.121.43.71
+  type: ss
+  country: 🇺🇸US
+  port: 6379
+  password: zDNVedRFPQexG9v
+  cipher: aes-256-gcm
+- name: 🇺🇸US_783
+  server: 38.121.43.71
+  type: ss
+  country: 🇺🇸US
+  port: 8009
+  password: XKFKl2rULjIp74
+  cipher: aes-256-gcm
+- name: 🇺🇸US_784
+  server: 38.121.43.97
+  type: ss
+  country: 🇺🇸US
+  port: 8119
+  password: cdBIDV42DCwnfIN
+  cipher: aes-256-gcm
+- name: 🇺🇸US_785
+  server: exchange.gameaurela.click
+  type: ss
+  country: 🇺🇸US
+  port: 52952
+  password: LMSNh21TrXjR2ok25Q2nE8ENT2zoBmPvka3RCCUAHZELCnWoekVjvaf89qwcRkdbxEfep2bc2aUtmnxqvF1ayQRez1JHjULj
+  cipher: chacha20-ietf-poly1305
+- name: 🇺🇸US_786
+  server: 38.121.43.97
+  type: ss
+  country: 🇺🇸US
+  port: 5500
+  password: KixLvKzwjekG00rm
+  cipher: aes-256-gcm
+- name: 🏁 ZZ_788
+  server: 103.186.155.19
+  type: ss
+  country: 🏁 ZZ
+  port: 38388
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  cipher: aes-256-cfb
+- name: 🏁 ZZ_790
+  server: 103.186.154.28
+  type: ss
+  country: 🏁 ZZ
+  port: 38388
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  cipher: aes-256-cfb
+- name: 🏁 ZZ_792
+  server: 103.186.154.38
+  type: ss
+  country: 🏁 ZZ
+  port: 38388
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  cipher: aes-256-cfb
+- name: 🏁 ZZ_793
+  server: 103.186.154.22
+  type: ss
+  country: 🏁 ZZ
+  port: 38388
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  cipher: aes-256-cfb
+- name: 🏁 ZZ_794
+  server: 103.186.154.21
+  type: ss
+  country: 🏁 ZZ
+  port: 38388
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  cipher: aes-256-cfb
+- name: 🏁 ZZ_795
+  server: 213.109.147.242
+  type: ss
+  country: 🏁 ZZ
+  port: 62685
+  password: VpKABcOpNNA0l5G2AVOmw8
+  cipher: chacha20-ietf-poly1305
+- name: 🏁 ZZ_797
+  server: 160.19.78.75
+  type: ss
+  country: 🏁 ZZ
   port: 443
+  password: Nk9asglDzHzjktVzTkvhaA
+  cipher: chacha20-ietf-poly1305
+- name: 🏁 ZZ_798
+  server: 23.154.136.132
+  type: ss
+  country: 🏁 ZZ
+  port: 5004
+  password: g5MeD6Ft3CWlJId
+  cipher: aes-256-gcm
+- name: 🏁 ZZ_800
+  server: 23.154.136.132
+  type: ss
+  country: 🏁 ZZ
+  port: 5000
+  password: Y6R9pAtvxxzmGC
+  cipher: aes-256-gcm
+- name: 🏁 ZZ_802
+  server: 103.186.154.33
+  type: ss
+  country: 🏁 ZZ
+  port: 38388
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  cipher: aes-256-cfb
+- name: 🏁 ZZ_803
+  server: 103.186.155.20
+  type: ss
+  country: 🏁 ZZ
+  port: 38388
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  cipher: aes-256-cfb
+- name: 🏁 ZZ_804
+  server: 103.186.154.32
+  type: ss
+  country: 🏁 ZZ
+  port: 38388
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  cipher: aes-256-cfb
+- name: 🏁 ZZ_805
+  server: 103.186.154.37
+  type: ss
+  country: 🏁 ZZ
+  port: 38388
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  cipher: aes-256-cfb
+- name: 🏁 ZZ_806
+  server: 103.186.154.35
+  type: ss
+  country: 🏁 ZZ
+  port: 38388
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  cipher: aes-256-cfb
+- name: 🏁 ZZ_807
+  server: 103.186.155.21
+  type: ss
+  country: 🏁 ZZ
+  port: 38388
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  cipher: aes-256-cfb
+- name: 🏁 ZZ_809
+  server: 103.186.154.19
+  type: ss
+  country: 🏁 ZZ
+  port: 38388
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  cipher: aes-256-cfb
+- name: 🏁 ZZ_810
+  server: 103.186.154.24
+  type: ss
+  country: 🏁 ZZ
+  port: 38388
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  cipher: aes-256-cfb
+- name: 🏁 ZZ_811
+  server: 103.186.154.30
+  type: ss
+  country: 🏁 ZZ
+  port: 38388
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  cipher: aes-256-cfb
+- name: 🏁 ZZ_812
+  server: 103.186.155.24
+  type: ss
+  country: 🏁 ZZ
+  port: 38388
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  cipher: aes-256-cfb
+- name: 🏁 ZZ_814
+  server: 103.186.155.25
+  type: ss
+  country: 🏁 ZZ
+  port: 38388
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  cipher: aes-256-cfb
+- name: 🏁 ZZ_815
+  server: 103.186.155.23
+  type: ss
+  country: 🏁 ZZ
+  port: 38388
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  cipher: aes-256-cfb
+- name: 🏁 ZZ_817
+  server: beseech.homeofbrave.net
   type: trojan
-  password: 4a3ee276-f50f-46f6-ba4d-13571732ab70
-  sni: X3W4.859886.XYz
-  alpn:
-  - http/1.1
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /COp52Dbu3dvwvDWUxOqxq
-    headers:
-      Host: X3W4.859886.XYz
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 100
-  server: 14.102.229.20
-  port: 8880
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  tls: false
-  servername: reedfree8mahsang2.redorg.ir
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 106
-  server: 91.193.58.94
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳@WangCai2/?ed=2560
-    headers:
-      Host: cs.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 107
-  server: 23.134.82.1
-  port: 80
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 108
-  server: 91.193.58.97
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: cs.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 109
-  server: 94.247.142.20
-  port: 8880
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 112
-  server: 91.193.58.131
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: cs.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 45
-  server: 155.46.213.20
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: us.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: us.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 46
-  server: 45.8.211.88
-  port: 8880
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  tls: false
-  servername: reedfree8mahsang2.redorg.ir
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 47
-  server: 45.142.120.93
-  port: 8880
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  tls: false
-  servername: reedfree8mahsang2.redorg.ir
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 48
-  server: 104.129.166.20
-  port: 8880
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  tls: false
-  servername: reedfree8mahsang2.redorg.ir
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 49
-  server: 104.254.140.20
-  port: 8880
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  tls: false
-  servername: reedfree8mahsang2.redorg.ir
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 50
-  server: 104.129.167.20
-  port: 8880
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  tls: false
-  servername: reedfree8mahsang2.redorg.ir
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 51
-  server: 92.53.188.20
-  port: 8880
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  tls: false
-  servername: reedfree8mahsang2.redorg.ir
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 52
-  server: 185.176.26.20
-  port: 8880
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 53
-  server: 209.46.30.20
-  port: 8880
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 54
-  server: 104.129.164.20
-  port: 8880
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  tls: false
-  servername: reedfree8mahsang2.redorg.ir
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 55
-  server: 102.177.176.20
-  port: 8880
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 56
-  server: 185.18.250.20
-  port: 8880
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 57
-  server: 91.193.58.222
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: cs.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 58
-  server: 91.193.58.245
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: us.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: us.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 59
-  server: 185.162.230.228
-  port: 8880
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  tls: false
-  servername: reedfree8mahsang2.redorg.ir
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 60
-  server: 185.59.218.20
-  port: 8880
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  tls: false
-  servername: reedfree8mahsang2.redorg.ir
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 61
-  server: 91.193.58.78
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram@WangCai2/?ed=2560
-    headers:
-      Host: cs.laoyoutiao.link
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 62
-  server: 141.193.213.117
-  port: 80
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: cs.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳@WangCai2/?ed=2560
-    headers:
-      Host: cs.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 63
-  server: 91.193.58.229
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: cs.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳@WangCai2/?ed=2560
-    headers:
-      Host: cs.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 64
-  server: 141.193.213.227
-  port: 80
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: cs.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 65
-  server: 141.193.213.187
-  port: 80
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: cs.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: cs.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 66
-  server: 141.193.213.178
-  port: 80
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: cs.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 67
-  server: 141.193.213.230
-  port: 80
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: cs.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: cs.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 68
-  server: 141.193.213.118
-  port: 80
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: cs.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 69
-  server: 103.169.142.20
-  port: 8880
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 70
-  server: 141.193.213.98
-  port: 80
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-    headers:
-      Host: cs.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 71
-  server: 94.140.0.20
-  port: 8880
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 72
-  server: 147.78.140.20
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: us.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: us.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 73
-  server: 167.68.42.20
-  port: 8880
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 74
-  server: 45.80.111.166
-  port: 80
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  tls: false
-  servername: reedfree8mahsang2.redorg.ir
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 75
-  server: 45.80.111.20
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: us.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: us.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 76
-  server: 5.10.215.143
-  port: 8880
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  tls: false
-  servername: reedfree8mahsang2.redorg.ir
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 77
-  server: 5.10.214.157
-  port: 8880
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  tls: false
-  servername: reedfree8mahsang2.redorg.ir
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 78
-  server: 91.193.58.79
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: us.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: us.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 79
-  server: 5.182.84.20
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: us.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: us.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 85
-  server: 103.116.7.248
+  country: 🏁 ZZ
   port: 443
+  password: SaujZeOR2F6eDD09KnxFcl3CY8laTXAyYOyCEI5qgwRSDp4ZCp33ASxN738zBa
+  skip-cert-verify: true
+  udp: true
+- name: 🏁ZZ_819
+  server: 23.154.136.51
+  type: ss
+  country: 🏁ZZ
+  port: 8888
+  password: Y6R9pAtvxxzmGC
+  cipher: aes-256-gcm
+- name: 🏁ZZ_820
+  server: 23.154.136.51
+  type: ss
+  country: 🏁ZZ
+  port: 8118
+  password: cdBIDV42DCwnfIN
+  cipher: aes-256-gcm
+- name: 🏁ZZ_821
+  server: 23.154.136.51
+  type: ss
+  country: 🏁ZZ
+  port: 6697
+  password: TEzjfAYq2IjtuoS
+  cipher: aes-256-gcm
+- name: 🏁ZZ_822
+  server: nl2-full.privateip.net
   type: trojan
-  password: Aimer
-  sni: epme.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560&proxyip=ts.hpc.tw
-    headers:
-      Host: epme.ambercc.filegear-sg.me
+  country: 🏁ZZ
+  port: 443
+  password: c378f9c9-733c-4a28-af47-cfa8b063a7f6
+  skip-cert-verify: true
   udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 86
-  server: 192.65.217.20
-  port: 8880
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  tls: false
-  servername: reedfree8mahsang2.redorg.ir
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
+- name: 日本2-Trojan
+  type: trojan
+  server: jp2.sstank.top
+  port: 443
+  password: b8e7b9eb-877a-382a-81d5-610021a53abd
+  sni: jp2.sstank.top
   udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 91
-  server: 213.109.205.20
-  port: 8880
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 93
-  server: 45.80.110.20
-  port: 8880
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  tls: false
-  servername: reedfree8mahsang2.redorg.ir
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 94
-  server: 91.193.58.196
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: cs.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /Telegram@WangCai2/?ed=2560
-    headers:
-      Host: cs.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 95
-  server: 91.193.58.64
-  port: 8880
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  tls: false
-  servername: us.laoyoutiao.link
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: us.laoyoutiao.link
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 96
-  server: 188.42.89.20
-  port: 8880
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  tls: false
-  servername: reedfree8mahsang2.redorg.ir
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 97
-  server: 92.243.74.20
-  port: 8880
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  tls: false
-  servername: reedfree8mahsang2.redorg.ir
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 99
-  server: 108.165.216.20
-  port: 8880
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-  udp: true
-- name: 🇭🇰 HK_335
-  server: c2abc5f2-sv0xs0-sy0vua-1rpnm.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: 4d0e01ce-2ae6-11ef-8433-f23c9164ca5d
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_336
-  server: 26dbf6b6-sva740-tc67m2-1tjc4.hk.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: fac704ae-0304-11f0-a2ef-f23c91cfbbc9
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_338
-  server: 9179c210-sv2sg0-tdmh9i-1qu3l.hk.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: fb5ef4a6-dfad-11ee-975b-f23c91cfbbc9
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_339
-  server: f5370a2e-sv2sg0-sw2c3o-1thts.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: cb96c846-fd6d-11ef-a910-f23c9164ca5d
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_341
-  server: 417739a6-sv2sg0-tb36ag-1jfq7.hk.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: baa46fd6-63c1-11ed-8ea9-f23c913c8d2b
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_342
-  server: 9d99030e-sv8cg0-syx1ku-1o8ak.hk.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: 8bb68d04-6973-11ee-b518-f23c9164ca5d
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_344
-  server: 814047e3-sv2sg0-t09t13-z7a1.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: 3bd247a8-993e-11ec-a8bf-f23c91cfbbc9
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_348
-  server: 62c1587e-sv2sg0-t2ke0u-1tif6.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: 3ec273e4-0087-11f0-ab20-f23c91cfbbc9
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_349
-  server: 0bdf3f30-sv8cg0-t9uin7-19ord.hk.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: dcdb1278-4b7d-11ed-bb74-f23c9164ca5d
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_355
-  server: cdd45134-sv2sg0-swwhoz-1me9w.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: 408e7148-df67-11ed-8e13-f23c91cfbbc9
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_356
-  server: 6603705f-sv8cg0-sw0nbj-1anhm.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: 3f58d3fe-f4ea-11eb-8673-f23c9164ca5d
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_357
-  server: a99c6b1b-sv0xs0-t0t0ee-1tave.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: a930bf30-e465-11ef-bd0b-f23c913c8d2b
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_358
-  server: 4e909a9d-sv2sg0-sw26q2-php4.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: c648ecc0-838a-11ed-bd81-f23c913c8d2b
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_359
-  server: afb5593d-sv2sg0-svlime-j22e.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: d189a7ec-f038-11ef-bb64-f23c913c8d2b
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_362
-  server: cf6a54ef-sv2sg0-swxjgn-1la2q.hk.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: 431026c8-7397-11ed-a8bf-f23c91cfbbc9
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_365
-  server: 5e392f9d-sv0xs0-svewl8-xu74.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: 715a2574-9c25-11eb-8673-f23c9164ca5d
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_367
-  server: 74b3f780-sv0xs0-tdb09u-1thl3.hk.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: 15d92b4e-fd53-11ef-bea4-f23c91cfbbc9
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_368
-  server: 3aeac334-sv2sg0-t2nkut-jx5r.hk.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: 73bfcc1c-5814-5f2a-b43a-3ef6af011db8
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_373
-  server: ccc83925-sv2sg0-t917sa-12ach.hk.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: fc5ba91a-acd7-11ef-97e0-f23c9164ca5d
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_381
-  server: 42c138d5-sv2sg0-svlime-j22e.hk.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: d189a7ec-f038-11ef-bb64-f23c913c8d2b
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_384
-  server: 28044739-sv2sg0-t1jamc-1fvdh.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: 9e1ddc04-073b-11ed-bd7c-f23c913c8d2b
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_388
-  server: 4fdb9910-sv0xs0-t2p691-1s4hc.hk.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: aafedc64-9c23-11ef-a79f-f23c91cfbbc9
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_390
-  server: 1dc2849f-sv2sg0-tct1rd-1o0ch.hk.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: d49e545e-0daf-11ee-a91f-f23c913c8d2b
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_396
-  server: d6732c26-sv8cg0-sxxbmq-1szgv.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: 448aff24-b2e6-11ef-97e0-f23c9164ca5d
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_397
-  server: 0ecc2654-sv2sg0-svvk7h-1tgdw.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: a19397b8-f7fa-11ef-836a-f23c913c8d2b
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_398
-  server: 7bdf5f2f-sv2sg0-t2p691-1s4hc.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: aafedc64-9c23-11ef-a79f-f23c91cfbbc9
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_399
-  server: f51a53a1-sv0xs0-swbdgq-1iddy.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: e168c43e-c6d9-11ed-a8bf-f23c91cfbbc9
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_400
-  server: 72e6fdd1-sv2sg0-t61ki5-1smhu.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: 62f2374c-891b-11ef-a3f6-f23c9164ca5d
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_401
-  server: 033a3be9-sva740-t0r7l4-1ruih.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: 3549abda-3854-11ef-b71e-f23c9164ca5d
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_403
-  server: 547393ea-sv2sg0-t8tsp0-1szmi.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: ba151628-b3a2-11ef-bdb9-f23c91cfbbc9
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_406
-  server: b8ffcda3-sv2sg0-sv37gm-81nv.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: 47e91fb6-25b8-df52-bc18-3cdc8548192f
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_407
-  server: a76246cf-sv0xs0-sv3jcr-1itli.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: 4088a148-dbec-11ec-bd7c-f23c913c8d2b
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_408
-  server: 261a4cf7-sv2sg0-t6ebrn-1f8zp.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: dd321b8e-a890-11ed-a8bf-f23c91cfbbc9
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_409
-  server: 5c4dc91c-sv2sg0-tbnucr-1thfv.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: 0a4d1c88-fb3a-11ef-8c3f-f23c913c8d2b
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇭🇰 HK_416
-  server: 7513a0b2-sv4n40-sxx3hh-1m7j8.hk3.p5pv.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 80
-  uuid: 91acf762-a4ea-11ef-b090-f23c91cfbbc9
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-path: /
-  servername: broadcastlv.chat.bilibili.com
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
+- name: 🇺🇸US-37.19.198.243-0284 | 207.807MB
+  server: 37.19.198.243
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸US-37.19.198.160-0280 | 183.874MB
+  server: 37.19.198.160
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸US-37.19.198.244-0278 | 97.76MB
+  server: 37.19.198.244
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸US-37.19.198.236-0277 | 97.719MB
+  server: 37.19.198.236
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸US-149.28.106.134-0279 | 91.069MB
+  server: 149.28.106.134
+  port: 31444
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 46e67f5a-63e4-4566-870c-76eaa9cf76fe
+- name: 🇺🇸US-194.5.215.59-0283 | 88.56MB
+  server: 194.5.215.59
+  port: 8080
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇺🇸US-156.146.38.168-0289 | 78.129MB
+  server: 156.146.38.168
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸US-156.146.38.169-0287 | 77.32MB
+  server: 156.146.38.169
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
 proxy-groups:
 - name: 节点选择
   type: select
@@ -1413,106 +775,106 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 69
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 50
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 54
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 51
-  - 🇺🇸 美国 - Reston - OVH SAS - 104
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 52
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 53
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 61
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 60
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 55
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 62
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 73
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 97
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 68
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 59
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 66
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 64
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 67
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 56
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 57
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 63
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 46
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 106
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 107
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 86
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 109
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 78
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 77
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 76
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 47
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 72
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 71
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 49
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 99
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 93
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 48
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 100
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 79
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 108
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 96
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 75
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 94
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 70
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 91
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 112
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 74
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 65
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 45
-  - 🇺🇸 美国 - 威尔明顿 - Internet Utilities NA LLC - 111
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 85
-  - 🇹🇷 土耳其 - Ataşehir - Netlen Internet Hizmetleri Ltd. Sti. - 1
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 95
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 44
-  - 🇺🇸 美国 - 洛杉矶 - Madcityservers LLC - 101
-  - 🇺🇸 美国 - 水牛城 - HostPapa - 3
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 84
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 40
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 58
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 39
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 26
-  - 🇭🇰 HK_348
-  - 🇭🇰 HK_339
-  - 🇭🇰 HK_335
-  - 🇭🇰 HK_399
-  - 🇭🇰 HK_416
-  - 🇭🇰 HK_344
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 30
-  - 🇭🇰 HK_356
-  - 🇭🇰 HK_407
-  - 🇭🇰 HK_401
-  - 🇭🇰 HK_398
-  - 🇭🇰 HK_409
-  - 🇭🇰 HK_397
-  - 🇭🇰 HK_408
-  - 🇭🇰 HK_406
-  - 🇭🇰 HK_400
-  - 🇭🇰 HK_357
-  - 🇭🇰 HK_403
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 34
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 38
-  - 🇭🇰 HK_355
-  - 🇭🇰 HK_396
-  - 🇭🇰 HK_358
-  - 🇭🇰 HK_365
-  - 🇭🇰 HK_359
-  - 🇭🇰 HK_349
-  - 🇭🇰 HK_342
-  - 🇭🇰 HK_341
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 31
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 22
-  - 🇭🇰 HK_336
-  - 🇭🇰 HK_338
-  - 🇭🇰 HK_381
-  - 🇭🇰 HK_390
-  - 🇭🇰 HK_373
-  - 🇭🇰 HK_367
-  - 🇭🇰 HK_388
-  - 🇭🇰 HK_368
-  - 🇭🇰 HK_362
-  - 🇭🇰 HK_384
+  - 🇺🇸US_783
+  - 🇺🇸US-37.19.198.236-0277 | 97.719MB
+  - 🇺🇸US-156.146.38.168-0289 | 78.129MB
+  - 🇺🇸US-37.19.198.244-0278 | 97.76MB
+  - 🇺🇸US-37.19.198.160-0280 | 183.874MB
+  - 🇺🇸US-37.19.198.243-0284 | 207.807MB
+  - 🇺🇸US-156.146.38.169-0287 | 77.32MB
+  - 🇺🇸US_781
+  - 🇺🇸US-194.5.215.59-0283 | 88.56MB
+  - 🏁ZZ_821
+  - 🏁ZZ_820
+  - 🏁ZZ_819
+  - 🇺🇸US_777
+  - 🇺🇸US-149.28.106.134-0279 | 91.069MB
+  - 🇺🇸US_780
+  - 🇺🇸US_784
+  - 🏁 ZZ_795
+  - 🇳🇱 NL_670
+  - 🇳🇱 NL_669
+  - 🇱🇹 LT_646
+  - 🇱🇹 LT_661
+  - 🇱🇹 LT_662
+  - 🇱🇹 LT_660
+  - 🇳🇱 NL_668
+  - 🇱🇹 LT_654
+  - 🇱🇹 LT_658
+  - 🇱🇹 LT_657
+  - 🇱🇹 LT_631
+  - 🇱🇹 LT_630
+  - 🇵🇦 PA_675
+  - 🇱🇹 LT_652
+  - 🇱🇹 LT_644
+  - 🇱🇹 LT_650
+  - 🇱🇹 LT_663
+  - 🇷🇴 RO_678
+  - 🇱🇹 LT_635
+  - 🇱🇹 LT_636
+  - 🇱🇹 LT_633
+  - 🇱🇹 LT_655
+  - 🇱🇹 LT_629
+  - 🇷🇺 RU_683
+  - 🇱🇹 LT_664
+  - 🇱🇹 LT_639
+  - 🇱🇹 LT_638
+  - 🇺🇸US_778
+  - 🇷🇺 RU_680
+  - 🇱🇹 LT_649
+  - 🇸🇪 SE_691
+  - 🏁 ZZ_817
+  - 🇱🇹 LT_651
+  - 🇱🇹 LT_643
+  - 🇱🇹 LT_653
+  - 🇱🇹 LT_665
+  - 🇱🇹 LT_647
+  - 🇵🇱PL_677
+  - 🇱🇹 LT_656
+  - 🇷🇺 RU_681
+  - 🇫🇷 法国 - 巴黎 - Online S.A.S. - 7
+  - 🇱🇹 LT_645
+  - 🇱🇹 LT_640
+  - tg频道:@ripaojiedian
+  - 轮子2216
+  - 🇱🇹 LT_637
+  - 🇱🇹 LT_632
+  - 🇫🇮 芬兰 - 赫尔辛基 - Hetzner Online GmbH - 1
+  - 🇱🇹 LT_642
+  - 🏁 ZZ_800
+  - 🇭🇰 韩国 - 首尔特别市 - Kaopu Cloud HK Limited - 3
+  - 🏁 ZZ_798
+  - 🇺🇸US_786
+  - 🇬🇧 英国 - 伦敦 - Oracle Corporation - 2
+  - 🇱🇹 LT_628
+  - 🇺🇸US_785
+  - 轮子3218
+  - 🏁ZZ_822
+  - 🏁 ZZ_805
+  - 🏁 ZZ_804
+  - 🏁 ZZ_797
+  - 🏁 ZZ_809
+  - 🏁 ZZ_793
+  - 🏁 ZZ_806
+  - 🏁 ZZ_810
+  - 🏁 ZZ_790
+  - 🇳🇱 NL_671
+  - 🏁 ZZ_815
+  - 🏁 ZZ_811
+  - 🏁 ZZ_807
+  - 日本2-Trojan
+  - 🏁 ZZ_794
+  - 🏁 ZZ_792
+  - 🏁 ZZ_812
+  - 🇵🇦 PA_676
+  - 🏁 ZZ_803
+  - 🏁 ZZ_814
+  - 🏁 ZZ_802
+  - 🏁 ZZ_788
+  - 🇲🇩 MD_666
+  - 🇱🇹 LT_648
+  - 🇱🇹 LT_634
+  - 🇯🇵 日本2|@ripaojiedian
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
@@ -1520,211 +882,211 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 69
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 50
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 54
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 51
-  - 🇺🇸 美国 - Reston - OVH SAS - 104
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 52
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 53
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 61
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 60
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 55
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 62
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 73
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 97
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 68
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 59
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 66
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 64
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 67
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 56
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 57
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 63
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 46
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 106
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 107
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 86
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 109
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 78
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 77
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 76
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 47
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 72
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 71
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 49
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 99
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 93
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 48
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 100
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 79
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 108
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 96
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 75
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 94
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 70
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 91
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 112
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 74
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 65
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 45
-  - 🇺🇸 美国 - 威尔明顿 - Internet Utilities NA LLC - 111
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 85
-  - 🇹🇷 土耳其 - Ataşehir - Netlen Internet Hizmetleri Ltd. Sti. - 1
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 95
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 44
-  - 🇺🇸 美国 - 洛杉矶 - Madcityservers LLC - 101
-  - 🇺🇸 美国 - 水牛城 - HostPapa - 3
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 84
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 40
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 58
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 39
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 26
-  - 🇭🇰 HK_348
-  - 🇭🇰 HK_339
-  - 🇭🇰 HK_335
-  - 🇭🇰 HK_399
-  - 🇭🇰 HK_416
-  - 🇭🇰 HK_344
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 30
-  - 🇭🇰 HK_356
-  - 🇭🇰 HK_407
-  - 🇭🇰 HK_401
-  - 🇭🇰 HK_398
-  - 🇭🇰 HK_409
-  - 🇭🇰 HK_397
-  - 🇭🇰 HK_408
-  - 🇭🇰 HK_406
-  - 🇭🇰 HK_400
-  - 🇭🇰 HK_357
-  - 🇭🇰 HK_403
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 34
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 38
-  - 🇭🇰 HK_355
-  - 🇭🇰 HK_396
-  - 🇭🇰 HK_358
-  - 🇭🇰 HK_365
-  - 🇭🇰 HK_359
-  - 🇭🇰 HK_349
-  - 🇭🇰 HK_342
-  - 🇭🇰 HK_341
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 31
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 22
-  - 🇭🇰 HK_336
-  - 🇭🇰 HK_338
-  - 🇭🇰 HK_381
-  - 🇭🇰 HK_390
-  - 🇭🇰 HK_373
-  - 🇭🇰 HK_367
-  - 🇭🇰 HK_388
-  - 🇭🇰 HK_368
-  - 🇭🇰 HK_362
-  - 🇭🇰 HK_384
+  - 🇺🇸US_783
+  - 🇺🇸US-37.19.198.236-0277 | 97.719MB
+  - 🇺🇸US-156.146.38.168-0289 | 78.129MB
+  - 🇺🇸US-37.19.198.244-0278 | 97.76MB
+  - 🇺🇸US-37.19.198.160-0280 | 183.874MB
+  - 🇺🇸US-37.19.198.243-0284 | 207.807MB
+  - 🇺🇸US-156.146.38.169-0287 | 77.32MB
+  - 🇺🇸US_781
+  - 🇺🇸US-194.5.215.59-0283 | 88.56MB
+  - 🏁ZZ_821
+  - 🏁ZZ_820
+  - 🏁ZZ_819
+  - 🇺🇸US_777
+  - 🇺🇸US-149.28.106.134-0279 | 91.069MB
+  - 🇺🇸US_780
+  - 🇺🇸US_784
+  - 🏁 ZZ_795
+  - 🇳🇱 NL_670
+  - 🇳🇱 NL_669
+  - 🇱🇹 LT_646
+  - 🇱🇹 LT_661
+  - 🇱🇹 LT_662
+  - 🇱🇹 LT_660
+  - 🇳🇱 NL_668
+  - 🇱🇹 LT_654
+  - 🇱🇹 LT_658
+  - 🇱🇹 LT_657
+  - 🇱🇹 LT_631
+  - 🇱🇹 LT_630
+  - 🇵🇦 PA_675
+  - 🇱🇹 LT_652
+  - 🇱🇹 LT_644
+  - 🇱🇹 LT_650
+  - 🇱🇹 LT_663
+  - 🇷🇴 RO_678
+  - 🇱🇹 LT_635
+  - 🇱🇹 LT_636
+  - 🇱🇹 LT_633
+  - 🇱🇹 LT_655
+  - 🇱🇹 LT_629
+  - 🇷🇺 RU_683
+  - 🇱🇹 LT_664
+  - 🇱🇹 LT_639
+  - 🇱🇹 LT_638
+  - 🇺🇸US_778
+  - 🇷🇺 RU_680
+  - 🇱🇹 LT_649
+  - 🇸🇪 SE_691
+  - 🏁 ZZ_817
+  - 🇱🇹 LT_651
+  - 🇱🇹 LT_643
+  - 🇱🇹 LT_653
+  - 🇱🇹 LT_665
+  - 🇱🇹 LT_647
+  - 🇵🇱PL_677
+  - 🇱🇹 LT_656
+  - 🇷🇺 RU_681
+  - 🇫🇷 法国 - 巴黎 - Online S.A.S. - 7
+  - 🇱🇹 LT_645
+  - 🇱🇹 LT_640
+  - tg频道:@ripaojiedian
+  - 轮子2216
+  - 🇱🇹 LT_637
+  - 🇱🇹 LT_632
+  - 🇫🇮 芬兰 - 赫尔辛基 - Hetzner Online GmbH - 1
+  - 🇱🇹 LT_642
+  - 🏁 ZZ_800
+  - 🇭🇰 韩国 - 首尔特别市 - Kaopu Cloud HK Limited - 3
+  - 🏁 ZZ_798
+  - 🇺🇸US_786
+  - 🇬🇧 英国 - 伦敦 - Oracle Corporation - 2
+  - 🇱🇹 LT_628
+  - 🇺🇸US_785
+  - 轮子3218
+  - 🏁ZZ_822
+  - 🏁 ZZ_805
+  - 🏁 ZZ_804
+  - 🏁 ZZ_797
+  - 🏁 ZZ_809
+  - 🏁 ZZ_793
+  - 🏁 ZZ_806
+  - 🏁 ZZ_810
+  - 🏁 ZZ_790
+  - 🇳🇱 NL_671
+  - 🏁 ZZ_815
+  - 🏁 ZZ_811
+  - 🏁 ZZ_807
+  - 日本2-Trojan
+  - 🏁 ZZ_794
+  - 🏁 ZZ_792
+  - 🏁 ZZ_812
+  - 🇵🇦 PA_676
+  - 🏁 ZZ_803
+  - 🏁 ZZ_814
+  - 🏁 ZZ_802
+  - 🏁 ZZ_788
+  - 🇲🇩 MD_666
+  - 🇱🇹 LT_648
+  - 🇱🇹 LT_634
+  - 🇯🇵 日本2|@ripaojiedian
   url: http://www.gstatic.com/generate_204
   interval: 300
 - name: 手动选择
   type: select
   proxies:
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 69
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 50
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 54
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 51
-  - 🇺🇸 美国 - Reston - OVH SAS - 104
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 52
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 53
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 61
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 60
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 55
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 62
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 73
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 97
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 68
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 59
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 66
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 64
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 67
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 56
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 57
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 63
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 46
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 106
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 107
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 86
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 109
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 78
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 77
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 76
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 47
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 72
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 71
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 49
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 99
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 93
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 48
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 100
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 79
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 108
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 96
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 75
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 94
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 70
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 91
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 112
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 74
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 65
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 45
-  - 🇺🇸 美国 - 威尔明顿 - Internet Utilities NA LLC - 111
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 85
-  - 🇹🇷 土耳其 - Ataşehir - Netlen Internet Hizmetleri Ltd. Sti. - 1
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 95
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 44
-  - 🇺🇸 美国 - 洛杉矶 - Madcityservers LLC - 101
-  - 🇺🇸 美国 - 水牛城 - HostPapa - 3
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 84
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 40
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 58
-  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 39
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 26
-  - 🇭🇰 HK_348
-  - 🇭🇰 HK_339
-  - 🇭🇰 HK_335
-  - 🇭🇰 HK_399
-  - 🇭🇰 HK_416
-  - 🇭🇰 HK_344
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 30
-  - 🇭🇰 HK_356
-  - 🇭🇰 HK_407
-  - 🇭🇰 HK_401
-  - 🇭🇰 HK_398
-  - 🇭🇰 HK_409
-  - 🇭🇰 HK_397
-  - 🇭🇰 HK_408
-  - 🇭🇰 HK_406
-  - 🇭🇰 HK_400
-  - 🇭🇰 HK_357
-  - 🇭🇰 HK_403
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 34
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 38
-  - 🇭🇰 HK_355
-  - 🇭🇰 HK_396
-  - 🇭🇰 HK_358
-  - 🇭🇰 HK_365
-  - 🇭🇰 HK_359
-  - 🇭🇰 HK_349
-  - 🇭🇰 HK_342
-  - 🇭🇰 HK_341
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 31
-  - 🇺🇸 美国 - 洛杉矶 - Sharktech - 22
-  - 🇭🇰 HK_336
-  - 🇭🇰 HK_338
-  - 🇭🇰 HK_381
-  - 🇭🇰 HK_390
-  - 🇭🇰 HK_373
-  - 🇭🇰 HK_367
-  - 🇭🇰 HK_388
-  - 🇭🇰 HK_368
-  - 🇭🇰 HK_362
-  - 🇭🇰 HK_384
+  - 🇺🇸US_783
+  - 🇺🇸US-37.19.198.236-0277 | 97.719MB
+  - 🇺🇸US-156.146.38.168-0289 | 78.129MB
+  - 🇺🇸US-37.19.198.244-0278 | 97.76MB
+  - 🇺🇸US-37.19.198.160-0280 | 183.874MB
+  - 🇺🇸US-37.19.198.243-0284 | 207.807MB
+  - 🇺🇸US-156.146.38.169-0287 | 77.32MB
+  - 🇺🇸US_781
+  - 🇺🇸US-194.5.215.59-0283 | 88.56MB
+  - 🏁ZZ_821
+  - 🏁ZZ_820
+  - 🏁ZZ_819
+  - 🇺🇸US_777
+  - 🇺🇸US-149.28.106.134-0279 | 91.069MB
+  - 🇺🇸US_780
+  - 🇺🇸US_784
+  - 🏁 ZZ_795
+  - 🇳🇱 NL_670
+  - 🇳🇱 NL_669
+  - 🇱🇹 LT_646
+  - 🇱🇹 LT_661
+  - 🇱🇹 LT_662
+  - 🇱🇹 LT_660
+  - 🇳🇱 NL_668
+  - 🇱🇹 LT_654
+  - 🇱🇹 LT_658
+  - 🇱🇹 LT_657
+  - 🇱🇹 LT_631
+  - 🇱🇹 LT_630
+  - 🇵🇦 PA_675
+  - 🇱🇹 LT_652
+  - 🇱🇹 LT_644
+  - 🇱🇹 LT_650
+  - 🇱🇹 LT_663
+  - 🇷🇴 RO_678
+  - 🇱🇹 LT_635
+  - 🇱🇹 LT_636
+  - 🇱🇹 LT_633
+  - 🇱🇹 LT_655
+  - 🇱🇹 LT_629
+  - 🇷🇺 RU_683
+  - 🇱🇹 LT_664
+  - 🇱🇹 LT_639
+  - 🇱🇹 LT_638
+  - 🇺🇸US_778
+  - 🇷🇺 RU_680
+  - 🇱🇹 LT_649
+  - 🇸🇪 SE_691
+  - 🏁 ZZ_817
+  - 🇱🇹 LT_651
+  - 🇱🇹 LT_643
+  - 🇱🇹 LT_653
+  - 🇱🇹 LT_665
+  - 🇱🇹 LT_647
+  - 🇵🇱PL_677
+  - 🇱🇹 LT_656
+  - 🇷🇺 RU_681
+  - 🇫🇷 法国 - 巴黎 - Online S.A.S. - 7
+  - 🇱🇹 LT_645
+  - 🇱🇹 LT_640
+  - tg频道:@ripaojiedian
+  - 轮子2216
+  - 🇱🇹 LT_637
+  - 🇱🇹 LT_632
+  - 🇫🇮 芬兰 - 赫尔辛基 - Hetzner Online GmbH - 1
+  - 🇱🇹 LT_642
+  - 🏁 ZZ_800
+  - 🇭🇰 韩国 - 首尔特别市 - Kaopu Cloud HK Limited - 3
+  - 🏁 ZZ_798
+  - 🇺🇸US_786
+  - 🇬🇧 英国 - 伦敦 - Oracle Corporation - 2
+  - 🇱🇹 LT_628
+  - 🇺🇸US_785
+  - 轮子3218
+  - 🏁ZZ_822
+  - 🏁 ZZ_805
+  - 🏁 ZZ_804
+  - 🏁 ZZ_797
+  - 🏁 ZZ_809
+  - 🏁 ZZ_793
+  - 🏁 ZZ_806
+  - 🏁 ZZ_810
+  - 🏁 ZZ_790
+  - 🇳🇱 NL_671
+  - 🏁 ZZ_815
+  - 🏁 ZZ_811
+  - 🏁 ZZ_807
+  - 日本2-Trojan
+  - 🏁 ZZ_794
+  - 🏁 ZZ_792
+  - 🏁 ZZ_812
+  - 🇵🇦 PA_676
+  - 🏁 ZZ_803
+  - 🏁 ZZ_814
+  - 🏁 ZZ_802
+  - 🏁 ZZ_788
+  - 🇲🇩 MD_666
+  - 🇱🇹 LT_648
+  - 🇱🇹 LT_634
+  - 🇯🇵 日本2|@ripaojiedian
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
