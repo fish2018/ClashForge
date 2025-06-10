@@ -2368,7 +2368,6 @@ if __name__ == '__main__':
         "http://gist.zmy666.us.kg",
         "https://gist.zmy666.us.kg",
         "http://flclash.us.kg",
-        "https://flclash.us.kg",
         "http://sub.derrick.us.kg",
         "https://sub.derrick.us.kg",
         "http://7777.pengggan.us.kg",
