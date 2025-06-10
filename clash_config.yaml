@@ -32,43 +32,67 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- name: tg频道:@ripaojiedian
-  server: 18.183.219.5
-  port: 443
-  client-fingerprint: chrome
+- name: _01
+  server: 45.89.52.66
   type: ss
+  port: 9001
+  udp: true
+  password: UkXRsXvR6buDMG2Y
   cipher: aes-256-cfb
-  password: awsps0501
-  tfo: false
-- name: 🇭🇰 香港8|@ripaojiedian
-  server: 9b53711d-sxlj40-szcxa1-dmd8.hkt.east.wctype.com
-  port: 460
-  client-fingerprint: chrome
-  type: vmess
-  uuid: 2058bdd6-1505-11f0-a035-f23c95b6f51d
-  alterId: 2
-  cipher: auto
-  tls: false
-  tfo: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: a605477178.m.ctrip.com
-- cipher: aes-256-cfb
-  name: 12|tg频道:@ripaojiedian
-  password: qawszxc123
+- name: _03
+  server: 217.30.10.18
+  type: ss
+  port: 9060
+  password: ueLXVkvh4hckhErQ
+  cipher: aes-256-cfb
+- name: _04
+  server: uk-dc1.yangon.club
+  type: ss
   port: 443
-  server: 13.229.50.252
-  tfo: false
+  password: shadowsocks
+  cipher: aes-128-gcm
+- name: _05
+  server: 217.30.10.18
   type: ss
-- name: _14
-  server: 38.68.135.18
+  port: 9019
+  password: GA9KzeEgvfxNrgmM
+  cipher: aes-256-cfb
+- name: _06
+  server: 142.4.216.225
   type: ss
-  port: 7306
-  password: FoOiGlkAA9yPEGP
+  port: 80
+  password: JIhN6rBKkaEboLNXVSv5rq
+  cipher: chacha20-ietf-poly1305
+- name: _09
+  server: 23.154.136.51
+  type: ss
+  port: 5499
+  password: lGqs95QkFHo2NV
   cipher: aes-256-gcm
+- name: _10
+  server: 80.92.204.106
+  type: ss
+  port: 9000
+  password: a3GFYt36Sm82Vys9
+  cipher: aes-256-cfb
+- name: _11
+  server: 80.92.204.106
+  type: ss
+  port: 9024
+  password: BejrQvtu9sqUeNuZ
+  cipher: aes-256-cfb
+- name: _12
+  server: 80.92.204.106
+  type: ss
+  port: 9005
+  password: ZET59LF6DvCC8KVt
+  cipher: aes-256-cfb
+- name: _13
+  server: 80.92.204.106
+  type: ss
+  port: 9027
+  password: EXN3S3eQpjE7EJu8
+  cipher: aes-256-cfb
 - name: _15
   server: 212.102.53.194
   type: ss
@@ -76,69 +100,63 @@ proxies:
   password: shadowsocks
   cipher: aes-128-gcm
 - name: _16
-  server: 80.92.204.106
-  type: ss
-  port: 9080
-  password: VP8ZPxQpJtZRCjfZ
-  cipher: aes-256-cfb
-- name: _17
   server: 45.144.48.63
   type: ss
   port: 57456
   password: d3837224ed465f00
   cipher: chacha20-ietf-poly1305
-- name: _18
+- name: _17
   server: 38.121.43.71
   type: ss
   port: 8008
   password: XKFKl2rULjIp74
   cipher: aes-256-gcm
-- name: _19
+- name: _18
   server: war.ssvpnapp.win
   type: ss
   port: 57456
   password: d3837224ed465f00
   cipher: chacha20-ietf-poly1305
-- name: _20
+- name: _19
   server: 38.121.43.71
   type: ss
   port: 8000
   udp: true
   password: KixLvKzwjekG00rm
   cipher: aes-256-gcm
-- name: _21
+- name: _20
   server: 38.143.66.87
   type: ss
   port: 6379
   password: zDNVedRFPQexG9v
   cipher: aes-256-gcm
-- name: _23
+- name: _21
   server: 45.89.52.66
   type: ss
-  port: 9000
-  password: a3GFYt36Sm82Vys9
+  port: 9037
+  password: TN2YqghxeFDKZfLU
   cipher: aes-256-cfb
-- name: _24
+- name: _22
   server: 45.89.52.66
   type: ss
   port: 9029
   password: dU3DSNS8wYPXzEKw
   cipher: aes-256-cfb
-- name: _25
+- name: _23
   server: 80.92.204.106
   type: ss
   port: 9037
   udp: true
   password: TN2YqghxeFDKZfLU
   cipher: aes-256-cfb
-- name: _26
+- name: _24
   server: 80.92.204.106
   type: ss
   port: 9084
   udp: true
   password: c3NtHJ5ujV2tGDfj
   cipher: aes-256-cfb
-- name: _27
+- name: _25
   server: 80.92.204.106
   type: ss
   port: 9094
@@ -148,507 +166,431 @@ proxies:
 - name: _28
   server: 80.92.204.106
   type: ss
-  port: 9010
-  udp: true
-  password: f63gg8EruDnUrmz4
-  cipher: aes-256-cfb
-- name: _29
-  server: 80.92.204.106
-  type: ss
-  port: 9019
-  udp: true
-  password: GA9KzeEgvfxNrgmM
-  cipher: aes-256-cfb
-- name: _30
-  server: 80.92.204.106
-  type: ss
   port: 9020
   udp: true
   password: BNmAXXxAHYpTRdzu
   cipher: aes-256-cfb
-- name: _31
+- name: _29
   server: 38.121.43.97
   type: ss
   port: 8091
   password: PCnnH6SQSnfoS27
   cipher: aes-256-gcm
-- name: _32
+- name: _30
   server: 38.121.43.71
   type: ss
   port: 6697
   password: TEzjfAYq2IjtuoS
   cipher: aes-256-gcm
-- name: _33
+- name: _31
   server: 38.121.43.71
   type: ss
   port: 5003
   password: g5MeD6Ft3CWlJId
   cipher: aes-256-gcm
-- name: _34
+- name: _32
   server: 38.121.43.71
   type: ss
   port: 7307
   password: FoOiGlkAA9yPEGP
   cipher: aes-256-gcm
-- name: _35
+- name: _33
   server: 38.121.43.97
   type: ss
   port: 8080
   password: KixLvKzwjekG00rm
   cipher: aes-256-gcm
-- name: _36
+- name: _34
   server: 38.121.43.97
   type: ss
   port: 6697
   password: TEzjfAYq2IjtuoS
   cipher: aes-256-gcm
-- name: _37
+- name: _35
   server: 38.121.43.97
   type: ss
   port: 8881
   password: kDWvXYZoTBcGkC4
   cipher: aes-256-gcm
-- name: _38
+- name: _36
   server: 38.143.66.87
   type: ss
   port: 6697
   udp: true
   password: TEzjfAYq2IjtuoS
   cipher: aes-256-gcm
-- name: _39
+- name: _37
   server: 38.143.66.87
   type: ss
   port: 5000
   udp: true
   password: Y6R9pAtvxxzmGC
   cipher: aes-256-gcm
-- name: _41
-  server: 38.68.135.18
-  type: ss
-  port: 8119
-  udp: true
-  password: cdBIDV42DCwnfIN
-  cipher: aes-256-gcm
-- name: _42
-  server: 5.188.181.201
-  type: ss
-  port: 9020
-  password: BNmAXXxAHYpTRdzu
-  cipher: aes-256-cfb
-- name: _43
+- name: _39
   server: 5.188.181.201
   type: ss
   port: 9019
   password: GA9KzeEgvfxNrgmM
   cipher: aes-256-cfb
-- name: _44
+- name: _40
   server: 5.188.181.201
   type: ss
   port: 9025
   password: XPtzA9sCug3SPR4c
   cipher: aes-256-cfb
-- name: _45
+- name: _41
   server: 5.188.181.201
   type: ss
   port: 9029
   password: dU3DSNS8wYPXzEKw
   cipher: aes-256-cfb
-- name: _46
-  server: 5.188.181.201
-  type: ss
-  port: 9005
-  password: ZET59LF6DvCC8KVt
-  cipher: aes-256-cfb
-- name: _47
-  server: 5.188.181.201
-  type: ss
-  port: 9054
-  password: VcFuyXvND2yQWSFY
-  cipher: aes-256-cfb
-- name: _48
+- name: _44
   server: 5.188.181.201
   type: ss
   port: 9014
   password: KnJGad3FqTvjqbaX
   cipher: aes-256-cfb
-- name: _49
+- name: _45
   server: 5.188.181.201
   type: ss
   port: 9011
   password: M3t2ZEQcMGRWBjRa
   cipher: aes-256-cfb
-- name: _50
+- name: _46
   server: 5.188.181.201
   type: ss
   port: 9001
   password: UkXRsXvR6buDMG2Y
   cipher: aes-256-cfb
-- name: _51
+- name: _47
   server: 5.188.181.201
   type: ss
   port: 9003
   password: JdmRK9gMEqFgs8nP
   cipher: aes-256-cfb
-- name: _52
-  server: 5.188.181.201
-  type: ss
-  port: 9027
-  password: EXN3S3eQpjE7EJu8
-  cipher: aes-256-cfb
-- name: _53
-  server: 195.238.126.84
-  type: ss
-  port: 9039
-  udp: true
-  password: qYEN5HX4JKeVCdEC
-  cipher: aes-256-cfb
-- name: _54
+- name: _50
   server: 38.121.43.71
   type: ss
   port: 5001
   password: Y6R9pAtvxxzmGC
   cipher: aes-256-gcm
-- name: _55
+- name: _51
   server: 38.110.1.88
   type: ss
   port: 5499
   udp: true
   password: lGqs95QkFHo2NV
   cipher: aes-256-gcm
-- name: _56
-  server: 38.68.135.18
-  type: ss
-  port: 8009
-  password: XKFKl2rULjIp74
-  cipher: aes-256-gcm
-- name: _57
+- name: _53
   server: 38.121.43.71
   type: ss
   port: 7002
   password: RexnBgU7EV5ADxG
   cipher: aes-256-gcm
-- name: _58
+- name: _54
   server: 38.121.43.71
   type: ss
   port: 6679
   password: TEzjfAYq2IjtuoS
   cipher: aes-256-gcm
-- name: _59
-  server: 38.121.43.71
-  type: ss
-  port: 5004
-  password: g5MeD6Ft3CWlJId
-  cipher: aes-256-gcm
-- name: _60
+- name: _56
   server: 38.121.43.71
   type: ss
   port: 443
   password: pKEW8JPByTVTLtM
   cipher: aes-256-gcm
-- name: _62
+- name: _57
+  server: 38.121.43.71
+  type: ss
+  port: 3306
+  password: Y6R9pAtvxxzmGC
+  cipher: aes-256-gcm
+- name: _58
   server: 38.121.43.71
   type: ss
   port: 5500
   password: KixLvKzwjekG00rm
   cipher: aes-256-gcm
-- name: _63
+- name: _59
   server: 38.121.43.71
   type: ss
   port: 5000
   password: Y6R9pAtvxxzmGC
   cipher: aes-256-gcm
-- name: _64
+- name: _60
   server: 38.121.43.71
   type: ss
   port: 5600
   password: Y6R9pAtvxxzmGC
   cipher: aes-256-gcm
-- name: _65
+- name: _61
   server: 38.121.43.71
   type: ss
   port: 8888
   password: Y6R9pAtvxxzmGC
   cipher: aes-256-gcm
-- name: _67
-  server: 38.68.135.18
+- name: _62
+  server: 38.121.43.71
   type: ss
-  port: 8090
-  udp: true
-  password: PCnnH6SQSnfoS27
+  port: 7001
+  password: RexnBgU7EV5ADxG
   cipher: aes-256-gcm
-- name: _68
-  server: 38.68.135.18
-  type: ss
-  port: 9101
-  udp: true
-  password: e4FCWrgpkji3QY
-  cipher: aes-256-gcm
-- name: _69
+- name: _65
   server: 38.110.1.197
   type: ss
   port: 5003
   udp: true
   password: g5MeD6Ft3CWlJId
   cipher: aes-256-gcm
-- name: _70
+- name: _66
   server: 38.121.43.71
   type: ss
   port: 8091
   udp: true
   password: PCnnH6SQSnfoS27
   cipher: aes-256-gcm
-- name: _71
+- name: _67
   server: 38.143.66.87
   type: ss
   port: 3389
   udp: true
   password: Y6R9pAtvxxzmGC
   cipher: aes-256-gcm
-- name: _72
-  server: 38.68.135.18
-  type: ss
-  port: 3389
-  udp: true
-  password: Y6R9pAtvxxzmGC
-  cipher: aes-256-gcm
-- name: _74
-  server: 38.68.135.18
-  type: ss
-  port: 6697
-  udp: true
-  password: TEzjfAYq2IjtuoS
-  cipher: aes-256-gcm
-- name: _75
+- name: _71
   server: 38.121.43.71
   type: ss
   port: 9101
   udp: true
   password: e4FCWrgpkji3QY
   cipher: aes-256-gcm
-- name: _76
+- name: _72
   server: 38.110.1.88
   type: ss
   port: 5600
   udp: true
   password: Y6R9pAtvxxzmGC
   cipher: aes-256-gcm
-- name: _77
+- name: _73
   server: 38.121.43.71
   type: ss
   port: 3389
   udp: true
   password: Y6R9pAtvxxzmGC
   cipher: aes-256-gcm
-- name: _79
-  server: 38.110.1.88
+- name: _74
+  server: 38.121.43.71
   type: ss
-  port: 2376
+  port: 2375
   udp: true
   password: faBAoD54k87UJG7
   cipher: aes-256-gcm
-- name: _80
-  server: 38.68.135.18
+- name: _75
+  server: 80.92.204.106
   type: ss
-  port: 5601
-  udp: true
-  password: Y6R9pAtvxxzmGC
+  port: 9011
+  password: M3t2ZEQcMGRWBjRa
+  cipher: aes-256-cfb
+- name: _76
+  server: 38.121.43.71
+  type: ss
+  port: 5004
+  password: g5MeD6Ft3CWlJId
   cipher: aes-256-gcm
-- name: _81
-  server: 45.89.52.66
+- name: _77
+  server: 212.102.53.197
   type: ss
-  port: 9031
-  udp: true
-  password: BwcAUZk8hUFAkDGN
-  cipher: aes-256-cfb
-- name: _82
-  server: 5.188.181.201
-  type: ss
-  port: 9031
-  udp: true
-  password: BwcAUZk8hUFAkDGN
-  cipher: aes-256-cfb
-- name: _83
-  server: 45.89.52.66
-  type: ss
-  port: 9001
-  udp: true
-  password: UkXRsXvR6buDMG2Y
-  cipher: aes-256-cfb
-- name: _84
+  port: 443
+  password: shadowsocks
+  cipher: aes-128-gcm
+- name: _78
   server: 45.89.52.66
   type: ss
   port: 9041
   udp: true
   password: U6qnYRhfyDmn8sgn
   cipher: aes-256-cfb
-- name: _85
+- name: _79
   server: 45.89.52.66
   type: ss
   port: 9040
   udp: true
   password: p9z5BVADH2YFs3MN
   cipher: aes-256-cfb
-- name: _86
+- name: _80
   server: 5.188.181.201
   type: ss
   port: 9042
   udp: true
   password: S7KwUu7yBy58S3Ga
   cipher: aes-256-cfb
-- name: _87
-  server: 5.188.181.201
+- name: _82
+  server: 45.89.52.66
   type: ss
-  port: 9041
+  port: 9030
   udp: true
-  password: U6qnYRhfyDmn8sgn
+  password: GeregetR8cvQHzYr
   cipher: aes-256-cfb
-- name: _89
+- name: _83
   server: 38.121.43.71
   type: ss
   port: 8882
   password: kDWvXYZoTBcGkC4
   cipher: aes-256-gcm
-- name: _90
+- name: _84
   server: 109.201.152.181
   type: ss
   port: 443
   udp: true
   password: shadowsocks
   cipher: aes-128-cfb
-- name: _91
+- name: _85
   server: 195.154.169.198
   type: ss
   port: 989
   udp: true
   password: f8f7aCzcPKbsF8p3
   cipher: aes-256-cfb
-- name: _92
+- name: _86
   server: 212.102.53.79
   type: ss
   port: 443
   password: shadowsocks
   cipher: aes-128-gcm
-- name: _93
+- name: _87
   server: 45.55.2.232
   type: ss
   port: 14293
   password: 2170f8
   cipher: aes-256-cfb
-- name: _95
+- name: _88
+  server: 38.121.43.71
+  type: ss
+  port: 8119
+  password: cdBIDV42DCwnfIN
+  cipher: aes-256-gcm
+- name: _89
   server: 212.102.53.193
   type: ss
   port: 443
   password: shadowsocks
   cipher: aes-128-gcm
-- name: _96
-  server: 38.68.135.18
-  type: ss
-  port: 5500
-  password: KixLvKzwjekG00rm
-  cipher: aes-256-gcm
-- name: _97
+- name: _91
   server: 212.102.53.80
   type: ss
   port: 443
   password: shadowsocks
   cipher: aes-128-gcm
-- name: _98
+- name: _92
   server: 212.102.53.81
   type: ss
   port: 443
   password: shadowsocks
   cipher: aes-128-gcm
-- name: _99
+- name: _93
   server: 212.102.53.196
   type: ss
   port: 443
   password: shadowsocks
   cipher: aes-128-gcm
-- name: _100
+- name: _94
   server: 212.102.53.78
   type: ss
   port: 443
   password: shadowsocks
   cipher: aes-128-gcm
+- name: _95
+  server: 5.188.181.201
+  type: ss
+  port: 9000
+  password: a3GFYt36Sm82Vys9
+  cipher: aes-256-cfb
+- name: _96
+  server: 38.110.1.88
+  type: ss
+  port: 2376
+  udp: true
+  password: faBAoD54k87UJG7
+  cipher: aes-256-gcm
+- name: _97
+  server: 194.116.173.21
+  type: ss
+  port: 9038
+  password: gYCYXfkUQEs2TaJQ
+  cipher: aes-256-cfb
+- name: _98
+  server: 171.22.254.17
+  type: ss
+  port: 989
+  password: f8f7aCzcPKbsF8p3
+  cipher: aes-256-cfb
+- name: _99
+  server: 46.183.185.15
+  type: ss
+  port: 989
+  password: f8f7aCzcPKbsF8p3
+  cipher: aes-256-cfb
+- name: _100
+  server: 192.36.27.94
+  type: ss
+  port: 989
+  password: f8f7aCzcPKbsF8p3
+  cipher: aes-256-cfb
 - name: _101
-  server: 37.143.129.230
+  server: 194.71.126.31
   type: ss
   port: 989
   password: f8f7aCzcPKbsF8p3
   cipher: aes-256-cfb
 - name: _102
-  server: 154.223.20.79
-  type: ss
-  port: 989
-  udp: true
-  password: f8f7aCzcPKbsF8p3
-  cipher: aes-256-cfb
-- name: _104
-  server: 37.235.49.152
-  type: ss
-  port: 989
-  udp: true
-  password: f8f7aCzcPKbsF8p3
-  cipher: aes-256-cfb
-- name: _105
-  server: 185.123.101.241
-  type: ss
-  port: 989
-  udp: true
-  password: f8f7aCzcPKbsF8p3
-  cipher: aes-256-cfb
-- name: _107
   server: 46.183.184.60
   type: ss
   port: 989
   udp: true
   password: f8f7aCzcPKbsF8p3
   cipher: aes-256-cfb
+- name: _104
+  server: 185.123.101.241
+  type: ss
+  port: 989
+  udp: true
+  password: f8f7aCzcPKbsF8p3
+  cipher: aes-256-cfb
+- name: _105
+  server: 37.235.49.152
+  type: ss
+  port: 989
+  udp: true
+  password: f8f7aCzcPKbsF8p3
+  cipher: aes-256-cfb
+- name: _106
+  server: 192.71.249.78
+  type: ss
+  port: 989
+  password: f8f7aCzcPKbsF8p3
+  cipher: aes-256-cfb
+- name: _107
+  server: 37.143.129.230
+  type: ss
+  port: 989
+  password: f8f7aCzcPKbsF8p3
+  cipher: aes-256-cfb
 - name: _108
-  server: 194.71.126.31
+  server: 154.223.20.79
   type: ss
   port: 989
+  udp: true
   password: f8f7aCzcPKbsF8p3
   cipher: aes-256-cfb
+- name: _109
+  server: jp-am48-6.eqnode.net
+  type: ssr
+  port: 8081
+  udp: true
+  password: eAokbaDN6
+  cipher: aes-256-cfb
+  protocol: origin
+  obfs: tls1.2_ticket_auth
 - name: _110
-  server: 46.183.185.15
-  type: ss
-  port: 989
-  password: f8f7aCzcPKbsF8p3
-  cipher: aes-256-cfb
-- name: _113
-  server: 80.92.204.106
-  type: ss
-  port: 9011
-  password: M3t2ZEQcMGRWBjRa
-  cipher: aes-256-cfb
-- name: _114
-  server: 5.188.181.201
-  type: ss
-  port: 9000
-  password: a3GFYt36Sm82Vys9
-  cipher: aes-256-cfb
-- name: _116
-  server: 104.21.80.1
-  type: trojan
-  port: 443
-  password: psycho
-  alpn:
-  - http%2F1.1
-  sni: PSYchO.SueX12.Ir
-  skip-cert-verify: true
-  udp: true
-- name: _117
-  server: 104.21.44.185
-  type: trojan
-  port: 2053
-  password: dreDeMpIQpnv
-  alpn:
-  - h3%2Ch2%2Chttp%2F1.1
-  sni: aryanews.onetwothree123.ir
-  skip-cert-verify: true
-  udp: true
-- name: _118
   server: 104.21.71.8
   type: trojan
   port: 2053
@@ -658,17 +600,7 @@ proxies:
   sni: khabaronline.itn24.ir
   skip-cert-verify: true
   udp: true
-- name: _119
-  server: 104.21.30.167
-  type: trojan
-  port: 443
-  password: 2fec7227-9abe-46f2-af18-78302b836c45
-  alpn:
-  - http%2F1.1
-  sni: 3y.2032.pp.ua
-  skip-cert-verify: true
-  udp: true
-- name: _120
+- name: _111
   server: 104.21.112.1
   type: trojan
   port: 443
@@ -678,34 +610,85 @@ proxies:
   sni: pSYcho.sUeX12.IR
   skip-cert-verify: true
   udp: true
-- name: 🇧🇩 BD_123
+- name: _112
+  server: 89.187.181.179
+  type: trojan
+  port: 43118
+  password: ypDt8RkT7J
+  skip-cert-verify: true
+  udp: true
+- name: _113
+  server: 104.21.44.185
+  type: trojan
+  port: 2053
+  password: dreDeMpIQpnv
+  alpn:
+  - h3%2Ch2%2Chttp%2F1.1
+  sni: aryanews.onetwothree123.ir
+  skip-cert-verify: true
+  udp: true
+- name: _114
+  server: 104.21.30.167
+  type: trojan
+  port: 443
+  password: 2fec7227-9abe-46f2-af18-78302b836c45
+  alpn:
+  - http%2F1.1
+  sni: 3y.2032.pp.ua
+  skip-cert-verify: true
+  udp: true
+- name: _115
+  server: 104.21.80.1
+  type: trojan
+  port: 443
+  password: psycho
+  alpn:
+  - http%2F1.1
+  sni: PSYchO.SueX12.Ir
+  skip-cert-verify: true
+  udp: true
+- name: 🇦🇴 AO_116
+  server: 104.167.197.25
+  type: ss
+  country: 🇦🇴 AO
+  port: 57456
+  password: 360e21d21977dc11
+  cipher: chacha20-ietf-poly1305
+- name: 🇧🇩 BD_118
   server: 103.106.1.92
   type: ss
   country: 🇧🇩 BD
   port: 23492
   password: yMX9WGPgUEcRZmlaa0YHHC
   cipher: chacha20-ietf-poly1305
-- name: 🇧🇪 BE_124
+- name: 🇧🇪 BE_119
   server: 57.128.190.171
   type: ss
   country: 🇧🇪 BE
   port: 11259
   password: f9d73c84e32a10f3
   cipher: chacha20-ietf-poly1305
-- name: 🇨🇦CA_131
-  server: ca225.vpnbook.com
-  type: ss
-  country: 🇨🇦CA
-  port: 80
-  password: JIhN6rBKkaEboLNXVSv5rq
-  cipher: chacha20-ietf-poly1305
-- name: 🇨🇿 CZ_140
+- name: 🇨🇿 CZ_134
   server: 79.127.233.170
   type: ss
   country: 🇨🇿 CZ
   port: 990
   password: f8f7aCzcPKbsF8p3
   cipher: chacha20-ietf-poly1305
+- name: 🇨🇿 CZ_135
+  server: 195.181.160.6
+  type: ss
+  country: 🇨🇿 CZ
+  port: 990
+  password: f8f7aCzcPKbsF8p3
+  cipher: chacha20-ietf-poly1305
+- name: 🇺🇸US_307
+  server: 216.39.248.133
+  type: ss
+  country: 🇺🇸US
+  port: 7001
+  password: RexnBgU7EV5ADxG
+  cipher: aes-256-gcm
 proxy-groups:
 - name: 节点选择
   type: select
@@ -718,106 +701,106 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - _116
-  - _93
-  - _119
-  - _118
-  - _117
-  - _120
-  - 🇨🇿 CZ_140
-  - _89
-  - _75
-  - _39
-  - _77
-  - _70
-  - _65
-  - _20
-  - _64
-  - _18
-  - _63
-  - _62
-  - _14
-  - _34
-  - _21
-  - _32
-  - _60
-  - _58
-  - _59
-  - _33
-  - _57
-  - _71
-  - _55
-  - _69
-  - _54
-  - _76
-  - _79
-  - _38
-  - tg频道:@ripaojiedian
-  - _96
-  - 🇨🇦CA_131
-  - _82
-  - _87
-  - _86
-  - _97
-  - _98
-  - _15
-  - _92
-  - _35
-  - _52
-  - _37
-  - 🇧🇪 BE_124
-  - _90
-  - _114
-  - _36
-  - _51
-  - _95
-  - _91
-  - _99
-  - _100
-  - _48
-  - _31
-  - _50
-  - _44
-  - _49
-  - _42
-  - 12|tg频道:@ripaojiedian
-  - _43
-  - _26
-  - _46
-  - _29
-  - _30
-  - _28
-  - _45
-  - _25
-  - 🇧🇩 BD_123
-  - _101
-  - _102
-  - _16
-  - _47
-  - _113
-  - _53
-  - _108
   - _110
-  - _107
-  - _27
-  - _80
-  - _104
-  - _105
-  - 🇭🇰 香港8|@ripaojiedian
-  - _85
-  - _84
-  - _74
-  - _68
-  - _81
-  - _24
-  - _23
-  - _17
-  - _83
-  - _67
-  - _72
-  - _19
+  - _111
+  - _113
+  - _114
+  - _115
   - _56
+  - _59
+  - _58
+  - _76
+  - _71
+  - _74
+  - _62
+  - _60
+  - _61
+  - _53
+  - _31
+  - _88
+  - _66
+  - _73
+  - _54
+  - _50
+  - _32
+  - _57
+  - 🇺🇸US_307
+  - _30
+  - _83
+  - _17
+  - _97
+  - _06
+  - _29
+  - _35
+  - _33
+  - _34
+  - _112
+  - _65
+  - _87
+  - 🇦🇴 AO_116
+  - 🇨🇿 CZ_134
+  - _86
+  - _91
+  - _84
+  - _46
+  - _40
+  - _85
+  - 🇧🇪 BE_119
+  - _45
+  - _15
+  - _93
+  - _89
+  - _77
+  - _94
+  - _92
+  - _47
+  - _106
+  - _37
+  - 🇧🇩 BD_118
+  - _09
+  - _67
+  - _20
+  - _95
+  - _107
+  - 🇨🇿 CZ_135
+  - _44
+  - _36
+  - _72
   - _41
+  - _80
+  - _75
+  - _101
+  - _39
+  - _19
+  - _12
+  - _11
+  - _10
+  - _04
+  - _100
+  - _102
+  - _24
+  - _25
+  - _96
+  - _05
+  - _23
+  - _105
+  - _108
+  - _13
+  - _82
+  - _79
+  - _28
+  - _78
+  - _104
+  - _01
+  - _99
+  - _51
+  - _109
+  - _03
+  - _21
+  - _98
+  - _18
+  - _16
+  - _22
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
@@ -825,211 +808,211 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - _116
-  - _93
-  - _119
-  - _118
-  - _117
-  - _120
-  - 🇨🇿 CZ_140
-  - _89
-  - _75
-  - _39
-  - _77
-  - _70
-  - _65
-  - _20
-  - _64
-  - _18
-  - _63
-  - _62
-  - _14
-  - _34
-  - _21
-  - _32
-  - _60
-  - _58
-  - _59
-  - _33
-  - _57
-  - _71
-  - _55
-  - _69
-  - _54
-  - _76
-  - _79
-  - _38
-  - tg频道:@ripaojiedian
-  - _96
-  - 🇨🇦CA_131
-  - _82
-  - _87
-  - _86
-  - _97
-  - _98
-  - _15
-  - _92
-  - _35
-  - _52
-  - _37
-  - 🇧🇪 BE_124
-  - _90
-  - _114
-  - _36
-  - _51
-  - _95
-  - _91
-  - _99
-  - _100
-  - _48
-  - _31
-  - _50
-  - _44
-  - _49
-  - _42
-  - 12|tg频道:@ripaojiedian
-  - _43
-  - _26
-  - _46
-  - _29
-  - _30
-  - _28
-  - _45
-  - _25
-  - 🇧🇩 BD_123
-  - _101
-  - _102
-  - _16
-  - _47
-  - _113
-  - _53
-  - _108
   - _110
-  - _107
-  - _27
-  - _80
-  - _104
-  - _105
-  - 🇭🇰 香港8|@ripaojiedian
-  - _85
-  - _84
-  - _74
-  - _68
-  - _81
-  - _24
-  - _23
-  - _17
-  - _83
-  - _67
-  - _72
-  - _19
+  - _111
+  - _113
+  - _114
+  - _115
   - _56
+  - _59
+  - _58
+  - _76
+  - _71
+  - _74
+  - _62
+  - _60
+  - _61
+  - _53
+  - _31
+  - _88
+  - _66
+  - _73
+  - _54
+  - _50
+  - _32
+  - _57
+  - 🇺🇸US_307
+  - _30
+  - _83
+  - _17
+  - _97
+  - _06
+  - _29
+  - _35
+  - _33
+  - _34
+  - _112
+  - _65
+  - _87
+  - 🇦🇴 AO_116
+  - 🇨🇿 CZ_134
+  - _86
+  - _91
+  - _84
+  - _46
+  - _40
+  - _85
+  - 🇧🇪 BE_119
+  - _45
+  - _15
+  - _93
+  - _89
+  - _77
+  - _94
+  - _92
+  - _47
+  - _106
+  - _37
+  - 🇧🇩 BD_118
+  - _09
+  - _67
+  - _20
+  - _95
+  - _107
+  - 🇨🇿 CZ_135
+  - _44
+  - _36
+  - _72
   - _41
+  - _80
+  - _75
+  - _101
+  - _39
+  - _19
+  - _12
+  - _11
+  - _10
+  - _04
+  - _100
+  - _102
+  - _24
+  - _25
+  - _96
+  - _05
+  - _23
+  - _105
+  - _108
+  - _13
+  - _82
+  - _79
+  - _28
+  - _78
+  - _104
+  - _01
+  - _99
+  - _51
+  - _109
+  - _03
+  - _21
+  - _98
+  - _18
+  - _16
+  - _22
   url: http://www.gstatic.com/generate_204
   interval: 300
 - name: 手动选择
   type: select
   proxies:
-  - _116
-  - _93
-  - _119
-  - _118
-  - _117
-  - _120
-  - 🇨🇿 CZ_140
-  - _89
-  - _75
-  - _39
-  - _77
-  - _70
-  - _65
-  - _20
-  - _64
-  - _18
-  - _63
-  - _62
-  - _14
-  - _34
-  - _21
-  - _32
-  - _60
-  - _58
-  - _59
-  - _33
-  - _57
-  - _71
-  - _55
-  - _69
-  - _54
-  - _76
-  - _79
-  - _38
-  - tg频道:@ripaojiedian
-  - _96
-  - 🇨🇦CA_131
-  - _82
-  - _87
-  - _86
-  - _97
-  - _98
-  - _15
-  - _92
-  - _35
-  - _52
-  - _37
-  - 🇧🇪 BE_124
-  - _90
-  - _114
-  - _36
-  - _51
-  - _95
-  - _91
-  - _99
-  - _100
-  - _48
-  - _31
-  - _50
-  - _44
-  - _49
-  - _42
-  - 12|tg频道:@ripaojiedian
-  - _43
-  - _26
-  - _46
-  - _29
-  - _30
-  - _28
-  - _45
-  - _25
-  - 🇧🇩 BD_123
-  - _101
-  - _102
-  - _16
-  - _47
-  - _113
-  - _53
-  - _108
   - _110
-  - _107
-  - _27
-  - _80
-  - _104
-  - _105
-  - 🇭🇰 香港8|@ripaojiedian
-  - _85
-  - _84
-  - _74
-  - _68
-  - _81
-  - _24
-  - _23
-  - _17
-  - _83
-  - _67
-  - _72
-  - _19
+  - _111
+  - _113
+  - _114
+  - _115
   - _56
+  - _59
+  - _58
+  - _76
+  - _71
+  - _74
+  - _62
+  - _60
+  - _61
+  - _53
+  - _31
+  - _88
+  - _66
+  - _73
+  - _54
+  - _50
+  - _32
+  - _57
+  - 🇺🇸US_307
+  - _30
+  - _83
+  - _17
+  - _97
+  - _06
+  - _29
+  - _35
+  - _33
+  - _34
+  - _112
+  - _65
+  - _87
+  - 🇦🇴 AO_116
+  - 🇨🇿 CZ_134
+  - _86
+  - _91
+  - _84
+  - _46
+  - _40
+  - _85
+  - 🇧🇪 BE_119
+  - _45
+  - _15
+  - _93
+  - _89
+  - _77
+  - _94
+  - _92
+  - _47
+  - _106
+  - _37
+  - 🇧🇩 BD_118
+  - _09
+  - _67
+  - _20
+  - _95
+  - _107
+  - 🇨🇿 CZ_135
+  - _44
+  - _36
+  - _72
   - _41
+  - _80
+  - _75
+  - _101
+  - _39
+  - _19
+  - _12
+  - _11
+  - _10
+  - _04
+  - _100
+  - _102
+  - _24
+  - _25
+  - _96
+  - _05
+  - _23
+  - _105
+  - _108
+  - _13
+  - _82
+  - _79
+  - _28
+  - _78
+  - _104
+  - _01
+  - _99
+  - _51
+  - _109
+  - _03
+  - _21
+  - _98
+  - _18
+  - _16
+  - _22
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
