@@ -32,790 +32,680 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- name: warp.irss.eu.org 2
-  server: 172.67.78.65
-  port: 80
-  client-fingerprint: randomized
-  type: vless
-  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
-  tls: false
-  tfo: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: warp.irss.eu.org
-- name: warp.irss.eu.org 3
-  server: 172.67.72.209
-  port: 80
-  client-fingerprint: randomized
-  type: vless
-  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
-  tls: false
-  tfo: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: warp.irss.eu.org
-- name: warp.irss.eu.org 4
-  server: 190.93.247.46
-  port: 80
-  client-fingerprint: randomized
-  type: vless
-  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
-  tls: false
-  tfo: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: warp.irss.eu.org
-- name: warp.irss.eu.org 5
-  server: 172.67.196.125
-  port: 80
-  client-fingerprint: randomized
-  type: vless
-  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
-  tls: false
-  tfo: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: warp.irss.eu.org
-- name: warp.irss.eu.org 6
-  server: 162.159.249.78
-  port: 80
-  client-fingerprint: randomized
-  type: vless
-  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
-  tls: false
-  tfo: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: warp.irss.eu.org
-- name: warp.irss.eu.org 7
-  server: 104.21.233.205
-  port: 80
-  client-fingerprint: randomized
-  type: vless
-  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
-  tls: false
-  tfo: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: warp.irss.eu.org
-- name: warp.irss.eu.org 8
-  server: 104.16.237.83
-  port: 80
-  client-fingerprint: randomized
-  type: vless
-  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
-  tls: false
-  tfo: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: warp.irss.eu.org
-- name: warp.irss.eu.org 9
-  server: 162.159.255.155
-  port: 80
-  client-fingerprint: randomized
-  type: vless
-  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
-  tls: false
-  tfo: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: warp.irss.eu.org
-- name: warp.irss.eu.org 10
-  server: 104.17.50.101
-  port: 80
-  client-fingerprint: randomized
-  type: vless
-  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
-  tls: false
-  tfo: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: warp.irss.eu.org
-- name: warp.irss.eu.org 11
-  server: 172.67.167.116
-  port: 80
-  client-fingerprint: randomized
-  type: vless
-  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
-  tls: false
-  tfo: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: warp.irss.eu.org
-- name: warp.irss.eu.org 12
-  server: 172.67.34.93
-  port: 80
-  client-fingerprint: randomized
-  type: vless
-  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
-  tls: false
-  tfo: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: warp.irss.eu.org
-- name: warp.irss.eu.org 14
-  server: 172.67.23.7
-  port: 80
-  client-fingerprint: randomized
-  type: vless
-  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
-  tls: false
-  tfo: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: warp.irss.eu.org
-- name: warp.irss.eu.org 15
-  server: 172.64.90.89
-  port: 80
-  client-fingerprint: randomized
-  type: vless
-  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
-  tls: false
-  tfo: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: warp.irss.eu.org
-- name: 轮子1
-  type: hysteria
-  server: 185.22.155.71
-  port: '10803'
-  auth_str: dongtaiwang.com
-  up: 11
-  down: 55
-  fast-open: true
-  protocol: udp
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-- name: 轮子2
-  type: hysteria2
-  server: 46.17.41.217
-  port: '30033'
-  password: dongtaiwang.com
-  fast-open: true
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 轮子3
-  type: hysteria2
-  server: 45.129.2.108
-  port: '50850'
-  password: dongtaiwang.com
-  fast-open: true
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 轮子4
-  type: hysteria2
-  server: 46.29.163.171
-  port: '30033'
-  password: dongtaiwang.com
-  fast-open: true
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 轮子9
-  type: hysteria
-  server: 195.154.200.178
-  port: 46938
-  auth_str: dongtaiwang.com
-  up: 11
-  down: 55
-  fast-open: true
-  protocol: udp
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-- name: _01
-  server: 45.89.52.66
+- name: _28
+  server: 38.68.135.18
   type: ss
-  port: 9041
+  port: 8119
   udp: true
-  password: U6qnYRhfyDmn8sgn
-  cipher: aes-256-cfb
-- name: _03
-  server: 45.89.52.66
-  type: ss
-  port: 9031
-  udp: true
-  password: BwcAUZk8hUFAkDGN
-  cipher: aes-256-cfb
-- name: _04
-  server: 142.4.216.225
-  type: ss
-  port: 80
-  password: JIhN6rBKkaEboLNXVSv5rq
-  cipher: chacha20-ietf-poly1305
-- name: _06
-  server: 38.121.43.71
-  type: ss
-  port: 2376
-  password: faBAoD54k87UJG7
+  password: cdBIDV42DCwnfIN
   cipher: aes-256-gcm
-- name: _07
-  server: 23.154.136.51
-  type: ss
-  port: 5499
-  password: lGqs95QkFHo2NV
-  cipher: aes-256-gcm
-- name: _08
-  server: 80.92.204.106
-  type: ss
-  port: 9005
-  password: ZET59LF6DvCC8KVt
-  cipher: aes-256-cfb
-- name: _11
-  server: 212.102.53.194
-  type: ss
-  port: 443
-  password: shadowsocks
-  cipher: aes-128-gcm
-- name: _13
-  server: 38.121.43.71
-  type: ss
-  port: 8008
-  password: XKFKl2rULjIp74
-  cipher: aes-256-gcm
-- name: _15
-  server: 38.121.43.71
-  type: ss
-  port: 8000
-  udp: true
-  password: KixLvKzwjekG00rm
-  cipher: aes-256-gcm
-- name: _17
-  server: 45.89.52.66
-  type: ss
-  port: 9029
-  password: dU3DSNS8wYPXzEKw
-  cipher: aes-256-cfb
-- name: _20
-  server: 38.121.43.71
-  type: ss
-  port: 6697
-  password: TEzjfAYq2IjtuoS
-  cipher: aes-256-gcm
-- name: _21
-  server: 38.121.43.71
-  type: ss
-  port: 5003
-  password: g5MeD6Ft3CWlJId
-  cipher: aes-256-gcm
-- name: _22
-  server: 38.121.43.71
-  type: ss
-  port: 7307
-  password: FoOiGlkAA9yPEGP
-  cipher: aes-256-gcm
-- name: _26
-  server: 38.143.66.87
-  type: ss
-  port: 6697
-  udp: true
-  password: TEzjfAYq2IjtuoS
-  cipher: aes-256-gcm
-- name: _27
-  server: 38.143.66.87
-  type: ss
-  port: 5000
-  udp: true
-  password: Y6R9pAtvxxzmGC
-  cipher: aes-256-gcm
-- name: _29
-  server: 5.188.181.201
-  type: ss
-  port: 9019
-  password: GA9KzeEgvfxNrgmM
-  cipher: aes-256-cfb
-- name: _30
-  server: 5.188.181.201
-  type: ss
-  port: 9005
-  password: ZET59LF6DvCC8KVt
-  cipher: aes-256-cfb
-- name: _31
+- name: _32
   server: 5.188.181.201
   type: ss
   port: 9054
   password: VcFuyXvND2yQWSFY
   cipher: aes-256-cfb
-- name: _32
-  server: 5.188.181.201
-  type: ss
-  port: 9011
-  password: M3t2ZEQcMGRWBjRa
-  cipher: aes-256-cfb
 - name: _33
   server: 5.188.181.201
   type: ss
-  port: 9001
-  password: UkXRsXvR6buDMG2Y
+  port: 9014
+  password: KnJGad3FqTvjqbaX
   cipher: aes-256-cfb
-- name: _34
-  server: 5.188.181.201
-  type: ss
-  port: 9003
-  password: JdmRK9gMEqFgs8nP
-  cipher: aes-256-cfb
-- name: _35
+- name: _37
   server: 38.121.43.71
   type: ss
   port: 5001
   password: Y6R9pAtvxxzmGC
   cipher: aes-256-gcm
-- name: _36
+- name: _38
   server: 38.110.1.88
   type: ss
   port: 5499
   udp: true
   password: lGqs95QkFHo2NV
   cipher: aes-256-gcm
-- name: _38
-  server: 38.121.43.71
-  type: ss
-  port: 7002
-  password: RexnBgU7EV5ADxG
-  cipher: aes-256-gcm
 - name: _39
+  server: 38.68.135.18
+  type: ss
+  port: 8009
+  password: XKFKl2rULjIp74
+  cipher: aes-256-gcm
+- name: _41
   server: 38.121.43.71
   type: ss
   port: 6679
   password: TEzjfAYq2IjtuoS
   cipher: aes-256-gcm
-- name: _40
+- name: _42
   server: 38.121.43.71
   type: ss
   port: 5004
   password: g5MeD6Ft3CWlJId
   cipher: aes-256-gcm
-- name: _41
+- name: _43
   server: 38.121.43.71
   type: ss
   port: 443
   password: pKEW8JPByTVTLtM
   cipher: aes-256-gcm
-- name: _42
+- name: _44
   server: 38.121.43.71
   type: ss
   port: 3306
   password: Y6R9pAtvxxzmGC
   cipher: aes-256-gcm
-- name: _43
+- name: _45
+  server: 38.121.43.71
+  type: ss
+  port: 5500
+  password: KixLvKzwjekG00rm
+  cipher: aes-256-gcm
+- name: _46
+  server: 38.121.43.71
+  type: ss
+  port: 5000
+  password: Y6R9pAtvxxzmGC
+  cipher: aes-256-gcm
+- name: _47
   server: 38.121.43.71
   type: ss
   port: 5600
   password: Y6R9pAtvxxzmGC
   cipher: aes-256-gcm
-- name: _44
+- name: _48
   server: 38.121.43.71
   type: ss
   port: 8888
   password: Y6R9pAtvxxzmGC
   cipher: aes-256-gcm
-- name: _45
+- name: _49
   server: 38.121.43.71
   type: ss
   port: 7001
   password: RexnBgU7EV5ADxG
   cipher: aes-256-gcm
-- name: _48
+- name: _50
+  server: 38.68.135.18
+  type: ss
+  port: 8090
+  udp: true
+  password: PCnnH6SQSnfoS27
+  cipher: aes-256-gcm
+- name: _51
+  server: 38.68.135.18
+  type: ss
+  port: 9101
+  udp: true
+  password: e4FCWrgpkji3QY
+  cipher: aes-256-gcm
+- name: _52
   server: 38.110.1.197
   type: ss
   port: 5003
   udp: true
   password: g5MeD6Ft3CWlJId
   cipher: aes-256-gcm
-- name: _49
+- name: _53
   server: 38.121.43.71
   type: ss
   port: 8091
   udp: true
   password: PCnnH6SQSnfoS27
   cipher: aes-256-gcm
-- name: _50
+- name: _54
   server: 38.143.66.87
   type: ss
   port: 3389
   udp: true
   password: Y6R9pAtvxxzmGC
   cipher: aes-256-gcm
-- name: _52
-  server: 45.89.52.66
+- name: _56
+  server: 46.183.185.15
   type: ss
-  port: 9001
-  udp: true
-  password: UkXRsXvR6buDMG2Y
+  port: 989
+  password: f8f7aCzcPKbsF8p3
   cipher: aes-256-cfb
-- name: _54
+- name: _57
+  server: 212.102.53.197
+  type: ss
+  port: 443
+  password: shadowsocks
+  cipher: aes-128-gcm
+- name: _58
   server: 38.121.43.71
   type: ss
   port: 9101
   udp: true
   password: e4FCWrgpkji3QY
   cipher: aes-256-gcm
-- name: _55
+- name: _59
   server: 38.110.1.88
   type: ss
   port: 5600
   udp: true
   password: Y6R9pAtvxxzmGC
   cipher: aes-256-gcm
-- name: _57
+- name: _60
+  server: 38.121.43.71
+  type: ss
+  port: 3389
+  udp: true
+  password: Y6R9pAtvxxzmGC
+  cipher: aes-256-gcm
+- name: _61
   server: 38.121.43.71
   type: ss
   port: 2375
   udp: true
   password: faBAoD54k87UJG7
   cipher: aes-256-gcm
-- name: _58
+- name: _62
   server: 38.110.1.88
   type: ss
   port: 2376
   udp: true
   password: faBAoD54k87UJG7
   cipher: aes-256-gcm
-- name: _61
-  server: uk-dc1.yangon.club
-  type: ss
-  port: 443
-  password: shadowsocks
-  cipher: aes-128-gcm
-- name: _62
-  server: 212.102.53.197
-  type: ss
-  port: 443
-  password: shadowsocks
-  cipher: aes-128-gcm
 - name: _63
-  server: 45.55.2.232
+  server: 38.68.135.18
   type: ss
-  port: 14293
-  password: 2170f8
+  port: 5601
+  udp: true
+  password: Y6R9pAtvxxzmGC
+  cipher: aes-256-gcm
+- name: _65
+  server: 38.121.43.71
+  type: ss
+  port: 8882
+  password: kDWvXYZoTBcGkC4
+  cipher: aes-256-gcm
+- name: _66
+  server: 109.201.152.181
+  type: ss
+  port: 443
+  udp: true
+  password: shadowsocks
+  cipher: aes-128-cfb
+- name: _67
+  server: 212.102.53.79
+  type: ss
+  port: 443
+  password: shadowsocks
+  cipher: aes-128-gcm
+- name: _68
+  server: 38.68.135.18
+  type: ss
+  port: 6697
+  udp: true
+  password: TEzjfAYq2IjtuoS
+  cipher: aes-256-gcm
+- name: _70
+  server: 212.102.53.193
+  type: ss
+  port: 443
+  password: shadowsocks
+  cipher: aes-128-gcm
+- name: _71
+  server: 38.68.135.18
+  type: ss
+  port: 5500
+  password: KixLvKzwjekG00rm
+  cipher: aes-256-gcm
+- name: _72
+  server: 212.102.53.80
+  type: ss
+  port: 443
+  password: shadowsocks
+  cipher: aes-128-gcm
+- name: _73
+  server: 212.102.53.81
+  type: ss
+  port: 443
+  password: shadowsocks
+  cipher: aes-128-gcm
+- name: _74
+  server: 212.102.53.196
+  type: ss
+  port: 443
+  password: shadowsocks
+  cipher: aes-128-gcm
+- name: _75
+  server: 212.102.53.78
+  type: ss
+  port: 443
+  password: shadowsocks
+  cipher: aes-128-gcm
+- name: _76
+  server: 192.36.27.94
+  type: ss
+  port: 989
+  password: f8f7aCzcPKbsF8p3
   cipher: aes-256-cfb
-- name: 🇺🇸 US_220
-  server: 38.68.134.202
+- name: _77
+  server: 194.71.126.31
   type: ss
-  country: 🇺🇸 US
-  port: 5004
+  port: 989
+  password: f8f7aCzcPKbsF8p3
+  cipher: aes-256-cfb
+- name: _78
+  server: 46.183.184.60
+  type: ss
+  port: 989
+  udp: true
+  password: f8f7aCzcPKbsF8p3
+  cipher: aes-256-cfb
+- name: _79
+  server: 37.143.129.230
+  type: ss
+  port: 989
+  password: f8f7aCzcPKbsF8p3
+  cipher: aes-256-cfb
+- name: _80
+  server: 192.71.244.150
+  type: ss
+  port: 989
+  udp: true
+  password: f8f7aCzcPKbsF8p3
+  cipher: aes-256-cfb
+- name: _81
+  server: 171.22.254.17
+  type: ss
+  port: 989
+  password: f8f7aCzcPKbsF8p3
+  cipher: aes-256-cfb
+- name: _82
+  server: 193.108.119.230
+  type: ss
+  port: 8080
+  udp: true
+  password: 14fFPrbezE3HDZzsMOr6
+  cipher: rc4-md5
+- name: _83
+  server: 37.235.49.152
+  type: ss
+  port: 989
+  udp: true
+  password: f8f7aCzcPKbsF8p3
+  cipher: aes-256-cfb
+- name: _84
+  server: 192.71.249.78
+  type: ss
+  port: 989
+  password: f8f7aCzcPKbsF8p3
+  cipher: aes-256-cfb
+- name: _85
+  server: 38.68.135.18
+  type: ss
+  port: 5003
+  udp: true
   password: g5MeD6Ft3CWlJId
   cipher: aes-256-gcm
-- name: 🇺🇸 US_221
-  server: 212.102.47.130
-  type: ss
-  country: 🇺🇸 US
+- name: _87
+  server: 104.21.44.185
+  type: trojan
+  port: 2053
+  password: dreDeMpIQpnv
+  alpn:
+  - h3%2Ch2%2Chttp%2F1.1
+  sni: aryanews.onetwothree123.ir
+  skip-cert-verify: true
+  udp: true
+- name: _88
+  server: 104.21.71.8
+  type: trojan
+  port: 2053
+  password: 9kHuEbiX7Bcp
+  alpn:
+  - h3%2Ch2%2Chttp%2F1.1
+  sni: khabaronline.itn24.ir
+  skip-cert-verify: true
+  udp: true
+- name: _89
+  server: 89.187.181.179
+  type: trojan
+  port: 43118
+  password: ypDt8RkT7J
+  skip-cert-verify: true
+  udp: true
+- name: _90
+  server: 104.21.80.1
+  type: trojan
   port: 443
-  password: shadowsocks
-  cipher: aes-128-gcm
-- name: 🇺🇸 US_222
-  server: 64.74.163.130
+  password: psycho
+  alpn:
+  - http%2F1.1
+  sni: PSYchO.SueX12.Ir
+  skip-cert-verify: true
+  udp: true
+- name: _91
+  server: 104.21.112.1
+  type: trojan
+  port: 443
+  password: psycho
+  alpn:
+  - http%2F1.1
+  sni: pSYcho.sUeX12.IR
+  skip-cert-verify: true
+  udp: true
+- name: _92
+  server: 104.21.30.167
+  type: trojan
+  port: 443
+  password: 2fec7227-9abe-46f2-af18-78302b836c45
+  alpn:
+  - http%2F1.1
+  sni: 3y.2032.pp.ua
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇦CA_98
+  server: ca225.vpnbook.com
   type: ss
-  country: 🇺🇸 US
+  country: 🇨🇦CA
+  port: 80
+  password: JIhN6rBKkaEboLNXVSv5rq
+  cipher: chacha20-ietf-poly1305
+- name: 🇨🇿 CZ_105
+  server: 195.181.160.6
+  type: ss
+  country: 🇨🇿 CZ
   port: 990
   password: f8f7aCzcPKbsF8p3
   cipher: chacha20-ietf-poly1305
-- name: 🇺🇸 US_223
-  server: 156.146.38.170
-  type: ss
-  country: 🇺🇸 US
-  port: 443
-  password: shadowsocks
-  cipher: aes-128-gcm
-- name: 🇺🇸 US_224
-  server: 208.67.105.87
-  type: ss
-  country: 🇺🇸 US
-  port: 42501
-  password: nq96KftrZAj3LuFQESqmn44Mo5oCuo2cipoEsae25mrmHG2oJ4VT37scBfVBpN5DWtUELZutVhhXs8Le5B8fZ9hLn9ytwvbf
-  cipher: chacha20-ietf-poly1305
-- name: 🇺🇸 US_240
-  server: lt.fxlcn.com
-  type: vmess
-  country: 🇺🇸 US
-  port: 45291
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  alterId: 0
-  cipher: auto
-  network: tcp
-  ws-path: /
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇺🇸 US_247
-  server: typical.starspace.link
+- name: 日本4-Trojan
   type: trojan
-  country: 🇺🇸 US
+  server: jp4.sstank.top
   port: 443
-  password: DD32pDOaTXqZ3z73OnR3D0e3ClC8CnCxEyxw8RcSal6l5ONYClwCyqRaAIY3ESZ4S94eF
-  skip-cert-verify: true
+  password: b8e7b9eb-877a-382a-81d5-610021a53abd
+  sni: jp4.sstank.top
   udp: true
-- name: 🇺🇸 US_248
-  server: guy-trace-lyric.stark-industries.solutions
+- name: 日本5-Trojan
   type: trojan
-  country: 🇺🇸 US
+  server: jp5.sstank.top
   port: 443
-  password: 3482c71a-d01c-4ae5-b454-fa8cb3785f66
-  skip-cert-verify: true
+  password: b8e7b9eb-877a-382a-81d5-610021a53abd
+  sni: jp5.sstank.top
   udp: true
-- name: 🇺🇸 US_251
-  server: ground.wireshop.net
+- name: 美国-Trojan
   type: trojan
-  country: 🇺🇸 US
+  server: usa.sstank.top
   port: 443
-  password: pBS63OYXOw3ATcOX5Cz0FEx4lS8CDCYZIBl3C3wzepKYa3SaSq9payCDRynqZxlKSea2A
-  skip-cert-verify: true
+  password: b8e7b9eb-877a-382a-81d5-610021a53abd
+  sni: usa.sstank.top
   udp: true
-- name: 🇺🇸 US_252
-  server: hotpot.homeofbrave.net
+- name: 美国1-Trojan
   type: trojan
-  country: 🇺🇸 US
+  server: usa1.sstank.top
   port: 443
-  password: ZaEjzYF6Dj6393CaBZO2pyE9BES2ZZ65SzD5eA283qOyFSSX3C0KqCSIXSFyRqau4DezYwAa3XyCnj8
-  skip-cert-verify: true
+  password: b8e7b9eb-877a-382a-81d5-610021a53abd
+  sni: usa1.sstank.top
   udp: true
-- name: 🇺🇸 US_254
-  server: cache-giver-wife.stark-industries.solutions
+- name: 韩国-Trojan
   type: trojan
-  country: 🇺🇸 US
+  server: kr.sstank.top
   port: 443
-  password: e6a2e741-0fce-440b-910c-b81325e2263a
-  skip-cert-verify: true
+  password: b8e7b9eb-877a-382a-81d5-610021a53abd
+  sni: kr.sstank.top
   udp: true
-- name: 🇺🇸US_255
-  server: 38.121.43.71
-  type: ss
-  country: 🇺🇸US
-  port: 8080
-  password: KixLvKzwjekG00rm
-  cipher: aes-256-gcm
-- name: 🇺🇸US_256
-  server: 45.158.171.66
-  type: ss
-  country: 🇺🇸US
-  port: 8080
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  cipher: chacha20-ietf-poly1305
-- name: 🇺🇸US_260
-  server: 38.121.43.71
-  type: ss
-  country: 🇺🇸US
-  port: 8090
-  password: PCnnH6SQSnfoS27
-  cipher: aes-256-gcm
-- name: 🇺🇸US_261
-  server: 38.121.43.71
-  type: ss
-  country: 🇺🇸US
-  port: 8009
-  password: XKFKl2rULjIp74
-  cipher: aes-256-gcm
-- name: 🇺🇸US_262
-  server: 38.121.43.71
-  type: ss
-  country: 🇺🇸US
-  port: 9102
-  password: e4FCWrgpkji3QY
-  cipher: aes-256-gcm
-- name: 🇺🇸US_263
-  server: 38.121.43.71
-  type: ss
-  country: 🇺🇸US
-  port: 8118
-  password: cdBIDV42DCwnfIN
-  cipher: aes-256-gcm
-- name: 🇺🇸US_267
-  server: 38.121.43.71
-  type: ss
-  country: 🇺🇸US
-  port: 4444
-  password: pKEW8JPByTVTLtM
-  cipher: aes-256-gcm
-- name: 🇺🇸US_269
-  server: 38.121.43.71
-  type: ss
-  country: 🇺🇸US
-  port: 6379
-  password: zDNVedRFPQexG9v
-  cipher: aes-256-gcm
-- name: 🇺🇸US_271
-  server: 38.121.43.71
-  type: ss
-  country: 🇺🇸US
-  port: 5601
-  password: Y6R9pAtvxxzmGC
-  cipher: aes-256-gcm
-- name: 🇺🇸US_279
-  server: 38.143.66.87
-  type: ss
-  country: 🇺🇸US
-  port: 3306
-  password: Y6R9pAtvxxzmGC
-  cipher: aes-256-gcm
-- name: 🇺🇸US_280
-  server: 38.121.43.71
-  type: ss
-  country: 🇺🇸US
-  port: 8881
-  password: kDWvXYZoTBcGkC4
-  cipher: aes-256-gcm
-- name: 🏁 ZZ_284
-  server: 213.109.147.242
-  type: ss
-  country: 🏁 ZZ
-  port: 62685
-  password: VpKABcOpNNA0l5G2AVOmw8
-  cipher: chacha20-ietf-poly1305
-- name: 🏁 ZZ_286
-  server: 103.186.154.30
-  type: ss
-  country: 🏁 ZZ
-  port: 38388
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  cipher: aes-256-cfb
-- name: 🏁 ZZ_287
-  server: 103.186.154.32
-  type: ss
-  country: 🏁 ZZ
-  port: 38388
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  cipher: aes-256-cfb
-- name: 🏁 ZZ_288
-  server: 103.186.154.31
-  type: ss
-  country: 🏁 ZZ
-  port: 38388
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  cipher: aes-256-cfb
-- name: 🏁 ZZ_289
-  server: 103.186.155.21
-  type: ss
-  country: 🏁 ZZ
-  port: 38388
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  cipher: aes-256-cfb
-- name: 🏁 ZZ_290
-  server: 103.186.154.21
-  type: ss
-  country: 🏁 ZZ
-  port: 38388
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  cipher: aes-256-cfb
-- name: 🏁 ZZ_307
-  server: 23.154.136.132
-  type: ss
-  country: 🏁 ZZ
-  port: 5004
-  password: g5MeD6Ft3CWlJId
-  cipher: aes-256-gcm
-- name: 🏁 ZZ_312
-  server: beseech.homeofbrave.net
+- name: 韩国1-Trojan
   type: trojan
-  country: 🏁 ZZ
+  server: kr1.sstank.top
   port: 443
-  password: SaujZeOR2F6eDD09KnxFcl3CY8laTXAyYOyCEI5qgwRSDp4ZCp33ASxN738zBa
-  skip-cert-verify: true
+  password: b8e7b9eb-877a-382a-81d5-610021a53abd
+  sni: kr1.sstank.top
   udp: true
-- name: 🏁ZZ_313
-  server: 23.154.136.51
-  type: ss
-  country: 🏁ZZ
-  port: 8118
-  password: cdBIDV42DCwnfIN
-  cipher: aes-256-gcm
-- name: 🏁ZZ_314
-  server: 23.154.136.51
-  type: ss
-  country: 🏁ZZ
-  port: 6697
-  password: TEzjfAYq2IjtuoS
-  cipher: aes-256-gcm
-- name: 🏁ZZ_315
-  server: 23.154.136.51
-  type: ss
-  country: 🏁ZZ
-  port: 8888
-  password: Y6R9pAtvxxzmGC
-  cipher: aes-256-gcm
-- name: 🏁ZZ_316
-  server: 23.154.136.148
-  type: ss
-  country: 🏁ZZ
-  port: 6679
-  password: TEzjfAYq2IjtuoS
-  cipher: aes-256-gcm
-- name: 🇺🇸US-37.19.198.244-0253 | 118.716MB
+- name: 香港3-Trojan
+  type: trojan
+  server: hk3.sstank.top
+  port: 443
+  password: b8e7b9eb-877a-382a-81d5-610021a53abd
+  sni: hk3.sstank.top
+  udp: true
+- name: 🇺🇸US-37.19.198.244-0286 | 210.261MB
   server: 37.19.198.244
   port: 443
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-- name: 🇺🇸US-37.19.198.243-0254 | 112.051MB
+- name: 🇺🇸US-37.19.198.243-0287 | 174.583MB
   server: 37.19.198.243
   port: 443
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-- name: 🇺🇸US-37.19.198.160-0256 | 108.684MB
-  server: 37.19.198.160
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸US-37.19.198.236-0255 | 108.48MB
+- name: 🇺🇸US-37.19.198.236-0289 | 105.466MB
   server: 37.19.198.236
   port: 443
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-- name: 🇺🇸US-194.5.215.59-0257 | 68.775MB
+- name: 🇺🇸US-194.5.215.59-0292 | 85.676MB
   server: 194.5.215.59
   port: 8080
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇺🇸US-156.146.38.168-0249 | 66.484MB
+- name: 🇺🇸US-156.146.38.168-0295 | 75.801MB
   server: 156.146.38.168
   port: 443
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
+- name: 🇺🇸US-173.244.56.6-0298 | 54.961MB
+  server: 173.244.56.6
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸US-173.244.56.9-0297 | 53.612MB
+  server: 173.244.56.9
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸US-156.146.38.169-0299 | 47.389MB
+  server: 156.146.38.169
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇬🇧GB-146.70.61.18-0343 | 44.476MB
+  server: 146.70.61.18
+  port: 8080
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇺🇸US-212.102.47.129-0337 | 40.771MB
+  server: 212.102.47.129
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸US-212.102.47.132-0306 | 37.314MB
+  server: 212.102.47.132
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇬🇧GB-85.210.120.237-0308 | 36.804MB
+  server: series-a2-me.varzesh360.co
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: Bog0ELmMM9DSxDdQ
+- name: 🇬🇧GB-85.210.120.237-0307 | 36.728MB
+  server: 85.210.120.237
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: Bog0ELmMM9DSxDdQ
+- name: 🇬🇧GB-85.210.55.181-0315 | 36.583MB
+  server: api.namasha.co
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: u17T3BvpYaaiuW2c
+- name: 🇬🇧GB-85.210.120.237-0309 | 36.502MB
+  server: series-a2-me.samanehha.co
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: Bog0ELmMM9DSxDdQ
+- name: 🇬🇧GB-131.145.36.151-0323 | 36.41MB
+  server: series-a2.samanehha.co
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: W74XFALLLuw6m5IA
+- name: 🇬🇧GB-131.145.36.151-0333 | 36.324MB
+  server: series-a2.varzesh360.co
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: mps3FwmDjLrWaOVg
+- name: 🇬🇧GB-85.210.120.237-0310 | 36.267MB
+  server: admin.c3.webramz.co
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: Bog0ELmMM9DSxDdQ
+- name: 🇬🇧GB-131.145.36.151-0317 | 36.143MB
+  server: admin.c1.webramz.co
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 1xO2cqPazqjGfCfd
+- name: 🇬🇧GB-131.145.45.24-0312 | 35.991MB
+  server: admin.c4.webramz.co
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 69MUii7VDwMqh7Hz
+- name: 🇬🇧GB-85.210.55.181-0311 | 35.986MB
+  server: series-a2-mec.samanehha.co
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: u17T3BvpYaaiuW2c
+- name: 🇬🇧GB-85.210.55.181-0322 | 35.924MB
+  server: series-a2-mec.varzesh360.co
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: u17T3BvpYaaiuW2c
+- name: 🇬🇧GB-85.210.55.181-0313 | 35.824MB
+  server: admin.c2.webramz.co
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: WstuSnlu4ieA9M0L
+- name: 🇬🇧GB-131.145.36.151-0321 | 35.741MB
+  server: series-a1.samanehha.co
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: W74XFALLLuw6m5IA
+- name: 🇬🇧GB-131.145.36.151-0318 | 35.327MB
+  server: freakconfig13.felafel.org
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 1xO2cqPazqjGfCfd
+- name: 🇳🇱NL-149.34.244.68-0328 | 35.214MB
+  server: 149.34.244.68
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸US-212.102.47.131-0338 | 34.26MB
+  server: 212.102.47.131
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇨🇦CA-149.22.95.183-0341 | 32.427MB
+  server: 149.22.95.183
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸US-37.19.198.160-0288 | 29.111MB
+  server: 37.19.198.160
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸US-172.233.128.126-0349 | 19.412MB
+  server: 172.233.128.126
+  port: 1866
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oXGp1+ihlfKg826H
+- name: 🇫🇷FR-77.239.116.76-0355 | 17.784MB
+  server: 77.239.116.76
+  port: 8315
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oHOP1bWFMkQVx3PdbhRlOk
+- name: 🇯🇵JP-149.22.87.241-0353 | 7.767MB
+  server: 149.22.87.241
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇯🇵JP-149.22.87.204-0352 | 5.941MB
+  server: 149.22.87.204
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: RELAY-104.21.112.1-1074 | 3.149MB
+  server: 104.21.112.1
+  port: 2087
+  type: vmess
+  uuid: 1c36906e-1a21-4330-b04f-85baf1a6ff26
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: rak1d3.777269.xyz
+- name: RELAY-104.21.64.1-0367 | 2.914MB
+  server: 104.21.64.1
+  port: 2087
+  type: vmess
+  uuid: 1c36906e-1a21-4330-b04f-85baf1a6ff26
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: rak1d3.777269.xyz
+- name: 🇩🇪DE-185.177.229.245-1070 | 2.688MB
+  server: 185.177.229.245
+  port: 1866
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oXGp1+ihlfKg826H
+- name: RELAY-104.21.96.1-0370 | 2.469MB
+  server: 104.21.96.1
+  port: 2087
+  type: vmess
+  uuid: 1c36906e-1a21-4330-b04f-85baf1a6ff26
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: rak1d3.777269.xyz
 proxy-groups:
 - name: 节点选择
   type: select
@@ -828,106 +718,106 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - warp.irss.eu.org 3
-  - warp.irss.eu.org 2
-  - warp.irss.eu.org 4
-  - warp.irss.eu.org 11
-  - warp.irss.eu.org 8
-  - warp.irss.eu.org 5
-  - warp.irss.eu.org 9
-  - warp.irss.eu.org 14
-  - 🇺🇸US-37.19.198.160-0256 | 108.684MB
-  - 🇺🇸US-37.19.198.244-0253 | 118.716MB
-  - 🇺🇸US-37.19.198.236-0255 | 108.48MB
-  - 🇺🇸US-156.146.38.168-0249 | 66.484MB
-  - warp.irss.eu.org 12
-  - 🇺🇸US-37.19.198.243-0254 | 112.051MB
-  - warp.irss.eu.org 15
-  - 🇺🇸 US_223
-  - 🇺🇸 US_220
-  - warp.irss.eu.org 6
-  - warp.irss.eu.org 10
-  - _04
-  - 🇺🇸US-194.5.215.59-0257 | 68.775MB
-  - _07
-  - 🏁ZZ_315
-  - 🏁ZZ_314
-  - 🏁ZZ_313
-  - 🇺🇸US_255
-  - _63
-  - warp.irss.eu.org 7
-  - 🇺🇸 US_221
-  - _57
+  - _88
+  - _90
+  - _92
+  - _91
+  - _87
   - _41
-  - 🇺🇸US_260
-  - _06
-  - _40
-  - _42
-  - _43
-  - _45
-  - 🇺🇸US_261
-  - _39
-  - _21
-  - _13
-  - 🇺🇸US_263
+  - _60
+  - _47
+  - _65
   - _44
-  - 🇺🇸US_262
-  - _20
-  - _22
-  - _48
-  - 🇺🇸US_269
-  - _54
-  - _38
-  - _49
-  - 🇺🇸US_280
-  - 🇺🇸US_267
-  - 🇺🇸US_271
-  - _15
-  - _35
-  - _36
-  - _55
-  - _31
-  - _34
-  - _30
-  - _58
-  - _33
-  - _29
-  - 🇺🇸US_256
-  - _11
-  - 🇺🇸 US_222
-  - _62
-  - _32
-  - 🏁 ZZ_284
-  - 🏁 ZZ_312
-  - 🏁ZZ_316
-  - _08
-  - _26
-  - 🇺🇸US_279
+  - _45
+  - _42
   - _61
-  - _50
-  - 🇺🇸 US_252
-  - 🏁 ZZ_307
-  - 🇺🇸 US_224
-  - _27
+  - 🇺🇸US-37.19.198.243-0287 | 174.583MB
+  - 🇺🇸US-37.19.198.236-0289 | 105.466MB
+  - _37
+  - 🇺🇸US-37.19.198.244-0286 | 210.261MB
+  - _49
+  - _48
+  - 🇺🇸US-156.146.38.169-0299 | 47.389MB
+  - _58
+  - 🇺🇸US-156.146.38.168-0295 | 75.801MB
+  - 🇺🇸US-37.19.198.160-0288 | 29.111MB
+  - 🇺🇸US-194.5.215.59-0292 | 85.676MB
+  - _43
+  - _46
+  - _53
+  - 🇺🇸US-212.102.47.132-0306 | 37.314MB
+  - 🇺🇸US-212.102.47.131-0338 | 34.26MB
+  - 🇺🇸US-212.102.47.129-0337 | 40.771MB
+  - 🇺🇸US-172.233.128.126-0349 | 19.412MB
+  - _89
+  - 🇨🇦CA-149.22.95.183-0341 | 32.427MB
+  - 🇺🇸US-173.244.56.9-0297 | 53.612MB
+  - 🇺🇸US-173.244.56.6-0298 | 54.961MB
   - _52
-  - _01
-  - _17
-  - 🇺🇸 US_254
-  - 🇺🇸 US_248
-  - 🏁 ZZ_290
-  - 🇺🇸 US_240
-  - 轮子1
-  - 🏁 ZZ_286
-  - 轮子2
-  - 🏁 ZZ_289
-  - 🏁 ZZ_287
-  - _03
-  - 🏁 ZZ_288
-  - 🇺🇸 US_251
-  - 轮子4
-  - 🇺🇸 US_247
-  - 轮子3
-  - 轮子9
+  - _71
+  - 🇨🇦CA_98
+  - _85
+  - 🇳🇱NL-149.34.244.68-0328 | 35.214MB
+  - _67
+  - _74
+  - _75
+  - _66
+  - _73
+  - _57
+  - 🇬🇧GB-85.210.120.237-0307 | 36.728MB
+  - _70
+  - _72
+  - _84
+  - 🇬🇧GB-146.70.61.18-0343 | 44.476MB
+  - RELAY-104.21.96.1-0370 | 2.469MB
+  - _51
+  - _68
+  - _32
+  - 🇨🇿 CZ_105
+  - 🇫🇷FR-77.239.116.76-0355 | 17.784MB
+  - _50
+  - RELAY-104.21.112.1-1074 | 3.149MB
+  - _79
+  - 🇩🇪DE-185.177.229.245-1070 | 2.688MB
+  - RELAY-104.21.64.1-0367 | 2.914MB
+  - _78
+  - _33
+  - 🇯🇵JP-149.22.87.204-0352 | 5.941MB
+  - _56
+  - _82
+  - 🇯🇵JP-149.22.87.241-0353 | 7.767MB
+  - _80
+  - 🇬🇧GB-85.210.120.237-0310 | 36.267MB
+  - _63
+  - 🇬🇧GB-85.210.55.181-0322 | 35.924MB
+  - 🇬🇧GB-131.145.36.151-0317 | 36.143MB
+  - 🇬🇧GB-85.210.120.237-0309 | 36.502MB
+  - 🇬🇧GB-85.210.55.181-0311 | 35.986MB
+  - _38
+  - _77
+  - _81
+  - 🇬🇧GB-131.145.36.151-0321 | 35.741MB
+  - 🇬🇧GB-85.210.120.237-0308 | 36.804MB
+  - 🇬🇧GB-131.145.45.24-0312 | 35.991MB
+  - 🇬🇧GB-131.145.36.151-0333 | 36.324MB
+  - _76
+  - 🇬🇧GB-85.210.55.181-0313 | 35.824MB
+  - 🇬🇧GB-131.145.36.151-0318 | 35.327MB
+  - 🇬🇧GB-85.210.55.181-0315 | 36.583MB
+  - 🇬🇧GB-131.145.36.151-0323 | 36.41MB
+  - _54
+  - _83
+  - _39
+  - _62
+  - _59
+  - _28
+  - 日本4-Trojan
+  - 日本5-Trojan
+  - 美国1-Trojan
+  - 美国-Trojan
+  - 韩国-Trojan
+  - 韩国1-Trojan
+  - 香港3-Trojan
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
@@ -935,211 +825,211 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - warp.irss.eu.org 3
-  - warp.irss.eu.org 2
-  - warp.irss.eu.org 4
-  - warp.irss.eu.org 11
-  - warp.irss.eu.org 8
-  - warp.irss.eu.org 5
-  - warp.irss.eu.org 9
-  - warp.irss.eu.org 14
-  - 🇺🇸US-37.19.198.160-0256 | 108.684MB
-  - 🇺🇸US-37.19.198.244-0253 | 118.716MB
-  - 🇺🇸US-37.19.198.236-0255 | 108.48MB
-  - 🇺🇸US-156.146.38.168-0249 | 66.484MB
-  - warp.irss.eu.org 12
-  - 🇺🇸US-37.19.198.243-0254 | 112.051MB
-  - warp.irss.eu.org 15
-  - 🇺🇸 US_223
-  - 🇺🇸 US_220
-  - warp.irss.eu.org 6
-  - warp.irss.eu.org 10
-  - _04
-  - 🇺🇸US-194.5.215.59-0257 | 68.775MB
-  - _07
-  - 🏁ZZ_315
-  - 🏁ZZ_314
-  - 🏁ZZ_313
-  - 🇺🇸US_255
-  - _63
-  - warp.irss.eu.org 7
-  - 🇺🇸 US_221
-  - _57
+  - _88
+  - _90
+  - _92
+  - _91
+  - _87
   - _41
-  - 🇺🇸US_260
-  - _06
-  - _40
-  - _42
-  - _43
-  - _45
-  - 🇺🇸US_261
-  - _39
-  - _21
-  - _13
-  - 🇺🇸US_263
+  - _60
+  - _47
+  - _65
   - _44
-  - 🇺🇸US_262
-  - _20
-  - _22
-  - _48
-  - 🇺🇸US_269
-  - _54
-  - _38
-  - _49
-  - 🇺🇸US_280
-  - 🇺🇸US_267
-  - 🇺🇸US_271
-  - _15
-  - _35
-  - _36
-  - _55
-  - _31
-  - _34
-  - _30
-  - _58
-  - _33
-  - _29
-  - 🇺🇸US_256
-  - _11
-  - 🇺🇸 US_222
-  - _62
-  - _32
-  - 🏁 ZZ_284
-  - 🏁 ZZ_312
-  - 🏁ZZ_316
-  - _08
-  - _26
-  - 🇺🇸US_279
+  - _45
+  - _42
   - _61
-  - _50
-  - 🇺🇸 US_252
-  - 🏁 ZZ_307
-  - 🇺🇸 US_224
-  - _27
+  - 🇺🇸US-37.19.198.243-0287 | 174.583MB
+  - 🇺🇸US-37.19.198.236-0289 | 105.466MB
+  - _37
+  - 🇺🇸US-37.19.198.244-0286 | 210.261MB
+  - _49
+  - _48
+  - 🇺🇸US-156.146.38.169-0299 | 47.389MB
+  - _58
+  - 🇺🇸US-156.146.38.168-0295 | 75.801MB
+  - 🇺🇸US-37.19.198.160-0288 | 29.111MB
+  - 🇺🇸US-194.5.215.59-0292 | 85.676MB
+  - _43
+  - _46
+  - _53
+  - 🇺🇸US-212.102.47.132-0306 | 37.314MB
+  - 🇺🇸US-212.102.47.131-0338 | 34.26MB
+  - 🇺🇸US-212.102.47.129-0337 | 40.771MB
+  - 🇺🇸US-172.233.128.126-0349 | 19.412MB
+  - _89
+  - 🇨🇦CA-149.22.95.183-0341 | 32.427MB
+  - 🇺🇸US-173.244.56.9-0297 | 53.612MB
+  - 🇺🇸US-173.244.56.6-0298 | 54.961MB
   - _52
-  - _01
-  - _17
-  - 🇺🇸 US_254
-  - 🇺🇸 US_248
-  - 🏁 ZZ_290
-  - 🇺🇸 US_240
-  - 轮子1
-  - 🏁 ZZ_286
-  - 轮子2
-  - 🏁 ZZ_289
-  - 🏁 ZZ_287
-  - _03
-  - 🏁 ZZ_288
-  - 🇺🇸 US_251
-  - 轮子4
-  - 🇺🇸 US_247
-  - 轮子3
-  - 轮子9
+  - _71
+  - 🇨🇦CA_98
+  - _85
+  - 🇳🇱NL-149.34.244.68-0328 | 35.214MB
+  - _67
+  - _74
+  - _75
+  - _66
+  - _73
+  - _57
+  - 🇬🇧GB-85.210.120.237-0307 | 36.728MB
+  - _70
+  - _72
+  - _84
+  - 🇬🇧GB-146.70.61.18-0343 | 44.476MB
+  - RELAY-104.21.96.1-0370 | 2.469MB
+  - _51
+  - _68
+  - _32
+  - 🇨🇿 CZ_105
+  - 🇫🇷FR-77.239.116.76-0355 | 17.784MB
+  - _50
+  - RELAY-104.21.112.1-1074 | 3.149MB
+  - _79
+  - 🇩🇪DE-185.177.229.245-1070 | 2.688MB
+  - RELAY-104.21.64.1-0367 | 2.914MB
+  - _78
+  - _33
+  - 🇯🇵JP-149.22.87.204-0352 | 5.941MB
+  - _56
+  - _82
+  - 🇯🇵JP-149.22.87.241-0353 | 7.767MB
+  - _80
+  - 🇬🇧GB-85.210.120.237-0310 | 36.267MB
+  - _63
+  - 🇬🇧GB-85.210.55.181-0322 | 35.924MB
+  - 🇬🇧GB-131.145.36.151-0317 | 36.143MB
+  - 🇬🇧GB-85.210.120.237-0309 | 36.502MB
+  - 🇬🇧GB-85.210.55.181-0311 | 35.986MB
+  - _38
+  - _77
+  - _81
+  - 🇬🇧GB-131.145.36.151-0321 | 35.741MB
+  - 🇬🇧GB-85.210.120.237-0308 | 36.804MB
+  - 🇬🇧GB-131.145.45.24-0312 | 35.991MB
+  - 🇬🇧GB-131.145.36.151-0333 | 36.324MB
+  - _76
+  - 🇬🇧GB-85.210.55.181-0313 | 35.824MB
+  - 🇬🇧GB-131.145.36.151-0318 | 35.327MB
+  - 🇬🇧GB-85.210.55.181-0315 | 36.583MB
+  - 🇬🇧GB-131.145.36.151-0323 | 36.41MB
+  - _54
+  - _83
+  - _39
+  - _62
+  - _59
+  - _28
+  - 日本4-Trojan
+  - 日本5-Trojan
+  - 美国1-Trojan
+  - 美国-Trojan
+  - 韩国-Trojan
+  - 韩国1-Trojan
+  - 香港3-Trojan
   url: http://www.gstatic.com/generate_204
   interval: 300
 - name: 手动选择
   type: select
   proxies:
-  - warp.irss.eu.org 3
-  - warp.irss.eu.org 2
-  - warp.irss.eu.org 4
-  - warp.irss.eu.org 11
-  - warp.irss.eu.org 8
-  - warp.irss.eu.org 5
-  - warp.irss.eu.org 9
-  - warp.irss.eu.org 14
-  - 🇺🇸US-37.19.198.160-0256 | 108.684MB
-  - 🇺🇸US-37.19.198.244-0253 | 118.716MB
-  - 🇺🇸US-37.19.198.236-0255 | 108.48MB
-  - 🇺🇸US-156.146.38.168-0249 | 66.484MB
-  - warp.irss.eu.org 12
-  - 🇺🇸US-37.19.198.243-0254 | 112.051MB
-  - warp.irss.eu.org 15
-  - 🇺🇸 US_223
-  - 🇺🇸 US_220
-  - warp.irss.eu.org 6
-  - warp.irss.eu.org 10
-  - _04
-  - 🇺🇸US-194.5.215.59-0257 | 68.775MB
-  - _07
-  - 🏁ZZ_315
-  - 🏁ZZ_314
-  - 🏁ZZ_313
-  - 🇺🇸US_255
-  - _63
-  - warp.irss.eu.org 7
-  - 🇺🇸 US_221
-  - _57
+  - _88
+  - _90
+  - _92
+  - _91
+  - _87
   - _41
-  - 🇺🇸US_260
-  - _06
-  - _40
-  - _42
-  - _43
-  - _45
-  - 🇺🇸US_261
-  - _39
-  - _21
-  - _13
-  - 🇺🇸US_263
+  - _60
+  - _47
+  - _65
   - _44
-  - 🇺🇸US_262
-  - _20
-  - _22
-  - _48
-  - 🇺🇸US_269
-  - _54
-  - _38
-  - _49
-  - 🇺🇸US_280
-  - 🇺🇸US_267
-  - 🇺🇸US_271
-  - _15
-  - _35
-  - _36
-  - _55
-  - _31
-  - _34
-  - _30
-  - _58
-  - _33
-  - _29
-  - 🇺🇸US_256
-  - _11
-  - 🇺🇸 US_222
-  - _62
-  - _32
-  - 🏁 ZZ_284
-  - 🏁 ZZ_312
-  - 🏁ZZ_316
-  - _08
-  - _26
-  - 🇺🇸US_279
+  - _45
+  - _42
   - _61
-  - _50
-  - 🇺🇸 US_252
-  - 🏁 ZZ_307
-  - 🇺🇸 US_224
-  - _27
+  - 🇺🇸US-37.19.198.243-0287 | 174.583MB
+  - 🇺🇸US-37.19.198.236-0289 | 105.466MB
+  - _37
+  - 🇺🇸US-37.19.198.244-0286 | 210.261MB
+  - _49
+  - _48
+  - 🇺🇸US-156.146.38.169-0299 | 47.389MB
+  - _58
+  - 🇺🇸US-156.146.38.168-0295 | 75.801MB
+  - 🇺🇸US-37.19.198.160-0288 | 29.111MB
+  - 🇺🇸US-194.5.215.59-0292 | 85.676MB
+  - _43
+  - _46
+  - _53
+  - 🇺🇸US-212.102.47.132-0306 | 37.314MB
+  - 🇺🇸US-212.102.47.131-0338 | 34.26MB
+  - 🇺🇸US-212.102.47.129-0337 | 40.771MB
+  - 🇺🇸US-172.233.128.126-0349 | 19.412MB
+  - _89
+  - 🇨🇦CA-149.22.95.183-0341 | 32.427MB
+  - 🇺🇸US-173.244.56.9-0297 | 53.612MB
+  - 🇺🇸US-173.244.56.6-0298 | 54.961MB
   - _52
-  - _01
-  - _17
-  - 🇺🇸 US_254
-  - 🇺🇸 US_248
-  - 🏁 ZZ_290
-  - 🇺🇸 US_240
-  - 轮子1
-  - 🏁 ZZ_286
-  - 轮子2
-  - 🏁 ZZ_289
-  - 🏁 ZZ_287
-  - _03
-  - 🏁 ZZ_288
-  - 🇺🇸 US_251
-  - 轮子4
-  - 🇺🇸 US_247
-  - 轮子3
-  - 轮子9
+  - _71
+  - 🇨🇦CA_98
+  - _85
+  - 🇳🇱NL-149.34.244.68-0328 | 35.214MB
+  - _67
+  - _74
+  - _75
+  - _66
+  - _73
+  - _57
+  - 🇬🇧GB-85.210.120.237-0307 | 36.728MB
+  - _70
+  - _72
+  - _84
+  - 🇬🇧GB-146.70.61.18-0343 | 44.476MB
+  - RELAY-104.21.96.1-0370 | 2.469MB
+  - _51
+  - _68
+  - _32
+  - 🇨🇿 CZ_105
+  - 🇫🇷FR-77.239.116.76-0355 | 17.784MB
+  - _50
+  - RELAY-104.21.112.1-1074 | 3.149MB
+  - _79
+  - 🇩🇪DE-185.177.229.245-1070 | 2.688MB
+  - RELAY-104.21.64.1-0367 | 2.914MB
+  - _78
+  - _33
+  - 🇯🇵JP-149.22.87.204-0352 | 5.941MB
+  - _56
+  - _82
+  - 🇯🇵JP-149.22.87.241-0353 | 7.767MB
+  - _80
+  - 🇬🇧GB-85.210.120.237-0310 | 36.267MB
+  - _63
+  - 🇬🇧GB-85.210.55.181-0322 | 35.924MB
+  - 🇬🇧GB-131.145.36.151-0317 | 36.143MB
+  - 🇬🇧GB-85.210.120.237-0309 | 36.502MB
+  - 🇬🇧GB-85.210.55.181-0311 | 35.986MB
+  - _38
+  - _77
+  - _81
+  - 🇬🇧GB-131.145.36.151-0321 | 35.741MB
+  - 🇬🇧GB-85.210.120.237-0308 | 36.804MB
+  - 🇬🇧GB-131.145.45.24-0312 | 35.991MB
+  - 🇬🇧GB-131.145.36.151-0333 | 36.324MB
+  - _76
+  - 🇬🇧GB-85.210.55.181-0313 | 35.824MB
+  - 🇬🇧GB-131.145.36.151-0318 | 35.327MB
+  - 🇬🇧GB-85.210.55.181-0315 | 36.583MB
+  - 🇬🇧GB-131.145.36.151-0323 | 36.41MB
+  - _54
+  - _83
+  - _39
+  - _62
+  - _59
+  - _28
+  - 日本4-Trojan
+  - 日本5-Trojan
+  - 美国1-Trojan
+  - 美国-Trojan
+  - 韩国-Trojan
+  - 韩国1-Trojan
+  - 香港3-Trojan
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
