@@ -32,192 +32,18 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- name: warp.irss.eu.org 2
-  server: 172.67.78.65
-  port: 80
-  client-fingerprint: randomized
-  type: vless
-  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
-  tls: false
-  tfo: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: warp.irss.eu.org
-- name: warp.irss.eu.org 3
-  server: 172.67.72.209
-  port: 80
-  client-fingerprint: randomized
-  type: vless
-  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
-  tls: false
-  tfo: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: warp.irss.eu.org
-- name: warp.irss.eu.org 4
-  server: 190.93.247.46
-  port: 80
-  client-fingerprint: randomized
-  type: vless
-  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
-  tls: false
-  tfo: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: warp.irss.eu.org
-- name: warp.irss.eu.org 5
-  server: 172.67.196.125
-  port: 80
-  client-fingerprint: randomized
-  type: vless
-  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
-  tls: false
-  tfo: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: warp.irss.eu.org
-- name: warp.irss.eu.org 6
-  server: 162.159.249.78
-  port: 80
-  client-fingerprint: randomized
-  type: vless
-  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
-  tls: false
-  tfo: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: warp.irss.eu.org
-- name: warp.irss.eu.org 7
-  server: 104.21.233.205
-  port: 80
-  client-fingerprint: randomized
-  type: vless
-  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
-  tls: false
-  tfo: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: warp.irss.eu.org
-- name: warp.irss.eu.org 8
-  server: 104.16.237.83
-  port: 80
-  client-fingerprint: randomized
-  type: vless
-  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
-  tls: false
-  tfo: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: warp.irss.eu.org
-- name: warp.irss.eu.org 9
-  server: 162.159.255.155
-  port: 80
-  client-fingerprint: randomized
-  type: vless
-  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
-  tls: false
-  tfo: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: warp.irss.eu.org
-- name: warp.irss.eu.org 10
-  server: 104.17.50.101
-  port: 80
-  client-fingerprint: randomized
-  type: vless
-  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
-  tls: false
-  tfo: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: warp.irss.eu.org
-- name: warp.irss.eu.org 11
-  server: 172.67.167.116
-  port: 80
-  client-fingerprint: randomized
-  type: vless
-  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
-  tls: false
-  tfo: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: warp.irss.eu.org
-- name: warp.irss.eu.org 12
-  server: 172.67.34.93
-  port: 80
-  client-fingerprint: randomized
-  type: vless
-  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
-  tls: false
-  tfo: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: warp.irss.eu.org
-- name: warp.irss.eu.org 14
-  server: 172.67.23.7
-  port: 80
-  client-fingerprint: randomized
-  type: vless
-  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
-  tls: false
-  tfo: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: warp.irss.eu.org
-- name: warp.irss.eu.org 15
-  server: 172.64.90.89
-  port: 80
-  client-fingerprint: randomized
-  type: vless
-  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
-  tls: false
-  tfo: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: warp.irss.eu.org
 - name: 轮子2
   type: hysteria2
   server: 46.17.41.217
   port: '30033'
+  password: dongtaiwang.com
+  fast-open: true
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 轮子3
+  type: hysteria2
+  server: 45.129.2.108
+  port: '50850'
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -230,408 +56,6 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: 轮子1211
-  type: hysteria
-  server: 195.154.200.178
-  port: 46938
-  auth_str: dongtaiwang.com
-  up: 11
-  down: 55
-  fast-open: true
-  protocol: udp
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-- name: 轮子2216
-  type: hysteria
-  server: 108.181.24.77
-  port: 11512
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-- name: 轮子3218
-  type: hysteria
-  server: 208.87.243.151
-  port: 17549
-  auth_str: dongtaiwang.com
-  alpn:
-  - h3
-  sni: www.bing.com
-  skip-cert-verify: true
-  up: 11 Mbps
-  down: 55 Mbps
-- name: 巴拉圭 - 亞松森 - IPXON Networks - 1
-  server: 38.165.233.93
-  port: 989
-  type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-  udp: true
-- name: 🇧🇬 保加利亚 - 索菲亞 - DataCamp Limited - 1
-  server: 37.19.203.147
-  port: 989
-  type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-  udp: true
-- name: 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 3
-  server: 104.24.230.10
-  port: 443
-  type: vless
-  uuid: 72982133-27fb-46fc-9061-61113e77e201
-  tls: true
-  servername: jack.jack-cq.click
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: jack.jack-cq.click
-- name: 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 31
-  server: 104.26.5.57
-  port: 443
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  tls: true
-  alpn:
-  - h2
-  - http/1.1
-  servername: UUHuhyYgESDfgh.UyHjhgvgFCjgujhBuILbVFDXdxM.xYZ
-  client-fingerprint: randomized
-  network: ws
-  ws-opts:
-    path: /egFIvRfmDaCdL5Uk/ODQuMjM1LjE2OS4yMzQ=?ed=2560/?MTMVPN---MTMVPN---MTMVPN---MTMVPN---MTMVPN---MTMVPN
-    headers:
-      Host: UuhUHYygESDfgh.uYhJhGVgfCjgujhbUiLbVFdXDXM.XyZ
-- name: 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 34
-  server: 104.24.218.44
-  port: 443
-  type: vless
-  uuid: f40b19a1-5515-4c93-804c-334873d38449
-  tls: true
-  servername: autumn.norjson.top
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: autumn.norjson.top
-  udp: true
-- name: 🇫🇷 法国 - 巴黎 - Online S.A.S. - 1
-  server: 51.158.205.126
-  port: 4489
-  type: hysteria2
-  password: dongtaiwang.com
-  auth: dongtaiwang.com
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇫🇷 法国 - 巴黎 - Online S.A.S. - 3
-  server: 51.159.226.1
-  port: 14241
-  type: hysteria
-  auth_str: dongtaiwang.com
-  auth-str: dongtaiwang.com
-  up: 100
-  down: 100
-  protocol: udp
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  udp: true
-- name: 🇫🇷 法国 - 巴黎 - Online S.A.S. - 7
-  server: hy2-2.694463.xyz
-  port: 4489
-  type: hysteria2
-  password: dongtaiwang.com
-  auth: dongtaiwang.com
-  sni: www.bing.com
-  skip-cert-verify: true
-  udp: true
-- name: 🇫🇷 法国 - 巴黎 - Online S.A.S. - 9
-  server: tgju.org
-  port: 80
-  type: vless
-  uuid: 76ad8213-4617-47eb-92cc-5392b39b45ce
-  tls: false
-  servername: eLOQuENt-caSE.ZUlaIR.orG.
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: eLOQuENt-caSE.ZUlaIR.orG.
-  udp: true
-- name: 🇫🇷 法国 - 巴黎 - SCALEWAY - 2
-  server: 51.159.111.32
-  port: 31180
-  type: hysteria2
-  password: dongtaiwang.com
-  auth: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-- name: 🇬🇧 英国 - Erith - OVH SAS - 3
-  server: 57.128.178.253
-  port: 443
-  type: vless
-  uuid: 2b5feae8-1a36-43cd-a722-83522e34853c
-  tls: true
-  alpn:
-  - http/1.1
-  servername: en.linceedab.com
-  client-fingerprint: safari
-  network: tcp
-  udp: true
-- name: 🇬🇧 英国 - 倫敦 - Zhejiang Aiyun Network Technology Co Ltd - 5
-  server: www.speedtest.net
-  port: 80
-  type: vless
-  uuid: telegram-id-ArV2ray2
-  tls: false
-  network: ws
-  ws-opts:
-    path: /-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry
-    headers:
-      Host: www.speedtest.net.b.1.speedtest2029.com.
-  udp: true
-- name: 🇯🇵 日本 - Ōkubo-naka - Cloudflare, Inc. - 10
-  server: 217.142.250.28
-  port: 443
-  type: vless
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-  tls: true
-  servername: steep.skyfigure.top
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    headers:
-      Host: steep.skyfigure.top
-- name: 🇯🇵 日本 - Ōkubo-naka - Cloudflare, Inc. - 11
-  server: 141.147.147.180
-  port: 443
-  type: vless
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-  tls: true
-  servername: steep.skyfigure.top
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    headers:
-      Host: steep.skyfigure.top
-- name: 🇯🇵 日本 - Ōkubo-naka - Cloudflare, Inc. - 15
-  server: 140.83.57.20
-  port: 13118
-  type: vless
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-  tls: true
-  servername: steep.skyfigure.top
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    headers:
-      Host: steep.skyfigure.top
-- name: 🇯🇵 日本 - Ōkubo-naka - Cloudflare, Inc. - 17
-  server: 217.142.236.93
-  port: 443
-  type: vless
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-  tls: true
-  servername: steep.skyfigure.top
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    headers:
-      Host: steep.skyfigure.top
-- name: 🇯🇵 日本 - Ōkubo-naka - Cloudflare, Inc. - 2
-  server: 150.66.0.85
-  port: 443
-  type: vless
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-  tls: true
-  servername: steep.skyfigure.top
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    headers:
-      Host: steep.skyfigure.top
-- name: 🇯🇵 日本 - Ōkubo-naka - Cloudflare, Inc. - 20
-  server: 64.176.52.132
-  port: 443
-  type: vless
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-  tls: true
-  servername: steep.skyfigure.top
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    headers:
-      Host: steep.skyfigure.top
-- name: 🇯🇵 日本 - Ōkubo-naka - Cloudflare, Inc. - 4
-  server: 121.85.55.59
-  port: 19842
-  type: vless
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-  tls: true
-  servername: steep.skyfigure.top
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    headers:
-      Host: steep.skyfigure.top
-  udp: true
-- name: 🇯🇵 日本 - Ōkubo-naka - Cloudflare, Inc. - 6
-  server: 138.2.39.24
-  port: 443
-  type: vless
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-  tls: true
-  servername: steep.skyfigure.top
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    headers:
-      Host: steep.skyfigure.top
-  udp: true
-- name: 🇯🇵 日本 - 成田市 - Cloudflare, Inc. - 12
-  server: 185.39.31.39
-  port: 443
-  type: vless
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-  tls: true
-  servername: steep.skyfigure.top
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    headers:
-      Host: steep.skyfigure.top
-- name: 🇯🇵 日本 - 成田市 - Cloudflare, Inc. - 13
-  server: 158.101.80.84
-  port: 443
-  type: vless
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-  tls: true
-  servername: steep.skyfigure.top
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    headers:
-      Host: steep.skyfigure.top
-- name: 🇯🇵 日本 - 成田市 - Cloudflare, Inc. - 16
-  server: 202.144.195.204
-  port: 443
-  type: vless
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-  tls: true
-  servername: steep.skyfigure.top
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    headers:
-      Host: steep.skyfigure.top
-- name: 🇯🇵 日本 - 成田市 - Cloudflare, Inc. - 18
-  server: 132.145.124.43
-  port: 12502
-  type: vless
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-  tls: true
-  servername: steep.skyfigure.top
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    headers:
-      Host: steep.skyfigure.top
-- name: 🇯🇵 日本 - 成田市 - Cloudflare, Inc. - 5
-  server: 141.147.182.141
-  port: 443
-  type: vless
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-  tls: true
-  servername: steep.skyfigure.top
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    headers:
-      Host: steep.skyfigure.top
-- name: 🇰🇷 韩国 - Yeongdong-gun - Cloudflare, Inc. - 4
-  server: 131.186.17.132
-  port: 443
-  type: vless
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-  tls: true
-  servername: steep.skyfigure.top
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    headers:
-      Host: steep.skyfigure.top
-- name: 🇰🇷 韩国 - Yeongdong-gun - Cloudflare, Inc. - 5
-  server: 119.56.175.56
-  port: 12406
-  type: vless
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-  tls: true
-  servername: steep.skyfigure.top
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    headers:
-      Host: steep.skyfigure.top
-- name: 🇰🇷 韩国 - Yeongdong-gun - Cloudflare, Inc. - 6
-  server: 132.145.94.80
-  port: 443
-  type: vless
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-  tls: true
-  servername: steep.skyfigure.top
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    headers:
-      Host: steep.skyfigure.top
-- name: 🇰🇷 韩国 - Yeongdong-gun - Cloudflare, Inc. - 7
-  server: 52.141.25.42
-  port: 443
-  type: vless
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-  tls: true
-  servername: steep.skyfigure.top
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    headers:
-      Host: steep.skyfigure.top
-- name: 🇲🇩 摩尔多瓦 - 基希讷乌 - ''IT FRUIT'' S.R.L. - 1
-  server: 185.153.197.5
-  port: 989
-  type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-  udp: true
-- name: 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 7
-  server: 188.114.99.93
-  port: 443
-  type: vless
-  uuid: 72982133-27fb-46fc-9061-61113e77e201
-  tls: true
-  servername: jack.jack-cq.click
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: jack.jack-cq.click
-- name: 🇳🇱 荷兰 - 阿姆斯特丹 - Hostkey B.V. - 1
-  server: exchange.gameaurela.click
-  port: 52952
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: LMSNh21TrXjR2ok25Q2nE8ENT2zoBmPvka3RCCUAHZELCnWoekVjvaf89qwcRkdbxEfep2bc2aUtmnxqvF1ayQRez1JHjULj
 - name: 🇳🇱 荷兰 - 阿姆斯特丹 - Hostkey B.V. - 2
   server: 141.98.4.67
   port: 52952
@@ -654,18 +78,14 @@ proxies:
   auth: dongtaiwang.com
   sni: www.bing.com
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 - 新加坡 - Cloudflare, Inc. - 10
-  server: 47.74.157.194
-  port: 443
-  type: vless
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-  tls: true
-  servername: steep.skyfigure.top
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    headers:
-      Host: steep.skyfigure.top
+- name: 🇷🇺 俄罗斯 - 莫斯科 - LLC Baxet - 9
+  server: 45.129.2.108
+  port: 50850
+  type: hysteria2
+  password: dongtaiwang.com
+  auth: dongtaiwang.com
+  sni: www.bing.com
+  skip-cert-verify: true
 - name: 🇸🇬 新加坡 - 新加坡 - Cloudflare, Inc. - 12
   server: 8.219.237.57
   port: 31523
@@ -726,29 +146,19 @@ proxies:
     path: /Telegram🇨🇳 @pgkj666 /?ed=2560
     headers:
       Host: steep.skyfigure.top
-- name: 🇸🇬 新加坡 - 新加坡 - Cloudflare, Inc. - 8
-  server: 8.222.178.214
-  port: 6666
+- name: 🇸🇬 新加坡 - 新加坡 - Google LLC - 1
+  server: 168.138.181.208
+  port: 443
   type: vless
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+  uuid: 0783b1b9-5d8b-4d03-adc3-b050acc71a29
   tls: true
-  servername: steep.skyfigure.top
+  servername: sgp.rtot.me
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /Telegram🇨🇳 @pgkj666 /?ed=2560
+    path: /bing
     headers:
-      Host: steep.skyfigure.top
-- name: 🇸🇬 新加坡 - 新加坡 - NewMedia Express Pte Ltd - 18
-  server: ip.sb
-  port: 8080
-  type: vless
-  uuid: d03d2ff3-0b28-4c6b-bab5-4bfac274aa91
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 0613.heweiyi.dpdns.org
+      Host: sgp.rtot.me
   udp: true
 - name: 🇸🇬 新加坡 - 新加坡 - NewMedia Express Pte Ltd - 21
   server: 104.26.12.31
@@ -786,22 +196,35 @@ proxies:
     headers:
       Host: 0612.heweiyi.dpdns.org
   udp: true
-- name: 🇸🇬 新加坡 - 新加坡 - PT Herza Digital Indonesia - 15
-  server: 38.47.176.251
-  port: 56051
-  type: vmess
-  uuid: 2bca3569-0662-47f7-fdf8-421f30e71f44
-  alterId: 0
-  cipher: auto
-  tls: false
+- name: 🇸🇬 新加坡 - 新加坡 - Oracle Corporation - 17
+  server: asg.pagate.top
+  port: 10086
+  type: hysteria2
+  password: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1
+  auth: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1
+  sni: asg.pagate.top
   skip-cert-verify: false
+- name: 🇺🇸 美国 - Reston - OVH SAS - 2
+  server: usa.test3.net
+  port: 443
+  type: trojan
+  password: ab33eed0-4684-11f0-8b81-1239d0255272
+  skip-cert-verify: true
   udp: true
-- name: 🇸🇮 斯洛文尼亚 - 卢布尔雅那 - Optimus IT d.o.o. - 1
-  server: 91.132.94.200
-  port: 989
-  type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
+- name: 🇺🇸 美国 - Reston - OVH SAS - 3
+  server: usa.test3.net
+  port: 443
+  type: trojan
+  password: 9e937610-4684-11f0-a6b2-1239d0255272
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸 美国 - Reston - OVH SAS - 4
+  server: usa.test3.net
+  port: 443
+  type: trojan
+  password: 8e2a3980-4684-11f0-b76c-1239d0255272
+  skip-cert-verify: true
+  udp: true
 - name: 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 49
   server: 104.16.125.228
   port: 443
@@ -823,6 +246,21 @@ proxies:
   auth: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1
   sni: aus.pagate.top
   skip-cert-verify: false
+- name: 🇺🇸 美国 - 水牛城 - HostPapa - 56
+  server: 162.159.140.167
+  port: 443
+  type: vless
+  uuid: 585acd30-52bf-4b70-a537-e13649fafefc
+  tls: true
+  alpn:
+  - http/1.1
+  servername: XszAW34.7282728.xYZ
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /rU9rSjDSOd4yY2fOe?ed=2048/@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn
+    headers:
+      Host: xszaw34.7282728.xyz
 - name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 13
   server: 208.87.243.187
   port: 40528
@@ -843,6 +281,22 @@ proxies:
   auth: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
+  udp: true
+- name: 🇺🇸 美国 - 紐約 - Massivegrid LTD - 97
+  server: 104.21.78.243
+  port: 443
+  type: vless
+  uuid: c8eac4b7-95ba-4ce0-920d-c3279eb3b391
+  tls: true
+  alpn:
+  - http/1.1
+  servername: cCVBNhJ.7282728.XYZ
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /6r23FpdcA4KNAXX
+    headers:
+      Host: ccvbnhj.7282728.xyz
   udp: true
 - name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 102
   server: 185.162.228.112
@@ -867,18 +321,6 @@ proxies:
     path: /Telegram:@ShadowProxy66/?ed=2560
     headers:
       Host: uuhUHYygEsdFGH.UYHJHGvgFcjGUJhbUIlbVFDxDxM.xyz
-  udp: true
-- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 114
-  server: 104.18.15.19
-  port: 8080
-  type: vless
-  uuid: 9d4f6cfb-c921-4bde-ae0a-61781848d940
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: 0225.axpsivp.workers.dev
   udp: true
 - name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 115
   server: 45.131.4.83
@@ -991,176 +433,430 @@ proxies:
   alpn:
   - h3
   udp: true
-- name: 🇻🇳 越南 - Hai BàTrưng - GLTEC - 5
-  server: 59.153.217.57
-  port: 34045
+- name: 🇺🇸 美国 - 肯特 - Cloudflare, Inc. - 46
+  server: 66.203.150.211
+  port: 7656
   type: vless
-  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
+  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
   tls: true
-  reality-opts:
-    public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
-    short-id: e8ab71d0
-  servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇻🇳 越南 - Trâu Quỳ - MOCLAMESOUL - 3
-  server: 103.12.77.78
-  port: 34045
-  type: vless
-  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
-  tls: true
-  reality-opts:
-    public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
-    short-id: e8ab71d0
-  servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇻🇳 越南 - Trâu Quỳ - MOCLAMESOUL - 7
-  server: 103.12.76.236
-  port: 34045
-  type: vless
-  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
-  tls: true
-  reality-opts:
-    public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
-    short-id: e8ab71d0
-  servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇬🇧 GB_124
-  server: 185.47.253.227
+  servername: steep.skyfigure.top
+  network: ws
+  ws-opts:
+    path: /Telegram🇨🇳 @pgkj666 /?ed=2560
+    headers:
+      Host: steep.skyfigure.top
+- name: 🇷🇺RU_200
+  server: 45.89.52.66
   type: ss
-  country: 🇬🇧 GB
+  country: 🇷🇺RU
+  port: 9065
+  password: PeHSHm5SqEjBuEXE
+  cipher: aes-256-cfb
+- name: 🇸🇬SG_202
+  server: sg-full.privateip.net
+  type: trojan
+  country: 🇸🇬SG
+  port: 443
+  password: d4bdfc72-7f0c-4ff0-aa4d-3530736f4088
+  skip-cert-verify: true
+  udp: true
+- name: 🇹🇭 TH_203
+  server: 116.206.124.41
+  type: ss
+  country: 🇹🇭 TH
+  port: 34045
+  password: TG:@Enkelte_notif&&TG:@Notif_Chat
+  cipher: aes-256-gcm
+- name: 🇹🇷 TR_204
+  server: 185.123.101.241
+  type: ss
+  country: 🇹🇷 TR
   port: 990
   password: f8f7aCzcPKbsF8p3
   cipher: chacha20-ietf-poly1305
-- name: 🇬🇧 GB_126
-  server: 77.239.116.76
+- name: 🇺🇦 UA_207
+  server: 188.191.147.127
   type: ss
-  country: 🇬🇧 GB
-  port: 8315
-  password: oHOP1bWFMkQVx3PdbhRlOk
+  country: 🇺🇦 UA
+  port: 31348
+  password: 6IVOuzMfH5ROpgwtRTcNJKYJvYe9FDVaU7wAYYh8PRLxxZs6
   cipher: chacha20-ietf-poly1305
-- name: 🇬🇧GB_131
-  server: 212.102.53.198
+- name: 🇺🇸 US_208
+  server: 166.1.157.228
   type: ss
-  country: 🇬🇧GB
+  country: 🇺🇸 US
+  port: 55330
+  password: rtR4YX74vwqRJu9MGH3e1N3CQdGMWCUFkyLisijiFuvhkU9McV5TpygfkernJ4UQe63JtcDQkrQ9HfchzqQz1kLCnTRor8jg
+  cipher: chacha20-ietf-poly1305
+- name: 🇺🇸 US_209
+  server: 154.90.62.168
+  type: ss
+  country: 🇺🇸 US
+  port: 989
+  password: f8f7aCzcPKbsF8p3
+  cipher: aes-256-cfb
+- name: 🇺🇸 US_210
+  server: 156.146.38.170
+  type: ss
+  country: 🇺🇸 US
   port: 443
   password: shadowsocks
   cipher: aes-128-gcm
-- name: 🇬🇧GB_132
-  server: 212.102.53.195
+- name: 🇺🇸 US_211
+  server: 94.131.21.174
   type: ss
-  country: 🇬🇧GB
+  country: 🇺🇸 US
+  port: 54075
+  password: o38yuvzSe3m5aDNpHtUPH1zGwbGEXXMDsGwVaub2SYEmHUa2WGZUjiezX3Vvva9CCzpjxYtuJLgKsSnsyKBf9ciPVba3y4o3
+  cipher: chacha20-ietf-poly1305
+- name: 🇺🇸 US_212
+  server: 156.146.38.167
+  type: ss
+  country: 🇺🇸 US
   port: 443
   password: shadowsocks
   cipher: aes-128-gcm
-- name: 🇱🇹 LT_147
-  server: 45.87.175.188
+- name: 🇺🇸 US_213
+  server: 156.146.62.161
   type: ss
-  country: 🇱🇹 LT
-  port: 8080
-  password: 4a2rfixophdjffa8KVA4Aa
+  country: 🇺🇸 US
+  port: 443
+  password: shadowsocks
+  cipher: aes-128-gcm
+- name: 🇺🇸 US_215
+  server: 156.146.62.162
+  type: ss
+  country: 🇺🇸 US
+  port: 443
+  password: shadowsocks
+  cipher: aes-128-gcm
+- name: 🇺🇸 US_216
+  server: 156.146.62.164
+  type: ss
+  country: 🇺🇸 US
+  port: 443
+  password: shadowsocks
+  cipher: aes-128-gcm
+- name: 🇺🇸 US_217
+  server: 38.68.134.202
+  type: ss
+  country: 🇺🇸 US
+  port: 5004
+  password: g5MeD6Ft3CWlJId
+  cipher: aes-256-gcm
+- name: 🇺🇸 US_218
+  server: 212.102.47.130
+  type: ss
+  country: 🇺🇸 US
+  port: 443
+  password: shadowsocks
+  cipher: aes-128-gcm
+- name: 🇺🇸 US_220
+  server: 38.165.233.18
+  type: ss
+  country: 🇺🇸 US
+  port: 990
+  password: f8f7aCzcPKbsF8p3
   cipher: chacha20-ietf-poly1305
-- name: 🇱🇹 LT_149
-  server: 45.158.171.151
+- name: 🇺🇸 US_222
+  server: 156.146.62.163
   type: ss
-  country: 🇱🇹 LT
-  port: 8080
-  password: 1RWwXhwfAB5gAEozU4G2Pg
+  country: 🇺🇸 US
+  port: 443
+  password: shadowsocks
+  cipher: aes-128-gcm
+- name: 🇺🇸 US_224
+  server: 9.163.232.180
+  type: ss
+  country: 🇺🇸 US
+  port: 1490
+  password: ojcP36n1SouDcnBg9EOZP8
   cipher: chacha20-ietf-poly1305
-- name: 🇱🇹 LT_155
-  server: 45.158.171.110
+- name: 🇺🇸 US_225
+  server: 38.54.57.90
   type: ss
-  country: 🇱🇹 LT
+  country: 🇺🇸 US
+  port: 989
+  password: f8f7aCzcPKbsF8p3
+  cipher: aes-256-cfb
+- name: 🇺🇸 US_226
+  server: 154.90.63.177
+  type: ss
+  country: 🇺🇸 US
+  port: 989
+  password: f8f7aCzcPKbsF8p3
+  cipher: aes-256-cfb
+- name: 🇺🇸 US_231
+  server: 142.4.119.72
+  type: vmess
+  country: 🇺🇸 US
+  port: 57118
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 0
+  cipher: auto
+  network: tcp
+  ws-path: /
+  http-opts: {}
+  h2-opts: {}
+  skip-cert-verify: true
+- name: 🇺🇸US_261
+  server: 38.121.43.71
+  type: ss
+  country: 🇺🇸US
+  port: 6379
+  password: zDNVedRFPQexG9v
+  cipher: aes-256-gcm
+- name: 🇺🇸US_262
+  server: 38.121.43.71
+  type: ss
+  country: 🇺🇸US
+  port: 9102
+  password: e4FCWrgpkji3QY
+  cipher: aes-256-gcm
+- name: 🇺🇸US_263
+  server: 45.158.171.66
+  type: ss
+  country: 🇺🇸US
   port: 8080
   password: oZIoA69Q8yhcQV8ka3Pa3A
   cipher: chacha20-ietf-poly1305
-- name: 🇱🇹 LT_159
-  server: 45.87.175.65
+- name: 🇺🇸US_267
+  server: 38.121.43.71
   type: ss
-  country: 🇱🇹 LT
+  country: 🇺🇸US
+  port: 8118
+  password: cdBIDV42DCwnfIN
+  cipher: aes-256-gcm
+- name: 🇺🇸US_270
+  server: 2.58.87.221
+  type: ss
+  country: 🇺🇸US
+  port: 16899
+  password: Yc2CtrIz8L
+  cipher: aes-128-gcm
+- name: 🇺🇸US_271
+  server: 38.121.43.71
+  type: ss
+  country: 🇺🇸US
+  port: 8881
+  password: kDWvXYZoTBcGkC4
+  cipher: aes-256-gcm
+- name: 🇺🇸US-37.19.198.160-0288 | 145.963MB
+  server: 37.19.198.160
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸US-194.5.215.59-0292 | 101.002MB
+  server: 194.5.215.59
   port: 8080
-  password: oZIoA69Q8yhcQV8ka3Pa3A
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇺🇸US-156.146.38.168-0295 | 68.409MB
+  server: 156.146.38.168
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸US-156.146.38.169-0299 | 66.984MB
+  server: 156.146.38.169
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸US-173.244.56.6-0298 | 60.808MB
+  server: 173.244.56.6
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇬🇧GB-62.100.205.48-0300 | 45.642MB
+  server: 62.100.205.48
+  port: 989
+  type: ss
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: 🇺🇸US-173.244.56.9-0297 | 44.339MB
+  server: 173.244.56.9
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸US-212.102.47.131-0338 | 42.877MB
+  server: 212.102.47.131
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸US-212.102.47.129-0337 | 30.174MB
+  server: 212.102.47.129
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇬🇧GB-146.70.61.18-0343 | 26.002MB
+  server: 146.70.61.18
+  port: 8080
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: CH-84.17.53.160-0331 | 24.941MB
+  server: 84.17.53.160
+  port: 989
+  type: ss
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: 🇬🇧GB-85.210.120.237-0309 | 24.253MB
+  server: series-a2-me.samanehha.co
+  port: 443
+  type: ss
   cipher: chacha20-ietf-poly1305
+  password: Bog0ELmMM9DSxDdQ
+- name: 🇬🇧GB-85.210.120.237-0308 | 24.222MB
+  server: series-a2-me.varzesh360.co
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: Bog0ELmMM9DSxDdQ
+- name: 🇬🇧GB-85.210.55.181-0315 | 24.086MB
+  server: api.namasha.co
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: u17T3BvpYaaiuW2c
+- name: 🇬🇧GB-131.145.45.24-0312 | 24.086MB
+  server: admin.c4.webramz.co
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 69MUii7VDwMqh7Hz
+- name: 🇬🇧GB-85.210.55.181-0313 | 23.53MB
+  server: admin.c2.webramz.co
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: WstuSnlu4ieA9M0L
+- name: 🇬🇧GB-131.145.36.151-0318 | 23.041MB
+  server: freakconfig13.felafel.org
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 1xO2cqPazqjGfCfd
+- name: 🇬🇧GB-85.210.55.181-0311 | 22.958MB
+  server: series-a2-mec.samanehha.co
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: u17T3BvpYaaiuW2c
+- name: 🇬🇧GB-85.210.120.237-0310 | 22.69MB
+  server: admin.c3.webramz.co
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: Bog0ELmMM9DSxDdQ
+- name: 🇬🇧GB-131.145.36.151-0333 | 22.446MB
+  server: series-a2.varzesh360.co
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: mps3FwmDjLrWaOVg
+- name: 🇬🇧GB-131.145.36.151-0317 | 22.266MB
+  server: admin.c1.webramz.co
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 1xO2cqPazqjGfCfd
+- name: 🇬🇧GB-131.145.36.151-0323 | 22.182MB
+  server: series-a2.samanehha.co
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: W74XFALLLuw6m5IA
+- name: 🇬🇧GB-131.145.36.151-0321 | 22.152MB
+  server: series-a1.samanehha.co
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: W74XFALLLuw6m5IA
+- name: 🇬🇧GB-85.210.55.181-0322 | 21.924MB
+  server: series-a2-mec.varzesh360.co
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: u17T3BvpYaaiuW2c
+- name: 🇳🇱NL-149.34.244.68-0328 | 19.623MB
+  server: 149.34.244.68
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸US-172.233.128.126-0349 | 18.889MB
+  server: 172.233.128.126
+  port: 1866
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oXGp1+ihlfKg826H
+- name: RO-194.14.217.38-0346 | 18.373MB
+  server: 194.14.217.38
+  port: 989
+  type: ss
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: 🇨🇦CA-149.22.95.183-0341 | 18.343MB
+  server: 149.22.95.183
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸US-212.102.47.132-0306 | 18.182MB
+  server: 212.102.47.132
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇯🇵JP-149.22.87.204-0352 | 17.915MB
+  server: 149.22.87.204
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇯🇵JP-149.22.87.241-0353 | 17.888MB
+  server: 149.22.87.241
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇵🇱PL-45.144.48.63-0371 | 17.682MB
+  server: 45.144.48.63
+  port: 57456
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: d3837224ed465f00
+- name: 🇰🇷KR-125.141.26.12-0281 | 15.586MB
+  server: 125.141.26.12
+  port: 4857
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇺🇸US-38.68.134.202-0484 | 1.069MB
+  server: 38.68.134.202
+  port: 2375
+  type: ss
+  cipher: aes-256-gcm
+  password: faBAoD54k87UJG7
+- name: 🇺🇸US-38.68.134.202-0473 | 1.059MB
+  server: 38.68.134.202
+  port: 5003
+  type: ss
+  cipher: aes-256-gcm
+  password: g5MeD6Ft3CWlJId
 - name: 🇺🇸US-38.68.134.202-5545 | 0.57MB
   server: 38.68.134.202
   port: 8091
   type: ss
   cipher: aes-256-gcm
   password: PCnnH6SQSnfoS27
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰 Hongkong 3
-  network: ws
-  port: 461
-  server: 7c4f5bb3-sy0cg0-sz5rs0-3vhf.hkt.east.wctype.com
-  tls: false
-  type: vmess
-  uuid: 5dc4bfeb-6a9f-11ef-aff1-f23c93136cb3
-  ws-headers:
-    Host: a605477178.m.ctrip.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  name: 🇸🇬 Singapore
-  network: ws
-  port: 4157
-  server: 277b6a72-sy0cg0-sz5rs0-3vhf.east.sgp2.189ti.com
-  tls: false
-  type: vmess
-  uuid: 5dc4bfeb-6a9f-11ef-aff1-f23c93136cb3
-  ws-headers:
-    Host: webrtcpunch.video.qq.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  name: 🇮🇩 Indonesia
-  network: tcp
-  port: 461
-  server: 7bfa1dab-sy0cg0-sz5rs0-3vhf.lnd-id.189ti.com
-  tls: true
-  type: vmess
-  uuid: 5dc4bfeb-6a9f-11ef-aff1-f23c93136cb3
-- alterId: 2
-  cipher: auto
-  name: 🇺🇸 US Fremont
-  network: tcp
-  port: 461
-  server: 5c3ba0b6-sy0cg0-sz5rs0-3vhf.fmt2-us.sghuawei.com
-  tls: true
-  type: vmess
-  uuid: 5dc4bfeb-6a9f-11ef-aff1-f23c93136cb3
-- alterId: 2
-  cipher: auto
-  name: 🇺🇸 US Silicon Valley
-  network: tcp
-  port: 5443
-  server: 96ef2630-sy0cg0-sz5rs0-3vhf.fmt-us.sghuawei.com
-  tls: true
-  type: vmess
-  uuid: 5dc4bfeb-6a9f-11ef-aff1-f23c93136cb3
-- alterId: 2
-  cipher: auto
-  name: 🇯🇵 JP Tokyo
-  network: tcp
-  port: 461
-  server: 0c073e04-sy0cg0-sz5rs0-3vhf.tky02.east.189ti.com
-  tls: true
-  type: vmess
-  uuid: 5dc4bfeb-6a9f-11ef-aff1-f23c93136cb3
-- alterId: 2
-  cipher: auto
-  name: 🇬🇧 UK London
-  network: tcp
-  port: 461
-  server: dc6a14bf-sy0cg0-sz5rs0-3vhf.ldn.west.yxlmgs.com
-  tls: true
-  type: vmess
-  uuid: 5dc4bfeb-6a9f-11ef-aff1-f23c93136cb3
 proxy-groups:
 - name: 节点选择
   type: select
@@ -1173,106 +869,106 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - warp.irss.eu.org 6
   - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 109
-  - warp.irss.eu.org 9
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 16
-  - warp.irss.eu.org 12
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 59
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 36
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 114
-  - warp.irss.eu.org 11
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 115
-  - warp.irss.eu.org 10
-  - warp.irss.eu.org 8
+  - 🇺🇸US-156.146.38.168-0295 | 68.409MB
   - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 102
-  - warp.irss.eu.org 5
-  - warp.irss.eu.org 4
-  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 31
-  - warp.irss.eu.org 3
+  - 🇺🇸US-156.146.38.169-0299 | 66.984MB
+  - 🇺🇸US-37.19.198.160-0288 | 145.963MB
+  - 🇺🇸 US_212
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 16
+  - 🇺🇸US-38.68.134.202-0484 | 1.069MB
+  - 🇺🇸 US_210
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 115
+  - 🇺🇸US-38.68.134.202-0473 | 1.059MB
+  - 🇺🇸US_267
+  - 🇺🇸 US_217
   - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 49
-  - warp.irss.eu.org 15
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 58
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 52
-  - warp.irss.eu.org 2
-  - warp.irss.eu.org 14
-  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 3
-  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 7
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 32
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 36
   - 🇺🇸US-38.68.134.202-5545 | 0.57MB
-  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 34
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 52
+  - 🇺🇸US_262
+  - 🇺🇸US_261
+  - 🇺🇸US_271
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 58
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 32
+  - 🇺🇸US-173.244.56.9-0297 | 44.339MB
+  - 🇺🇸US-173.244.56.6-0298 | 60.808MB
+  - 🇺🇸US-194.5.215.59-0292 | 101.002MB
+  - 🇺🇸US-172.233.128.126-0349 | 18.889MB
+  - 🇺🇸US-212.102.47.132-0306 | 18.182MB
+  - 🇺🇸US-212.102.47.129-0337 | 30.174MB
+  - 🇨🇦CA-149.22.95.183-0341 | 18.343MB
+  - 🇺🇸 US_218
+  - 🇺🇸US-212.102.47.131-0338 | 42.877MB
+  - 🇺🇸US_270
+  - 🇺🇸 US_231
   - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 72
-  - 🇬🇧 GB_124
+  - 🇺🇸 美国 - Reston - OVH SAS - 4
+  - 🇺🇸 美国 - Reston - OVH SAS - 3
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 59
   - 🇺🇸 美国 - 聖荷西 - SolidTools Technology - 15
-  - 🇬🇧GB_132
-  - warp.irss.eu.org 7
-  - 🇱🇹 LT_159
-  - 🇬🇧GB_131
-  - 🇱🇹 LT_155
-  - 🇱🇹 LT_149
-  - 🇱🇹 LT_147
-  - 🇫🇷 法国 - 巴黎 - Online S.A.S. - 9
-  - 🇬🇧 GB_126
-  - 🇺🇸 US Fremont
-  - 🇺🇸 US Silicon Valley
-  - 🇲🇩 摩尔多瓦 - 基希讷乌 - ''IT FRUIT'' S.R.L. - 1
-  - 🇺🇸 美国 - 凤凰城 - Oracle Corporation - 98
-  - 🇬🇧 英国 - Erith - OVH SAS - 3
+  - 🇳🇱NL-149.34.244.68-0328 | 19.623MB
+  - 🇺🇸 美国 - Reston - OVH SAS - 2
+  - 🇬🇧GB-146.70.61.18-0343 | 26.002MB
+  - 🇺🇸US_263
+  - 🇬🇧GB-62.100.205.48-0300 | 45.642MB
+  - 🇺🇸 US_216
+  - 🇺🇸 US_213
+  - 🇺🇸 US_222
+  - 🇺🇸 US_224
+  - 🇺🇸 US_215
+  - CH-84.17.53.160-0331 | 24.941MB
+  - 🇯🇵JP-149.22.87.204-0352 | 17.915MB
+  - 🇯🇵JP-149.22.87.241-0353 | 17.888MB
   - 🇳🇱 荷兰 - 阿姆斯特丹 - Hostkey B.V. - 2
-  - 🇧🇬 保加利亚 - 索菲亞 - DataCamp Limited - 1
-  - 🇫🇷 法国 - 巴黎 - SCALEWAY - 2
-  - 🇬🇧 英国 - 倫敦 - Zhejiang Aiyun Network Technology Co Ltd - 5
+  - 🇺🇸 美国 - 凤凰城 - Oracle Corporation - 98
+  - 🇺🇸 US_225
+  - 🇬🇧GB-131.145.36.151-0333 | 22.446MB
+  - 🇬🇧GB-131.145.36.151-0323 | 22.182MB
+  - 🇬🇧GB-131.145.36.151-0317 | 22.266MB
+  - 🇬🇧GB-85.210.55.181-0311 | 22.958MB
+  - 🇬🇧GB-131.145.36.151-0321 | 22.152MB
+  - RO-194.14.217.38-0346 | 18.373MB
+  - 🇬🇧GB-85.210.55.181-0322 | 21.924MB
+  - 🇬🇧GB-85.210.55.181-0315 | 24.086MB
+  - 🇺🇸 US_226
+  - 🇬🇧GB-85.210.55.181-0313 | 23.53MB
+  - 🇺🇦 UA_207
+  - 🇬🇧GB-131.145.45.24-0312 | 24.086MB
+  - 🇬🇧GB-131.145.36.151-0318 | 23.041MB
+  - 🇰🇷KR-125.141.26.12-0281 | 15.586MB
+  - 🇺🇸 US_211
+  - 🇹🇷 TR_204
+  - 🇵🇱PL-45.144.48.63-0371 | 17.682MB
+  - 🇷🇺RU_200
   - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 13
-  - 🇫🇷 法国 - 巴黎 - Online S.A.S. - 1
-  - 轮子2216
-  - 轮子3218
-  - 巴拉圭 - 亞松森 - IPXON Networks - 1
-  - 🇬🇧 UK London
-  - 🇸🇬 新加坡 - 新加坡 - PT Herza Digital Indonesia - 15
-  - 🇳🇱 荷兰 - 阿姆斯特丹 - Hostkey B.V. - 1
-  - 🇯🇵 日本 - 成田市 - Cloudflare, Inc. - 18
-  - 🇯🇵 日本 - 成田市 - Cloudflare, Inc. - 12
-  - 🇫🇷 法国 - 巴黎 - Online S.A.S. - 7
-  - 🇯🇵 日本 - 成田市 - Cloudflare, Inc. - 13
-  - 🇯🇵 JP Tokyo
-  - 轮子4
-  - 🇷🇺 俄罗斯 - 莫斯科 - LLC Baxet - 3
-  - 🇰🇷 韩国 - Yeongdong-gun - Cloudflare, Inc. - 6
-  - 🇸🇬 新加坡 - 新加坡 - Cloudflare, Inc. - 7
-  - 🇷🇺 俄罗斯 - 莫斯科 - LLC BAXET - 5
-  - 🇸🇬 新加坡 - 新加坡 - Cloudflare, Inc. - 3
-  - 🇸🇬 新加坡 - 新加坡 - NewMedia Express Pte Ltd - 18
-  - 🇸🇬 新加坡 - 新加坡 - NewMedia Express Pte Ltd - 21
-  - 🇯🇵 日本 - Ōkubo-naka - Cloudflare, Inc. - 20
-  - 🇸🇬 新加坡 - 新加坡 - NewMedia Express Pte Ltd - 23
-  - 🇸🇬 新加坡 - 新加坡 - NewMedia Express Pte Ltd - 22
+  - 🇺🇸 US_209
+  - 🇬🇧GB-85.210.120.237-0310 | 22.69MB
+  - 🇺🇸 US_220
+  - 🇬🇧GB-85.210.120.237-0308 | 24.222MB
+  - 🇬🇧GB-85.210.120.237-0309 | 24.253MB
+  - 🇺🇸 US_208
+  - 🇹🇭 TH_203
   - 轮子2
-  - 🇯🇵 日本 - Ōkubo-naka - Cloudflare, Inc. - 2
-  - 🇭🇰 Hongkong 3
-  - 🇸🇮 斯洛文尼亚 - 卢布尔雅那 - Optimus IT d.o.o. - 1
-  - 🇯🇵 日本 - 成田市 - Cloudflare, Inc. - 16
-  - 🇯🇵 日本 - 成田市 - Cloudflare, Inc. - 5
-  - 🇸🇬 Singapore
-  - 🇰🇷 韩国 - Yeongdong-gun - Cloudflare, Inc. - 7
-  - 🇰🇷 韩国 - Yeongdong-gun - Cloudflare, Inc. - 5
+  - 🇷🇺 俄罗斯 - 莫斯科 - LLC BAXET - 5
+  - 🇸🇬 新加坡 - 新加坡 - Cloudflare, Inc. - 7
+  - 🇸🇬 新加坡 - 新加坡 - Cloudflare, Inc. - 6
+  - 🇷🇺 俄罗斯 - 莫斯科 - LLC Baxet - 3
+  - 🇷🇺 俄罗斯 - 莫斯科 - LLC Baxet - 9
+  - 🇸🇬 新加坡 - 新加坡 - NewMedia Express Pte Ltd - 23
+  - 🇸🇬 新加坡 - 新加坡 - NewMedia Express Pte Ltd - 21
+  - 🇸🇬 新加坡 - 新加坡 - NewMedia Express Pte Ltd - 22
+  - 🇸🇬 新加坡 - 新加坡 - Cloudflare, Inc. - 3
+  - 🇸🇬SG_202
+  - 🇸🇬 新加坡 - 新加坡 - Oracle Corporation - 17
+  - 🇺🇸 美国 - 肯特 - Cloudflare, Inc. - 46
   - 🇸🇬 新加坡 - 新加坡 - Cloudflare, Inc. - 13
   - 🇸🇬 新加坡 - 新加坡 - Cloudflare, Inc. - 12
-  - 🇸🇬 新加坡 - 新加坡 - Cloudflare, Inc. - 8
-  - 🇯🇵 日本 - Ōkubo-naka - Cloudflare, Inc. - 15
-  - 轮子1211
-  - 🇯🇵 日本 - Ōkubo-naka - Cloudflare, Inc. - 17
-  - 🇰🇷 韩国 - Yeongdong-gun - Cloudflare, Inc. - 4
-  - 🇯🇵 日本 - Ōkubo-naka - Cloudflare, Inc. - 11
-  - 🇯🇵 日本 - Ōkubo-naka - Cloudflare, Inc. - 10
-  - 🇻🇳 越南 - Trâu Quỳ - MOCLAMESOUL - 7
-  - 🇫🇷 法国 - 巴黎 - Online S.A.S. - 3
-  - 🇯🇵 日本 - Ōkubo-naka - Cloudflare, Inc. - 6
-  - 🇻🇳 越南 - Trâu Quỳ - MOCLAMESOUL - 3
-  - 🇻🇳 越南 - Hai BàTrưng - GLTEC - 5
-  - 🇸🇬 新加坡 - 新加坡 - Cloudflare, Inc. - 6
-  - 🇮🇩 Indonesia
-  - 🇸🇬 新加坡 - 新加坡 - Cloudflare, Inc. - 10
-  - 🇯🇵 日本 - Ōkubo-naka - Cloudflare, Inc. - 4
+  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 97
+  - 轮子4
+  - 轮子3
+  - 🇸🇬 新加坡 - 新加坡 - Google LLC - 1
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 56
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
@@ -1280,211 +976,211 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - warp.irss.eu.org 6
   - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 109
-  - warp.irss.eu.org 9
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 16
-  - warp.irss.eu.org 12
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 59
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 36
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 114
-  - warp.irss.eu.org 11
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 115
-  - warp.irss.eu.org 10
-  - warp.irss.eu.org 8
+  - 🇺🇸US-156.146.38.168-0295 | 68.409MB
   - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 102
-  - warp.irss.eu.org 5
-  - warp.irss.eu.org 4
-  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 31
-  - warp.irss.eu.org 3
+  - 🇺🇸US-156.146.38.169-0299 | 66.984MB
+  - 🇺🇸US-37.19.198.160-0288 | 145.963MB
+  - 🇺🇸 US_212
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 16
+  - 🇺🇸US-38.68.134.202-0484 | 1.069MB
+  - 🇺🇸 US_210
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 115
+  - 🇺🇸US-38.68.134.202-0473 | 1.059MB
+  - 🇺🇸US_267
+  - 🇺🇸 US_217
   - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 49
-  - warp.irss.eu.org 15
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 58
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 52
-  - warp.irss.eu.org 2
-  - warp.irss.eu.org 14
-  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 3
-  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 7
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 32
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 36
   - 🇺🇸US-38.68.134.202-5545 | 0.57MB
-  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 34
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 52
+  - 🇺🇸US_262
+  - 🇺🇸US_261
+  - 🇺🇸US_271
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 58
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 32
+  - 🇺🇸US-173.244.56.9-0297 | 44.339MB
+  - 🇺🇸US-173.244.56.6-0298 | 60.808MB
+  - 🇺🇸US-194.5.215.59-0292 | 101.002MB
+  - 🇺🇸US-172.233.128.126-0349 | 18.889MB
+  - 🇺🇸US-212.102.47.132-0306 | 18.182MB
+  - 🇺🇸US-212.102.47.129-0337 | 30.174MB
+  - 🇨🇦CA-149.22.95.183-0341 | 18.343MB
+  - 🇺🇸 US_218
+  - 🇺🇸US-212.102.47.131-0338 | 42.877MB
+  - 🇺🇸US_270
+  - 🇺🇸 US_231
   - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 72
-  - 🇬🇧 GB_124
+  - 🇺🇸 美国 - Reston - OVH SAS - 4
+  - 🇺🇸 美国 - Reston - OVH SAS - 3
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 59
   - 🇺🇸 美国 - 聖荷西 - SolidTools Technology - 15
-  - 🇬🇧GB_132
-  - warp.irss.eu.org 7
-  - 🇱🇹 LT_159
-  - 🇬🇧GB_131
-  - 🇱🇹 LT_155
-  - 🇱🇹 LT_149
-  - 🇱🇹 LT_147
-  - 🇫🇷 法国 - 巴黎 - Online S.A.S. - 9
-  - 🇬🇧 GB_126
-  - 🇺🇸 US Fremont
-  - 🇺🇸 US Silicon Valley
-  - 🇲🇩 摩尔多瓦 - 基希讷乌 - ''IT FRUIT'' S.R.L. - 1
-  - 🇺🇸 美国 - 凤凰城 - Oracle Corporation - 98
-  - 🇬🇧 英国 - Erith - OVH SAS - 3
+  - 🇳🇱NL-149.34.244.68-0328 | 19.623MB
+  - 🇺🇸 美国 - Reston - OVH SAS - 2
+  - 🇬🇧GB-146.70.61.18-0343 | 26.002MB
+  - 🇺🇸US_263
+  - 🇬🇧GB-62.100.205.48-0300 | 45.642MB
+  - 🇺🇸 US_216
+  - 🇺🇸 US_213
+  - 🇺🇸 US_222
+  - 🇺🇸 US_224
+  - 🇺🇸 US_215
+  - CH-84.17.53.160-0331 | 24.941MB
+  - 🇯🇵JP-149.22.87.204-0352 | 17.915MB
+  - 🇯🇵JP-149.22.87.241-0353 | 17.888MB
   - 🇳🇱 荷兰 - 阿姆斯特丹 - Hostkey B.V. - 2
-  - 🇧🇬 保加利亚 - 索菲亞 - DataCamp Limited - 1
-  - 🇫🇷 法国 - 巴黎 - SCALEWAY - 2
-  - 🇬🇧 英国 - 倫敦 - Zhejiang Aiyun Network Technology Co Ltd - 5
+  - 🇺🇸 美国 - 凤凰城 - Oracle Corporation - 98
+  - 🇺🇸 US_225
+  - 🇬🇧GB-131.145.36.151-0333 | 22.446MB
+  - 🇬🇧GB-131.145.36.151-0323 | 22.182MB
+  - 🇬🇧GB-131.145.36.151-0317 | 22.266MB
+  - 🇬🇧GB-85.210.55.181-0311 | 22.958MB
+  - 🇬🇧GB-131.145.36.151-0321 | 22.152MB
+  - RO-194.14.217.38-0346 | 18.373MB
+  - 🇬🇧GB-85.210.55.181-0322 | 21.924MB
+  - 🇬🇧GB-85.210.55.181-0315 | 24.086MB
+  - 🇺🇸 US_226
+  - 🇬🇧GB-85.210.55.181-0313 | 23.53MB
+  - 🇺🇦 UA_207
+  - 🇬🇧GB-131.145.45.24-0312 | 24.086MB
+  - 🇬🇧GB-131.145.36.151-0318 | 23.041MB
+  - 🇰🇷KR-125.141.26.12-0281 | 15.586MB
+  - 🇺🇸 US_211
+  - 🇹🇷 TR_204
+  - 🇵🇱PL-45.144.48.63-0371 | 17.682MB
+  - 🇷🇺RU_200
   - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 13
-  - 🇫🇷 法国 - 巴黎 - Online S.A.S. - 1
-  - 轮子2216
-  - 轮子3218
-  - 巴拉圭 - 亞松森 - IPXON Networks - 1
-  - 🇬🇧 UK London
-  - 🇸🇬 新加坡 - 新加坡 - PT Herza Digital Indonesia - 15
-  - 🇳🇱 荷兰 - 阿姆斯特丹 - Hostkey B.V. - 1
-  - 🇯🇵 日本 - 成田市 - Cloudflare, Inc. - 18
-  - 🇯🇵 日本 - 成田市 - Cloudflare, Inc. - 12
-  - 🇫🇷 法国 - 巴黎 - Online S.A.S. - 7
-  - 🇯🇵 日本 - 成田市 - Cloudflare, Inc. - 13
-  - 🇯🇵 JP Tokyo
-  - 轮子4
-  - 🇷🇺 俄罗斯 - 莫斯科 - LLC Baxet - 3
-  - 🇰🇷 韩国 - Yeongdong-gun - Cloudflare, Inc. - 6
-  - 🇸🇬 新加坡 - 新加坡 - Cloudflare, Inc. - 7
-  - 🇷🇺 俄罗斯 - 莫斯科 - LLC BAXET - 5
-  - 🇸🇬 新加坡 - 新加坡 - Cloudflare, Inc. - 3
-  - 🇸🇬 新加坡 - 新加坡 - NewMedia Express Pte Ltd - 18
-  - 🇸🇬 新加坡 - 新加坡 - NewMedia Express Pte Ltd - 21
-  - 🇯🇵 日本 - Ōkubo-naka - Cloudflare, Inc. - 20
-  - 🇸🇬 新加坡 - 新加坡 - NewMedia Express Pte Ltd - 23
-  - 🇸🇬 新加坡 - 新加坡 - NewMedia Express Pte Ltd - 22
+  - 🇺🇸 US_209
+  - 🇬🇧GB-85.210.120.237-0310 | 22.69MB
+  - 🇺🇸 US_220
+  - 🇬🇧GB-85.210.120.237-0308 | 24.222MB
+  - 🇬🇧GB-85.210.120.237-0309 | 24.253MB
+  - 🇺🇸 US_208
+  - 🇹🇭 TH_203
   - 轮子2
-  - 🇯🇵 日本 - Ōkubo-naka - Cloudflare, Inc. - 2
-  - 🇭🇰 Hongkong 3
-  - 🇸🇮 斯洛文尼亚 - 卢布尔雅那 - Optimus IT d.o.o. - 1
-  - 🇯🇵 日本 - 成田市 - Cloudflare, Inc. - 16
-  - 🇯🇵 日本 - 成田市 - Cloudflare, Inc. - 5
-  - 🇸🇬 Singapore
-  - 🇰🇷 韩国 - Yeongdong-gun - Cloudflare, Inc. - 7
-  - 🇰🇷 韩国 - Yeongdong-gun - Cloudflare, Inc. - 5
+  - 🇷🇺 俄罗斯 - 莫斯科 - LLC BAXET - 5
+  - 🇸🇬 新加坡 - 新加坡 - Cloudflare, Inc. - 7
+  - 🇸🇬 新加坡 - 新加坡 - Cloudflare, Inc. - 6
+  - 🇷🇺 俄罗斯 - 莫斯科 - LLC Baxet - 3
+  - 🇷🇺 俄罗斯 - 莫斯科 - LLC Baxet - 9
+  - 🇸🇬 新加坡 - 新加坡 - NewMedia Express Pte Ltd - 23
+  - 🇸🇬 新加坡 - 新加坡 - NewMedia Express Pte Ltd - 21
+  - 🇸🇬 新加坡 - 新加坡 - NewMedia Express Pte Ltd - 22
+  - 🇸🇬 新加坡 - 新加坡 - Cloudflare, Inc. - 3
+  - 🇸🇬SG_202
+  - 🇸🇬 新加坡 - 新加坡 - Oracle Corporation - 17
+  - 🇺🇸 美国 - 肯特 - Cloudflare, Inc. - 46
   - 🇸🇬 新加坡 - 新加坡 - Cloudflare, Inc. - 13
   - 🇸🇬 新加坡 - 新加坡 - Cloudflare, Inc. - 12
-  - 🇸🇬 新加坡 - 新加坡 - Cloudflare, Inc. - 8
-  - 🇯🇵 日本 - Ōkubo-naka - Cloudflare, Inc. - 15
-  - 轮子1211
-  - 🇯🇵 日本 - Ōkubo-naka - Cloudflare, Inc. - 17
-  - 🇰🇷 韩国 - Yeongdong-gun - Cloudflare, Inc. - 4
-  - 🇯🇵 日本 - Ōkubo-naka - Cloudflare, Inc. - 11
-  - 🇯🇵 日本 - Ōkubo-naka - Cloudflare, Inc. - 10
-  - 🇻🇳 越南 - Trâu Quỳ - MOCLAMESOUL - 7
-  - 🇫🇷 法国 - 巴黎 - Online S.A.S. - 3
-  - 🇯🇵 日本 - Ōkubo-naka - Cloudflare, Inc. - 6
-  - 🇻🇳 越南 - Trâu Quỳ - MOCLAMESOUL - 3
-  - 🇻🇳 越南 - Hai BàTrưng - GLTEC - 5
-  - 🇸🇬 新加坡 - 新加坡 - Cloudflare, Inc. - 6
-  - 🇮🇩 Indonesia
-  - 🇸🇬 新加坡 - 新加坡 - Cloudflare, Inc. - 10
-  - 🇯🇵 日本 - Ōkubo-naka - Cloudflare, Inc. - 4
+  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 97
+  - 轮子4
+  - 轮子3
+  - 🇸🇬 新加坡 - 新加坡 - Google LLC - 1
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 56
   url: http://www.gstatic.com/generate_204
   interval: 300
 - name: 手动选择
   type: select
   proxies:
-  - warp.irss.eu.org 6
   - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 109
-  - warp.irss.eu.org 9
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 16
-  - warp.irss.eu.org 12
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 59
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 36
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 114
-  - warp.irss.eu.org 11
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 115
-  - warp.irss.eu.org 10
-  - warp.irss.eu.org 8
+  - 🇺🇸US-156.146.38.168-0295 | 68.409MB
   - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 102
-  - warp.irss.eu.org 5
-  - warp.irss.eu.org 4
-  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 31
-  - warp.irss.eu.org 3
+  - 🇺🇸US-156.146.38.169-0299 | 66.984MB
+  - 🇺🇸US-37.19.198.160-0288 | 145.963MB
+  - 🇺🇸 US_212
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 16
+  - 🇺🇸US-38.68.134.202-0484 | 1.069MB
+  - 🇺🇸 US_210
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 115
+  - 🇺🇸US-38.68.134.202-0473 | 1.059MB
+  - 🇺🇸US_267
+  - 🇺🇸 US_217
   - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 49
-  - warp.irss.eu.org 15
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 58
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 52
-  - warp.irss.eu.org 2
-  - warp.irss.eu.org 14
-  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 3
-  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 7
-  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 32
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 36
   - 🇺🇸US-38.68.134.202-5545 | 0.57MB
-  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 34
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 52
+  - 🇺🇸US_262
+  - 🇺🇸US_261
+  - 🇺🇸US_271
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 58
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 32
+  - 🇺🇸US-173.244.56.9-0297 | 44.339MB
+  - 🇺🇸US-173.244.56.6-0298 | 60.808MB
+  - 🇺🇸US-194.5.215.59-0292 | 101.002MB
+  - 🇺🇸US-172.233.128.126-0349 | 18.889MB
+  - 🇺🇸US-212.102.47.132-0306 | 18.182MB
+  - 🇺🇸US-212.102.47.129-0337 | 30.174MB
+  - 🇨🇦CA-149.22.95.183-0341 | 18.343MB
+  - 🇺🇸 US_218
+  - 🇺🇸US-212.102.47.131-0338 | 42.877MB
+  - 🇺🇸US_270
+  - 🇺🇸 US_231
   - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 72
-  - 🇬🇧 GB_124
+  - 🇺🇸 美国 - Reston - OVH SAS - 4
+  - 🇺🇸 美国 - Reston - OVH SAS - 3
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 59
   - 🇺🇸 美国 - 聖荷西 - SolidTools Technology - 15
-  - 🇬🇧GB_132
-  - warp.irss.eu.org 7
-  - 🇱🇹 LT_159
-  - 🇬🇧GB_131
-  - 🇱🇹 LT_155
-  - 🇱🇹 LT_149
-  - 🇱🇹 LT_147
-  - 🇫🇷 法国 - 巴黎 - Online S.A.S. - 9
-  - 🇬🇧 GB_126
-  - 🇺🇸 US Fremont
-  - 🇺🇸 US Silicon Valley
-  - 🇲🇩 摩尔多瓦 - 基希讷乌 - ''IT FRUIT'' S.R.L. - 1
-  - 🇺🇸 美国 - 凤凰城 - Oracle Corporation - 98
-  - 🇬🇧 英国 - Erith - OVH SAS - 3
+  - 🇳🇱NL-149.34.244.68-0328 | 19.623MB
+  - 🇺🇸 美国 - Reston - OVH SAS - 2
+  - 🇬🇧GB-146.70.61.18-0343 | 26.002MB
+  - 🇺🇸US_263
+  - 🇬🇧GB-62.100.205.48-0300 | 45.642MB
+  - 🇺🇸 US_216
+  - 🇺🇸 US_213
+  - 🇺🇸 US_222
+  - 🇺🇸 US_224
+  - 🇺🇸 US_215
+  - CH-84.17.53.160-0331 | 24.941MB
+  - 🇯🇵JP-149.22.87.204-0352 | 17.915MB
+  - 🇯🇵JP-149.22.87.241-0353 | 17.888MB
   - 🇳🇱 荷兰 - 阿姆斯特丹 - Hostkey B.V. - 2
-  - 🇧🇬 保加利亚 - 索菲亞 - DataCamp Limited - 1
-  - 🇫🇷 法国 - 巴黎 - SCALEWAY - 2
-  - 🇬🇧 英国 - 倫敦 - Zhejiang Aiyun Network Technology Co Ltd - 5
+  - 🇺🇸 美国 - 凤凰城 - Oracle Corporation - 98
+  - 🇺🇸 US_225
+  - 🇬🇧GB-131.145.36.151-0333 | 22.446MB
+  - 🇬🇧GB-131.145.36.151-0323 | 22.182MB
+  - 🇬🇧GB-131.145.36.151-0317 | 22.266MB
+  - 🇬🇧GB-85.210.55.181-0311 | 22.958MB
+  - 🇬🇧GB-131.145.36.151-0321 | 22.152MB
+  - RO-194.14.217.38-0346 | 18.373MB
+  - 🇬🇧GB-85.210.55.181-0322 | 21.924MB
+  - 🇬🇧GB-85.210.55.181-0315 | 24.086MB
+  - 🇺🇸 US_226
+  - 🇬🇧GB-85.210.55.181-0313 | 23.53MB
+  - 🇺🇦 UA_207
+  - 🇬🇧GB-131.145.45.24-0312 | 24.086MB
+  - 🇬🇧GB-131.145.36.151-0318 | 23.041MB
+  - 🇰🇷KR-125.141.26.12-0281 | 15.586MB
+  - 🇺🇸 US_211
+  - 🇹🇷 TR_204
+  - 🇵🇱PL-45.144.48.63-0371 | 17.682MB
+  - 🇷🇺RU_200
   - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 13
-  - 🇫🇷 法国 - 巴黎 - Online S.A.S. - 1
-  - 轮子2216
-  - 轮子3218
-  - 巴拉圭 - 亞松森 - IPXON Networks - 1
-  - 🇬🇧 UK London
-  - 🇸🇬 新加坡 - 新加坡 - PT Herza Digital Indonesia - 15
-  - 🇳🇱 荷兰 - 阿姆斯特丹 - Hostkey B.V. - 1
-  - 🇯🇵 日本 - 成田市 - Cloudflare, Inc. - 18
-  - 🇯🇵 日本 - 成田市 - Cloudflare, Inc. - 12
-  - 🇫🇷 法国 - 巴黎 - Online S.A.S. - 7
-  - 🇯🇵 日本 - 成田市 - Cloudflare, Inc. - 13
-  - 🇯🇵 JP Tokyo
-  - 轮子4
-  - 🇷🇺 俄罗斯 - 莫斯科 - LLC Baxet - 3
-  - 🇰🇷 韩国 - Yeongdong-gun - Cloudflare, Inc. - 6
-  - 🇸🇬 新加坡 - 新加坡 - Cloudflare, Inc. - 7
-  - 🇷🇺 俄罗斯 - 莫斯科 - LLC BAXET - 5
-  - 🇸🇬 新加坡 - 新加坡 - Cloudflare, Inc. - 3
-  - 🇸🇬 新加坡 - 新加坡 - NewMedia Express Pte Ltd - 18
-  - 🇸🇬 新加坡 - 新加坡 - NewMedia Express Pte Ltd - 21
-  - 🇯🇵 日本 - Ōkubo-naka - Cloudflare, Inc. - 20
-  - 🇸🇬 新加坡 - 新加坡 - NewMedia Express Pte Ltd - 23
-  - 🇸🇬 新加坡 - 新加坡 - NewMedia Express Pte Ltd - 22
+  - 🇺🇸 US_209
+  - 🇬🇧GB-85.210.120.237-0310 | 22.69MB
+  - 🇺🇸 US_220
+  - 🇬🇧GB-85.210.120.237-0308 | 24.222MB
+  - 🇬🇧GB-85.210.120.237-0309 | 24.253MB
+  - 🇺🇸 US_208
+  - 🇹🇭 TH_203
   - 轮子2
-  - 🇯🇵 日本 - Ōkubo-naka - Cloudflare, Inc. - 2
-  - 🇭🇰 Hongkong 3
-  - 🇸🇮 斯洛文尼亚 - 卢布尔雅那 - Optimus IT d.o.o. - 1
-  - 🇯🇵 日本 - 成田市 - Cloudflare, Inc. - 16
-  - 🇯🇵 日本 - 成田市 - Cloudflare, Inc. - 5
-  - 🇸🇬 Singapore
-  - 🇰🇷 韩国 - Yeongdong-gun - Cloudflare, Inc. - 7
-  - 🇰🇷 韩国 - Yeongdong-gun - Cloudflare, Inc. - 5
+  - 🇷🇺 俄罗斯 - 莫斯科 - LLC BAXET - 5
+  - 🇸🇬 新加坡 - 新加坡 - Cloudflare, Inc. - 7
+  - 🇸🇬 新加坡 - 新加坡 - Cloudflare, Inc. - 6
+  - 🇷🇺 俄罗斯 - 莫斯科 - LLC Baxet - 3
+  - 🇷🇺 俄罗斯 - 莫斯科 - LLC Baxet - 9
+  - 🇸🇬 新加坡 - 新加坡 - NewMedia Express Pte Ltd - 23
+  - 🇸🇬 新加坡 - 新加坡 - NewMedia Express Pte Ltd - 21
+  - 🇸🇬 新加坡 - 新加坡 - NewMedia Express Pte Ltd - 22
+  - 🇸🇬 新加坡 - 新加坡 - Cloudflare, Inc. - 3
+  - 🇸🇬SG_202
+  - 🇸🇬 新加坡 - 新加坡 - Oracle Corporation - 17
+  - 🇺🇸 美国 - 肯特 - Cloudflare, Inc. - 46
   - 🇸🇬 新加坡 - 新加坡 - Cloudflare, Inc. - 13
   - 🇸🇬 新加坡 - 新加坡 - Cloudflare, Inc. - 12
-  - 🇸🇬 新加坡 - 新加坡 - Cloudflare, Inc. - 8
-  - 🇯🇵 日本 - Ōkubo-naka - Cloudflare, Inc. - 15
-  - 轮子1211
-  - 🇯🇵 日本 - Ōkubo-naka - Cloudflare, Inc. - 17
-  - 🇰🇷 韩国 - Yeongdong-gun - Cloudflare, Inc. - 4
-  - 🇯🇵 日本 - Ōkubo-naka - Cloudflare, Inc. - 11
-  - 🇯🇵 日本 - Ōkubo-naka - Cloudflare, Inc. - 10
-  - 🇻🇳 越南 - Trâu Quỳ - MOCLAMESOUL - 7
-  - 🇫🇷 法国 - 巴黎 - Online S.A.S. - 3
-  - 🇯🇵 日本 - Ōkubo-naka - Cloudflare, Inc. - 6
-  - 🇻🇳 越南 - Trâu Quỳ - MOCLAMESOUL - 3
-  - 🇻🇳 越南 - Hai BàTrưng - GLTEC - 5
-  - 🇸🇬 新加坡 - 新加坡 - Cloudflare, Inc. - 6
-  - 🇮🇩 Indonesia
-  - 🇸🇬 新加坡 - 新加坡 - Cloudflare, Inc. - 10
-  - 🇯🇵 日本 - Ōkubo-naka - Cloudflare, Inc. - 4
+  - 🇺🇸 美国 - 紐約 - Massivegrid LTD - 97
+  - 轮子4
+  - 轮子3
+  - 🇸🇬 新加坡 - 新加坡 - Google LLC - 1
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 56
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
